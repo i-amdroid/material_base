@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@import "compass";
+@import "compass/css3";
+
+@import "color-palette";
+@import "variables";
+
+.theme-dark { color: $color-text-light; background: $color-bg-dark;
+
+  a { @include link-colors($color-accent-light, $color-accent-light-hover, $color-accent-light-active); }
+
+  article .content a[href^="#"]:not([href="#"]):not(.btn) { border-color: $color-accent-light;
+    &:hover { border-color: $color-accent-light-hover; }
+    &:active { border-color: $color-accent-light-active; }
+  }
+
+  article .content blockquote { color: $color-text-light-secondary; }
+  
+  table { background: $color-bg-dark-card; border-color: #585858 !important; }
+  tr { border-color: #585858; }
+  tr.selected { background: lighten($color-bg-dark-card, 4); }
+  tr:hover, tr.selected:hover { background: $color-bg-dark-hover; }
+  th { color: $color-text-light-secondary; }
+  .table-bordered { box-shadow: 0 0 0 1px #585858; }
+  .table-striped { 
+    tbody tr:nth-child(even) { background: lighten($color-bg-dark-card, 2); }
+    tbody tr:nth-child(even):hover, tbody tr.selected:nth-child(even):hover { background: $color-bg-dark-hover; }
+    tbody tr.selected:nth-child(even) { background: lighten($color-bg-dark-card, 4); }
+  }
+  .table-responsive td:before { color: $color-text-light-secondary; }
+
+  :not(pre) > code, pre { background: $color-bg-dark-bar; }
+
+  .breadcrumb .delimiter:before { color: $color-text-light; } // D8
+
+  .rippleAnimate { background-color: rgba(#FFF, 0.1); }
+
+  .text-secondary { color: $color-text-light-secondary; }
+  .text-primary, a.text-primary, a.text-primary:hover, a.text-primary:focus { color: $color-primary-light; }
+  .text-accent, a.text-accent, a.text-accent:hover, a.text-accent:focus { color: $color-accent-light; }
+  .material-icons.text-accent { color: $color-accent-light; }
+  .icon-primary {
+    &.icon-left:before, &.icon-right:after { color: $color-primary-light; }
+  }
+  .icon-accent {
+    &.icon-left:before, &.icon-right:after { color: $color-accent-light; }
+  }
+
+  .divider-top { border-top-color: $color-light-divider; }
+  .divider-bottom { border-bottom-color: $color-light-divider; }
+
+  #footer { background: $color-bg-dark-bar; }
+
+  .btn, input[type="submit"] { color: $color-text-light;
+    &:hover, &:focus { background: rgba(#CCCCCC, .15); color: $color-text-light; }
+    &:active { background: rgba(#CCCCCC, .25); }
+  }
+  .btn-colored, .btn-colored:hover, .btn-colored:focus,
+  .btn.btn-colored, .btn.btn-colored:hover, .btn.btn-colored:focus { color: $color-primary-light; }
+  .btn-accent, .btn-accent:hover, .btn-accent:focus,
+  .btn.btn-accent, .btn.btn-accent:hover, .btn.btn-accent:focus { color: $color-accent-light; }
+  .btn-raised, .btn.btn-raised { background: rgba(#FFF, .05);
+    &.btn-colored { background: $color-primary-light; color: contrast-color($color-primary-light); }
+    &.btn-accent { background: $color-accent-light; color: contrast-color($color-accent-light); }
+    &.btn-colored:hover, &.btn-colored:focus { background: $color-primary-light-hover; color: contrast-color($color-primary-light); }
+    &.btn-colored:active { background: $color-primary-light-active; }
+    &.btn-accent:hover, &.btn-accent:focus { background: $color-accent-light-hover; color: contrast-color($color-accent-light); }
+    &.btn-accent:active { background: $color-accent-light-active; }
+  }
+  .btn-disabled { color: $color-text-light-disabled;
+    &:hover, &:focus, &:active { color: $color-text-light-disabled; }
+  }
+
+  .fab { color: $color-text-light; 
+    &:hover, &:focus { background: rgba(#CCC, .15); color: $color-text-light; }
+    &:active { background: rgba(#CCC, .25); }
+
+    &.fab-colored { background: $color-primary-light; color: contrast-color($color-primary-light);
+      &:hover, &:focus { background: $color-primary-light-hover; color: contrast-color($color-primary-light); }
+      &:active { background: $color-primary-light-active; }
+    }
+
+    &.fab-accent { background: $color-accent-light; color: contrast-color($color-accent-light);
+      &:hover, &:focus { background: $color-accent-light-hover; color: contrast-color($color-accent-light); }
+      &:active { background: $color-accent-light-active; }
+    }
+  }
+
+  .tooltip:before { background: rgba(#FFF, 0.9); color: $color-text; }
+
+  .form-item {
+    label, .description { color: $color-text-light-secondary; }
+    label.option, &.focused label.option { color: $color-text-light; }
+    &.focused label { color: $color-accent-light }
+    input, textarea, select { color: $color-text-light; }
+    select option { color: $color-text; }
+    input[type="text"], input[type="email"], input[type="password"], textarea, select { border-bottom-color: $color-light-divider;
+      &:focus, &.error:focus { border-bottom-color: $color-accent-light }
+      @include input-placeholder { color: $color-text-light-disabled; }
+    }
+    input[type="radio"], input[type="checkbox"] { color: $color-text-light-secondary; }
+    input[type="checkbox"]:checked:before { color: $color-accent-light }
+    input[type="radio"]:checked:before { color: $color-accent-light }
+    &.form-type-select:after { color: $color-text-light-secondary; }
+  }
+
+  #drawer { background: $color-bg-dark; border-color: $color-light-divider;
+    #drawer-menu-close a { color: $color-text-light; }
+    #drawer-title { color: $color-text-light-secondary; }
+    .menu { 
+      li a { color: $color-text-light;
+        &:hover { background: $color-bg-dark-hover; }
+        &.icon-left:before, &.icon-right:after { color: $color-text-light-secondary; }
+      }
+      li.active a, li.active-trail a { color: $color-primary-light;
+        &.icon-left:before, &.icon-right:after { color: $color-primary-light; }
+      }
+    } 
+  }
+
+  .sidebar .menu { 
+    li a {  color: $color-text-light;
+      &:hover { background: $color-bg-dark-hover; }
+    }
+    li.active a { color: $color-primary-light; }
+    .collapsed > a:after, .expanded > a:after { color: $color-text-light-secondary; }
+  }
+
+  .card { background: $color-bg-dark-card; }
+  .card-main { border-bottom-color: $color-light-divider; background: $color-bg-dark-card; }
+  &.content-card .card-holder { background: $color-bg-dark-card; }
+  .card-bg-primary { background: $color-primary; color: contrast-color($color-primary); }
+  .card-bg-accent { background: $color-accent; color: contrast-color($color-accent); }
+
+  .collapsible-toggle { 
+    &:before { color: $color-text-light-secondary; }
+    span { color: $color-accent-light; border-color: $color-accent-light;
+      &:hover { color: $color-accent-light-hover; border-color: $color-accent-light-hover; }
+      &:active { color: $color-accent-light-active; border-color: $color-accent-light-active; }
+    } 
+
+  }
+  .collapsible-content { border-color: $color-light-divider; }
+
+  .menu-dropdown { background: $color-bg-dark-card; 
+    li a { color: $color-text-light;
+      &:hover { background: $color-bg-dark-hover; color: $color-text-light; }
+    } 
+  }
+
+}

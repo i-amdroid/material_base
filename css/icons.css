@@ -1,0 +1,63 @@
+/* break points */
+.material-icons, .icon-left:before, .icon-right:after {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga'; }
+
+.material-icons.fs-18, .fs-18.icon-left:before, .fs-18.icon-right:after {
+  font-size: 18px; }
+
+.material-icons.fs-24, .fs-24.icon-left:before, .fs-24.icon-right:after {
+  font-size: 24px; }
+
+.material-icons.fs-36, .fs-36.icon-left:before, .fs-36.icon-right:after {
+  font-size: 36px; }
+
+.material-icons.fs-48, .fs-48.icon-left:before, .fs-48.icon-right:after {
+  font-size: 48px; }
+
+.material-icons.text-dark, .text-dark.icon-left:before, .text-dark.icon-right:after {
+  color: rgba(0, 0, 0, 0.87); }
+
+.material-icons.text-dark.text-disabled, .text-dark.text-disabled.icon-left:before, .text-dark.text-disabled.icon-right:after {
+  color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.text-light, .text-light.icon-left:before, .text-light.icon-right:after {
+  color: #FFF; }
+
+.material-icons.text-light.text-disabled, .text-light.text-disabled.icon-left:before, .text-light.text-disabled.icon-right:after {
+  color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.text-disabled, .text-disabled.icon-left:before, .text-disabled.icon-right:after {
+  color: rgba(0, 0, 0, 0.26); }
+
+.theme-dark .material-icons.text-disabled, .theme-dark .text-disabled.icon-left:before, .theme-dark .text-disabled.icon-right:after {
+  color: rgba(255, 255, 255, 0.3); }
+
+.icon-left:before {
+  content: attr(data-icon);
+  margin-right: 12px;
+  float: left; }
+
+.icon-right:after {
+  content: attr(data-icon);
+  margin-left: 12px;
+  float: right; }

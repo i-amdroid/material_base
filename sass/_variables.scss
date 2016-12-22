@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+// font
+$font-family: 'Roboto', sans-serif !default;
+//font-weight: normal;
+//font-weight: 500; //medium
+//font-weight: bold;
+$font-size: 16px !default;
+
+$heading-font-family: $font-family !default;
+
+// colors
+$color-text-dark: #000 !default;
+$color-text-light: #FFF !default;
+
+$color-text: rgba($color-text-dark, .87) !default;
+$color-text-secondary: rgba($color-text-dark, .54) !default;
+$color-text-disabled: rgba($color-text-dark, .26) !default;
+$color-divider: rgba($color-text-dark, .12) !default;
+
+//$color-text-light: #fff;
+$color-text-light-secondary: rgba($color-text-light, .70) !default;
+$color-text-light-disabled: rgba($color-text-light, .30) !default;
+$color-light-divider: rgba($color-text-light, .12) !default;
+
+$contrasted-dark-default: $color-text;        //compass contrast
+$contrasted-light-default: $color-text-light; //compass contrast
+
+$color-primary-base: $blue-grey !default; //$blue-grey
+$color-accent-base: $light-blue !default; //$light-blue
+
+$color-primary: color($color-primary-base) !default; //500
+$color-primary-hover: color($color-primary-base, 600) !default;
+$color-primary-active: color($color-primary-base, 700) !default;
+
+$color-accent: color($color-accent-base, a400) !default;
+$color-accent-hover: lighten(color($color-accent-base, a700), 6) !default;
+$color-accent-active: color($color-accent-base, a700) !default;
+
+//for theme-dark
+$color-primary-light: color($color-primary-base, 400) !default;
+$color-primary-light-hover: color($color-primary-base, 300) !default;
+$color-primary-light-active: color($color-primary-base, 200) !default;
+
+$color-accent-light: color($color-accent-base, a200) !default;
+$color-accent-light-hover: lighten(color($color-accent-base, a200), 6) !default;
+$color-accent-light-active: color($color-accent-base, a100) !default;
+
+$color-bg: #FAFAFA !default;
+$color-bg-card: #FFFFFF !default;
+$color-bg-bar: color($grey, 100) !default;
+$color-bg-hover: color($grey, 200) !default;
+
+$color-bg-dark: #303030 !default;
+$color-bg-dark-card: color($grey, 800) !default;
+$color-bg-dark-bar: color($grey, 900) !default;
+$color-bg-dark-hover: lighten($color-bg-dark-card, 6) !default;
+
+// layout
+$content: 944px !default; //944px
+$sidebar: 240px !default;
+$gutter: 24px !default;
+
+/* break points */
+
+$ss: 360px !default;
+$xs: $sidebar * 2 + $gutter * 3 + 16px !default;            //568px (including scrollbar width)
+$sm: 768px !default;
+$md: $content + $gutter * 2 !default;                       //992px
+$lg: $content + $sidebar + $gutter * 3 !default;            //1256px
+$xl: $content + $sidebar * 2 + $gutter * 4 !default;        //1520px
+
+$max-ss: $ss - 1px;
+$max-xs: $xs - 1px;
+$max-sm: $sm - 1px;
+$max-md: $md - 1px;
+$max-lg: $lg - 1px;
+$max-xl: $xl - 1px;

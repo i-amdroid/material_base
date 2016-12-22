@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import "compass";
+@import "color-palette";
+@import "variables";
+
+.services-icons { display: inline-block; width: 24px; height: 24px;
+  background: url(../img/services-icons.svg) no-repeat; opacity: .87;
+}
+.services-icons.icon-secondary { opacity: .54; }
+.services-icons.icon-light { background: $color-text-light; opacity: 1; mask: url(../img/services-icons.svg) no-repeat; }
+.services-icons.icon-primary { background: $color-primary; opacity: 1; mask: url(../img/services-icons.svg) no-repeat; }
+.services-icons.icon-accent { background: $color-accent; opacity: 1; mask: url(../img/services-icons.svg) no-repeat; }
+
+.services-icons.si-behance, .services-icons[data-icon="behance"] { background-position: -144px -48px; }
+.services-icons.si-bitbucket, .services-icons[data-icon="bitbucket"] { background-position: -24px -120px; }
+.services-icons.si-blogger, .services-icons[data-icon="blogger"] { background-position: -168px -48px; }
+.services-icons.si-delicious, .services-icons[data-icon="delicious"] { background-position: -144px -72px; }
+.services-icons.si-delicious-box, .services-icons[data-icon="delicious-box"] { background-position: -168px -72px; }
+.services-icons.si-digg, .services-icons[data-icon="digg"] { background-position: -120px -72px; }
+.services-icons.si-disqus, .services-icons[data-icon="disqus"] { background-position: -24px -96px; }
+.services-icons.si-disqus-outline, .services-icons[data-icon="disqus-outline"] { background-position: 0 -96px; }
+.services-icons.si-dribbble, .services-icons[data-icon="dribbble"] { background-position: -192px -48px; }
+.services-icons.si-dribbble-box, .services-icons[data-icon="dribbble-box"] { background-position: -216px -48px; }
+.services-icons.si-drupal, .services-icons[data-icon="drupal"] { background-position: -96px -120px; }
+.services-icons.si-evernote, .services-icons[data-icon="evernote"] { background-position: -216px -72px; }
+.services-icons.si-facebook, .services-icons[data-icon="facebook"] { background-position: 0 0; }
+.services-icons.si-facebook-box, .services-icons[data-icon="facebook-box"] { background-position: -24px 0; }
+.services-icons.si-facebook-messenger, .services-icons[data-icon="facebook-messenger"] { background-position: -144px -120px; }
+.services-icons.si-flickr, .services-icons[data-icon="flickr"] { background-position: -96px -96px; }
+.services-icons.si-foursquare, .services-icons[data-icon="foursquare"] { background-position: -48px -96px; }
+.services-icons.si-github-box, .services-icons[data-icon="github-box"] { background-position: 0 -120px; }
+.services-icons.si-google-photos, .services-icons[data-icon="google-photos"] { background-position: -120px -96px; }
+.services-icons.si-google-plus, .services-icons[data-icon="google-plus"] { background-position: -96px 0; }
+.services-icons.si-google-plus-box, .services-icons[data-icon="google-plus-box"] { background-position: -120px 0; }
+.services-icons.si-instagram, .services-icons[data-icon="instagram"] { background-position: 0 -24px; }
+.services-icons.si-instagram-box, .services-icons[data-icon="instagram-box"] { background-position: -24px -24px; }
+.services-icons.si-lastfm, .services-icons[data-icon="lastfm"] { background-position: -144px -96px; }
+.services-icons.si-line, .services-icons[data-icon="line"] { background-position: -72px -144px; }
+.services-icons.si-linkedin, .services-icons[data-icon="linkedin"] { background-position: -144px 0; }
+.services-icons.si-linkedin-box, .services-icons[data-icon="linkedin-box"] { background-position: -168px 0; }
+.services-icons.si-livejournal, .services-icons[data-icon="livejournal"] { background-position: -192px -72px; }
+.services-icons.si-medium, .services-icons[data-icon="medium"] { background-position: 0 -72px; }
+.services-icons.si-odnoklassniki, .services-icons[data-icon="odnoklassniki"] { background-position: -96px -24px; }
+.services-icons.si-odnoklassniki-box, .services-icons[data-icon="odnoklassniki-box"] { background-position: -120px -24px; }
+.services-icons.si-periscope, .services-icons[data-icon="periscope"] { background-position: -120px -48px; }
+.services-icons.si-pinterest, .services-icons[data-icon="pinterest"] { background-position: -192px 0; }
+.services-icons.si-pinterest-box, .services-icons[data-icon="pinterest-box"] { background-position: -216px 0; }
+.services-icons.si-pocket, .services-icons[data-icon="pocket"] { background-position: -24px -72px; }
+.services-icons.si-qqchat, .services-icons[data-icon="qqchat"] { background-position: -96px -144px; }
+.services-icons.si-qzone, .services-icons[data-icon="qzone"] { background-position: -216px -24px; }
+.services-icons.si-reddit, .services-icons[data-icon="reddit"] { background-position: -48px -72px; }
+.services-icons.si-renren, .services-icons[data-icon="renren"] { background-position: -24px -48px; }
+.services-icons.si-sina-weibo, .services-icons[data-icon="sina-weibo"] { background-position: -192px -24px; }
+.services-icons.si-skype, .services-icons[data-icon="skype"] { background-position: -24px -144px; }
+.services-icons.si-skype-outline, .services-icons[data-icon="skype-outline"] { background-position: 0 -144px; }
+.services-icons.si-slack, .services-icons[data-icon="slack"] { background-position: -144px -144px; }
+.services-icons.si-snapchat, .services-icons[data-icon="snapchat"] { background-position: -120px -144px; }
+.services-icons.si-soundcloud, .services-icons[data-icon="soundcloud"] { background-position: -168px -96px; }
+.services-icons.si-spotify, .services-icons[data-icon="spotify"] { background-position: -192px -96px; }
+.services-icons.si-stackexchange, .services-icons[data-icon="stackexchange"] { background-position: -48px -120px; }
+.services-icons.si-stackoverflow, .services-icons[data-icon="stackoverflow"] { background-position: -72px -120px; }
+.services-icons.si-swarm, .services-icons[data-icon="swarm"] { background-position: -72px -96px; }
+.services-icons.si-telegram, .services-icons[data-icon="telegram"] { background-position: -216px -120px; }
+.services-icons.si-trello, .services-icons[data-icon="trello"] { background-position: -216px -96px; }
+.services-icons.si-tumblr, .services-icons[data-icon="tumblr"] { background-position: 0 -48px; }
+.services-icons.si-twitch, .services-icons[data-icon="twitch"] { background-position: -96px -72px; }
+.services-icons.si-twitter, .services-icons[data-icon="twitter"] { background-position: -48px 0; }
+.services-icons.si-twitter-box, .services-icons[data-icon="twitter-box"] { background-position: -72px 0; }
+.services-icons.si-viber, .services-icons[data-icon="viber"] { background-position: -192px -120px; }
+.services-icons.si-vimeo, .services-icons[data-icon="vimeo"] { background-position: -72px -48px; }
+.services-icons.si-vine, .services-icons[data-icon="vine"] { background-position: -96px -48px; }
+.services-icons.si-vk, .services-icons[data-icon="vk"] { background-position: -48px -24px; }
+.services-icons.si-vk-box, .services-icons[data-icon="vk-box"] { background-position: -72px -24px; }
+.services-icons.si-wechat, .services-icons[data-icon="wechat"] { background-position: -48px -144px; }
+.services-icons.si-whatsapp, .services-icons[data-icon="whatsapp"] { background-position: -168px -120px; }
+.services-icons.si-wordpress, .services-icons[data-icon="wordpress"] { background-position: -120px -120px; }
+.services-icons.si-wunderlist, .services-icons[data-icon="wunderlist"] { background-position: -72px -72px; }
+.services-icons.si-xing, .services-icons[data-icon="xing"] { background-position: -144px -24px; }
+.services-icons.si-xing-box, .services-icons[data-icon="xing-box"] { background-position: -168px -24px; }
+.services-icons.si-youtube, .services-icons[data-icon="youtube"] { background-position: -48px -48px; }
+
+.services-icons.icon-light,
+.services-icons.icon-primary,
+.services-icons.icon-accent {
+  &.si-behance, &[data-icon="behance"] { mask-position: -144px -48px; }
+  &.si-bitbucket, &[data-icon="bitbucket"] { mask-position: -24px -120px; }
+  &.si-blogger, &[data-icon="blogger"] { mask-position: -168px -48px; }
+  &.si-delicious, &[data-icon="delicious"] { mask-position: -144px -72px; }
+  &.si-delicious-box, &[data-icon="delicious-box"] { mask-position: -168px -72px; }
+  &.si-digg, &[data-icon="digg"] { mask-position: -120px -72px; }
+  &.si-disqus, &[data-icon="disqus"] { mask-position: -24px -96px; }
+  &.si-disqus-outline, &[data-icon="disqus-outline"] { mask-position: 0 -96px; }
+  &.si-dribbble, &[data-icon="dribbble"] { mask-position: -192px -48px; }
+  &.si-dribbble-box, &[data-icon="dribbble-box"] { mask-position: -216px -48px; }
+  &.si-drupal, &[data-icon="drupal"] { mask-position: -96px -120px; }
+  &.si-evernote, &[data-icon="evernote"] { mask-position: -216px -72px; }
+  &.si-facebook, &[data-icon="facebook"] { mask-position: 0 0; }
+  &.si-facebook-box, &[data-icon="facebook-box"] { mask-position: -24px 0; }
+  &.si-facebook-messenger, &[data-icon="facebook-messenger"] { mask-position: -144px -120px; }
+  &.si-flickr, &[data-icon="flickr"] { mask-position: -96px -96px; }
+  &.si-foursquare, &[data-icon="foursquare"] { mask-position: -48px -96px; }
+  &.si-github-box, &[data-icon="github-box"] { mask-position: 0 -120px; }
+  &.si-google-photos, &[data-icon="google-photos"] { mask-position: -120px -96px; }
+  &.si-google-plus, &[data-icon="google-plus"] { mask-position: -96px 0; }
+  &.si-google-plus-box, &[data-icon="google-plus-box"] { mask-position: -120px 0; }
+  &.si-instagram, &[data-icon="instagram"] { mask-position: 0 -24px; }
+  &.si-instagram-box, &[data-icon="instagram-box"] { mask-position: -24px -24px; }
+  &.si-lastfm, &[data-icon="lastfm"] { mask-position: -144px -96px; }
+  &.si-line, &[data-icon="line"] { mask-position: -72px -144px; }
+  &.si-linkedin, &[data-icon="linkedin"] { mask-position: -144px 0; }
+  &.si-linkedin-box, &[data-icon="linkedin-box"] { mask-position: -168px 0; }
+  &.si-livejournal, &[data-icon="livejournal"] { mask-position: -192px -72px; }
+  &.si-medium, &[data-icon="medium"] { mask-position: 0 -72px; }
+  &.si-odnoklassniki, &[data-icon="odnoklassniki"] { mask-position: -96px -24px; }
+  &.si-odnoklassniki-box, &[data-icon="odnoklassniki-box"] { mask-position: -120px -24px; }
+  &.si-periscope, &[data-icon="periscope"] { mask-position: -120px -48px; }
+  &.si-pinterest, &[data-icon="pinterest"] { mask-position: -192px 0; }
+  &.si-pinterest-box, &[data-icon="pinterest-box"] { mask-position: -216px 0; }
+  &.si-pocket, &[data-icon="pocket"] { mask-position: -24px -72px; }
+  &.si-qqchat, &[data-icon="qqchat"] { mask-position: -96px -144px; }
+  &.si-qzone, &[data-icon="qzone"] { mask-position: -216px -24px; }
+  &.si-reddit, &[data-icon="reddit"] { mask-position: -48px -72px; }
+  &.si-renren, &[data-icon="renren"] { mask-position: -24px -48px; }
+  &.si-sina-weibo, &[data-icon="sina-weibo"] { mask-position: -192px -24px; }
+  &.si-skype, &[data-icon="skype"] { mask-position: -24px -144px; }
+  &.si-skype-outline, &[data-icon="skype-outline"] { mask-position: 0 -144px; }
+  &.si-slack, &[data-icon="slack"] { mask-position: -144px -144px; }
+  &.si-snapchat, &[data-icon="snapchat"] { mask-position: -120px -144px; }
+  &.si-soundcloud, &[data-icon="soundcloud"] { mask-position: -168px -96px; }
+  &.si-spotify, &[data-icon="spotify"] { mask-position: -192px -96px; }
+  &.si-stackexchange, &[data-icon="stackexchange"] { mask-position: -48px -120px; }
+  &.si-stackoverflow, &[data-icon="stackoverflow"] { mask-position: -72px -120px; }
+  &.si-swarm, &[data-icon="swarm"] { mask-position: -72px -96px; }
+  &.si-telegram, &[data-icon="telegram"] { mask-position: -216px -120px; }
+  &.si-trello, &[data-icon="trello"] { mask-position: -216px -96px; }
+  &.si-tumblr, &[data-icon="tumblr"] { mask-position: 0 -48px; }
+  &.si-twitch, &[data-icon="twitch"] { mask-position: -96px -72px; }
+  &.si-twitter, &[data-icon="twitter"] { mask-position: -48px 0; }
+  &.si-twitter-box, &[data-icon="twitter-box"] { mask-position: -72px 0; }
+  &.si-viber, &[data-icon="viber"] { mask-position: -192px -120px; }
+  &.si-vimeo, &[data-icon="vimeo"] { mask-position: -72px -48px; }
+  &.si-vine, &[data-icon="vine"] { mask-position: -96px -48px; }
+  &.si-vk, &[data-icon="vk"] { mask-position: -48px -24px;  }
+  &.si-vk-box, &[data-icon="vk-box"] { mask-position: -72px -24px; }
+  &.si-wechat, &[data-icon="wechat"] { mask-position: -48px -144px; }
+  &.si-whatsapp, &[data-icon="whatsapp"] { mask-position: -168px -120px; }
+  &.si-wordpress, &[data-icon="wordpress"] { mask-position: -120px -120px; }
+  &.si-wunderlist, &[data-icon="wunderlist"] { mask-position: -72px -72px; }
+  &.si-xing, &[data-icon="xing"] { mask-position: -144px -24px; }
+  &.si-xing-box, &[data-icon="xing-box"] { mask-position: -168px -24px; }
+  &.si-youtube, &[data-icon="youtube"] { mask-position: -48px -48px; }
+}

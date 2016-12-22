@@ -1,0 +1,29 @@
+name = Material cascade
+core = 7.x
+description = Starter kit for Material base theme. No recompilation needed.
+
+base theme = material_base
+
+stylesheets[all][]   = css/custom.css
+
+;scripts[] = js/custom.js
+
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[header] = Header
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[footer] = Footer
+
+regions[navbar] = Navbar
+regions[drawer] = Drawer
+regions[header_bg] = Header background
+regions[actions] = Actions
+regions[before_main] = Before main content
+regions[after_main] = After main content
+regions[content_secondary] = Content secondary
+regions[footer_content] = Footer content

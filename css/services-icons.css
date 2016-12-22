@@ -1,0 +1,699 @@
+/* break points */
+.services-icons {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/services-icons.svg) no-repeat;
+  opacity: .87; }
+
+.services-icons.icon-secondary {
+  opacity: .54; }
+
+.services-icons.icon-light {
+  background: #FFF;
+  opacity: 1;
+  -webkit-mask: url(../img/services-icons.svg) no-repeat;
+          mask: url(../img/services-icons.svg) no-repeat; }
+
+.services-icons.icon-primary {
+  background: #607d8b;
+  opacity: 1;
+  -webkit-mask: url(../img/services-icons.svg) no-repeat;
+          mask: url(../img/services-icons.svg) no-repeat; }
+
+.services-icons.icon-accent {
+  background: #00b0ff;
+  opacity: 1;
+  -webkit-mask: url(../img/services-icons.svg) no-repeat;
+          mask: url(../img/services-icons.svg) no-repeat; }
+
+.services-icons.si-behance, .services-icons[data-icon="behance"] {
+  background-position: -144px -48px; }
+
+.services-icons.si-bitbucket, .services-icons[data-icon="bitbucket"] {
+  background-position: -24px -120px; }
+
+.services-icons.si-blogger, .services-icons[data-icon="blogger"] {
+  background-position: -168px -48px; }
+
+.services-icons.si-delicious, .services-icons[data-icon="delicious"] {
+  background-position: -144px -72px; }
+
+.services-icons.si-delicious-box, .services-icons[data-icon="delicious-box"] {
+  background-position: -168px -72px; }
+
+.services-icons.si-digg, .services-icons[data-icon="digg"] {
+  background-position: -120px -72px; }
+
+.services-icons.si-disqus, .services-icons[data-icon="disqus"] {
+  background-position: -24px -96px; }
+
+.services-icons.si-disqus-outline, .services-icons[data-icon="disqus-outline"] {
+  background-position: 0 -96px; }
+
+.services-icons.si-dribbble, .services-icons[data-icon="dribbble"] {
+  background-position: -192px -48px; }
+
+.services-icons.si-dribbble-box, .services-icons[data-icon="dribbble-box"] {
+  background-position: -216px -48px; }
+
+.services-icons.si-drupal, .services-icons[data-icon="drupal"] {
+  background-position: -96px -120px; }
+
+.services-icons.si-evernote, .services-icons[data-icon="evernote"] {
+  background-position: -216px -72px; }
+
+.services-icons.si-facebook, .services-icons[data-icon="facebook"] {
+  background-position: 0 0; }
+
+.services-icons.si-facebook-box, .services-icons[data-icon="facebook-box"] {
+  background-position: -24px 0; }
+
+.services-icons.si-facebook-messenger, .services-icons[data-icon="facebook-messenger"] {
+  background-position: -144px -120px; }
+
+.services-icons.si-flickr, .services-icons[data-icon="flickr"] {
+  background-position: -96px -96px; }
+
+.services-icons.si-foursquare, .services-icons[data-icon="foursquare"] {
+  background-position: -48px -96px; }
+
+.services-icons.si-github-box, .services-icons[data-icon="github-box"] {
+  background-position: 0 -120px; }
+
+.services-icons.si-google-photos, .services-icons[data-icon="google-photos"] {
+  background-position: -120px -96px; }
+
+.services-icons.si-google-plus, .services-icons[data-icon="google-plus"] {
+  background-position: -96px 0; }
+
+.services-icons.si-google-plus-box, .services-icons[data-icon="google-plus-box"] {
+  background-position: -120px 0; }
+
+.services-icons.si-instagram, .services-icons[data-icon="instagram"] {
+  background-position: 0 -24px; }
+
+.services-icons.si-instagram-box, .services-icons[data-icon="instagram-box"] {
+  background-position: -24px -24px; }
+
+.services-icons.si-lastfm, .services-icons[data-icon="lastfm"] {
+  background-position: -144px -96px; }
+
+.services-icons.si-line, .services-icons[data-icon="line"] {
+  background-position: -72px -144px; }
+
+.services-icons.si-linkedin, .services-icons[data-icon="linkedin"] {
+  background-position: -144px 0; }
+
+.services-icons.si-linkedin-box, .services-icons[data-icon="linkedin-box"] {
+  background-position: -168px 0; }
+
+.services-icons.si-livejournal, .services-icons[data-icon="livejournal"] {
+  background-position: -192px -72px; }
+
+.services-icons.si-medium, .services-icons[data-icon="medium"] {
+  background-position: 0 -72px; }
+
+.services-icons.si-odnoklassniki, .services-icons[data-icon="odnoklassniki"] {
+  background-position: -96px -24px; }
+
+.services-icons.si-odnoklassniki-box, .services-icons[data-icon="odnoklassniki-box"] {
+  background-position: -120px -24px; }
+
+.services-icons.si-periscope, .services-icons[data-icon="periscope"] {
+  background-position: -120px -48px; }
+
+.services-icons.si-pinterest, .services-icons[data-icon="pinterest"] {
+  background-position: -192px 0; }
+
+.services-icons.si-pinterest-box, .services-icons[data-icon="pinterest-box"] {
+  background-position: -216px 0; }
+
+.services-icons.si-pocket, .services-icons[data-icon="pocket"] {
+  background-position: -24px -72px; }
+
+.services-icons.si-qqchat, .services-icons[data-icon="qqchat"] {
+  background-position: -96px -144px; }
+
+.services-icons.si-qzone, .services-icons[data-icon="qzone"] {
+  background-position: -216px -24px; }
+
+.services-icons.si-reddit, .services-icons[data-icon="reddit"] {
+  background-position: -48px -72px; }
+
+.services-icons.si-renren, .services-icons[data-icon="renren"] {
+  background-position: -24px -48px; }
+
+.services-icons.si-sina-weibo, .services-icons[data-icon="sina-weibo"] {
+  background-position: -192px -24px; }
+
+.services-icons.si-skype, .services-icons[data-icon="skype"] {
+  background-position: -24px -144px; }
+
+.services-icons.si-skype-outline, .services-icons[data-icon="skype-outline"] {
+  background-position: 0 -144px; }
+
+.services-icons.si-slack, .services-icons[data-icon="slack"] {
+  background-position: -144px -144px; }
+
+.services-icons.si-snapchat, .services-icons[data-icon="snapchat"] {
+  background-position: -120px -144px; }
+
+.services-icons.si-soundcloud, .services-icons[data-icon="soundcloud"] {
+  background-position: -168px -96px; }
+
+.services-icons.si-spotify, .services-icons[data-icon="spotify"] {
+  background-position: -192px -96px; }
+
+.services-icons.si-stackexchange, .services-icons[data-icon="stackexchange"] {
+  background-position: -48px -120px; }
+
+.services-icons.si-stackoverflow, .services-icons[data-icon="stackoverflow"] {
+  background-position: -72px -120px; }
+
+.services-icons.si-swarm, .services-icons[data-icon="swarm"] {
+  background-position: -72px -96px; }
+
+.services-icons.si-telegram, .services-icons[data-icon="telegram"] {
+  background-position: -216px -120px; }
+
+.services-icons.si-trello, .services-icons[data-icon="trello"] {
+  background-position: -216px -96px; }
+
+.services-icons.si-tumblr, .services-icons[data-icon="tumblr"] {
+  background-position: 0 -48px; }
+
+.services-icons.si-twitch, .services-icons[data-icon="twitch"] {
+  background-position: -96px -72px; }
+
+.services-icons.si-twitter, .services-icons[data-icon="twitter"] {
+  background-position: -48px 0; }
+
+.services-icons.si-twitter-box, .services-icons[data-icon="twitter-box"] {
+  background-position: -72px 0; }
+
+.services-icons.si-viber, .services-icons[data-icon="viber"] {
+  background-position: -192px -120px; }
+
+.services-icons.si-vimeo, .services-icons[data-icon="vimeo"] {
+  background-position: -72px -48px; }
+
+.services-icons.si-vine, .services-icons[data-icon="vine"] {
+  background-position: -96px -48px; }
+
+.services-icons.si-vk, .services-icons[data-icon="vk"] {
+  background-position: -48px -24px; }
+
+.services-icons.si-vk-box, .services-icons[data-icon="vk-box"] {
+  background-position: -72px -24px; }
+
+.services-icons.si-wechat, .services-icons[data-icon="wechat"] {
+  background-position: -48px -144px; }
+
+.services-icons.si-whatsapp, .services-icons[data-icon="whatsapp"] {
+  background-position: -168px -120px; }
+
+.services-icons.si-wordpress, .services-icons[data-icon="wordpress"] {
+  background-position: -120px -120px; }
+
+.services-icons.si-wunderlist, .services-icons[data-icon="wunderlist"] {
+  background-position: -72px -72px; }
+
+.services-icons.si-xing, .services-icons[data-icon="xing"] {
+  background-position: -144px -24px; }
+
+.services-icons.si-xing-box, .services-icons[data-icon="xing-box"] {
+  background-position: -168px -24px; }
+
+.services-icons.si-youtube, .services-icons[data-icon="youtube"] {
+  background-position: -48px -48px; }
+
+.services-icons.icon-light.si-behance, .services-icons.icon-light[data-icon="behance"],
+.services-icons.icon-primary.si-behance,
+.services-icons.icon-primary[data-icon="behance"],
+.services-icons.icon-accent.si-behance,
+.services-icons.icon-accent[data-icon="behance"] {
+  -webkit-mask-position: -144px -48px;
+          mask-position: -144px -48px; }
+.services-icons.icon-light.si-bitbucket, .services-icons.icon-light[data-icon="bitbucket"],
+.services-icons.icon-primary.si-bitbucket,
+.services-icons.icon-primary[data-icon="bitbucket"],
+.services-icons.icon-accent.si-bitbucket,
+.services-icons.icon-accent[data-icon="bitbucket"] {
+  -webkit-mask-position: -24px -120px;
+          mask-position: -24px -120px; }
+.services-icons.icon-light.si-blogger, .services-icons.icon-light[data-icon="blogger"],
+.services-icons.icon-primary.si-blogger,
+.services-icons.icon-primary[data-icon="blogger"],
+.services-icons.icon-accent.si-blogger,
+.services-icons.icon-accent[data-icon="blogger"] {
+  -webkit-mask-position: -168px -48px;
+          mask-position: -168px -48px; }
+.services-icons.icon-light.si-delicious, .services-icons.icon-light[data-icon="delicious"],
+.services-icons.icon-primary.si-delicious,
+.services-icons.icon-primary[data-icon="delicious"],
+.services-icons.icon-accent.si-delicious,
+.services-icons.icon-accent[data-icon="delicious"] {
+  -webkit-mask-position: -144px -72px;
+          mask-position: -144px -72px; }
+.services-icons.icon-light.si-delicious-box, .services-icons.icon-light[data-icon="delicious-box"],
+.services-icons.icon-primary.si-delicious-box,
+.services-icons.icon-primary[data-icon="delicious-box"],
+.services-icons.icon-accent.si-delicious-box,
+.services-icons.icon-accent[data-icon="delicious-box"] {
+  -webkit-mask-position: -168px -72px;
+          mask-position: -168px -72px; }
+.services-icons.icon-light.si-digg, .services-icons.icon-light[data-icon="digg"],
+.services-icons.icon-primary.si-digg,
+.services-icons.icon-primary[data-icon="digg"],
+.services-icons.icon-accent.si-digg,
+.services-icons.icon-accent[data-icon="digg"] {
+  -webkit-mask-position: -120px -72px;
+          mask-position: -120px -72px; }
+.services-icons.icon-light.si-disqus, .services-icons.icon-light[data-icon="disqus"],
+.services-icons.icon-primary.si-disqus,
+.services-icons.icon-primary[data-icon="disqus"],
+.services-icons.icon-accent.si-disqus,
+.services-icons.icon-accent[data-icon="disqus"] {
+  -webkit-mask-position: -24px -96px;
+          mask-position: -24px -96px; }
+.services-icons.icon-light.si-disqus-outline, .services-icons.icon-light[data-icon="disqus-outline"],
+.services-icons.icon-primary.si-disqus-outline,
+.services-icons.icon-primary[data-icon="disqus-outline"],
+.services-icons.icon-accent.si-disqus-outline,
+.services-icons.icon-accent[data-icon="disqus-outline"] {
+  -webkit-mask-position: 0 -96px;
+          mask-position: 0 -96px; }
+.services-icons.icon-light.si-dribbble, .services-icons.icon-light[data-icon="dribbble"],
+.services-icons.icon-primary.si-dribbble,
+.services-icons.icon-primary[data-icon="dribbble"],
+.services-icons.icon-accent.si-dribbble,
+.services-icons.icon-accent[data-icon="dribbble"] {
+  -webkit-mask-position: -192px -48px;
+          mask-position: -192px -48px; }
+.services-icons.icon-light.si-dribbble-box, .services-icons.icon-light[data-icon="dribbble-box"],
+.services-icons.icon-primary.si-dribbble-box,
+.services-icons.icon-primary[data-icon="dribbble-box"],
+.services-icons.icon-accent.si-dribbble-box,
+.services-icons.icon-accent[data-icon="dribbble-box"] {
+  -webkit-mask-position: -216px -48px;
+          mask-position: -216px -48px; }
+.services-icons.icon-light.si-drupal, .services-icons.icon-light[data-icon="drupal"],
+.services-icons.icon-primary.si-drupal,
+.services-icons.icon-primary[data-icon="drupal"],
+.services-icons.icon-accent.si-drupal,
+.services-icons.icon-accent[data-icon="drupal"] {
+  -webkit-mask-position: -96px -120px;
+          mask-position: -96px -120px; }
+.services-icons.icon-light.si-evernote, .services-icons.icon-light[data-icon="evernote"],
+.services-icons.icon-primary.si-evernote,
+.services-icons.icon-primary[data-icon="evernote"],
+.services-icons.icon-accent.si-evernote,
+.services-icons.icon-accent[data-icon="evernote"] {
+  -webkit-mask-position: -216px -72px;
+          mask-position: -216px -72px; }
+.services-icons.icon-light.si-facebook, .services-icons.icon-light[data-icon="facebook"],
+.services-icons.icon-primary.si-facebook,
+.services-icons.icon-primary[data-icon="facebook"],
+.services-icons.icon-accent.si-facebook,
+.services-icons.icon-accent[data-icon="facebook"] {
+  -webkit-mask-position: 0 0;
+          mask-position: 0 0; }
+.services-icons.icon-light.si-facebook-box, .services-icons.icon-light[data-icon="facebook-box"],
+.services-icons.icon-primary.si-facebook-box,
+.services-icons.icon-primary[data-icon="facebook-box"],
+.services-icons.icon-accent.si-facebook-box,
+.services-icons.icon-accent[data-icon="facebook-box"] {
+  -webkit-mask-position: -24px 0;
+          mask-position: -24px 0; }
+.services-icons.icon-light.si-facebook-messenger, .services-icons.icon-light[data-icon="facebook-messenger"],
+.services-icons.icon-primary.si-facebook-messenger,
+.services-icons.icon-primary[data-icon="facebook-messenger"],
+.services-icons.icon-accent.si-facebook-messenger,
+.services-icons.icon-accent[data-icon="facebook-messenger"] {
+  -webkit-mask-position: -144px -120px;
+          mask-position: -144px -120px; }
+.services-icons.icon-light.si-flickr, .services-icons.icon-light[data-icon="flickr"],
+.services-icons.icon-primary.si-flickr,
+.services-icons.icon-primary[data-icon="flickr"],
+.services-icons.icon-accent.si-flickr,
+.services-icons.icon-accent[data-icon="flickr"] {
+  -webkit-mask-position: -96px -96px;
+          mask-position: -96px -96px; }
+.services-icons.icon-light.si-foursquare, .services-icons.icon-light[data-icon="foursquare"],
+.services-icons.icon-primary.si-foursquare,
+.services-icons.icon-primary[data-icon="foursquare"],
+.services-icons.icon-accent.si-foursquare,
+.services-icons.icon-accent[data-icon="foursquare"] {
+  -webkit-mask-position: -48px -96px;
+          mask-position: -48px -96px; }
+.services-icons.icon-light.si-github-box, .services-icons.icon-light[data-icon="github-box"],
+.services-icons.icon-primary.si-github-box,
+.services-icons.icon-primary[data-icon="github-box"],
+.services-icons.icon-accent.si-github-box,
+.services-icons.icon-accent[data-icon="github-box"] {
+  -webkit-mask-position: 0 -120px;
+          mask-position: 0 -120px; }
+.services-icons.icon-light.si-google-photos, .services-icons.icon-light[data-icon="google-photos"],
+.services-icons.icon-primary.si-google-photos,
+.services-icons.icon-primary[data-icon="google-photos"],
+.services-icons.icon-accent.si-google-photos,
+.services-icons.icon-accent[data-icon="google-photos"] {
+  -webkit-mask-position: -120px -96px;
+          mask-position: -120px -96px; }
+.services-icons.icon-light.si-google-plus, .services-icons.icon-light[data-icon="google-plus"],
+.services-icons.icon-primary.si-google-plus,
+.services-icons.icon-primary[data-icon="google-plus"],
+.services-icons.icon-accent.si-google-plus,
+.services-icons.icon-accent[data-icon="google-plus"] {
+  -webkit-mask-position: -96px 0;
+          mask-position: -96px 0; }
+.services-icons.icon-light.si-google-plus-box, .services-icons.icon-light[data-icon="google-plus-box"],
+.services-icons.icon-primary.si-google-plus-box,
+.services-icons.icon-primary[data-icon="google-plus-box"],
+.services-icons.icon-accent.si-google-plus-box,
+.services-icons.icon-accent[data-icon="google-plus-box"] {
+  -webkit-mask-position: -120px 0;
+          mask-position: -120px 0; }
+.services-icons.icon-light.si-instagram, .services-icons.icon-light[data-icon="instagram"],
+.services-icons.icon-primary.si-instagram,
+.services-icons.icon-primary[data-icon="instagram"],
+.services-icons.icon-accent.si-instagram,
+.services-icons.icon-accent[data-icon="instagram"] {
+  -webkit-mask-position: 0 -24px;
+          mask-position: 0 -24px; }
+.services-icons.icon-light.si-instagram-box, .services-icons.icon-light[data-icon="instagram-box"],
+.services-icons.icon-primary.si-instagram-box,
+.services-icons.icon-primary[data-icon="instagram-box"],
+.services-icons.icon-accent.si-instagram-box,
+.services-icons.icon-accent[data-icon="instagram-box"] {
+  -webkit-mask-position: -24px -24px;
+          mask-position: -24px -24px; }
+.services-icons.icon-light.si-lastfm, .services-icons.icon-light[data-icon="lastfm"],
+.services-icons.icon-primary.si-lastfm,
+.services-icons.icon-primary[data-icon="lastfm"],
+.services-icons.icon-accent.si-lastfm,
+.services-icons.icon-accent[data-icon="lastfm"] {
+  -webkit-mask-position: -144px -96px;
+          mask-position: -144px -96px; }
+.services-icons.icon-light.si-line, .services-icons.icon-light[data-icon="line"],
+.services-icons.icon-primary.si-line,
+.services-icons.icon-primary[data-icon="line"],
+.services-icons.icon-accent.si-line,
+.services-icons.icon-accent[data-icon="line"] {
+  -webkit-mask-position: -72px -144px;
+          mask-position: -72px -144px; }
+.services-icons.icon-light.si-linkedin, .services-icons.icon-light[data-icon="linkedin"],
+.services-icons.icon-primary.si-linkedin,
+.services-icons.icon-primary[data-icon="linkedin"],
+.services-icons.icon-accent.si-linkedin,
+.services-icons.icon-accent[data-icon="linkedin"] {
+  -webkit-mask-position: -144px 0;
+          mask-position: -144px 0; }
+.services-icons.icon-light.si-linkedin-box, .services-icons.icon-light[data-icon="linkedin-box"],
+.services-icons.icon-primary.si-linkedin-box,
+.services-icons.icon-primary[data-icon="linkedin-box"],
+.services-icons.icon-accent.si-linkedin-box,
+.services-icons.icon-accent[data-icon="linkedin-box"] {
+  -webkit-mask-position: -168px 0;
+          mask-position: -168px 0; }
+.services-icons.icon-light.si-livejournal, .services-icons.icon-light[data-icon="livejournal"],
+.services-icons.icon-primary.si-livejournal,
+.services-icons.icon-primary[data-icon="livejournal"],
+.services-icons.icon-accent.si-livejournal,
+.services-icons.icon-accent[data-icon="livejournal"] {
+  -webkit-mask-position: -192px -72px;
+          mask-position: -192px -72px; }
+.services-icons.icon-light.si-medium, .services-icons.icon-light[data-icon="medium"],
+.services-icons.icon-primary.si-medium,
+.services-icons.icon-primary[data-icon="medium"],
+.services-icons.icon-accent.si-medium,
+.services-icons.icon-accent[data-icon="medium"] {
+  -webkit-mask-position: 0 -72px;
+          mask-position: 0 -72px; }
+.services-icons.icon-light.si-odnoklassniki, .services-icons.icon-light[data-icon="odnoklassniki"],
+.services-icons.icon-primary.si-odnoklassniki,
+.services-icons.icon-primary[data-icon="odnoklassniki"],
+.services-icons.icon-accent.si-odnoklassniki,
+.services-icons.icon-accent[data-icon="odnoklassniki"] {
+  -webkit-mask-position: -96px -24px;
+          mask-position: -96px -24px; }
+.services-icons.icon-light.si-odnoklassniki-box, .services-icons.icon-light[data-icon="odnoklassniki-box"],
+.services-icons.icon-primary.si-odnoklassniki-box,
+.services-icons.icon-primary[data-icon="odnoklassniki-box"],
+.services-icons.icon-accent.si-odnoklassniki-box,
+.services-icons.icon-accent[data-icon="odnoklassniki-box"] {
+  -webkit-mask-position: -120px -24px;
+          mask-position: -120px -24px; }
+.services-icons.icon-light.si-periscope, .services-icons.icon-light[data-icon="periscope"],
+.services-icons.icon-primary.si-periscope,
+.services-icons.icon-primary[data-icon="periscope"],
+.services-icons.icon-accent.si-periscope,
+.services-icons.icon-accent[data-icon="periscope"] {
+  -webkit-mask-position: -120px -48px;
+          mask-position: -120px -48px; }
+.services-icons.icon-light.si-pinterest, .services-icons.icon-light[data-icon="pinterest"],
+.services-icons.icon-primary.si-pinterest,
+.services-icons.icon-primary[data-icon="pinterest"],
+.services-icons.icon-accent.si-pinterest,
+.services-icons.icon-accent[data-icon="pinterest"] {
+  -webkit-mask-position: -192px 0;
+          mask-position: -192px 0; }
+.services-icons.icon-light.si-pinterest-box, .services-icons.icon-light[data-icon="pinterest-box"],
+.services-icons.icon-primary.si-pinterest-box,
+.services-icons.icon-primary[data-icon="pinterest-box"],
+.services-icons.icon-accent.si-pinterest-box,
+.services-icons.icon-accent[data-icon="pinterest-box"] {
+  -webkit-mask-position: -216px 0;
+          mask-position: -216px 0; }
+.services-icons.icon-light.si-pocket, .services-icons.icon-light[data-icon="pocket"],
+.services-icons.icon-primary.si-pocket,
+.services-icons.icon-primary[data-icon="pocket"],
+.services-icons.icon-accent.si-pocket,
+.services-icons.icon-accent[data-icon="pocket"] {
+  -webkit-mask-position: -24px -72px;
+          mask-position: -24px -72px; }
+.services-icons.icon-light.si-qqchat, .services-icons.icon-light[data-icon="qqchat"],
+.services-icons.icon-primary.si-qqchat,
+.services-icons.icon-primary[data-icon="qqchat"],
+.services-icons.icon-accent.si-qqchat,
+.services-icons.icon-accent[data-icon="qqchat"] {
+  -webkit-mask-position: -96px -144px;
+          mask-position: -96px -144px; }
+.services-icons.icon-light.si-qzone, .services-icons.icon-light[data-icon="qzone"],
+.services-icons.icon-primary.si-qzone,
+.services-icons.icon-primary[data-icon="qzone"],
+.services-icons.icon-accent.si-qzone,
+.services-icons.icon-accent[data-icon="qzone"] {
+  -webkit-mask-position: -216px -24px;
+          mask-position: -216px -24px; }
+.services-icons.icon-light.si-reddit, .services-icons.icon-light[data-icon="reddit"],
+.services-icons.icon-primary.si-reddit,
+.services-icons.icon-primary[data-icon="reddit"],
+.services-icons.icon-accent.si-reddit,
+.services-icons.icon-accent[data-icon="reddit"] {
+  -webkit-mask-position: -48px -72px;
+          mask-position: -48px -72px; }
+.services-icons.icon-light.si-renren, .services-icons.icon-light[data-icon="renren"],
+.services-icons.icon-primary.si-renren,
+.services-icons.icon-primary[data-icon="renren"],
+.services-icons.icon-accent.si-renren,
+.services-icons.icon-accent[data-icon="renren"] {
+  -webkit-mask-position: -24px -48px;
+          mask-position: -24px -48px; }
+.services-icons.icon-light.si-sina-weibo, .services-icons.icon-light[data-icon="sina-weibo"],
+.services-icons.icon-primary.si-sina-weibo,
+.services-icons.icon-primary[data-icon="sina-weibo"],
+.services-icons.icon-accent.si-sina-weibo,
+.services-icons.icon-accent[data-icon="sina-weibo"] {
+  -webkit-mask-position: -192px -24px;
+          mask-position: -192px -24px; }
+.services-icons.icon-light.si-skype, .services-icons.icon-light[data-icon="skype"],
+.services-icons.icon-primary.si-skype,
+.services-icons.icon-primary[data-icon="skype"],
+.services-icons.icon-accent.si-skype,
+.services-icons.icon-accent[data-icon="skype"] {
+  -webkit-mask-position: -24px -144px;
+          mask-position: -24px -144px; }
+.services-icons.icon-light.si-skype-outline, .services-icons.icon-light[data-icon="skype-outline"],
+.services-icons.icon-primary.si-skype-outline,
+.services-icons.icon-primary[data-icon="skype-outline"],
+.services-icons.icon-accent.si-skype-outline,
+.services-icons.icon-accent[data-icon="skype-outline"] {
+  -webkit-mask-position: 0 -144px;
+          mask-position: 0 -144px; }
+.services-icons.icon-light.si-slack, .services-icons.icon-light[data-icon="slack"],
+.services-icons.icon-primary.si-slack,
+.services-icons.icon-primary[data-icon="slack"],
+.services-icons.icon-accent.si-slack,
+.services-icons.icon-accent[data-icon="slack"] {
+  -webkit-mask-position: -144px -144px;
+          mask-position: -144px -144px; }
+.services-icons.icon-light.si-snapchat, .services-icons.icon-light[data-icon="snapchat"],
+.services-icons.icon-primary.si-snapchat,
+.services-icons.icon-primary[data-icon="snapchat"],
+.services-icons.icon-accent.si-snapchat,
+.services-icons.icon-accent[data-icon="snapchat"] {
+  -webkit-mask-position: -120px -144px;
+          mask-position: -120px -144px; }
+.services-icons.icon-light.si-soundcloud, .services-icons.icon-light[data-icon="soundcloud"],
+.services-icons.icon-primary.si-soundcloud,
+.services-icons.icon-primary[data-icon="soundcloud"],
+.services-icons.icon-accent.si-soundcloud,
+.services-icons.icon-accent[data-icon="soundcloud"] {
+  -webkit-mask-position: -168px -96px;
+          mask-position: -168px -96px; }
+.services-icons.icon-light.si-spotify, .services-icons.icon-light[data-icon="spotify"],
+.services-icons.icon-primary.si-spotify,
+.services-icons.icon-primary[data-icon="spotify"],
+.services-icons.icon-accent.si-spotify,
+.services-icons.icon-accent[data-icon="spotify"] {
+  -webkit-mask-position: -192px -96px;
+          mask-position: -192px -96px; }
+.services-icons.icon-light.si-stackexchange, .services-icons.icon-light[data-icon="stackexchange"],
+.services-icons.icon-primary.si-stackexchange,
+.services-icons.icon-primary[data-icon="stackexchange"],
+.services-icons.icon-accent.si-stackexchange,
+.services-icons.icon-accent[data-icon="stackexchange"] {
+  -webkit-mask-position: -48px -120px;
+          mask-position: -48px -120px; }
+.services-icons.icon-light.si-stackoverflow, .services-icons.icon-light[data-icon="stackoverflow"],
+.services-icons.icon-primary.si-stackoverflow,
+.services-icons.icon-primary[data-icon="stackoverflow"],
+.services-icons.icon-accent.si-stackoverflow,
+.services-icons.icon-accent[data-icon="stackoverflow"] {
+  -webkit-mask-position: -72px -120px;
+          mask-position: -72px -120px; }
+.services-icons.icon-light.si-swarm, .services-icons.icon-light[data-icon="swarm"],
+.services-icons.icon-primary.si-swarm,
+.services-icons.icon-primary[data-icon="swarm"],
+.services-icons.icon-accent.si-swarm,
+.services-icons.icon-accent[data-icon="swarm"] {
+  -webkit-mask-position: -72px -96px;
+          mask-position: -72px -96px; }
+.services-icons.icon-light.si-telegram, .services-icons.icon-light[data-icon="telegram"],
+.services-icons.icon-primary.si-telegram,
+.services-icons.icon-primary[data-icon="telegram"],
+.services-icons.icon-accent.si-telegram,
+.services-icons.icon-accent[data-icon="telegram"] {
+  -webkit-mask-position: -216px -120px;
+          mask-position: -216px -120px; }
+.services-icons.icon-light.si-trello, .services-icons.icon-light[data-icon="trello"],
+.services-icons.icon-primary.si-trello,
+.services-icons.icon-primary[data-icon="trello"],
+.services-icons.icon-accent.si-trello,
+.services-icons.icon-accent[data-icon="trello"] {
+  -webkit-mask-position: -216px -96px;
+          mask-position: -216px -96px; }
+.services-icons.icon-light.si-tumblr, .services-icons.icon-light[data-icon="tumblr"],
+.services-icons.icon-primary.si-tumblr,
+.services-icons.icon-primary[data-icon="tumblr"],
+.services-icons.icon-accent.si-tumblr,
+.services-icons.icon-accent[data-icon="tumblr"] {
+  -webkit-mask-position: 0 -48px;
+          mask-position: 0 -48px; }
+.services-icons.icon-light.si-twitch, .services-icons.icon-light[data-icon="twitch"],
+.services-icons.icon-primary.si-twitch,
+.services-icons.icon-primary[data-icon="twitch"],
+.services-icons.icon-accent.si-twitch,
+.services-icons.icon-accent[data-icon="twitch"] {
+  -webkit-mask-position: -96px -72px;
+          mask-position: -96px -72px; }
+.services-icons.icon-light.si-twitter, .services-icons.icon-light[data-icon="twitter"],
+.services-icons.icon-primary.si-twitter,
+.services-icons.icon-primary[data-icon="twitter"],
+.services-icons.icon-accent.si-twitter,
+.services-icons.icon-accent[data-icon="twitter"] {
+  -webkit-mask-position: -48px 0;
+          mask-position: -48px 0; }
+.services-icons.icon-light.si-twitter-box, .services-icons.icon-light[data-icon="twitter-box"],
+.services-icons.icon-primary.si-twitter-box,
+.services-icons.icon-primary[data-icon="twitter-box"],
+.services-icons.icon-accent.si-twitter-box,
+.services-icons.icon-accent[data-icon="twitter-box"] {
+  -webkit-mask-position: -72px 0;
+          mask-position: -72px 0; }
+.services-icons.icon-light.si-viber, .services-icons.icon-light[data-icon="viber"],
+.services-icons.icon-primary.si-viber,
+.services-icons.icon-primary[data-icon="viber"],
+.services-icons.icon-accent.si-viber,
+.services-icons.icon-accent[data-icon="viber"] {
+  -webkit-mask-position: -192px -120px;
+          mask-position: -192px -120px; }
+.services-icons.icon-light.si-vimeo, .services-icons.icon-light[data-icon="vimeo"],
+.services-icons.icon-primary.si-vimeo,
+.services-icons.icon-primary[data-icon="vimeo"],
+.services-icons.icon-accent.si-vimeo,
+.services-icons.icon-accent[data-icon="vimeo"] {
+  -webkit-mask-position: -72px -48px;
+          mask-position: -72px -48px; }
+.services-icons.icon-light.si-vine, .services-icons.icon-light[data-icon="vine"],
+.services-icons.icon-primary.si-vine,
+.services-icons.icon-primary[data-icon="vine"],
+.services-icons.icon-accent.si-vine,
+.services-icons.icon-accent[data-icon="vine"] {
+  -webkit-mask-position: -96px -48px;
+          mask-position: -96px -48px; }
+.services-icons.icon-light.si-vk, .services-icons.icon-light[data-icon="vk"],
+.services-icons.icon-primary.si-vk,
+.services-icons.icon-primary[data-icon="vk"],
+.services-icons.icon-accent.si-vk,
+.services-icons.icon-accent[data-icon="vk"] {
+  -webkit-mask-position: -48px -24px;
+          mask-position: -48px -24px; }
+.services-icons.icon-light.si-vk-box, .services-icons.icon-light[data-icon="vk-box"],
+.services-icons.icon-primary.si-vk-box,
+.services-icons.icon-primary[data-icon="vk-box"],
+.services-icons.icon-accent.si-vk-box,
+.services-icons.icon-accent[data-icon="vk-box"] {
+  -webkit-mask-position: -72px -24px;
+          mask-position: -72px -24px; }
+.services-icons.icon-light.si-wechat, .services-icons.icon-light[data-icon="wechat"],
+.services-icons.icon-primary.si-wechat,
+.services-icons.icon-primary[data-icon="wechat"],
+.services-icons.icon-accent.si-wechat,
+.services-icons.icon-accent[data-icon="wechat"] {
+  -webkit-mask-position: -48px -144px;
+          mask-position: -48px -144px; }
+.services-icons.icon-light.si-whatsapp, .services-icons.icon-light[data-icon="whatsapp"],
+.services-icons.icon-primary.si-whatsapp,
+.services-icons.icon-primary[data-icon="whatsapp"],
+.services-icons.icon-accent.si-whatsapp,
+.services-icons.icon-accent[data-icon="whatsapp"] {
+  -webkit-mask-position: -168px -120px;
+          mask-position: -168px -120px; }
+.services-icons.icon-light.si-wordpress, .services-icons.icon-light[data-icon="wordpress"],
+.services-icons.icon-primary.si-wordpress,
+.services-icons.icon-primary[data-icon="wordpress"],
+.services-icons.icon-accent.si-wordpress,
+.services-icons.icon-accent[data-icon="wordpress"] {
+  -webkit-mask-position: -120px -120px;
+          mask-position: -120px -120px; }
+.services-icons.icon-light.si-wunderlist, .services-icons.icon-light[data-icon="wunderlist"],
+.services-icons.icon-primary.si-wunderlist,
+.services-icons.icon-primary[data-icon="wunderlist"],
+.services-icons.icon-accent.si-wunderlist,
+.services-icons.icon-accent[data-icon="wunderlist"] {
+  -webkit-mask-position: -72px -72px;
+          mask-position: -72px -72px; }
+.services-icons.icon-light.si-xing, .services-icons.icon-light[data-icon="xing"],
+.services-icons.icon-primary.si-xing,
+.services-icons.icon-primary[data-icon="xing"],
+.services-icons.icon-accent.si-xing,
+.services-icons.icon-accent[data-icon="xing"] {
+  -webkit-mask-position: -144px -24px;
+          mask-position: -144px -24px; }
+.services-icons.icon-light.si-xing-box, .services-icons.icon-light[data-icon="xing-box"],
+.services-icons.icon-primary.si-xing-box,
+.services-icons.icon-primary[data-icon="xing-box"],
+.services-icons.icon-accent.si-xing-box,
+.services-icons.icon-accent[data-icon="xing-box"] {
+  -webkit-mask-position: -168px -24px;
+          mask-position: -168px -24px; }
+.services-icons.icon-light.si-youtube, .services-icons.icon-light[data-icon="youtube"],
+.services-icons.icon-primary.si-youtube,
+.services-icons.icon-primary[data-icon="youtube"],
+.services-icons.icon-accent.si-youtube,
+.services-icons.icon-accent[data-icon="youtube"] {
+  -webkit-mask-position: -48px -48px;
+          mask-position: -48px -48px; }
