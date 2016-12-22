@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the theme.
+ */
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function material_cascade_preprocess_html(&$variables) {
+  // Add classes for apply colors.
+  $variables['attributes']['class'][] = 'accent-orange';
+  //$variables['attributes']['class'][] = 'primary-blue-gray';
+  //$variables['attributes']['class'][] = 'navbar-fixed';
+}

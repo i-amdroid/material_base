@@ -1,0 +1,32 @@
+name: Material compile
+type: theme
+description: Starter kit for Material base theme. Designed for recompilation.
+core: 8.x
+
+# Defines the base theme
+base theme: material_base
+
+# Defines libraries group in which we can add css/js.
+libraries:
+  - material_compile/styles
+
+# Regions
+regions:
+  page_top: 'Page top'
+  header: Header
+  help: Help
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  footer: Footer
+  page_bottom: 'Page bottom'
+  navbar: Navbar
+  drawer: Drawer
+  header_bg: 'Header background'
+  actions: 'Actions'
+  before_main: 'Before main content'
+  after_main: 'After main content'
+  content_secondary: 'Content secondary'
+  footer_content: 'Footer content'

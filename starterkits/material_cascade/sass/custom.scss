@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "compass";
+@import "compass/css3";
+@import "compass/css3/flexbox";
+@import "breakpoint";
+
+// colors
+
+//$color-primary: #607d8b;
+$color-accent: #ff9100;
+
+// breakpoints
+
+$ss: 360px;
+$xs: 568px;
+$sm: 768px;
+$md: 992px;
+$lg: 1256px;
+$xl: 1520px;
+
+// put your styles here

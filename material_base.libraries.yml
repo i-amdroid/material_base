@@ -1,0 +1,46 @@
+flexboxgrid:
+  css:
+    theme:
+      css/flexboxgrid.css: {}
+
+color-themes:
+  css:
+    theme:
+      css/color-themes.css: {}
+
+theme-dark:
+  css:
+    theme:
+      css/theme-dark.css: {}
+
+icons:
+  css:
+    theme:
+      css/icons.css: {}
+
+services-icons:
+  css:
+    theme:
+      css/services-icons.css: {}
+
+helpers:
+  css:
+    theme:
+      css/helpers.css: {}
+
+code-highlight:
+  css:
+    theme:
+      css/code-highlight.css: {}
+  js:
+    js/prism.js: {}
+
+styles:
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    js/jquery.ripple.js: {}
+    js/misc.js: {}
+  dependencies:
+    - core/jquery

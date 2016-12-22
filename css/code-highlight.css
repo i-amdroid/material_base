@@ -1,0 +1,200 @@
+/* break points */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&subset=latin,cyrillic-ext);
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+apacheconf+bash+c+cpp+css-extras+git+java+markdown+php+php-extras+sass+scss+twig+yaml&plugins=line-numbers */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray; }
+
+.token.punctuation {
+  color: #999; }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #690; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5); }
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a; }
+
+.token.function {
+  color: #DD4A68; }
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+pre.line-numbers {
+  position: relative;
+  padding-left: 64px;
+  counter-reset: linenumber; }
+
+pre.line-numbers > code {
+  position: relative; }
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -64px;
+  width: 52px;
+  letter-spacing: -1px;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber; }
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: rgba(0, 0, 0, 0.54);
+  display: block;
+  padding-right: 12px;
+  text-align: right; }
+
+.code-card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24);
+  border-radius: 2px; }
+  .card .code-card, .content-card .card-holder .code-card {
+    margin-left: -16px;
+    margin-right: -16px;
+    box-shadow: none;
+    border-radius: 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0; }
+
+@media (min-width: 568px) {
+  .card .code-card, .content-card .card-holder .code-card {
+    margin-left: -24px;
+    margin-right: -24px; } }
+/* theme dark */
+.theme-dark {
+  /* Markup */ }
+  .theme-dark .token.comment,
+  .theme-dark .token.prolog,
+  .theme-dark .token.doctype,
+  .theme-dark .token.cdata {
+    color: #787878;
+    /* #777777 */ }
+  .theme-dark .token.punctuation {
+    opacity: .7; }
+  .theme-dark .namespace {
+    opacity: .7; }
+  .theme-dark .token.tag,
+  .theme-dark .token.boolean,
+  .theme-dark .token.number,
+  .theme-dark .token.deleted {
+    color: #cf694a;
+    /* #CF6A4C */ }
+  .theme-dark .token.keyword,
+  .theme-dark .token.property,
+  .theme-dark .token.selector,
+  .theme-dark .token.constant,
+  .theme-dark .token.symbol,
+  .theme-dark .token.builtin {
+    color: #f9ee9a;
+    /* #F9EE98 */ }
+  .theme-dark .token.attr-name,
+  .theme-dark .token.attr-value,
+  .theme-dark .token.string,
+  .theme-dark .token.char,
+  .theme-dark .token.operator,
+  .theme-dark .token.entity,
+  .theme-dark .token.url,
+  .theme-dark .language-css .token.string,
+  .theme-dark .style .token.string,
+  .theme-dark .token.variable,
+  .theme-dark .token.inserted {
+    color: #919e6b;
+    /* #8F9D6A */ }
+  .theme-dark .token.atrule {
+    color: #7386a5;
+    /* #7587A6 */ }
+  .theme-dark .token.regex,
+  .theme-dark .token.important {
+    color: #e9c163;
+    /* #E9C062 */ }
+  .theme-dark .token.important,
+  .theme-dark .token.bold {
+    font-weight: bold; }
+  .theme-dark .token.italic {
+    font-style: italic; }
+  .theme-dark .token.entity {
+    cursor: help; }
+  .theme-dark pre[data-line] {
+    padding: 1em 0 1em 3em;
+    position: relative; }
+  .theme-dark .language-markup .token.tag,
+  .theme-dark .language-markup .token.attr-name,
+  .theme-dark .language-markup .token.punctuation {
+    color: #ad895c;
+    /* #AC885B */ }
+  .theme-dark .line-numbers .line-numbers-rows {
+    border-right: 1px solid rgba(255, 255, 255, 0.12); }
+  .theme-dark .line-numbers-rows > span:before {
+    color: rgba(255, 255, 255, 0.7); }
+  .theme-dark .card .code-card, .theme-dark.content-card .card-holder .code-card {
+    border-color: #585858; }

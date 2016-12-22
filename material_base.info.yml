@@ -1,0 +1,48 @@
+name: Material base
+type: theme
+description: Base theme inspirited by Material Design concept.
+core: 8.x
+
+# Defines the base theme
+base theme: stable
+
+screenshot: screenshot.svg
+
+# Defines libraries group in which we can add css/js.
+libraries:
+  - material_base/flexboxgrid
+#  - material_base/animation
+  - material_base/color-themes
+  - material_base/theme-dark
+  - material_base/icons
+  - material_base/services-icons
+  - material_base/helpers
+  - material_base/code-highlight
+  - material_base/styles
+
+#stylesheets-remove:
+#  - core/assets/vendor/normalize-css/normalize.css
+#  - core/modules/system/css/system.module.css
+#  - core/modules/system/css/system.theme.css
+#  - core/modules/views/css/views.module.css
+
+# Regions
+regions:
+  page_top: 'Page top'
+  header: Header
+  help: Help
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  footer: Footer
+  page_bottom: 'Page bottom'
+  navbar: Navbar
+  drawer: Drawer
+  header_bg: 'Header background'
+  actions: 'Actions'
+  before_main: 'Before main content'
+  after_main: 'After main content'
+  content_secondary: 'Content secondary'
+  footer_content: 'Footer content'

@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@import "compass";
+@import "compass/css3";
+
+@import "color-palette";
+@import "variables";
+
+$primary-colors: (
+    red: $red,
+    pink: $pink,
+    purple: $purple,
+    deep-purple: $deep-purple,
+    indigo: $indigo,
+    blue: $blue,
+    light-blue: $light-blue,
+    cyan: $cyan,
+    teal: $teal,
+    green: $green,
+    light-green: $light-green,
+    lime: $lime,
+    yellow: $yellow,
+    amber: $amber,
+    orange: $orange,
+    deep-orange: $deep-orange,
+    brown: $brown,
+    grey: $grey,
+    blue-grey: $blue-grey
+);
+
+$accent-colors: (
+    red: $red,
+    pink: $pink,
+    purple: $purple,
+    deep-purple: $deep-purple,
+    indigo: $indigo,
+    blue: $blue,
+    light-blue: $light-blue,
+    cyan: $cyan,
+    teal: $teal,
+    green: $green,
+    light-green: $light-green,
+    lime: $lime,
+    yellow: $yellow,
+    amber: $amber,
+    orange: $orange,
+    deep-orange: $deep-orange
+);
+
+@each $color-name, $color-value in $primary-colors {
+  .primary-#{"" + $color-name} {
+    #header { background: color($color-value); color: contrast-color(color($color-value)); }
+    &.navbar-fixed #navbar { background: color($color-value); }
+    &.header-bg-image #header, &.header-bg-object #header { background-color: color($color-value); }
+    &.header-bg-image.navbar-fixed #header { background: color($color-value); }
+    &.header-bg-image.navbar-fixed #navbar.navbar-bg, &.header-bg-object.navbar-fixed #navbar.navbar-bg { background: color($color-value); }
+    .navbar-icon { color: contrast-color(color($color-value)); }
+    .navbar-title a { color: contrast-color(color($color-value)); }
+    .navbar-slogan { color: contrast-color(color($color-value)); }
+    .search-form {
+      .form-item .navbar-icon, .form-item.icon-left:before { color: contrast-color(color($color-value)); }
+      .form-item input[type="text"] { color: contrast-color(color($color-value));
+        @include input-placeholder { color: contrast-color(color($color-value), $color-text-secondary, $color-text-light-secondary); }
+      }
+    }
+    .navbar-menu .menu {
+      a { color: contrast-color(color($color-value));
+        &:hover { border-color: rgba(contrast-color(color($color-value)), .5); color: contrast-color(color($color-value)); }
+      }
+    .active a, .active-trail a, .active { border-color: contrast-color(color($color-value)); }
+    }
+    article blockquote { border-color: color($color-value); }
+    #drawer .menu li.active a, li.active-trail a { color: color($color-value, 600);
+      &.icon-left:before, &.icon-right:after { color: color($color-value, 600); }
+    }
+    //.sidebar .menu li.active a { color: color($color-value, 600); }
+    .sidebar .menu li a.is-active { color: color($color-value, 600); }
+    .card-bg-primary { background: color($color-value); color: contrast-color(color($color-value));
+      .text-secondary { color: contrast-color(color($color-value), $color-text-secondary, $color-text-light-secondary); }
+      .btn { color: contrast-color(color($color-value));
+        &:hover, &:focus { background: contrast-color(color($color-value), rgba(#999999, .20), rgba(#CCCCCC, .15)); color: contrast-color(color($color-value)); }
+        &:active { background: contrast-color(color($color-value), rgba(#999999, .40), rgba(#CCCCCC, .25)); }
+      }
+      .rippleAnimate { background-color: contrast-color(color($color-value), rgba(#000, 0.3), rgba(#FFF, 0.1)); }
+    }
+    .material-icons.text-primary { color: color($color-value); }
+    .text-primary, a.text-primary, a.text-primary:hover, a.text-primary:focus { color: color($color-value, 600); }
+    .btn-colored, .btn-colored:hover, .btn-colored:focus,
+    .btn.btn-colored, .btn.btn-colored:hover, .btn.btn-colored:focus,
+    input.btn-colored[type="submit"], input.btn-colored[type="submit"]:hover, input.btn-colored[type="submit"]:focus { color: color($color-value, 600); }
+    .btn-raised, .btn.btn-raised, input.btn-raised[type="submit"] {
+      &.btn-colored { background: color($color-value); color: contrast-color(color($color-value)); }
+      &.btn-colored:hover, &.btn-colored:focus { background: color($color-value, 600); color: contrast-color(color($color-value)); }
+      &.btn-colored:active { background: color($color-value, 700); }
+    }
+    &.theme-dark {
+      .text-primary, a.text-primary, a.text-primary:hover, a.text-primary:focus { color: color($color-value, 400); }
+      .btn-colored, .btn-colored:hover, .btn-colored:focus,
+      .btn.btn-colored, .btn.btn-colored:hover, .btn.btn-colored:focus,
+      input.btn-colored[type="submit"], input.btn-colored[type="submit"]:hover, input.btn-colored[type="submit"]:focus { color: color($color-value, 400); }
+      .btn-raised, .btn.btn-raised, input.btn-raised {
+        &.btn-colored { background: color($color-value); color: contrast-color(color($color-value)); }
+        &.btn-colored:hover, &.btn-colored:focus { background: color($color-value, 300); color: contrast-color(color($color-value)); }
+        &.btn-colored:active { background: color($color-value, 200); }
+      }
+    }
+  }
+}
+
+@each $color-name, $color-value in $accent-colors {
+  .accent-#{"" + $color-name} {
+    a { @include link-colors(color($color-value, a400), lighten(color($color-value, a700), 6), color($color-value, a700)); }
+    .card-bg-accent { background: color($color-value, a400); color: contrast-color(color($color-value));
+      .text-secondary { color: contrast-color(color($color-value, a400), $color-text-secondary, $color-text-light-secondary); }
+      .btn { color: contrast-color(color($color-value, a400));
+        &:hover, &:focus { background: contrast-color(color($color-value, a400), rgba(#999999, .20), rgba(#CCCCCC, .15)); color: contrast-color(color($color-value, a400)); }
+        &:active { background: contrast-color(color($color-value, a400), rgba(#999999, .40), rgba(#CCCCCC, .25)); }
+      }
+      .rippleAnimate { background-color: contrast-color(color($color-value, a400), rgba(#000, 0.3), rgba(#FFF, 0.1)); }
+    }
+    .material-icons.text-accent { color: color($color-value, a400); }
+    .text-accent, a.text-accent, a.text-accent:hover, a.text-accent:focus { color: color($color-value, a400); }
+    .btn { color: $color-text;
+      &:hover, &:focus { color: $color-text; }
+    }
+    .btn-accent, .btn-accent:hover, .btn-accent:focus,
+    .btn.btn-accent, .btn.btn-accent:hover, .btn.btn-accent:focus,
+    input.btn-accent[type="submit"], input.btn-accent[type="submit"]:hover, input.btn-accent[type="submit"]:focus { color: color($color-value, a400); }
+    .btn-raised, .btn.btn-raised, input.btn-raised[type="submit"] {
+      &.btn-accent { background: color($color-value, a400); color: contrast-color(color($color-value)); }
+      &.btn-accent:hover, &.btn-accent:focus { background: lighten(color($color-value, a700), 6); color: contrast-color(color($color-value)); }
+      &.btn-accent:active { background: color($color-value, a700); }
+    }
+    .form-item {
+      & .focused label { color: color($color-value, a200); }
+      input[type="text"], input[type="email"], input[type="password"], textarea, select {
+        &:focus, &.error:focus { border-color: color($color-value, a200); }
+      }
+      input[type="checkbox"]:checked:before, input[type="radio"]:checked:before { color: color($color-value, a200); }
+    }
+    &.theme-dark {
+      a { @include link-colors(color($color-value, a200), lighten(color($color-value, a200), 6), color($color-value, a100)); }
+      .material-icons.text-accent { color: color($color-value, a200); }
+      .text-accent, a.text-accent, a.text-accent:hover, a.text-accent:focus { color: color($color-value, a200); }
+      .btn { color: $color-text-light;
+        &:hover, &:focus { color: $color-text-light; }
+      }
+      .btn-accent, .btn-accent:hover, .btn-accent:focus,
+      .btn.btn-accent, .btn.btn-accent:hover, .btn.btn-accent:focus,
+      input.btn-accent[type="submit"], input.btn-accent[type="submit"]:hover, input.btn-accent[type="submit"]:focus { color: color($color-value, a200); }
+      .btn-raised, .btn.btn-raised, input.btn-raised[type="submit"] {
+        &.btn-accent { background: color($color-value, a400); color: contrast-color(color($color-value)); }
+        &.btn-accent:hover, &.btn-accent:focus { background: color($color-value, a200); color: contrast-color(color($color-value)); }
+        &.btn-accent:active { background: lighten(color($color-value, a200), 6); }
+      }
+    }
+  }
+}

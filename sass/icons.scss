@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@import "compass";
+@import "color-palette";
+@import "variables";
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons.fs-18 { font-size: 18px; }
+.material-icons.fs-24 { font-size: 24px; }
+.material-icons.fs-36 { font-size: 36px; }
+.material-icons.fs-48 { font-size: 48px; }
+.material-icons.text-dark { color: $color-text; }
+.material-icons.text-dark.text-disabled { color: $color-text-disabled; }
+.material-icons.text-light { color: $color-text-light; }
+.material-icons.text-light.text-disabled { color: $color-text-light-disabled; }
+
+.material-icons.text-disabled { color: $color-text-disabled; }
+.theme-dark .material-icons.text-disabled { color: $color-text-light-disabled; }
+
+.icon-left:before {
+  @extend .material-icons;
+  content: attr(data-icon);
+  margin-right: 12px;
+  float: left;
+}
+
+.icon-right:after {
+  @extend .material-icons;
+  content: attr(data-icon);
+  margin-left: 12px;
+  float: right;
+}
