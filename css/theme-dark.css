@@ -176,6 +176,16 @@
     color: #78909c; }
   .theme-dark .sidebar .menu .collapsed > a:after, .theme-dark .sidebar .menu .expanded > a:after {
     color: rgba(255, 255, 255, 0.7); }
+  .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"] {
+    color: rgba(0, 0, 0, 0.87); }
+    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
   .theme-dark .card {
     background: #424242; }
   .theme-dark .card-main {
