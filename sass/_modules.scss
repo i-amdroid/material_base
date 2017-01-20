@@ -178,15 +178,15 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 
 #main .block { margin-top: $gutter; margin-bottom: $gutter; }
 
-#navbar { height: 64px; padding: 8px 4px; position: relative; z-index: 30; @extend .clearfix; color: contrast-color($color-primary); text-align: center; } // CTV
-#header { @extend .z-level-1; background: $color-primary; color: contrast-color($color-primary); padding-top: 64px; margin-top: -64px; position: relative; z-index: 10; } // CTV
+#navbar { height: $navbar; padding: 8px 4px; position: relative; z-index: 30; @extend .clearfix; color: contrast-color($color-primary); text-align: center; } // CTV
+#header { @extend .z-level-1; background: $color-primary; color: contrast-color($color-primary); padding-top: $navbar; margin-top: -$navbar; position: relative; z-index: 10; } // CTV
 #header-bg { display: none; }
 //#navbar-shadow { display: none; }
 
 .navbar-fixed {
   #navbar { position: fixed; top: 0; width: 100%; background: $color-primary; z-index: 30; } // CTV
   .navbar-shadow { @extend .z-level-1; }
-  #header { padding-top: 64px; position: relative; z-index: 10; margin-top: 0; }
+  #header { padding-top: $navbar; position: relative; z-index: 10; margin-top: 0; }
 }
 
 .navbar-transparent {
@@ -231,8 +231,8 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
   .two-sidebars {
     #main { display: flex; flex-wrap: wrap; }
     #main-content { flex: 0 0 auto; width: 100%; }
-    #sidebar-first { flex: 0 0 auto; margin-right: $gutter / 2; @include experimental-value(width, calc(50% - 12px)); }
-    #sidebar-second { flex: 0 0 auto; margin-left: $gutter / 2; @include experimental-value(width, calc(50% - 12px)); }
+    #sidebar-first { flex: 0 0 auto; margin-right: $gutter / 2; width: calc(50% - 12px); }
+    #sidebar-second { flex: 0 0 auto; margin-left: $gutter / 2; width: calc(50% - 12px); }
   }
 }
 
@@ -242,15 +242,15 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
   .no-sidebars.wide-two-side .container { width: auto; }
   .one-sidebar {
     #main { display: flex; }
-    #main-content { order: 2; flex: 0 0 auto; @include experimental-value(width, calc(100% - 264px)); }
+    #main-content { order: 2; flex: 0 0 auto; width: calc(100% - 264px); }
     #sidebar-first { order: 1; flex: 0 0 $sidebar; margin-right: $gutter; }
     #sidebar-second { order: 3; flex: 0 0 $sidebar; margin-left: $gutter; }
   }
   .two-sidebars {
     #main { display: block; }
-    #main-content { @include experimental-value(width, calc(100% - 264px)); float: right; }
+    #main-content { width: calc(100% - 264px); float: right; }
     #sidebar-first { width: $sidebar; margin-right: $gutter; float: left; }
-    #sidebar-second { @include experimental-value(width, calc(100% - 264px)); float: right; }
+    #sidebar-second { width: calc(100% - 264px); float: right; }
   }
 }
 
@@ -260,16 +260,35 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
   .one-sidebar.wide-two-side .container { width: auto; }
   .two-sidebars {
     #main { display: flex; flex-wrap: nowrap; }
-    #main-content { order: 2; flex: 0 0 auto; @include experimental-value(width, calc(100% - 528px)); }
+    #main-content { order: 2; flex: 0 0 auto; width: calc(100% - 528px); }
     #sidebar-first { order: 1; flex: 0 0 $sidebar; margin-right: $gutter; }
     #sidebar-second { order: 3; flex: 0 0 $sidebar; width: $sidebar; margin-left: $gutter; }
   }
-}
-
-@include breakpoint($xl + 24px) {
   .no-sidebars.wide-two-side .container { width: $xl; }
   .one-sidebar.wide-two-side .container { width: $xl; }
   .two-sidebars .container { width: $xl; }
+}
+
+// drawer-permanent - experimental implementation
+@include breakpoint($md) {
+  .drawer-permanent {
+    #header, #content, #navbar, #footer { margin-left: $drawer; }
+    &.navbar-fixed #navbar { width: calc(100% - #{$drawer}); } 
+    #drawer { margin-left: 0; @include z-level-0; }
+    #drawer-overlay { display: none !important; }
+    &.drawer-below-navbar {
+      #navbar { margin-left: 0; width: 100%; }
+      #drawer { top: $navbar; z-index: 29; }
+    }
+
+    &.no-sidebars .container { width: auto; }
+  }
+}
+
+@include breakpoint($lg + 24px) {
+  .drawer-permanent {
+    &.no-sidebars .container { width: $md; }
+  }
 }
 
 .text-box { max-width: $content; }
@@ -459,29 +478,11 @@ icon labels
 .navbar-branding { display: flex;
   & > div:not(.contextual) + div { margin: 0 -12px 0 12px; }
 }
-.search-form {
-  // TO DO needs refactor in color themes - was #navbar-search
-  height: 48px; display: inline-block; padding: 4px 12px;
-  .form-item { background: rgba(#FFF, .15); border-radius: 2px; height: 40px; transition: background-color .2s, box-shadow .2s; margin: 0;
-    &:hover { background: rgba(#FFF, .25); }
-    &.focused { background: #FFF; @extend .z-level-1; }
-    .navbar-icon, &.icon-left:before { margin: 8px 12px 8px 24px; float: left; color: contrast-color($color-primary); transition: color .2s; }
-    &.focused .navbar-icon, &.focused.icon-left:before { color: $color-text; }
-  }
-  .form-item input[type="text"],
-  .form-item input[type="text"].error { width: 316px; background: none; height: 40px; border: 0; margin: 0; padding: 0 12px; font-size: 16px; color: contrast-color($color-primary); outline: 0; transition: color .2s;
-    @include input-placeholder { color: contrast-color($color-primary, $color-text-secondary, $color-text-light-secondary); }
-    &:focus { color: $color-text;
-      @include input-placeholder { color: $color-text-secondary; }
-    }
-  }
-  .hidden { display: none; }
-} // CTV
-.navbar-item .search-form { margin: 0 -12px; width: 400px; }
-.navbar-menu { margin: -8px 0; height: 64px;
-  .menu { display: flex; height: 64px; padding: 0; margin: 0;
-    li { display: block; height: 64px; }
-    a { display: block; height: 64px; line-height: 20px; border-bottom: 2px solid transparent; padding: 22px 12px 20px;
+
+.navbar-menu { margin: -8px 0; height: $navbar;
+  .menu { display: flex; height: $navbar; padding: 0; margin: 0;
+    li { display: block; height: $navbar; }
+    a { display: block; height: $navbar; line-height: 20px; border-bottom: 2px solid transparent; padding: 22px 12px 20px;
       font-size: 14px; font-weight: 500; color: contrast-color($color-primary); text-transform: uppercase;
       &:hover { border-color: rgba(contrast-color($color-primary), .5); color: contrast-color($color-primary); }
     }
@@ -499,8 +500,8 @@ icon labels
   .drawer-open & { display: block; }
 }
 
-#drawer { position: fixed; top: 0; left: 0; bottom: 0; width: 240px; margin-left: -250px; z-index: 40; background: $color-bg; overflow: auto;
-  transition: margin .2s; @extend .z-level-4; border-right: 1px solid $color-divider;
+#drawer { position: fixed; top: 0; left: 0; bottom: 0; width: $drawer; margin-left: -($drawer + 10px); z-index: 40; background: $color-bg; overflow: auto;
+  transition: margin .2s; @include z-level-4; border-right: 1px solid $color-divider;
   .drawer-open & { margin-left: 0; }
   .drawer-item { padding: 8px 12px; }
   #drawer-menu-close { float: left; }
@@ -532,21 +533,21 @@ closing drawer by swipe
 .margin-box { margin: 160px auto 160px; }
 
 .header-bg-image {
-  #header { background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 64px), $color-primary url(../img/header-bg.jpg) top center; background-size: auto, cover; } // CTV
+  #header { background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) $navbar), $color-primary url(../img/header-bg.jpg) top center; background-size: auto, cover; } // CTV
   #bg-video { display: none; }
 
   &.navbar-fixed {
     #navbar { background: none; }
     #navbar.navbar-bg { background: $color-primary; } // CTV
     #header { background: $color-primary; } // CTV
-    #header-bg { display: block; background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 64px), url(../img/header-bg.jpg) top center; background-size: auto, cover; opacity: 1;
+    #header-bg { display: block; background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) $navbar), url(../img/header-bg.jpg) top center; background-size: auto, cover; opacity: 1;
       top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1;
     }
   }
 }
 
 .header-bg-object {
-  #navbar { background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 64px); }
+  #navbar { background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) $navbar); }
   #header { background: $color-primary; } // CTV
   #header-bg { display: block; z-index: -1; position: absolute; top: 0; left: 0; bottom: 0; right: 0; overflow: hidden; }
   #bg-object { display: block; position: absolute; left: 50%; top: 50%; width: 100%; min-width: 100%; min-height: 100%;
@@ -560,8 +561,8 @@ closing drawer by swipe
   &.navbar-fixed {
     #navbar { background: none; }
     #navbar.navbar-bg { background: $color-primary; } // CTV
-    #header-bg:before { content: " "; display: block; position: absolute; top: 0; left: 0; right: 0; z-index: 1; height: 64px;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 64px);
+    #header-bg:before { content: " "; display: block; position: absolute; top: 0; left: 0; right: 0; z-index: 1; height: $navbar;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) $navbar);
     }
   }
 }
@@ -596,6 +597,78 @@ navbar overlaying header-content (for sliders)
   }
 }
 
+/* search */
+.block-search { width: 100%;
+  form { display: block; width: 100%; max-width: $search; height: 48px; padding: 4px 0;
+    .form-item { margin: 0; display: flex; height: 40px;
+      &.icon-left:before { margin: 8px 12px 8px 0; height: 24px; }
+      input[type="text"] { margin: 2px 0; background: none; }
+    }
+  }
+  &.search-persistent form {
+    .form-item { background: rgba(#FFF, .15); border-radius: 2px; transition: background-color .2s, box-shadow .2s; position: relative; display: block;
+      &:hover { background: rgba(#FFF, .25); }
+      &.focused { background: #FFF; @extend .z-level-1; }
+      input[type="text"] { margin: 0; padding: 0 12px 0 60px; height: 40px; line-height: 40px; border: 0; } // TDV (color overrrides when .focused)
+      &.icon-left:before { margin: 8px 12px 8px 24px; transition: color .2s; position: absolute; top: 0; left: 0; }
+      &.focused.icon-left:before { color: $color-text; } 
+    }
+  }
+}
+
+.navbar-item.block-search,
+#header .block-search,
+.card-bg-primary .block-search { 
+  form {
+    .form-item {
+      input[type="text"] { color: contrast-color($color-primary);
+        border-bottom: 1px solid contrast-color($color-primary, $color-text, $color-text-light);
+        @include input-placeholder { color: contrast-color($color-primary, $color-text-disabled, $color-text-light-disabled); }
+        &:focus, &.error:focus { border-bottom: 2px solid; padding-bottom: 7px; }
+      }
+      &.icon-left:before { color: contrast-color($color-primary); }
+    } // CTV
+  }
+  &.search-persistent form {
+    .form-item { 
+      input[type="text"] { border: 0;
+        &:focus, &.error:focus { border: 0; padding-bottom: 0; }
+      }
+      &.focused.icon-left:before { color: $color-text; }
+      &.focused input[type="text"] { color: $color-text;
+        @include input-placeholder { color: $color-text-disabled; }
+      }
+    }
+  }
+}
+
+.navbar-item.block-search { margin: 0; padding: 0 12px; max-width: $search + 24px; }
+
+// drupal
+.block-search { 
+  form { 
+    .form-actions { display: none; }
+  }
+}
+
+// autocomplete
+.ui-autocomplete { border: 0; padding: 0; box-sizing: content-box; background: #FFF;
+  padding-top: 8px; padding-bottom: 8px; border-top: 1px solid $color-divider; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; @extend .z-level-1;
+  .ui-menu-item { padding: 0; margin: 0; display: block;
+    a { display: block; padding: 8px 12px 8px 12px; color: $color-text; font-family: $font-family; font-size: 16px; line-height: 24px; }
+    &.ui-state-focus, &.ui-state-active { border: 0;
+      a { background: $color-bg-hover; }
+    }
+  }
+  .search-persistent-autocomplete & {
+    .ui-menu-item a { padding: 8px 12px 8px 60px; }
+  }
+} // TDV D7
+
+/* TO DO
+deafault D8 search (input[type="search"])
+*/
+
 /* cards */
 $primary-colors: (
     red: $red,
@@ -629,7 +702,7 @@ $primary-colors: (
   & > .block:last-child, & > div > .block:last-child { margin-bottom: 0 !important; }
 }
 .card-main { background: $color-bg-card; border-bottom: 1px solid $color-divider; margin-left: -$gutter / 1.5; margin-right: -$gutter / 1.5; padding: $gutter / 1.5;
-  @extend .z-level-0; border-radius: 0; } // TDV
+  @include z-level-0; border-radius: 0; } // TDV
 
 .content-card .card-holder { @extend .card; @extend .card-main; } // TDV
 
@@ -805,29 +878,6 @@ card title and actions overlay for card-bg-image and card-media
   &.toolbar-tray-open.admin-toolbar.adminimal-admin-toolbar {
     &.navbar-fixed #navbar, #drawer { top: 79px; }
   }
-}
-
-// search api autocomplete
-.navbar-item .views-exposed-form .views-exposed-widget { float: none;  padding: 0; }
-
-/*
-#autocomplete { border: 1px solid; overflow: hidden; position: absolute; z-index: 100;
-  top: 44px; left: 60px; width: 316px; opacity: 1;
-  ul { list-style: none; list-style-image: none; margin: 0; padding: 0; }
-  li { background: #fff; color: #000; cursor: default; white-space: pre; zoom: 1; }
-}
-.search-api-autocomplete-suggestion { position: relative;
-  .autocomplete-user-input { font-weight: bold; }
-  .autocomplete-suggestion-suffix {}
-}
-*/
-
-#autocomplete { border: 0; margin-left: -60px; width: 376px !important;
-  border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; @extend .z-level-1;
-  ul { padding: 8px 0; background: #FFF; border-top: 1px solid $color-divider; } // TDV
-  li { color: $color-text; padding: 8px 0 8px 72px; text-align: left;
-    &:hover, &.selected { background: $color-bg-bar; }
-  } // TDV
 }
 
 /* user pages */

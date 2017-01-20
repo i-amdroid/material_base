@@ -60,6 +60,9 @@ $color-bg-dark-hover: lighten($color-bg-dark-card, 6) !default;
 $content: 944px !default; //944px
 $sidebar: 240px !default;
 $gutter: 24px !default;
+$drawer: $sidebar !default;
+$navbar: 64px !default;
+$search: 392px !default;
 
 /* break points */
 
