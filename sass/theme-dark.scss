@@ -127,6 +127,12 @@
     .collapsed > a:after, .expanded > a:after { color: $color-text-light-secondary; }
   }
 
+  .block-search.search-persistent form {
+    .form-item.focused input[type="text"] { color: $color-text;
+      @include input-placeholder { color: $color-text-disabled; }
+    }
+  }
+
   .card { background: $color-bg-dark-card; }
   .card-main { border-bottom-color: $color-light-divider; background: $color-bg-dark-card; }
   &.content-card .card-holder { background: $color-bg-dark-card; }

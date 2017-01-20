@@ -31,21 +31,33 @@ gulp.task('imagemin', function() {
     .pipe(gulp.dest(IMG));
 });
 
+/*
 gulp.task('build', function(){
   gulp.run('sass');
   gulp.run('autoprefixer');
   gulp.run('imagemin');
 });
+*/
+
+gulp.task('build', ['sass', 'autoprefixer', 'imagemin']);
+
+// gulp.task('watch', function() {
+//   gulp.watch(SASS + '/**/*.scss', function () {
+//     gulp.run('sass');
+//     gulp.run('autoprefixer');
+//     gulp.run('imagemin');
+//   });
+// });
 
 gulp.task('watch', function() {
-  gulp.watch(SASS + '/**/*.scss', function () {
-    gulp.run('sass');
-    gulp.run('autoprefixer');
-    gulp.run('imagemin');
-  });
+  gulp.watch(SASS + '/**/*.scss', ['sass', 'autoprefixer', 'imagemin']);
 });
 
+/*
 gulp.task('default', function(){
   gulp.run('build');
   gulp.run('watch');
 });
+*/
+
+gulp.task('default', ['build', 'watch']);

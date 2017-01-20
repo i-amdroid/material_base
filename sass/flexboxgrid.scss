@@ -27,10 +27,6 @@ $outer-margin: $gutter;
 $gutter-width: $gutter;
 $half-gutter-width: $gutter-width / 2;
 
-$screen-sm-min: $sm;
-$screen-md-min: $md;
-$screen-lg-min: $lg;
-
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -244,9 +240,9 @@ $screen-lg-min: $lg;
   order: 1;
 }
 
-@media only screen and (min-width: $screen-sm-min) {
+@media only screen and (min-width: $sm) {
   .container {
-    width: $screen-sm-min;
+    width: $sm;
   }
 
   .col-sm,
@@ -433,9 +429,9 @@ $screen-lg-min: $lg;
   }
 }
 
-@media only screen and (min-width: $screen-md-min) {
+@media only screen and (min-width: $md) {
   .container {
-    width: $screen-md-min;
+    width: $md;
   }
 
   .col-md,
@@ -622,9 +618,9 @@ $screen-lg-min: $lg;
   }
 }
 
-@media only screen and (min-width: $screen-lg-min) {
+@media only screen and (min-width: $lg) {
   .container {
-    width: $screen-lg-min;
+    width: $lg;
   }
 
   .col-lg,

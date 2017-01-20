@@ -57,12 +57,6 @@ $accent-colors: (
     .navbar-icon { color: contrast-color(color($color-value)); }
     .navbar-title a { color: contrast-color(color($color-value)); }
     .navbar-slogan { color: contrast-color(color($color-value)); }
-    .search-form {
-      .form-item .navbar-icon, .form-item.icon-left:before { color: contrast-color(color($color-value)); }
-      .form-item input[type="text"] { color: contrast-color(color($color-value));
-        @include input-placeholder { color: contrast-color(color($color-value), $color-text-secondary, $color-text-light-secondary); }
-      }
-    }
     .navbar-menu .menu {
       a { color: contrast-color(color($color-value));
         &:hover { border-color: rgba(contrast-color(color($color-value)), .5); color: contrast-color(color($color-value)); }
@@ -74,6 +68,15 @@ $accent-colors: (
       &.icon-left:before, &.icon-right:after { color: color($color-value, 600); }
     }
     .sidebar .menu li.active a { color: color($color-value, 600); }
+    .navbar-item.block-search, #header .block-search, .card-bg-primary .block-search {
+      form .form-item {
+        input[type="text"] { color: contrast-color(color($color-value));
+          border-bottom: 1px solid contrast-color(color($color-value), $color-text, $color-text-light);
+          @include input-placeholder { color: contrast-color(color($color-value), $color-text-disabled, $color-text-light-disabled); }
+        }
+        &.icon-left:before { color: contrast-color(color($color-value)); }
+      }
+    }
     .card-bg-primary { background: color($color-value); color: contrast-color(color($color-value));
       .text-secondary { color: contrast-color(color($color-value), $color-text-secondary, $color-text-light-secondary); }
       .btn { color: contrast-color(color($color-value));
