@@ -96,6 +96,11 @@ $accent-colors: (
       &.btn-colored:hover, &.btn-colored:focus { background: color($color-value, 600); color: contrast-color(color($color-value)); }
       &.btn-colored:active { background: color($color-value, 700); }
     }
+    .pager {
+      .pager-item.item-current {
+        & > a, & > span { color: color($color-value, 600); }
+      }
+    }
     &.theme-dark {
       .text-primary, a.text-primary, a.text-primary:hover, a.text-primary:focus { color: color($color-value, 400); }
       .btn-colored, .btn-colored:hover, .btn-colored:focus,

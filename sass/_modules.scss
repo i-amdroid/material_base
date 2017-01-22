@@ -264,6 +264,9 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
     #sidebar-first { order: 1; flex: 0 0 $sidebar; margin-right: $gutter; }
     #sidebar-second { order: 3; flex: 0 0 $sidebar; width: $sidebar; margin-left: $gutter; }
   }
+}
+
+@include breakpoint($xl + 24px) {
   .no-sidebars.wide-two-side .container { width: $xl; }
   .one-sidebar.wide-two-side .container { width: $xl; }
   .two-sidebars .container { width: $xl; }
@@ -834,13 +837,72 @@ card title and actions overlay for card-bg-image and card-media
 /* Drupal integrations */
 
 // fields
-
 .field-label { font-weight: 500; }
 .field-label-inline > {
   .field-label, .field-item, .field-items, .field-items .field-item { display: inline; }
 }
 
 // pager
+.pager {
+  .pager-items { padding: 0; margin: 16px 0; text-align: center; list-style: none; }
+  .pager-item { display: inline-block; 
+    & > a, & > span { @extend .btn; @extend .btn-accent; margin: 8px 2px; min-width: 48px; }
+  }
+  .pager-item.item-ellipsis, .pager-item.item-current {
+    & > a, & > span { @extend .btn-disabled; } // TDV
+  }
+  .pager-item.item-current {
+    & > a, & > span { color: $color-primary-hover; } // TDV CTV
+  }
+  // replacing text by icons
+  .pager-item.item-first {
+    & > a, & > span { padding: 6px 12px;
+      &:before { @extend .material-icons; content: "first_page"; }
+      span { display: none; }
+    }
+    & > span { @extend .btn-disabled; } // TDV
+  }
+  .pager-item.item-previous {
+    & > a, & > span { padding: 6px 12px;
+      &:before { @extend .material-icons; content: "chevron_left"; }
+      span { display: none; }
+    }
+    & > span { @extend .btn-disabled; } // TDV
+  }
+  .pager-item.item-ellipsis {
+    & > a, & > span { padding: 6px 12px;
+      &:before { @extend .material-icons; content: "more_horiz"; }
+      span { display: none; }
+    }
+  }
+  .pager-item.item-next {
+    & > a, & > span { padding: 6px 12px;
+      &:before { @extend .material-icons; content: "chevron_right"; }
+      span { display: none; }
+    }
+    & > span { @extend .btn-disabled; } // TDV
+  }
+  .pager-item.item-last {
+    & > a, & > span { padding: 6px 12px;
+      &:before { @extend .material-icons; content: "last_page"; }
+      span { display: none; }
+    }
+    & > span { @extend .btn-disabled; } // TDV
+  }
+  .card-actions & { display: inline-block; // for mini pager only
+    .pager-items { margin: 2px 6px; }
+    .pager-item.item-previous, .pager-item.item-next {
+      & > a, & > span { padding: 6px 6px; width: 36px; min-width: auto; }
+      & > a:before { color: $color-text; } // TDV
+    }
+    .pager-item.item-current { display: none; }
+  }
+}
+
+.card-actions .pager-summary { display: inline-block; font-size: 14px; line-height: 20px; margin: 18px 8px; color: $color-text-secondary; } // TDV
+
+
+
 // TO DO should be completely refactored for using one styles with D7
 .pager__items { padding: 0; text-align: center;
   .card-actions & { margin: 0; }
