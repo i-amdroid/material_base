@@ -901,23 +901,6 @@ card title and actions overlay for card-bg-image and card-media
 
 .card-actions .pager-summary { display: inline-block; font-size: 14px; line-height: 20px; margin: 18px 8px; color: $color-text-secondary; } // TDV
 
-
-
-// TO DO should be completely refactored for using one styles with D7
-.pager__items { padding: 0; text-align: center;
-  .card-actions & { margin: 0; }
-  * { display: inline-block; }
-  .pager__item {
-    a { @extend .btn; @extend .btn-accent; min-width: 48px; margin: 8px 2px; }
-  }
-  .pager-ellipsis, .pager-current {
-    // TO DO should be replaced by .btn-disabled
-    height: 36px; min-width: 48px; margin: 8px 2px; padding: 8px 16px; text-align: center; outline: 0;
-    font-family: $font-family; font-size: 14px; vertical-align: middle; font-weight: 500; color: $color-text;
-    text-transform: uppercase; text-decoration: none; white-space: nowrap; text-overflow: ellipsis;
-  } // TDV
-}
-
 // login forms
 .card-form { max-width: 360px; margin: 0 auto;
   .user-icon { margin: 48px 0;
@@ -954,5 +937,3 @@ card title and actions overlay for card-bg-image and card-media
   }
   .maintenance-info { text-align: center; max-width: 320px; padding: 12px; }
 } // CTV
-
-/* tmp */
