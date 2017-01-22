@@ -155,4 +155,25 @@
     } 
   }
 
+  .pager {
+    .pager-item.item-ellipsis, .pager-item.item-current {
+      & > a, & > span {
+        &:before { color: $color-text-light-disabled; }
+      }
+    }
+    .pager-item.item-current {
+      & > a, & > span { color: $color-primary-light; }
+    }
+    .pager-item.item-first, .pager-item.item-previous, .pager-item.item-next, .pager-item.item-last {
+      & > span {
+        &:before { color: $color-text-light-disabled; }
+      }
+    }
+  }
+  .card-actions .pager {
+    .pager-item.item-previous, .pager-item.item-next {
+      & > a:before { color: $color-text-light; }
+    }
+  }
+  .card-actions .pager-summary {  color: $color-text-light-secondary; }
 }

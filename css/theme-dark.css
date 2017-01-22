@@ -220,3 +220,13 @@
       .theme-dark .menu-dropdown li a:hover {
         background: #515151;
         color: #FFF; }
+  .theme-dark .pager .pager-item.item-ellipsis > a:before, .theme-dark .pager .pager-item.item-ellipsis > span:before, .theme-dark .pager .pager-item.item-current > a:before, .theme-dark .pager .pager-item.item-current > span:before {
+    color: rgba(255, 255, 255, 0.3); }
+  .theme-dark .pager .pager-item.item-current > a, .theme-dark .pager .pager-item.item-current > span {
+    color: #78909c; }
+  .theme-dark .pager .pager-item.item-first > span:before, .theme-dark .pager .pager-item.item-previous > span:before, .theme-dark .pager .pager-item.item-next > span:before, .theme-dark .pager .pager-item.item-last > span:before {
+    color: rgba(255, 255, 255, 0.3); }
+  .theme-dark .card-actions .pager .pager-item.item-previous > a:before, .theme-dark .card-actions .pager .pager-item.item-next > a:before {
+    color: #FFF; }
+  .theme-dark .card-actions .pager-summary {
+    color: rgba(255, 255, 255, 0.7); }
