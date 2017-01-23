@@ -103,7 +103,7 @@ function material_base_form_alter(&$form, &$form_state, $form_id) {
     case 'user_login_block':
       $form['#attributes']['class'][] = 'card card-form';
       $form['links'] = Null;
-      $form['user_icon']['#markup'] = '<div class="user-icon align-center"><i class="material-icons text-disabled">lock</i></div>';
+      $form['user_icon']['#markup'] = '<div class="user-icon text-align-center"><i class="material-icons text-disabled">lock</i></div>';
       $form['user_icon']['#weight'] = -15;
       $form['name']['#title'] = Null;
       $form['name']['#attributes']['placeholder'] = t('Login');
@@ -117,7 +117,7 @@ function material_base_form_alter(&$form, &$form_state, $form_id) {
       break;
     case 'user_pass':
       $form['#attributes']['class'][] = 'card card-form';
-      $form['user_icon']['#markup'] = '<div class="user-icon align-center"><i class="material-icons text-disabled">vpn_key</i></div>';
+      $form['user_icon']['#markup'] = '<div class="user-icon text-align-center"><i class="material-icons text-disabled">vpn_key</i></div>';
       $form['user_icon']['#weight'] = -15;
       $form['name']['#title'] = Null;
       $form['name']['#attributes']['placeholder'] = t('Login or E-mail');
@@ -126,7 +126,7 @@ function material_base_form_alter(&$form, &$form_state, $form_id) {
       break;
     case 'user_register_form':
       $form['#attributes']['class'][] = 'card card-form';
-      $form['user_icon']['#markup'] = '<div class="user-icon align-center"><i class="material-icons text-disabled">account_circle</i></div>';
+      $form['user_icon']['#markup'] = '<div class="user-icon text-align-center"><i class="material-icons text-disabled">account_circle</i></div>';
       $form['user_icon']['#weight'] = -15;
       $form['account']['name']['#title'] = Null;
       $form['account']['name']['#attributes']['placeholder'] = t('Login');
