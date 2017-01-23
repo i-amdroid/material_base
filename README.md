@@ -21,7 +21,7 @@ Installation
 Documentation
 -------------
 
- * Official project page - [m_.4dx.pw](http://m_.4dx.pw/)
+ * Official project page - [mb.4dx.pw](http://mb.4dx.pw/)
 
 Technologies
 ------------

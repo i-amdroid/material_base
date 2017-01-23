@@ -46,7 +46,7 @@ function material_base_form_alter(array &$form, FormStateInterface $form_state, 
     case 'user_login_form': 
       $form['#attributes']['class'][] = 'card card-form';
       $form['links'] = Null;
-      $form['user_icon']['#markup'] = '<div class="user-icon align-center"><i class="material-icons text-disabled">lock</i></div>';
+      $form['user_icon']['#markup'] = '<div class="user-icon text-align-center"><i class="material-icons text-disabled">lock</i></div>';
       $form['user_icon']['#weight'] = -15;
       $form['name']['#title'] = Null;
       $form['name']['#attributes']['placeholder'] = t('Login');
@@ -60,7 +60,7 @@ function material_base_form_alter(array &$form, FormStateInterface $form_state, 
       break;
     case 'user_pass':
       $form['#attributes']['class'][] = 'card card-form';
-      $form['user_icon']['#markup'] = '<div class="user-icon align-center"><i class="material-icons text-disabled">vpn_key</i></div>';
+      $form['user_icon']['#markup'] = '<div class="user-icon text-align-center"><i class="material-icons text-disabled">vpn_key</i></div>';
       $form['user_icon']['#weight'] = -15;
       $form['mail']['#weight'] = -10;
       $form['name']['#title'] = Null;
@@ -70,7 +70,7 @@ function material_base_form_alter(array &$form, FormStateInterface $form_state, 
       break;
     case 'user_register_form':
       $form['#attributes']['class'][] = 'card card-form';
-      $form['user_icon']['#markup'] = '<div class="user-icon align-center"><i class="material-icons text-disabled">account_circle</i></div>';
+      $form['user_icon']['#markup'] = '<div class="user-icon text-align-center"><i class="material-icons text-disabled">account_circle</i></div>';
       $form['user_icon']['#weight'] = -15;
       $form['account']['name']['#title'] = Null;
       $form['account']['name']['#attributes']['placeholder'] = t('Login');
