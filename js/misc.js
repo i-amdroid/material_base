@@ -53,6 +53,15 @@
       e.preventDefault();
     });
 
+    // jquery touch events https://github.com/benmajor/jQuery-Touch-Events
+    $('#drawer').swipeleft(function() {
+      $('body').removeClass('drawer-open');
+    });
+
+    $('#drawer-overlay').swipeleft(function() {
+      $('body').removeClass('drawer-open');
+    });
+
     // smooth scroll for internal links
     var fixedHeight = 24;
     if ( $('body').hasClass('navbar-fixed') ) {

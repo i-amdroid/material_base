@@ -49,6 +49,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 /* break points */
+/**
+ * Legend:
+ * TDV - theme dark values
+ * CTV - color themes values
+ * D7 - differs in Drupal 7 version
+ * TO DO - needs to be implemented
+ */
 /* fonts */
 /* helpful classes */
 .clearfix:after, .media-left:after, .media-right:after, #navbar:after, #footer-content:after {
@@ -480,6 +487,38 @@ pre {
 .navbar-transparent #navbar.navbar-bg {
   background: none; }
 
+.navbar-light #navbar {
+  color: rgba(0, 0, 0, 0.87); }
+.navbar-light #header {
+  background: #FFFFFF; }
+.navbar-light.navbar-fixed #navbar {
+  background: #FFFFFF; }
+.navbar-light .navbar-item .navbar-icon, .navbar-light .navbar-slogan, .navbar-light .navbar-title a {
+  color: rgba(0, 0, 0, 0.87); }
+.navbar-light .navbar-menu .menu a {
+  color: rgba(0, 0, 0, 0.87); }
+.navbar-light .navbar-menu .menu a:hover {
+  color: rgba(0, 0, 0, 0.87);
+  border-color: rgba(0, 0, 0, 0.5); }
+.navbar-light .navbar-menu .menu .active-trail a, .navbar-light .navbar-menu .menu .is-active {
+  border-color: rgba(0, 0, 0, 0.87); }
+
+.navbar-dark #navbar {
+  color: #FFF; }
+.navbar-dark #header {
+  background: #212121; }
+.navbar-dark.navbar-fixed #navbar {
+  background: #212121; }
+.navbar-dark .navbar-item .navbar-icon, .navbar-dark .navbar-slogan, .navbar-dark .navbar-title a {
+  color: #FFF; }
+.navbar-dark .navbar-menu .menu a {
+  color: #FFF; }
+.navbar-dark .navbar-menu .menu a:hover {
+  color: #FFF;
+  border-color: rgba(255, 255, 255, 0.5); }
+.navbar-dark .navbar-menu .menu .active-trail a, .navbar-dark .navbar-menu .menu .is-active {
+  border-color: #FFF; }
+
 #footer {
   min-height: 64px;
   background: #f5f5f5;
@@ -542,8 +581,6 @@ pre {
   .footer-icons {
     min-height: 48px; } }
 /* TO DO
-.navbar-light
-.navbar-dark
 .navbar-gray
 .footer-dark
 */
@@ -687,10 +724,13 @@ pre {
     display: none !important; }
   .drawer-permanent.drawer-below-navbar #navbar {
     margin-left: 0;
-    width: 100%; }
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   .drawer-permanent.drawer-below-navbar #drawer {
     top: 64px;
     z-index: 29; }
+  .drawer-permanent.drawer-below-navbar #header {
+    box-shadow: none; }
   .drawer-permanent.no-sidebars .container {
     width: auto; } }
 @media (min-width: 1280px) {
@@ -1518,6 +1558,37 @@ navbar overlaying header-content (for sliders)
 /* TO DO
 deafault D8 search (input[type="search"])
 */
+/* tabs */
+.tabs ul, ul.tabs {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 0; }
+  .tabs ul li, ul.tabs li {
+    display: block; }
+    .tabs ul li a, ul.tabs li a {
+      display: inline-block;
+      height: 48px;
+      line-height: 20px;
+      padding: 14px 12px 12px 12px;
+      border-bottom: 2px solid transparent;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.54); }
+      .tabs ul li a:hover, ul.tabs li a:hover {
+        border-color: rgba(96, 125, 139, 0.5); }
+      .tabs ul li a.is-active, ul.tabs li a.is-active {
+        border-color: #607d8b;
+        color: #607d8b; }
+        .tabs ul li a.is-active:hover, ul.tabs li a.is-active:hover {
+          border-color: #607d8b; }
+
+/* TO DO
+tabs in navbar, tabs in header (on primary background)
+theme dark, color themes
+*/
 /* cards */
 .card, .content-card .card-holder {
   padding: 24px;
@@ -2027,7 +2098,7 @@ deafault D8 search (input[type="search"])
 /* TO DO
 card title and actions overlay for card-bg-image and card-media
 */
-/* Collapsible panels */
+/* collapsible panels */
 .collapsible-toggle {
   padding: 12px 16px 12px 40px;
   position: relative; }
@@ -2066,7 +2137,7 @@ card title and actions overlay for card-bg-image and card-media
   .collapsible-content > *:last-child {
     margin-bottom: 0; }
 
-/* Dropdown menus */
+/* dropdown menus */
 .menu-dropdown {
   display: none;
   padding: 8px 0;
@@ -2085,7 +2156,7 @@ card title and actions overlay for card-bg-image and card-media
       background: #eeeeee;
       color: rgba(0, 0, 0, 0.87); }
 
-/* Drupal integrations */
+/* drupal integrations */
 .field-label {
   font-weight: 500; }
 
@@ -2174,6 +2245,24 @@ card title and actions overlay for card-bg-image and card-media
 .toolbar-horizontal.toolbar-tray-open.admin-toolbar.adminimal-admin-toolbar.navbar-fixed #navbar, .toolbar-horizontal.toolbar-tray-open.admin-toolbar.adminimal-admin-toolbar #drawer {
   top: 79px; }
 
+.adminimal-admin-toolbar.toolbar-fixed.toolbar-vertical {
+  padding-top: 39px !important; }
+
+.toolbar-vertical.toolbar-tray-open.drawer-permanent #drawer {
+  left: 240px; }
+
+@media (min-width: 992px) {
+  .toolbar-vertical.drawer-below-navbar #drawer {
+    top: 103px; }
+
+  .toolbar-horizontal.drawer-below-navbar #drawer {
+    top: 103px; }
+  .toolbar-horizontal.toolbar-tray-open.drawer-below-navbar #drawer {
+    top: 143px; }
+  .toolbar-horizontal.toolbar-tray-open.admin-toolbar.drawer-below-navbar #drawer {
+    top: 144px; }
+  .toolbar-horizontal.toolbar-tray-open.admin-toolbar.adminimal-admin-toolbar.drawer-below-navbar #drawer {
+    top: 143px; } }
 /* user pages */
 .layout-container {
   margin: 0; }

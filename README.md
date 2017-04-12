@@ -30,7 +30,7 @@ Technologies
  * SASS Framework - [Compass](http://compass-style.org)
  * Syntax highlighter - [Prism](http://prismjs.com)
  * Layout - [Flex box model](http://www.w3.org/TR/css3-flexbox)
- * Grid - [Flexbox Grig](http://flexboxgrid.com/)
+ * Grid - [Flexbox Grid](http://flexboxgrid.com/)
 
 Features
 --------

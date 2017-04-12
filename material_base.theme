@@ -34,8 +34,6 @@ function material_base_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'admin-toolbar';
   }
 
-  // Add sticky navbar class
-  $variables['attributes']['class'][] = 'navbar-fixed';
 }
 
 /**

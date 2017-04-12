@@ -41,6 +41,7 @@ styles:
       css/styles.css: {}
   js:
     js/jquery.ripple.js: {}
+    js/jquery.mobile-events.min.js: {}
     js/misc.js: {}
   dependencies:
     - core/jquery
