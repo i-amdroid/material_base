@@ -48,6 +48,21 @@ function material_base_preprocess_html(&$variables) {
 }
 
 /**
+ * Implements template_preprocess_maintenance_page().
+ */
+function material_base_preprocess_maintenance_page(&$variables) {
+  // Add viewport meta tag.
+  $viewport = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'viewport',
+      'content' => 'width=device-width, initial-scale=1',
+    ),
+  );
+  drupal_add_html_head($viewport, 'viewport');
+}
+
+/**
  * Implements hook_process_html().
  *
  * Backports the following changes made to Drupal 8:

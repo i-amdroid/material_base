@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
 /* fonts */
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 /* helpful classes */
-
 .clearfix {
   &:after { content: ""; display: table; clear: both; }
 }
@@ -16,7 +14,6 @@
 }
 
 /* common styles */
-
 * { box-sizing: content-box; }
 #page * { box-sizing: border-box; }
 
@@ -158,7 +155,6 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 .z-level-5 { @include z-level-5; }
 
 /* layout */
-
 #page { display: flex; min-height: 100vh; flex-direction: column; }
 #content { flex: 1 0 auto; }
 
@@ -188,6 +184,34 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
   }
   #navbar.navbar-bg { background: none; }
   &.navbar-fixed .navbar-shadow { @extend .z-level-0; }
+}
+
+.navbar-light {
+  #navbar { color: $color-text; }
+  #header { background: $color-bg-card; }
+  &.navbar-fixed {
+    #navbar { background: $color-bg-card; }
+  }
+  .navbar-item .navbar-icon, .navbar-slogan, .navbar-title a { color: $color-text; }
+  .navbar-menu .menu {
+    a { color: $color-text; }
+    a:hover { color: $color-text; border-color: rgba($color-text, .5); }
+    .active a, .active-trail a, .active { border-color: $color-text; }
+  }
+}
+
+.navbar-dark {
+  #navbar { color: $color-text-light; }
+  #header { background: $color-bg-dark-bar; }
+  &.navbar-fixed {
+    #navbar { background: $color-bg-dark-bar; }
+  }
+  .navbar-item .navbar-icon, .navbar-slogan, .navbar-title a { color: $color-text-light; }
+  .navbar-menu .menu {
+    a { color: $color-text-light; }
+    a:hover { color: $color-text-light; border-color: rgba($color-text-light, .5); }
+    .active a, .active-trail a, .active { border-color: $color-text-light; }
+  }
 }
 
 #footer { min-height: 64px; background: $color-bg-bar; @extend .z-level-1; font-size: 14px; }
@@ -265,8 +289,9 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
     #drawer { margin-left: 0; @include z-level-0; }
     #drawer-overlay { display: none !important; }
     &.drawer-below-navbar {
-      #navbar { margin-left: 0; width: 100%; }
+      #navbar { margin-left: 0; width: 100%; @include z-level-1; }
       #drawer { top: $navbar; z-index: 29; }
+      #header { @include z-level-0; }
     }
 
     &.no-sidebars .container { width: auto; }
@@ -283,7 +308,6 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 // for centering use .pull-center
 
 /* buttons */
-
 .btn-group { margin: 8px 0; }
 
 // btn by default is btn-flat
@@ -320,7 +344,6 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 }
 
 /* floating action buttons */
-
 .fab { display: inline-block; height: 56px; width: 56px; margin: 8px; padding: 16px; text-align: center; border-radius: 50%; cursor: pointer; outline: 0;  border: 0;
   color: $color-text; text-decoration: none;  font-family: $font-family; font-size: 24px; line-height: 24px; vertical-align: middle; font-weight: 500;
   @extend .z-level-2; transition: background-color .2s, box-shadow .2s;
@@ -341,7 +364,6 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 }
 
 /* tooltips */
-
 .tooltip { position: relative;
   &:before { content: attr(data-tooltip); position: absolute; box-sizing: border-box; width: 160px; background: rgba(color($grey, 700), 0.9); padding: 6px 16px; border-radius: 2px;
     color: $color-text-light; font-size: 14px; font-weight: normal; text-align: center; text-transform: none; line-height: 20px;
@@ -625,6 +647,19 @@ tr.selected:hover { background: $color-bg-hover; }
   }
 }
 
+/* tabs */
+.tabs ul, ul.tabs { list-style: none; display: flex; padding-left: 0;
+  li { display: block;
+    a { display: inline-block; height: 48px; line-height: 20px; padding: 14px 12px 12px 12px; border-bottom: 2px solid transparent; font-size: 14px; font-weight: 500; text-transform: uppercase;
+      color: $color-text-secondary;
+      &:hover { border-color: rgba($color-primary, .5); }
+      &.active { border-color: $color-primary; color: $color-primary;
+        &:hover { border-color: $color-primary; }
+      }
+    }
+  }
+}
+
 /* cards */
 $primary-colors: (
     red: $red,
@@ -754,8 +789,7 @@ $primary-colors: (
   .card-media { border-radius: 0; }
 }
 
-/* Collapsible panels */
-
+/* collapsible panels */
 .collapsible-toggle { padding: 12px 16px 12px 40px; position: relative;
   &:before { @extend .material-icons; content: "chevron_right"; font-size: 20px; position: absolute; left: 12px; top: 14px; color: $color-text-secondary;
     transition: transform 0.25s ease;
@@ -773,8 +807,7 @@ $primary-colors: (
   & > *:last-child { margin-bottom: 0; }
 }
 
-/* Dropdown menus */
-
+/* dropdown menus */
 .menu-dropdown-toggle { }
 .menu-dropdown { display: none; padding: 8px 0; margin: 0; background: $color-bg-card; border-radius: 2px; @extend .z-level-2;
   position: absolute; list-style: none; text-align: left; width: 200px; 
@@ -783,10 +816,9 @@ $primary-colors: (
   }
 }
 
-/* Drupal integrations */
+/* drupal integrations */
 
 // fields
-
 .field-label { font-weight: 500; }
 .field-label-inline > {
   .field-label, .field-item, .field-items, .field-items .field-item { display: inline; }
@@ -861,23 +893,26 @@ $primary-colors: (
 // adminimal menu
 .adminimal-menu {
   .slicknav_menu { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
-  &.navbar-fixed #navbar { top: 47px; }
-  #drawer { top: 47px; }
-  &.drawer-below-navbar #drawer { top: 47px + $navbar; }
+  &.navbar-fixed #navbar, #drawer { top: 47px; }
   #page { margin-top: 47px; }
+}
+
+@include breakpoint($md) {
+  .adminimal-menu {
+    &.drawer-below-navbar #drawer { top: 47px + $navbar; }
+    #page { margin-top: 47px; }
+  }
 }
 
 @include breakpoint(1025px) {
   .adminimal-menu {
-    &.navbar-fixed #navbar { top: 29px; }
-    #drawer { top: 29px; }
+    &.navbar-fixed #navbar, #drawer { top: 29px; }
     &.drawer-below-navbar #drawer { top: 29px + $navbar; }
     #page { margin-top: 0; }
   }
 }
 
 /* maintenance-page */
-
 .maintenance-page { height: 100%; margin: 0; padding: 0; background: $color-primary; color: contrast-color($color-primary);
   #page { justify-content: center; align-items: center; }
   #logo-box { width: 320px; height: 320px; display: flex; justify-content: center; align-items: center;

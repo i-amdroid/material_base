@@ -14,6 +14,7 @@ stylesheets[all][]   = css/styles.css
 
 scripts[] = js/misc.js
 scripts[] = js/jquery.ripple.js
+scripts[] = js/jquery.mobile-events.min.js
 ;scripts[] = js/animation.js
 scripts[] = js/prism.js
 

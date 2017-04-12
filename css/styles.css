@@ -480,6 +480,38 @@ pre {
 .navbar-transparent #navbar.navbar-bg {
   background: none; }
 
+.navbar-light #navbar {
+  color: rgba(0, 0, 0, 0.87); }
+.navbar-light #header {
+  background: #FFFFFF; }
+.navbar-light.navbar-fixed #navbar {
+  background: #FFFFFF; }
+.navbar-light .navbar-item .navbar-icon, .navbar-light .navbar-slogan, .navbar-light .navbar-title a {
+  color: rgba(0, 0, 0, 0.87); }
+.navbar-light .navbar-menu .menu a {
+  color: rgba(0, 0, 0, 0.87); }
+.navbar-light .navbar-menu .menu a:hover {
+  color: rgba(0, 0, 0, 0.87);
+  border-color: rgba(0, 0, 0, 0.5); }
+.navbar-light .navbar-menu .menu .active a, .navbar-light .navbar-menu .menu .active-trail a, .navbar-light .navbar-menu .menu .active {
+  border-color: rgba(0, 0, 0, 0.87); }
+
+.navbar-dark #navbar {
+  color: #FFF; }
+.navbar-dark #header {
+  background: #212121; }
+.navbar-dark.navbar-fixed #navbar {
+  background: #212121; }
+.navbar-dark .navbar-item .navbar-icon, .navbar-dark .navbar-slogan, .navbar-dark .navbar-title a {
+  color: #FFF; }
+.navbar-dark .navbar-menu .menu a {
+  color: #FFF; }
+.navbar-dark .navbar-menu .menu a:hover {
+  color: #FFF;
+  border-color: rgba(255, 255, 255, 0.5); }
+.navbar-dark .navbar-menu .menu .active a, .navbar-dark .navbar-menu .menu .active-trail a, .navbar-dark .navbar-menu .menu .active {
+  border-color: #FFF; }
+
 #footer {
   min-height: 64px;
   background: #f5f5f5;
@@ -681,10 +713,13 @@ pre {
     display: none !important; }
   .drawer-permanent.drawer-below-navbar #navbar {
     margin-left: 0;
-    width: 100%; }
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   .drawer-permanent.drawer-below-navbar #drawer {
     top: 64px;
     z-index: 29; }
+  .drawer-permanent.drawer-below-navbar #header {
+    box-shadow: none; }
   .drawer-permanent.no-sidebars .container {
     width: auto; } }
 @media (min-width: 1280px) {
@@ -1481,6 +1516,33 @@ tr.selected:hover {
   .search-persistent #autocomplete li {
     padding: 8px 12px 8px 60px; }
 
+/* tabs */
+.tabs ul, ul.tabs {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 0; }
+  .tabs ul li, ul.tabs li {
+    display: block; }
+    .tabs ul li a, ul.tabs li a {
+      display: inline-block;
+      height: 48px;
+      line-height: 20px;
+      padding: 14px 12px 12px 12px;
+      border-bottom: 2px solid transparent;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.54); }
+      .tabs ul li a:hover, ul.tabs li a:hover {
+        border-color: rgba(96, 125, 139, 0.5); }
+      .tabs ul li a.active, ul.tabs li a.active {
+        border-color: #607d8b;
+        color: #607d8b; }
+        .tabs ul li a.active:hover, ul.tabs li a.active:hover {
+          border-color: #607d8b; }
+
 /* cards */
 .card, .content-card .card-holder {
   padding: 24px;
@@ -1988,7 +2050,7 @@ tr.selected:hover {
   .card-grid .card-media {
     border-radius: 0; }
 
-/* Collapsible panels */
+/* collapsible panels */
 .collapsible-toggle {
   padding: 12px 16px 12px 40px;
   position: relative; }
@@ -2027,7 +2089,7 @@ tr.selected:hover {
   .collapsible-content > *:last-child {
     margin-bottom: 0; }
 
-/* Dropdown menus */
+/* dropdown menus */
 .menu-dropdown {
   display: none;
   padding: 8px 0;
@@ -2046,7 +2108,7 @@ tr.selected:hover {
       background: #eeeeee;
       color: rgba(0, 0, 0, 0.87); }
 
-/* Drupal integrations */
+/* drupal integrations */
 .field-label {
   font-weight: 500; }
 
@@ -2129,19 +2191,18 @@ tr.selected:hover {
   left: 0;
   right: 0;
   z-index: 100; }
-.adminimal-menu.navbar-fixed #navbar {
+.adminimal-menu.navbar-fixed #navbar, .adminimal-menu #drawer {
   top: 47px; }
-.adminimal-menu #drawer {
-  top: 47px; }
-.adminimal-menu.drawer-below-navbar #drawer {
-  top: 111px; }
 .adminimal-menu #page {
   margin-top: 47px; }
 
+@media (min-width: 992px) {
+  .adminimal-menu.drawer-below-navbar #drawer {
+    top: 111px; }
+  .adminimal-menu #page {
+    margin-top: 47px; } }
 @media (min-width: 1025px) {
-  .adminimal-menu.navbar-fixed #navbar {
-    top: 29px; }
-  .adminimal-menu #drawer {
+  .adminimal-menu.navbar-fixed #navbar, .adminimal-menu #drawer {
     top: 29px; }
   .adminimal-menu.drawer-below-navbar #drawer {
     top: 93px; }
