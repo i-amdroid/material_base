@@ -57,6 +57,12 @@
     border-top-color: rgba(255, 255, 255, 0.12); }
   .theme-dark .divider-bottom {
     border-bottom-color: rgba(255, 255, 255, 0.12); }
+  .theme-dark .highlight {
+    background: #212121; }
+  .theme-dark .info, .theme-dark .messages-error {
+    background: #263238; }
+    .theme-dark .info:before, .theme-dark .messages-error:before {
+      color: #78909c; }
   .theme-dark #footer {
     background: #212121; }
   .theme-dark .btn, .theme-dark input[type="submit"] {
@@ -186,6 +192,15 @@
       color: rgba(0, 0, 0, 0.26); }
     .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
+  .theme-dark .tabs ul, .theme-dark ul.tabs li a {
+    color: rgba(255, 255, 255, 0.7); }
+    .theme-dark .tabs ul:hover, .theme-dark ul.tabs li a:hover {
+      border-color: rgba(120, 144, 156, 0.5); }
+    .theme-dark .tabs ul.is-active, .theme-dark ul.tabs li a.is-active {
+      border-color: #78909c;
+      color: #78909c; }
+      .theme-dark .tabs ul.is-active:hover, .theme-dark ul.tabs li a.is-active:hover {
+        border-color: #78909c; }
   .theme-dark .card {
     background: #424242; }
   .theme-dark .card-main {
@@ -229,3 +244,33 @@
     color: #FFF; }
   .theme-dark .card-actions .pager-summary {
     color: rgba(255, 255, 255, 0.7); }
+  .theme-dark .messages-status {
+    background: #1b5e20; }
+    .theme-dark .messages-status:before {
+      color: #66bb6a; }
+    .theme-dark .messages-status a {
+      color: #00c853; }
+      .theme-dark .messages-status a:hover {
+        color: #00d759; }
+      .theme-dark .messages-status a:active {
+        color: #00e760; }
+  .theme-dark .messages-warning {
+    background: #f57f17; }
+    .theme-dark .messages-warning:before {
+      color: #ffee58; }
+    .theme-dark .messages-warning a {
+      color: #ffff00; }
+      .theme-dark .messages-warning a:hover {
+        color: #ffff0f; }
+      .theme-dark .messages-warning a:active {
+        color: #ffff1f; }
+  .theme-dark .messages-error {
+    background: #b71c1c; }
+    .theme-dark .messages-error:before {
+      color: #e57373; }
+    .theme-dark .messages-error a {
+      color: #ff8a80; }
+      .theme-dark .messages-error a:hover {
+        color: #ff988f; }
+      .theme-dark .messages-error a:active {
+        color: #ffa69f; }

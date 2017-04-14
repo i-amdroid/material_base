@@ -168,6 +168,26 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 .z-level-4 { @include z-level-4; }
 .z-level-5 { @include z-level-5; }
 
+.highlight { background: $color-bg-bar; padding: 16px 24px; border-radius: 2px; margin-top: 16px; margin-bottom: 16px;
+  & > *:first-child { margin-top: 0 !important; }
+  & > *:last-child { margin-bottom: 0 !important; }
+  .card &, .content-card .card-holder & { margin-left: -16px; margin-right: -16px; border-radius: 0; }
+  @include breakpoint($xs) {
+    .card &, .content-card .card-holder & { margin-left: -24px; margin-right: -24px; }
+  }
+} // TDV
+.info { @extend .highlight; background: color($color-primary-base, 50); padding-left: 64px; position: relative;
+  &:before { @extend .material-icons; content: "info"; position: absolute; top: 16px; left: 24px; color: $color-primary; }
+} // TDV CTV
+.important { @extend .info; background: $color-primary; color: contrast-color($color-primary);
+  &:before { content: "warning"; color: contrast-color($color-primary); }
+  a { @include link-colors($color-accent-light, $color-accent-light-hover, $color-accent-light-active); }
+} // CTV
+
+/* TO DO
+  color themes
+*/
+
 /* layout */
 #page { display: flex; min-height: 100vh; flex-direction: column; }
 #content { flex: 1 0 auto; }
@@ -717,7 +737,7 @@ deafault D8 search (input[type="search"])
 
 /* TO DO
 tabs in navbar, tabs in header (on primary background)
-theme dark, color themes
+color themes
 */
 
 /* cards */
@@ -803,12 +823,13 @@ $primary-colors: (
 
 @each $color-name, $color-value in $primary-colors {
   .card-bg-#{"" + $color-name} { background-color: color($color-value); color: contrast-color(color($color-value));
-    .text-secondary { color: contrast-color( color($color-value), $color-text-secondary, $color-text-light-secondary); }
-    .btn { color: contrast-color( color($color-value));
-      &:hover, &:focus { background: contrast-color( color($color-value), rgba(#999999, .20), rgba(#CCCCCC, .15)); color: contrast-color( color($color-value)); }
-      &:active { background: contrast-color( color($color-value), rgba(#999999, .40), rgba(#CCCCCC, .25)); }
+    .text-secondary { color: contrast-color(color($color-value), $color-text-secondary, $color-text-light-secondary); }
+    .btn { color: contrast-color(color($color-value));
+      &:hover, &:focus { background: contrast-color(color($color-value), rgba(#999999, .20), rgba(#CCCCCC, .15)); color: contrast-color(color($color-value)); }
+      &:active { background: contrast-color(color($color-value), rgba(#999999, .40), rgba(#CCCCCC, .25)); }
     }
-    .rippleAnimate { background-color: contrast-color( color($color-value), rgba(#000, 0.3), rgba(#FFF, 0.1)); }
+    .divider-top, .divider-bottom { border-color: contrast-color(color($color-value), $color-divider, $color-light-divider); }
+    .rippleAnimate { background-color: contrast-color(color($color-value), rgba(#000, 0.3), rgba(#FFF, 0.1)); }
   }
 }
 .card-bg-primary { background: $color-primary; color: contrast-color($color-primary);
@@ -817,6 +838,8 @@ $primary-colors: (
     &:hover, &:focus { background: contrast-color($color-primary, rgba(#999999, .20), rgba(#CCCCCC, .15)); color: contrast-color($color-primary); }
     &:active { background: contrast-color($color-primary, rgba(#999999, .40), rgba(#CCCCCC, .25)); }
   }
+  a { @include link-colors($color-accent-light, $color-accent-light-hover, $color-accent-light-active); }
+  .divider-top, .divider-bottom { border-color: contrast-color($color-primary, $color-divider, $color-light-divider); }
   .rippleAnimate { background-color: contrast-color($color-primary, rgba(#000, 0.3), rgba(#FFF, 0.1)); }
 } // TDV CTV
 .card-bg-accent { background: $color-accent; color: contrast-color($color-accent);
@@ -825,6 +848,8 @@ $primary-colors: (
     &:hover, &:focus { background: contrast-color($color-accent, rgba(#999999, .20), rgba(#CCCCCC, .15)); color: contrast-color($color-accent); }
     &:active { background: contrast-color($color-accent, rgba(#999999, .40), rgba(#CCCCCC, .25)); }
   }
+  a { @include link-colors($color-accent-light, $color-accent-light-hover, $color-accent-light-active); }
+  .divider-top, .divider-bottom { border-color: contrast-color($color-accent, $color-divider, $color-light-divider); }
   .rippleAnimate { background-color: contrast-color($color-accent, rgba(#000, 0.3), rgba(#FFF, 0.1)); }
 } // TDV CTV
 
@@ -946,6 +971,23 @@ card title and actions overlay for card-bg-image and card-media
 }
 
 .card-actions .pager-summary { display: inline-block; font-size: 14px; line-height: 20px; margin: 18px 8px; color: $color-text-secondary; } // TDV
+
+// messages
+.messages-status { @extend .info; background: color($green, 50);
+  &:before { content: "check_circle"; color: color($green, 700); }
+  a { @include link-colors(color($green, 800), darken(color($green, 800), 3), darken(color($green, 800), 6)); }
+} // TDV
+.messages-warning { @extend .info; background: color($yellow, 50);
+  &:before { color: color($yellow, 700); }
+  a { @include link-colors(color($yellow, 900), darken(color($yellow, 900), 3), darken(color($yellow, 900), 6)); }
+} // TDV
+.messages-error { @extend .info; background: color($red, 50);
+  &:before { content: "warning"; color: color($red, 700); }
+  a { @include link-colors(color($red, 900), darken(color($red, 900), 3), darken(color($red, 900), 6)); }
+} // TDV
+.messages {
+  & > .visually-hidden:first-child + * { margin-top: 0 !important; } // D7
+}
 
 // login forms
 .card-form { max-width: 360px; margin: 0 auto;
