@@ -50,6 +50,11 @@
   .divider-top { border-top-color: $color-light-divider; }
   .divider-bottom { border-bottom-color: $color-light-divider; }
 
+  .highlight { background: $color-bg-dark-bar; }
+  .info { background: color($color-primary-base, 900);
+    &:before { color:color($color-primary-base, 400); }
+  }
+
   #footer { background: $color-bg-dark-bar; }
 
   .btn, input[type="submit"] { color: $color-text-light;
@@ -133,6 +138,15 @@
     }
   }
 
+  .tabs ul li, ul.tabs li {
+    a { color: $color-text-light-secondary;
+      &:hover { border-color: rgba($color-primary-light, .5); }
+    }
+    &.active a, & a.active { border-color: $color-primary-light; color: $color-primary-light;
+      &:hover { border-color: $color-primary-light; }
+    } 
+  }
+
   .card { background: $color-bg-dark-card; }
   .card-main { border-bottom-color: $color-light-divider; background: $color-bg-dark-card; }
   &.content-card .card-holder { background: $color-bg-dark-card; }
@@ -176,4 +190,17 @@
     }
   }
   .card-actions .pager-summary {  color: $color-text-light-secondary; }
+
+  .messages-status { background: color($green, 900);
+    &:before { color: color($green, 400); }
+    a { @include link-colors(color($green, 'a700'), lighten(color($green, 'a700'), 3), lighten(color($green, 'a700'), 6)); }
+  }
+  .messages-warning { background: color($yellow, 900);
+    &:before { color: color($yellow, 400); }
+    a { @include link-colors(color($yellow, 'a200'), lighten(color($yellow, 'a200'), 3), lighten(color($yellow, 'a200'), 6)); }
+  }
+  .messages-error { @extend .info; background: color($red, 900);
+    &:before { color: color($red, 300); }
+    a { @include link-colors(color($red, 'a100'), lighten(color($red, 'a100'), 3), lighten(color($red, 'a100'), 6)); }
+  }
 }
