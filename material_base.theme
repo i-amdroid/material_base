@@ -39,7 +39,7 @@ function material_base_preprocess_html(&$variables) {
 /**
  * Implements hook_form_alter().
  */
-function material_base_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+function material_base_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   switch ($form_id) {
     case 'user_login_form': 
       $form['#attributes']['class'][] = 'card card-form';

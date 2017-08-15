@@ -136,7 +136,7 @@
     }
   }
 
-  .tabs ul, ul.tabs li a { color: $color-text-light-secondary;
+  .tabs ul li a, ul.tabs li a { color: $color-text-light-secondary;
     &:hover { border-color: rgba($color-primary-light, .5); }
     &.is-active { border-color: $color-primary-light; color: $color-primary-light;
       &:hover { border-color: $color-primary-light; }

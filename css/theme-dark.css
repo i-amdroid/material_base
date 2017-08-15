@@ -192,14 +192,14 @@
       color: rgba(0, 0, 0, 0.26); }
     .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
-  .theme-dark .tabs ul, .theme-dark ul.tabs li a {
+  .theme-dark .tabs ul li a, .theme-dark ul.tabs li a {
     color: rgba(255, 255, 255, 0.7); }
-    .theme-dark .tabs ul:hover, .theme-dark ul.tabs li a:hover {
+    .theme-dark .tabs ul li a:hover, .theme-dark ul.tabs li a:hover {
       border-color: rgba(120, 144, 156, 0.5); }
-    .theme-dark .tabs ul.is-active, .theme-dark ul.tabs li a.is-active {
+    .theme-dark .tabs ul li a.is-active, .theme-dark ul.tabs li a.is-active {
       border-color: #78909c;
       color: #78909c; }
-      .theme-dark .tabs ul.is-active:hover, .theme-dark ul.tabs li a.is-active:hover {
+      .theme-dark .tabs ul li a.is-active:hover, .theme-dark ul.tabs li a.is-active:hover {
         border-color: #78909c; }
   .theme-dark .card {
     background: #424242; }
