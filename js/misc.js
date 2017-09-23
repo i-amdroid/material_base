@@ -64,15 +64,15 @@
 
     // smooth scroll for internal links
     var fixedHeight = 24;
-    if ( $('body').hasClass('navbar-fixed') ) {
+    if ($('body').hasClass('navbar-fixed')) {
       fixedHeight += 64;
     }
-    if ( $('body').hasClass('toolbar-vertical') ) {
+    if ($('body').hasClass('toolbar-vertical')) {
       fixedHeight += 40;
     }
-    if ( $('body').hasClass('toolbar-horizontal') ) {
+    if ($('body').hasClass('toolbar-horizontal')) {
       fixedHeight += 40;
-      if ( $('body').hasClass('toolbar-tray-open') ) {
+      if ($('body').hasClass('toolbar-tray-open')) {
         fixedHeight += 40;
       }
     }
@@ -109,18 +109,24 @@
 
     // tootips
     $('.tooltip').hover(function() {
-      $( this ).addClass('tooltip-expanded');
+      $(this).addClass('tooltip-expanded');
     }, function() {
-      $( this ).removeClass('tooltip-expanded');
+      $(this).removeClass('tooltip-expanded');
     });
 
     // dropdown menus
     $('.menu-dropdown-toggle').click(function(e) {
+      $(this).removeClass('tooltip-expanded');
+      $(this).find('.tooltip').removeClass('tooltip-expanded');
       var target = '#'.concat($(this).attr('data-target'));
       $(target).slideToggle('fast');
-      // TO DO some event should call $(target).slideUp('fast');
+      $('.menu-dropdown:not(' + target + ')').slideUp('fast');
       e.stopPropagation();
       e.preventDefault();
+    });
+
+    $(document).click(function(){
+      $('.menu-dropdown').slideUp('fast');
     });
 
   });

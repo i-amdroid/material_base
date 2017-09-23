@@ -60,10 +60,22 @@ article a[href^="#"]:not([href="#"]):not(.btn) { border-bottom: dotted 1px $colo
 article blockquote { border-left: 2px solid $color-primary; padding-left: 36px; color: $color-text-secondary; } // TDV CTV D7
 
 p { margin-bottom: 8px; }
-p.icon-left { padding-left: 36px;
+p.icon-left, p.services-icon-left { padding-left: 36px;
   &:before { margin-left: -36px; }
 }
-p .material-icons { vertical-align: -30%; }
+p .material-icons, p .services-icons,
+ul:not(.menu) li .material-icons,
+ul:not(.menu) li .services-icons,
+.btn .material-icons, .btn .services-icons { vertical-align: -30%; }
+
+p, ul:not(.menu) li, td, th {
+  a.icon-left:not(.btn), a.services-icon-left:not(.btn) { display: inline-block;
+    &:before { margin-right: 4px; }
+  }
+  a.icon-right:not(.btn), a.services-icon-right:not(.btn) { display: inline-block;
+    &:after { margin-left: 4px; }
+  }
+}
 
 strong { font-weight: 500; }
 
@@ -128,21 +140,13 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 
 .subtitle { font-size: 14px;  } 
 
+.text-dark { color: $color-text !important; }
 .text-secondary { color: $color-text-secondary; } // TDV
+.text-disabled { color: $color-text-disabled; } // TDV
+.text-light { color: $color-text-light !important; }
+.text-light.text-disabled { color: $color-text-light-disabled !important; }
 .text-primary, a.text-primary, a.text-primary:hover, a.text-primary:focus { color: $color-primary-hover; } // TDV CTV
 .text-accent, a.text-accent, a.text-accent:hover, a.text-accent:focus { color: $color-accent; } // TDV CTV
-.text-light { color: $color-text-light; }
-.text-dark { color: $color-text; }
-
-.material-icons.text-primary { color: $color-primary; } // CTV
-.material-icons.text-accent { color: $color-accent; } // CTV
-
-.icon-primary {
-  &.icon-left:before, &.icon-right:after { color: $color-primary; } // CTV
-}
-.icon-accent {
-  &.icon-left:before, &.icon-right:after { color: $color-accent; } // CTV
-}
 
 .divider-top { border-top: 1px solid $color-divider; } // TDV
 .divider-bottom { border-bottom: 1px solid $color-divider; } // TDV
@@ -378,9 +382,12 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 } // TDV CTV
 
 .btn.icon-left:before, .btn.icon-right:after, .btn .material-icons { margin-top: -2px; margin-bottom: -2px; }
-.btn.icon-left:before, .btn .material-icons { margin-left: -2px; }
-.btn.icon-right:after, .btn .material-icons { margin-right: -2px; }
-.btn.icon-right > span { float: left; }
+.btn.services-icon-left:before, .btn.services-icon-right:after, .btn .services-icons { margin-top: -2px; margin-bottom: -1px; } // margin-bottom: -1px is strange beahavior
+.btn.icon-left:before, .btn .material-icons,
+.btn.services-icon-left:before, .btn .services-icons { margin-left: -2px; }
+.btn.icon-right:after, .btn .material-icons,
+.btn.services-icon-right:after, .btn .services-icons { margin-right: -2px; }
+.btn.icon-right > span, .btn.services-icon-right > span { float: left; }
 
 .btn-disabled { color: $color-text-disabled; cursor: default; pointer-events: none;
   &:hover, &:focus, &:active { background: none; color: $color-text-disabled; }
@@ -415,12 +422,33 @@ colored but not raised
 
 /* tooltips */
 .tooltip { position: relative;
-  &:before { content: attr(data-tooltip); position: absolute; box-sizing: border-box; width: 160px; background: rgba(color($grey, 700), 0.9); padding: 6px 16px; border-radius: 2px;
-    color: $color-text-light; font-size: 14px; font-weight: normal; text-align: center; text-transform: none; line-height: 20px;
+  &:before { content: attr(data-tooltip); position: absolute; box-sizing: border-box; max-width: 160px; background: rgba(color($grey, 700), 0.9); padding: 6px 16px; border-radius: 2px;
+    color: $color-text-light; font-size: 14px; font-weight: normal; text-align: center; text-transform: none; line-height: 20px; white-space: normal;
     opacity: 0; transition: opacity .2s;
-    bottom: calc(100% + 16px); left: 50%; pointer-events: none; margin-left: -80px;
+    bottom: calc(100% + 16px); left: 50%; pointer-events: none; transform: translate(-50%, 0);
   }
   &.tooltip-expanded:before { opacity: 1; }
+  &.tooltip-top-left {
+    &:before { left: 0; transform: translate(0%, 0); }
+  }
+  &.tooltip-top-right {
+    &:before { left: auto; right: 0; transform: translate(0%, 0); }
+  }
+  &.tooltip-bottom-left {
+    &:before { bottom: auto; top: calc(100% + 16px); left: 0; transform: translate(0%, 0); }
+  }  
+  &.tooltip-bottom {
+    &:before { bottom: auto; top: calc(100% + 16px); }
+  }
+  &.tooltip-bottom-right {
+    &:before { bottom: auto; top: calc(100% + 16px); left: auto; right: 0; transform: translate(0%, 0); }
+  }
+  &.tooltip-left {
+    &:before { transform: translate(0, -50%); right: calc(100% + 12px); top: 50%; bottom: auto; left: auto; }
+  }
+  &.tooltip-right {
+    &:before { transform: translate(0, -50%); left: calc(100% + 12px); top: 50%; bottom: auto; }
+  }
 } // TDV
 
 /* tables */
@@ -553,9 +581,9 @@ icon labels
   .drawer-open & { display: block; }
 }
 
-#drawer { position: fixed; top: 0; left: 0; bottom: 0; width: $drawer; margin-left: -($drawer + 10px); z-index: 40; background: $color-bg; overflow: auto;
-  transition: margin .2s; @include z-level-4; border-right: 1px solid $color-divider;
-  .drawer-open & { margin-left: 0; }
+#drawer { position: fixed; top: 0; left: 0; bottom: 0; width: $drawer; margin-left: -($drawer + 24px); z-index: 40; background: $color-bg; overflow: auto;
+  border-right: 1px solid $color-bg; transition: margin-left .2s;
+  .drawer-open & { margin-left: 0; border-right-color: $color-divider; @include z-level-4; }
   .drawer-item { padding: 8px 12px; }
   #drawer-menu-close { float: left; }
   #drawer-menu-close a { display: inline-block; padding: 12px; height: 48px; width: 48px; color: $color-text-dark; }
@@ -564,9 +592,11 @@ icon labels
     li a { display: block; padding: 12px 24px; font-weight: 500; color: $color-text;
       &:hover { background: $color-bg-hover; }
       &.icon-left:before, &.icon-right:after { color: $color-text-secondary; }
+      &.services-icon-left:before, &.services-icon-right:after { background: $color-text-secondary; }
     }
     .active-trail a, .is-active { color: $color-primary;
       &.icon-left:before, &.icon-right:after { color: $color-primary; }
+      &.services-icon-left:before, &.services-icon-right:after { background: $color-primary; }
     } // D7
   } // TDV CTV
 }
@@ -988,6 +1018,7 @@ card title and actions overlay for card-bg-image and card-media
 .messages {
   & > .visually-hidden:first-child + * { margin-top: 0 !important; } // D7
 }
+ul.messages-list { padding-left: 24px; } // D7
 
 // login forms
 .card-form { max-width: 360px; margin: 0 auto;

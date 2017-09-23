@@ -16,30 +16,29 @@
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
-
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
-
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
 
+// fs-** should work without helpers
 .material-icons.fs-18 { font-size: 18px; }
 .material-icons.fs-24 { font-size: 24px; }
 .material-icons.fs-36 { font-size: 36px; }
 .material-icons.fs-48 { font-size: 48px; }
-.material-icons.text-dark { color: $color-text; }
-.material-icons.text-dark.text-disabled { color: $color-text-disabled; }
-.material-icons.text-light { color: $color-text-light; }
-.material-icons.text-light.text-disabled { color: $color-text-light-disabled; }
 
-.material-icons.text-disabled { color: $color-text-disabled; }
-.theme-dark .material-icons.text-disabled { color: $color-text-light-disabled; }
+.icon-dark.icon-left:before, .icon-dark.icon-right:after { color: $color-text !important; }
+.icon-secondary.icon-left:before, .icon-secondary.icon-right:after { color: $color-text-secondary; } // TDV
+.icon-disabled.icon-left:before, .icon-disabled.icon-right:after { color: $color-text-disabled; } // TDV
+.icon-light.icon-left:before, .icon-light.icon-right:after { color: $color-text-light !important; }
+.icon-light.icon-disabled.icon-left:before, .icon-light.icon-disabled.icon-right:after { color: $color-text-light-disabled !important; }
+.icon-primary.icon-left:before, .icon-primary.icon-right:after { color: $color-primary; } // TDV, TO DO: CTV
+.icon-accent.icon-left:before, .icon-accent.icon-right:after { color: $color-accent; } // TDV, TO DO: CTV
 
 .icon-left:before {
   @extend .material-icons;
@@ -53,4 +52,11 @@
   content: attr(data-icon);
   margin-left: 12px;
   float: right;
+}
+
+.theme-dark {
+  .icon-secondary.icon-left:before, .icon-secondary.icon-right:after { color: $color-text-light-secondary; }
+  .icon-disabled.icon-left:before, .icon-disabled.icon-right:after { color: $color-text-light-disabled; }
+  .icon-primary.icon-left:before, .icon-primary.icon-right:after { color: $color-primary-light; } // TO DO: CTV
+  .icon-accent.icon-left:before, .icon-accent.icon-right:after { color: $color-accent-light; } // TO DO: CTV
 }
