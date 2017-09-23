@@ -4,7 +4,6 @@
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
-  /* Preferred icon size */
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -12,13 +11,9 @@
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
-  /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga'; }
 
@@ -34,23 +29,26 @@
 .material-icons.fs-48, .fs-48.icon-left:before, .fs-48.icon-right:after {
   font-size: 48px; }
 
-.material-icons.text-dark, .text-dark.icon-left:before, .text-dark.icon-right:after {
-  color: rgba(0, 0, 0, 0.87); }
+.icon-dark.icon-left:before, .icon-dark.icon-right:after {
+  color: rgba(0, 0, 0, 0.87) !important; }
 
-.material-icons.text-dark.text-disabled, .text-dark.text-disabled.icon-left:before, .text-dark.text-disabled.icon-right:after {
+.icon-secondary.icon-left:before, .icon-secondary.icon-right:after {
+  color: rgba(0, 0, 0, 0.54); }
+
+.icon-disabled.icon-left:before, .icon-disabled.icon-right:after {
   color: rgba(0, 0, 0, 0.26); }
 
-.material-icons.text-light, .text-light.icon-left:before, .text-light.icon-right:after {
-  color: #FFF; }
+.icon-light.icon-left:before, .icon-light.icon-right:after {
+  color: #FFF !important; }
 
-.material-icons.text-light.text-disabled, .text-light.text-disabled.icon-left:before, .text-light.text-disabled.icon-right:after {
-  color: rgba(255, 255, 255, 0.3); }
+.icon-light.icon-disabled.icon-left:before, .icon-light.icon-disabled.icon-right:after {
+  color: rgba(255, 255, 255, 0.3) !important; }
 
-.material-icons.text-disabled, .text-disabled.icon-left:before, .text-disabled.icon-right:after {
-  color: rgba(0, 0, 0, 0.26); }
+.icon-primary.icon-left:before, .icon-primary.icon-right:after {
+  color: #607d8b; }
 
-.theme-dark .material-icons.text-disabled, .theme-dark .text-disabled.icon-left:before, .theme-dark .text-disabled.icon-right:after {
-  color: rgba(255, 255, 255, 0.3); }
+.icon-accent.icon-left:before, .icon-accent.icon-right:after {
+  color: #00b0ff; }
 
 .icon-left:before {
   content: attr(data-icon);
@@ -61,3 +59,12 @@
   content: attr(data-icon);
   margin-left: 12px;
   float: right; }
+
+.theme-dark .icon-secondary.icon-left:before, .theme-dark .icon-secondary.icon-right:after {
+  color: rgba(255, 255, 255, 0.7); }
+.theme-dark .icon-disabled.icon-left:before, .theme-dark .icon-disabled.icon-right:after {
+  color: rgba(255, 255, 255, 0.3); }
+.theme-dark .icon-primary.icon-left:before, .theme-dark .icon-primary.icon-right:after {
+  color: #78909c; }
+.theme-dark .icon-accent.icon-left:before, .theme-dark .icon-accent.icon-right:after {
+  color: #40c4ff; }

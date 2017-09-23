@@ -118,12 +118,19 @@
 
     // dropdown menus
     $('.menu-dropdown-toggle').click(function(e) {
+      $(this).removeClass('tooltip-expanded');
+      $(this).find('.tooltip').removeClass('tooltip-expanded');
       var target = '#'.concat($(this).attr('data-target'));
       $(target).slideToggle('fast');
-      // TO DO some event should call $(target).slideUp('fast');
+      $('.menu-dropdown:not(' + target + ')').slideUp('fast');
       e.stopPropagation();
       e.preventDefault();
     });
+    
+    $(document).click(function(){
+      $('.menu-dropdown').slideUp('fast');
+    });
+
 
   }); 
 })(jQuery);

@@ -37,15 +37,10 @@
   .rippleAnimate { background-color: rgba(#FFF, 0.1); }
 
   .text-secondary { color: $color-text-light-secondary; }
+  .text-disabled { color: $color-text-light-disabled; }
   .text-primary, a.text-primary, a.text-primary:hover, a.text-primary:focus { color: $color-primary-light; }
   .text-accent, a.text-accent, a.text-accent:hover, a.text-accent:focus { color: $color-accent-light; }
   .material-icons.text-accent { color: $color-accent-light; }
-  .icon-primary {
-    &.icon-left:before, &.icon-right:after { color: $color-primary-light; }
-  }
-  .icon-accent {
-    &.icon-left:before, &.icon-right:after { color: $color-accent-light; }
-  }
 
   .divider-top { border-top-color: $color-light-divider; }
   .divider-bottom { border-bottom-color: $color-light-divider; }
@@ -110,16 +105,19 @@
     &.form-type-select:after { color: $color-text-light-secondary; }
   }
 
-  #drawer { background: $color-bg-dark; border-color: $color-light-divider;
+  #drawer { background: $color-bg-dark; border-right-color: $color-bg-dark;
+    .drawer-open & { border-right-color: $color-light-divider; }
     #drawer-menu-close a { color: $color-text-light; }
     #drawer-title { color: $color-text-light-secondary; }
     .menu { 
       li a { color: $color-text-light;
         &:hover { background: $color-bg-dark-hover; }
         &.icon-left:before, &.icon-right:after { color: $color-text-light-secondary; }
+        &.services-icon-left:before, &.services-icon-right:after { background: $color-text-light-secondary; }
       }
       li.active a, li.active-trail a { color: $color-primary-light;
         &.icon-left:before, &.icon-right:after { color: $color-primary-light; }
+        &.services-icon-left:before, &.services-icon-right:after { background: $color-primary-light; }
       }
     } 
   }

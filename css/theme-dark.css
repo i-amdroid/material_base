@@ -45,15 +45,13 @@
     background-color: rgba(255, 255, 255, 0.1); }
   .theme-dark .text-secondary {
     color: rgba(255, 255, 255, 0.7); }
+  .theme-dark .text-disabled {
+    color: rgba(255, 255, 255, 0.3); }
   .theme-dark .text-primary, .theme-dark a.text-primary, .theme-dark a.text-primary:hover, .theme-dark a.text-primary:focus {
     color: #78909c; }
   .theme-dark .text-accent, .theme-dark a.text-accent, .theme-dark a.text-accent:hover, .theme-dark a.text-accent:focus {
     color: #40c4ff; }
   .theme-dark .material-icons.text-accent {
-    color: #40c4ff; }
-  .theme-dark .icon-primary.icon-left:before, .theme-dark .icon-primary.icon-right:after {
-    color: #78909c; }
-  .theme-dark .icon-accent.icon-left:before, .theme-dark .icon-accent.icon-right:after {
     color: #40c4ff; }
   .theme-dark .divider-top {
     border-top-color: rgba(255, 255, 255, 0.12); }
@@ -160,7 +158,9 @@
     color: rgba(255, 255, 255, 0.7); }
   .theme-dark #drawer {
     background: #303030;
-    border-color: rgba(255, 255, 255, 0.12); }
+    border-right-color: #303030; }
+    .drawer-open .theme-dark #drawer {
+      border-right-color: rgba(255, 255, 255, 0.12); }
     .theme-dark #drawer #drawer-menu-close a {
       color: #FFF; }
     .theme-dark #drawer #drawer-title {
@@ -171,10 +171,14 @@
         background: #515151; }
       .theme-dark #drawer .menu li a.icon-left:before, .theme-dark #drawer .menu li a.icon-right:after {
         color: rgba(255, 255, 255, 0.7); }
+      .theme-dark #drawer .menu li a.services-icon-left:before, .theme-dark #drawer .menu li a.services-icon-right:after {
+        background: rgba(255, 255, 255, 0.7); }
     .theme-dark #drawer .menu li.active a, .theme-dark #drawer .menu li.active-trail a {
       color: #78909c; }
       .theme-dark #drawer .menu li.active a.icon-left:before, .theme-dark #drawer .menu li.active a.icon-right:after, .theme-dark #drawer .menu li.active-trail a.icon-left:before, .theme-dark #drawer .menu li.active-trail a.icon-right:after {
         color: #78909c; }
+      .theme-dark #drawer .menu li.active a.services-icon-left:before, .theme-dark #drawer .menu li.active a.services-icon-right:after, .theme-dark #drawer .menu li.active-trail a.services-icon-left:before, .theme-dark #drawer .menu li.active-trail a.services-icon-right:after {
+        background: #78909c; }
   .theme-dark .sidebar .menu li a {
     color: #FFF; }
     .theme-dark .sidebar .menu li a:hover {

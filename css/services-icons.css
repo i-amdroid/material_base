@@ -9,691 +9,1677 @@
 .services-icons.icon-secondary {
   opacity: .54; }
 
-.services-icons.icon-light {
-  background: #FFF;
-  opacity: 1;
-  -webkit-mask: url(../img/services-icons.svg) no-repeat;
-          mask: url(../img/services-icons.svg) no-repeat; }
-
-.services-icons.icon-primary {
-  background: #607d8b;
-  opacity: 1;
-  -webkit-mask: url(../img/services-icons.svg) no-repeat;
-          mask: url(../img/services-icons.svg) no-repeat; }
-
-.services-icons.icon-accent {
-  background: #00b0ff;
-  opacity: 1;
-  -webkit-mask: url(../img/services-icons.svg) no-repeat;
-          mask: url(../img/services-icons.svg) no-repeat; }
+.services-icons.icon-disabled {
+  opacity: .26; }
 
 .services-icons.si-behance, .services-icons[data-icon="behance"] {
   background-position: -144px -48px; }
-
 .services-icons.si-bitbucket, .services-icons[data-icon="bitbucket"] {
   background-position: -24px -120px; }
-
 .services-icons.si-blogger, .services-icons[data-icon="blogger"] {
   background-position: -168px -48px; }
-
 .services-icons.si-delicious, .services-icons[data-icon="delicious"] {
   background-position: -144px -72px; }
-
 .services-icons.si-delicious-box, .services-icons[data-icon="delicious-box"] {
   background-position: -168px -72px; }
-
 .services-icons.si-digg, .services-icons[data-icon="digg"] {
   background-position: -120px -72px; }
-
 .services-icons.si-disqus, .services-icons[data-icon="disqus"] {
   background-position: -24px -96px; }
-
 .services-icons.si-disqus-outline, .services-icons[data-icon="disqus-outline"] {
   background-position: 0 -96px; }
-
 .services-icons.si-dribbble, .services-icons[data-icon="dribbble"] {
   background-position: -192px -48px; }
-
 .services-icons.si-dribbble-box, .services-icons[data-icon="dribbble-box"] {
   background-position: -216px -48px; }
-
 .services-icons.si-drupal, .services-icons[data-icon="drupal"] {
   background-position: -96px -120px; }
-
 .services-icons.si-evernote, .services-icons[data-icon="evernote"] {
   background-position: -216px -72px; }
-
 .services-icons.si-facebook, .services-icons[data-icon="facebook"] {
   background-position: 0 0; }
-
 .services-icons.si-facebook-box, .services-icons[data-icon="facebook-box"] {
   background-position: -24px 0; }
-
 .services-icons.si-facebook-messenger, .services-icons[data-icon="facebook-messenger"] {
   background-position: -144px -120px; }
-
 .services-icons.si-flickr, .services-icons[data-icon="flickr"] {
   background-position: -96px -96px; }
-
 .services-icons.si-foursquare, .services-icons[data-icon="foursquare"] {
   background-position: -48px -96px; }
-
 .services-icons.si-github-box, .services-icons[data-icon="github-box"] {
   background-position: 0 -120px; }
-
 .services-icons.si-google-photos, .services-icons[data-icon="google-photos"] {
   background-position: -120px -96px; }
-
 .services-icons.si-google-plus, .services-icons[data-icon="google-plus"] {
   background-position: -96px 0; }
-
 .services-icons.si-google-plus-box, .services-icons[data-icon="google-plus-box"] {
   background-position: -120px 0; }
-
 .services-icons.si-instagram, .services-icons[data-icon="instagram"] {
   background-position: 0 -24px; }
-
 .services-icons.si-instagram-box, .services-icons[data-icon="instagram-box"] {
   background-position: -24px -24px; }
-
 .services-icons.si-lastfm, .services-icons[data-icon="lastfm"] {
   background-position: -144px -96px; }
-
 .services-icons.si-line, .services-icons[data-icon="line"] {
   background-position: -72px -144px; }
-
 .services-icons.si-linkedin, .services-icons[data-icon="linkedin"] {
   background-position: -144px 0; }
-
 .services-icons.si-linkedin-box, .services-icons[data-icon="linkedin-box"] {
   background-position: -168px 0; }
-
 .services-icons.si-livejournal, .services-icons[data-icon="livejournal"] {
   background-position: -192px -72px; }
-
 .services-icons.si-medium, .services-icons[data-icon="medium"] {
   background-position: 0 -72px; }
-
 .services-icons.si-odnoklassniki, .services-icons[data-icon="odnoklassniki"] {
   background-position: -96px -24px; }
-
 .services-icons.si-odnoklassniki-box, .services-icons[data-icon="odnoklassniki-box"] {
   background-position: -120px -24px; }
-
 .services-icons.si-periscope, .services-icons[data-icon="periscope"] {
   background-position: -120px -48px; }
-
 .services-icons.si-pinterest, .services-icons[data-icon="pinterest"] {
   background-position: -192px 0; }
-
 .services-icons.si-pinterest-box, .services-icons[data-icon="pinterest-box"] {
   background-position: -216px 0; }
-
 .services-icons.si-pocket, .services-icons[data-icon="pocket"] {
   background-position: -24px -72px; }
-
 .services-icons.si-qqchat, .services-icons[data-icon="qqchat"] {
   background-position: -96px -144px; }
-
 .services-icons.si-qzone, .services-icons[data-icon="qzone"] {
   background-position: -216px -24px; }
-
 .services-icons.si-reddit, .services-icons[data-icon="reddit"] {
   background-position: -48px -72px; }
-
 .services-icons.si-renren, .services-icons[data-icon="renren"] {
   background-position: -24px -48px; }
-
 .services-icons.si-sina-weibo, .services-icons[data-icon="sina-weibo"] {
   background-position: -192px -24px; }
-
 .services-icons.si-skype, .services-icons[data-icon="skype"] {
   background-position: -24px -144px; }
-
 .services-icons.si-skype-outline, .services-icons[data-icon="skype-outline"] {
   background-position: 0 -144px; }
-
 .services-icons.si-slack, .services-icons[data-icon="slack"] {
   background-position: -144px -144px; }
-
 .services-icons.si-snapchat, .services-icons[data-icon="snapchat"] {
   background-position: -120px -144px; }
-
 .services-icons.si-soundcloud, .services-icons[data-icon="soundcloud"] {
   background-position: -168px -96px; }
-
 .services-icons.si-spotify, .services-icons[data-icon="spotify"] {
   background-position: -192px -96px; }
-
 .services-icons.si-stackexchange, .services-icons[data-icon="stackexchange"] {
   background-position: -48px -120px; }
-
 .services-icons.si-stackoverflow, .services-icons[data-icon="stackoverflow"] {
   background-position: -72px -120px; }
-
 .services-icons.si-swarm, .services-icons[data-icon="swarm"] {
   background-position: -72px -96px; }
-
 .services-icons.si-telegram, .services-icons[data-icon="telegram"] {
   background-position: -216px -120px; }
-
 .services-icons.si-trello, .services-icons[data-icon="trello"] {
   background-position: -216px -96px; }
-
 .services-icons.si-tumblr, .services-icons[data-icon="tumblr"] {
   background-position: 0 -48px; }
-
 .services-icons.si-twitch, .services-icons[data-icon="twitch"] {
   background-position: -96px -72px; }
-
 .services-icons.si-twitter, .services-icons[data-icon="twitter"] {
   background-position: -48px 0; }
-
 .services-icons.si-twitter-box, .services-icons[data-icon="twitter-box"] {
   background-position: -72px 0; }
-
 .services-icons.si-viber, .services-icons[data-icon="viber"] {
   background-position: -192px -120px; }
-
 .services-icons.si-vimeo, .services-icons[data-icon="vimeo"] {
   background-position: -72px -48px; }
-
 .services-icons.si-vine, .services-icons[data-icon="vine"] {
   background-position: -96px -48px; }
-
 .services-icons.si-vk, .services-icons[data-icon="vk"] {
   background-position: -48px -24px; }
-
 .services-icons.si-vk-box, .services-icons[data-icon="vk-box"] {
   background-position: -72px -24px; }
-
 .services-icons.si-wechat, .services-icons[data-icon="wechat"] {
   background-position: -48px -144px; }
-
 .services-icons.si-whatsapp, .services-icons[data-icon="whatsapp"] {
   background-position: -168px -120px; }
-
 .services-icons.si-wordpress, .services-icons[data-icon="wordpress"] {
   background-position: -120px -120px; }
-
 .services-icons.si-wunderlist, .services-icons[data-icon="wunderlist"] {
   background-position: -72px -72px; }
-
 .services-icons.si-xing, .services-icons[data-icon="xing"] {
   background-position: -144px -24px; }
-
 .services-icons.si-xing-box, .services-icons[data-icon="xing-box"] {
   background-position: -168px -24px; }
-
 .services-icons.si-youtube, .services-icons[data-icon="youtube"] {
   background-position: -48px -48px; }
 
-.services-icons.icon-light.si-behance, .services-icons.icon-light[data-icon="behance"],
-.services-icons.icon-primary.si-behance,
-.services-icons.icon-primary[data-icon="behance"],
-.services-icons.icon-accent.si-behance,
-.services-icons.icon-accent[data-icon="behance"] {
+.services-icons.icon-dark {
+  background: rgba(0, 0, 0, 0.87) !important; }
+
+.services-icons.icon-light {
+  background: #FFF !important; }
+
+.services-icons.icon-light.icon-disabled {
+  background: rgba(255, 255, 255, 0.3) !important; }
+
+.services-icons.icon-primary {
+  background: #607d8b; }
+
+.services-icons.icon-accent {
+  background: #00b0ff; }
+
+.btn .services-icons, .btn .services-icons:hover, .btn .services-icons:focus {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn-colored .services-icons, .btn-colored:hover .services-icons, .btn-colored:focus .services-icons, .btn.btn-colored .services-icons, .btn.btn-colored:hover .services-icons, .btn.btn-colored:focus .services-icons {
+  background: #546e7a; }
+
+.btn-accent .services-icons, .btn-accent:hover .services-icons, .btn-accent:focus .services-icons, .btn.btn-accent .services-icons, .btn.btn-accent:hover .services-icons, .btn.btn-accent:focus .services-icons {
+  background: #00b0ff; }
+
+.btn-raised.btn-colored .services-icons, .btn-raised.btn-colored:hover .services-icons, .btn-raised.btn-colored:focus .services-icons, .btn.btn-raised.btn-colored .services-icons, .btn.btn-raised.btn-colored:hover .services-icons, .btn.btn-raised.btn-colored:focus .services-icons {
+  background: #FFF; }
+.btn-raised.btn-accent .services-icons, .btn-raised.btn-accent:hover .services-icons, .btn-raised.btn-accent:focus .services-icons, .btn.btn-raised.btn-accent .services-icons, .btn.btn-raised.btn-accent:hover .services-icons, .btn.btn-raised.btn-accent:focus .services-icons {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn.btn-disabled .services-icons, .btn.btn-disabled:hover .services-icons, .btn.btn-disabled:focus .services-icons, .btn.btn-disabled:active .services-icons {
+  background: rgba(0, 0, 0, 0.26); }
+
+.fab .services-icons, .fab:hover .services-icons, .fab:focus .services-icons {
+  background: rgba(0, 0, 0, 0.87); }
+.fab.fab-colored .services-icons, .fab.fab-colored:hover .services-icons, .fab.fab-colored:focus .services-icons {
+  background: #FFF; }
+.fab.fab-accent .services-icons, .fab.fab-accent:hover .services-icons, .fab.fab-accent:focus .services-icons {
+  background: rgba(0, 0, 0, 0.87); }
+
+.services-icons.icon-dark,
+.services-icons.icon-light,
+.services-icons.icon-primary,
+.services-icons.icon-accent,
+.btn .services-icons, .fab .services-icons,
+.theme-dark .services-icons {
+  opacity: 1;
+  -webkit-mask: url(../img/services-icons.svg) no-repeat;
+          mask: url(../img/services-icons.svg) no-repeat; }
+  .services-icons.icon-dark.si-behance, .services-icons.icon-dark[data-icon="behance"],
+  .services-icons.icon-light.si-behance,
+  .services-icons.icon-light[data-icon="behance"],
+  .services-icons.icon-primary.si-behance,
+  .services-icons.icon-primary[data-icon="behance"],
+  .services-icons.icon-accent.si-behance,
+  .services-icons.icon-accent[data-icon="behance"],
+  .btn .services-icons.si-behance,
+  .btn .services-icons[data-icon="behance"], .fab .services-icons.si-behance, .fab .services-icons[data-icon="behance"],
+  .theme-dark .services-icons.si-behance,
+  .theme-dark .services-icons[data-icon="behance"] {
+    -webkit-mask-position: -144px -48px;
+            mask-position: -144px -48px; }
+  .services-icons.icon-dark.si-bitbucket, .services-icons.icon-dark[data-icon="bitbucket"],
+  .services-icons.icon-light.si-bitbucket,
+  .services-icons.icon-light[data-icon="bitbucket"],
+  .services-icons.icon-primary.si-bitbucket,
+  .services-icons.icon-primary[data-icon="bitbucket"],
+  .services-icons.icon-accent.si-bitbucket,
+  .services-icons.icon-accent[data-icon="bitbucket"],
+  .btn .services-icons.si-bitbucket,
+  .btn .services-icons[data-icon="bitbucket"], .fab .services-icons.si-bitbucket, .fab .services-icons[data-icon="bitbucket"],
+  .theme-dark .services-icons.si-bitbucket,
+  .theme-dark .services-icons[data-icon="bitbucket"] {
+    -webkit-mask-position: -24px -120px;
+            mask-position: -24px -120px; }
+  .services-icons.icon-dark.si-blogger, .services-icons.icon-dark[data-icon="blogger"],
+  .services-icons.icon-light.si-blogger,
+  .services-icons.icon-light[data-icon="blogger"],
+  .services-icons.icon-primary.si-blogger,
+  .services-icons.icon-primary[data-icon="blogger"],
+  .services-icons.icon-accent.si-blogger,
+  .services-icons.icon-accent[data-icon="blogger"],
+  .btn .services-icons.si-blogger,
+  .btn .services-icons[data-icon="blogger"], .fab .services-icons.si-blogger, .fab .services-icons[data-icon="blogger"],
+  .theme-dark .services-icons.si-blogger,
+  .theme-dark .services-icons[data-icon="blogger"] {
+    -webkit-mask-position: -168px -48px;
+            mask-position: -168px -48px; }
+  .services-icons.icon-dark.si-delicious, .services-icons.icon-dark[data-icon="delicious"],
+  .services-icons.icon-light.si-delicious,
+  .services-icons.icon-light[data-icon="delicious"],
+  .services-icons.icon-primary.si-delicious,
+  .services-icons.icon-primary[data-icon="delicious"],
+  .services-icons.icon-accent.si-delicious,
+  .services-icons.icon-accent[data-icon="delicious"],
+  .btn .services-icons.si-delicious,
+  .btn .services-icons[data-icon="delicious"], .fab .services-icons.si-delicious, .fab .services-icons[data-icon="delicious"],
+  .theme-dark .services-icons.si-delicious,
+  .theme-dark .services-icons[data-icon="delicious"] {
+    -webkit-mask-position: -144px -72px;
+            mask-position: -144px -72px; }
+  .services-icons.icon-dark.si-delicious-box, .services-icons.icon-dark[data-icon="delicious-box"],
+  .services-icons.icon-light.si-delicious-box,
+  .services-icons.icon-light[data-icon="delicious-box"],
+  .services-icons.icon-primary.si-delicious-box,
+  .services-icons.icon-primary[data-icon="delicious-box"],
+  .services-icons.icon-accent.si-delicious-box,
+  .services-icons.icon-accent[data-icon="delicious-box"],
+  .btn .services-icons.si-delicious-box,
+  .btn .services-icons[data-icon="delicious-box"], .fab .services-icons.si-delicious-box, .fab .services-icons[data-icon="delicious-box"],
+  .theme-dark .services-icons.si-delicious-box,
+  .theme-dark .services-icons[data-icon="delicious-box"] {
+    -webkit-mask-position: -168px -72px;
+            mask-position: -168px -72px; }
+  .services-icons.icon-dark.si-digg, .services-icons.icon-dark[data-icon="digg"],
+  .services-icons.icon-light.si-digg,
+  .services-icons.icon-light[data-icon="digg"],
+  .services-icons.icon-primary.si-digg,
+  .services-icons.icon-primary[data-icon="digg"],
+  .services-icons.icon-accent.si-digg,
+  .services-icons.icon-accent[data-icon="digg"],
+  .btn .services-icons.si-digg,
+  .btn .services-icons[data-icon="digg"], .fab .services-icons.si-digg, .fab .services-icons[data-icon="digg"],
+  .theme-dark .services-icons.si-digg,
+  .theme-dark .services-icons[data-icon="digg"] {
+    -webkit-mask-position: -120px -72px;
+            mask-position: -120px -72px; }
+  .services-icons.icon-dark.si-disqus, .services-icons.icon-dark[data-icon="disqus"],
+  .services-icons.icon-light.si-disqus,
+  .services-icons.icon-light[data-icon="disqus"],
+  .services-icons.icon-primary.si-disqus,
+  .services-icons.icon-primary[data-icon="disqus"],
+  .services-icons.icon-accent.si-disqus,
+  .services-icons.icon-accent[data-icon="disqus"],
+  .btn .services-icons.si-disqus,
+  .btn .services-icons[data-icon="disqus"], .fab .services-icons.si-disqus, .fab .services-icons[data-icon="disqus"],
+  .theme-dark .services-icons.si-disqus,
+  .theme-dark .services-icons[data-icon="disqus"] {
+    -webkit-mask-position: -24px -96px;
+            mask-position: -24px -96px; }
+  .services-icons.icon-dark.si-disqus-outline, .services-icons.icon-dark[data-icon="disqus-outline"],
+  .services-icons.icon-light.si-disqus-outline,
+  .services-icons.icon-light[data-icon="disqus-outline"],
+  .services-icons.icon-primary.si-disqus-outline,
+  .services-icons.icon-primary[data-icon="disqus-outline"],
+  .services-icons.icon-accent.si-disqus-outline,
+  .services-icons.icon-accent[data-icon="disqus-outline"],
+  .btn .services-icons.si-disqus-outline,
+  .btn .services-icons[data-icon="disqus-outline"], .fab .services-icons.si-disqus-outline, .fab .services-icons[data-icon="disqus-outline"],
+  .theme-dark .services-icons.si-disqus-outline,
+  .theme-dark .services-icons[data-icon="disqus-outline"] {
+    -webkit-mask-position: 0 -96px;
+            mask-position: 0 -96px; }
+  .services-icons.icon-dark.si-dribbble, .services-icons.icon-dark[data-icon="dribbble"],
+  .services-icons.icon-light.si-dribbble,
+  .services-icons.icon-light[data-icon="dribbble"],
+  .services-icons.icon-primary.si-dribbble,
+  .services-icons.icon-primary[data-icon="dribbble"],
+  .services-icons.icon-accent.si-dribbble,
+  .services-icons.icon-accent[data-icon="dribbble"],
+  .btn .services-icons.si-dribbble,
+  .btn .services-icons[data-icon="dribbble"], .fab .services-icons.si-dribbble, .fab .services-icons[data-icon="dribbble"],
+  .theme-dark .services-icons.si-dribbble,
+  .theme-dark .services-icons[data-icon="dribbble"] {
+    -webkit-mask-position: -192px -48px;
+            mask-position: -192px -48px; }
+  .services-icons.icon-dark.si-dribbble-box, .services-icons.icon-dark[data-icon="dribbble-box"],
+  .services-icons.icon-light.si-dribbble-box,
+  .services-icons.icon-light[data-icon="dribbble-box"],
+  .services-icons.icon-primary.si-dribbble-box,
+  .services-icons.icon-primary[data-icon="dribbble-box"],
+  .services-icons.icon-accent.si-dribbble-box,
+  .services-icons.icon-accent[data-icon="dribbble-box"],
+  .btn .services-icons.si-dribbble-box,
+  .btn .services-icons[data-icon="dribbble-box"], .fab .services-icons.si-dribbble-box, .fab .services-icons[data-icon="dribbble-box"],
+  .theme-dark .services-icons.si-dribbble-box,
+  .theme-dark .services-icons[data-icon="dribbble-box"] {
+    -webkit-mask-position: -216px -48px;
+            mask-position: -216px -48px; }
+  .services-icons.icon-dark.si-drupal, .services-icons.icon-dark[data-icon="drupal"],
+  .services-icons.icon-light.si-drupal,
+  .services-icons.icon-light[data-icon="drupal"],
+  .services-icons.icon-primary.si-drupal,
+  .services-icons.icon-primary[data-icon="drupal"],
+  .services-icons.icon-accent.si-drupal,
+  .services-icons.icon-accent[data-icon="drupal"],
+  .btn .services-icons.si-drupal,
+  .btn .services-icons[data-icon="drupal"], .fab .services-icons.si-drupal, .fab .services-icons[data-icon="drupal"],
+  .theme-dark .services-icons.si-drupal,
+  .theme-dark .services-icons[data-icon="drupal"] {
+    -webkit-mask-position: -96px -120px;
+            mask-position: -96px -120px; }
+  .services-icons.icon-dark.si-evernote, .services-icons.icon-dark[data-icon="evernote"],
+  .services-icons.icon-light.si-evernote,
+  .services-icons.icon-light[data-icon="evernote"],
+  .services-icons.icon-primary.si-evernote,
+  .services-icons.icon-primary[data-icon="evernote"],
+  .services-icons.icon-accent.si-evernote,
+  .services-icons.icon-accent[data-icon="evernote"],
+  .btn .services-icons.si-evernote,
+  .btn .services-icons[data-icon="evernote"], .fab .services-icons.si-evernote, .fab .services-icons[data-icon="evernote"],
+  .theme-dark .services-icons.si-evernote,
+  .theme-dark .services-icons[data-icon="evernote"] {
+    -webkit-mask-position: -216px -72px;
+            mask-position: -216px -72px; }
+  .services-icons.icon-dark.si-facebook, .services-icons.icon-dark[data-icon="facebook"],
+  .services-icons.icon-light.si-facebook,
+  .services-icons.icon-light[data-icon="facebook"],
+  .services-icons.icon-primary.si-facebook,
+  .services-icons.icon-primary[data-icon="facebook"],
+  .services-icons.icon-accent.si-facebook,
+  .services-icons.icon-accent[data-icon="facebook"],
+  .btn .services-icons.si-facebook,
+  .btn .services-icons[data-icon="facebook"], .fab .services-icons.si-facebook, .fab .services-icons[data-icon="facebook"],
+  .theme-dark .services-icons.si-facebook,
+  .theme-dark .services-icons[data-icon="facebook"] {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0; }
+  .services-icons.icon-dark.si-facebook-box, .services-icons.icon-dark[data-icon="facebook-box"],
+  .services-icons.icon-light.si-facebook-box,
+  .services-icons.icon-light[data-icon="facebook-box"],
+  .services-icons.icon-primary.si-facebook-box,
+  .services-icons.icon-primary[data-icon="facebook-box"],
+  .services-icons.icon-accent.si-facebook-box,
+  .services-icons.icon-accent[data-icon="facebook-box"],
+  .btn .services-icons.si-facebook-box,
+  .btn .services-icons[data-icon="facebook-box"], .fab .services-icons.si-facebook-box, .fab .services-icons[data-icon="facebook-box"],
+  .theme-dark .services-icons.si-facebook-box,
+  .theme-dark .services-icons[data-icon="facebook-box"] {
+    -webkit-mask-position: -24px 0;
+            mask-position: -24px 0; }
+  .services-icons.icon-dark.si-facebook-messenger, .services-icons.icon-dark[data-icon="facebook-messenger"],
+  .services-icons.icon-light.si-facebook-messenger,
+  .services-icons.icon-light[data-icon="facebook-messenger"],
+  .services-icons.icon-primary.si-facebook-messenger,
+  .services-icons.icon-primary[data-icon="facebook-messenger"],
+  .services-icons.icon-accent.si-facebook-messenger,
+  .services-icons.icon-accent[data-icon="facebook-messenger"],
+  .btn .services-icons.si-facebook-messenger,
+  .btn .services-icons[data-icon="facebook-messenger"], .fab .services-icons.si-facebook-messenger, .fab .services-icons[data-icon="facebook-messenger"],
+  .theme-dark .services-icons.si-facebook-messenger,
+  .theme-dark .services-icons[data-icon="facebook-messenger"] {
+    -webkit-mask-position: -144px -120px;
+            mask-position: -144px -120px; }
+  .services-icons.icon-dark.si-flickr, .services-icons.icon-dark[data-icon="flickr"],
+  .services-icons.icon-light.si-flickr,
+  .services-icons.icon-light[data-icon="flickr"],
+  .services-icons.icon-primary.si-flickr,
+  .services-icons.icon-primary[data-icon="flickr"],
+  .services-icons.icon-accent.si-flickr,
+  .services-icons.icon-accent[data-icon="flickr"],
+  .btn .services-icons.si-flickr,
+  .btn .services-icons[data-icon="flickr"], .fab .services-icons.si-flickr, .fab .services-icons[data-icon="flickr"],
+  .theme-dark .services-icons.si-flickr,
+  .theme-dark .services-icons[data-icon="flickr"] {
+    -webkit-mask-position: -96px -96px;
+            mask-position: -96px -96px; }
+  .services-icons.icon-dark.si-foursquare, .services-icons.icon-dark[data-icon="foursquare"],
+  .services-icons.icon-light.si-foursquare,
+  .services-icons.icon-light[data-icon="foursquare"],
+  .services-icons.icon-primary.si-foursquare,
+  .services-icons.icon-primary[data-icon="foursquare"],
+  .services-icons.icon-accent.si-foursquare,
+  .services-icons.icon-accent[data-icon="foursquare"],
+  .btn .services-icons.si-foursquare,
+  .btn .services-icons[data-icon="foursquare"], .fab .services-icons.si-foursquare, .fab .services-icons[data-icon="foursquare"],
+  .theme-dark .services-icons.si-foursquare,
+  .theme-dark .services-icons[data-icon="foursquare"] {
+    -webkit-mask-position: -48px -96px;
+            mask-position: -48px -96px; }
+  .services-icons.icon-dark.si-github-box, .services-icons.icon-dark[data-icon="github-box"],
+  .services-icons.icon-light.si-github-box,
+  .services-icons.icon-light[data-icon="github-box"],
+  .services-icons.icon-primary.si-github-box,
+  .services-icons.icon-primary[data-icon="github-box"],
+  .services-icons.icon-accent.si-github-box,
+  .services-icons.icon-accent[data-icon="github-box"],
+  .btn .services-icons.si-github-box,
+  .btn .services-icons[data-icon="github-box"], .fab .services-icons.si-github-box, .fab .services-icons[data-icon="github-box"],
+  .theme-dark .services-icons.si-github-box,
+  .theme-dark .services-icons[data-icon="github-box"] {
+    -webkit-mask-position: 0 -120px;
+            mask-position: 0 -120px; }
+  .services-icons.icon-dark.si-google-photos, .services-icons.icon-dark[data-icon="google-photos"],
+  .services-icons.icon-light.si-google-photos,
+  .services-icons.icon-light[data-icon="google-photos"],
+  .services-icons.icon-primary.si-google-photos,
+  .services-icons.icon-primary[data-icon="google-photos"],
+  .services-icons.icon-accent.si-google-photos,
+  .services-icons.icon-accent[data-icon="google-photos"],
+  .btn .services-icons.si-google-photos,
+  .btn .services-icons[data-icon="google-photos"], .fab .services-icons.si-google-photos, .fab .services-icons[data-icon="google-photos"],
+  .theme-dark .services-icons.si-google-photos,
+  .theme-dark .services-icons[data-icon="google-photos"] {
+    -webkit-mask-position: -120px -96px;
+            mask-position: -120px -96px; }
+  .services-icons.icon-dark.si-google-plus, .services-icons.icon-dark[data-icon="google-plus"],
+  .services-icons.icon-light.si-google-plus,
+  .services-icons.icon-light[data-icon="google-plus"],
+  .services-icons.icon-primary.si-google-plus,
+  .services-icons.icon-primary[data-icon="google-plus"],
+  .services-icons.icon-accent.si-google-plus,
+  .services-icons.icon-accent[data-icon="google-plus"],
+  .btn .services-icons.si-google-plus,
+  .btn .services-icons[data-icon="google-plus"], .fab .services-icons.si-google-plus, .fab .services-icons[data-icon="google-plus"],
+  .theme-dark .services-icons.si-google-plus,
+  .theme-dark .services-icons[data-icon="google-plus"] {
+    -webkit-mask-position: -96px 0;
+            mask-position: -96px 0; }
+  .services-icons.icon-dark.si-google-plus-box, .services-icons.icon-dark[data-icon="google-plus-box"],
+  .services-icons.icon-light.si-google-plus-box,
+  .services-icons.icon-light[data-icon="google-plus-box"],
+  .services-icons.icon-primary.si-google-plus-box,
+  .services-icons.icon-primary[data-icon="google-plus-box"],
+  .services-icons.icon-accent.si-google-plus-box,
+  .services-icons.icon-accent[data-icon="google-plus-box"],
+  .btn .services-icons.si-google-plus-box,
+  .btn .services-icons[data-icon="google-plus-box"], .fab .services-icons.si-google-plus-box, .fab .services-icons[data-icon="google-plus-box"],
+  .theme-dark .services-icons.si-google-plus-box,
+  .theme-dark .services-icons[data-icon="google-plus-box"] {
+    -webkit-mask-position: -120px 0;
+            mask-position: -120px 0; }
+  .services-icons.icon-dark.si-instagram, .services-icons.icon-dark[data-icon="instagram"],
+  .services-icons.icon-light.si-instagram,
+  .services-icons.icon-light[data-icon="instagram"],
+  .services-icons.icon-primary.si-instagram,
+  .services-icons.icon-primary[data-icon="instagram"],
+  .services-icons.icon-accent.si-instagram,
+  .services-icons.icon-accent[data-icon="instagram"],
+  .btn .services-icons.si-instagram,
+  .btn .services-icons[data-icon="instagram"], .fab .services-icons.si-instagram, .fab .services-icons[data-icon="instagram"],
+  .theme-dark .services-icons.si-instagram,
+  .theme-dark .services-icons[data-icon="instagram"] {
+    -webkit-mask-position: 0 -24px;
+            mask-position: 0 -24px; }
+  .services-icons.icon-dark.si-instagram-box, .services-icons.icon-dark[data-icon="instagram-box"],
+  .services-icons.icon-light.si-instagram-box,
+  .services-icons.icon-light[data-icon="instagram-box"],
+  .services-icons.icon-primary.si-instagram-box,
+  .services-icons.icon-primary[data-icon="instagram-box"],
+  .services-icons.icon-accent.si-instagram-box,
+  .services-icons.icon-accent[data-icon="instagram-box"],
+  .btn .services-icons.si-instagram-box,
+  .btn .services-icons[data-icon="instagram-box"], .fab .services-icons.si-instagram-box, .fab .services-icons[data-icon="instagram-box"],
+  .theme-dark .services-icons.si-instagram-box,
+  .theme-dark .services-icons[data-icon="instagram-box"] {
+    -webkit-mask-position: -24px -24px;
+            mask-position: -24px -24px; }
+  .services-icons.icon-dark.si-lastfm, .services-icons.icon-dark[data-icon="lastfm"],
+  .services-icons.icon-light.si-lastfm,
+  .services-icons.icon-light[data-icon="lastfm"],
+  .services-icons.icon-primary.si-lastfm,
+  .services-icons.icon-primary[data-icon="lastfm"],
+  .services-icons.icon-accent.si-lastfm,
+  .services-icons.icon-accent[data-icon="lastfm"],
+  .btn .services-icons.si-lastfm,
+  .btn .services-icons[data-icon="lastfm"], .fab .services-icons.si-lastfm, .fab .services-icons[data-icon="lastfm"],
+  .theme-dark .services-icons.si-lastfm,
+  .theme-dark .services-icons[data-icon="lastfm"] {
+    -webkit-mask-position: -144px -96px;
+            mask-position: -144px -96px; }
+  .services-icons.icon-dark.si-line, .services-icons.icon-dark[data-icon="line"],
+  .services-icons.icon-light.si-line,
+  .services-icons.icon-light[data-icon="line"],
+  .services-icons.icon-primary.si-line,
+  .services-icons.icon-primary[data-icon="line"],
+  .services-icons.icon-accent.si-line,
+  .services-icons.icon-accent[data-icon="line"],
+  .btn .services-icons.si-line,
+  .btn .services-icons[data-icon="line"], .fab .services-icons.si-line, .fab .services-icons[data-icon="line"],
+  .theme-dark .services-icons.si-line,
+  .theme-dark .services-icons[data-icon="line"] {
+    -webkit-mask-position: -72px -144px;
+            mask-position: -72px -144px; }
+  .services-icons.icon-dark.si-linkedin, .services-icons.icon-dark[data-icon="linkedin"],
+  .services-icons.icon-light.si-linkedin,
+  .services-icons.icon-light[data-icon="linkedin"],
+  .services-icons.icon-primary.si-linkedin,
+  .services-icons.icon-primary[data-icon="linkedin"],
+  .services-icons.icon-accent.si-linkedin,
+  .services-icons.icon-accent[data-icon="linkedin"],
+  .btn .services-icons.si-linkedin,
+  .btn .services-icons[data-icon="linkedin"], .fab .services-icons.si-linkedin, .fab .services-icons[data-icon="linkedin"],
+  .theme-dark .services-icons.si-linkedin,
+  .theme-dark .services-icons[data-icon="linkedin"] {
+    -webkit-mask-position: -144px 0;
+            mask-position: -144px 0; }
+  .services-icons.icon-dark.si-linkedin-box, .services-icons.icon-dark[data-icon="linkedin-box"],
+  .services-icons.icon-light.si-linkedin-box,
+  .services-icons.icon-light[data-icon="linkedin-box"],
+  .services-icons.icon-primary.si-linkedin-box,
+  .services-icons.icon-primary[data-icon="linkedin-box"],
+  .services-icons.icon-accent.si-linkedin-box,
+  .services-icons.icon-accent[data-icon="linkedin-box"],
+  .btn .services-icons.si-linkedin-box,
+  .btn .services-icons[data-icon="linkedin-box"], .fab .services-icons.si-linkedin-box, .fab .services-icons[data-icon="linkedin-box"],
+  .theme-dark .services-icons.si-linkedin-box,
+  .theme-dark .services-icons[data-icon="linkedin-box"] {
+    -webkit-mask-position: -168px 0;
+            mask-position: -168px 0; }
+  .services-icons.icon-dark.si-livejournal, .services-icons.icon-dark[data-icon="livejournal"],
+  .services-icons.icon-light.si-livejournal,
+  .services-icons.icon-light[data-icon="livejournal"],
+  .services-icons.icon-primary.si-livejournal,
+  .services-icons.icon-primary[data-icon="livejournal"],
+  .services-icons.icon-accent.si-livejournal,
+  .services-icons.icon-accent[data-icon="livejournal"],
+  .btn .services-icons.si-livejournal,
+  .btn .services-icons[data-icon="livejournal"], .fab .services-icons.si-livejournal, .fab .services-icons[data-icon="livejournal"],
+  .theme-dark .services-icons.si-livejournal,
+  .theme-dark .services-icons[data-icon="livejournal"] {
+    -webkit-mask-position: -192px -72px;
+            mask-position: -192px -72px; }
+  .services-icons.icon-dark.si-medium, .services-icons.icon-dark[data-icon="medium"],
+  .services-icons.icon-light.si-medium,
+  .services-icons.icon-light[data-icon="medium"],
+  .services-icons.icon-primary.si-medium,
+  .services-icons.icon-primary[data-icon="medium"],
+  .services-icons.icon-accent.si-medium,
+  .services-icons.icon-accent[data-icon="medium"],
+  .btn .services-icons.si-medium,
+  .btn .services-icons[data-icon="medium"], .fab .services-icons.si-medium, .fab .services-icons[data-icon="medium"],
+  .theme-dark .services-icons.si-medium,
+  .theme-dark .services-icons[data-icon="medium"] {
+    -webkit-mask-position: 0 -72px;
+            mask-position: 0 -72px; }
+  .services-icons.icon-dark.si-odnoklassniki, .services-icons.icon-dark[data-icon="odnoklassniki"],
+  .services-icons.icon-light.si-odnoklassniki,
+  .services-icons.icon-light[data-icon="odnoklassniki"],
+  .services-icons.icon-primary.si-odnoklassniki,
+  .services-icons.icon-primary[data-icon="odnoklassniki"],
+  .services-icons.icon-accent.si-odnoklassniki,
+  .services-icons.icon-accent[data-icon="odnoklassniki"],
+  .btn .services-icons.si-odnoklassniki,
+  .btn .services-icons[data-icon="odnoklassniki"], .fab .services-icons.si-odnoklassniki, .fab .services-icons[data-icon="odnoklassniki"],
+  .theme-dark .services-icons.si-odnoklassniki,
+  .theme-dark .services-icons[data-icon="odnoklassniki"] {
+    -webkit-mask-position: -96px -24px;
+            mask-position: -96px -24px; }
+  .services-icons.icon-dark.si-odnoklassniki-box, .services-icons.icon-dark[data-icon="odnoklassniki-box"],
+  .services-icons.icon-light.si-odnoklassniki-box,
+  .services-icons.icon-light[data-icon="odnoklassniki-box"],
+  .services-icons.icon-primary.si-odnoklassniki-box,
+  .services-icons.icon-primary[data-icon="odnoklassniki-box"],
+  .services-icons.icon-accent.si-odnoklassniki-box,
+  .services-icons.icon-accent[data-icon="odnoklassniki-box"],
+  .btn .services-icons.si-odnoklassniki-box,
+  .btn .services-icons[data-icon="odnoklassniki-box"], .fab .services-icons.si-odnoklassniki-box, .fab .services-icons[data-icon="odnoklassniki-box"],
+  .theme-dark .services-icons.si-odnoklassniki-box,
+  .theme-dark .services-icons[data-icon="odnoklassniki-box"] {
+    -webkit-mask-position: -120px -24px;
+            mask-position: -120px -24px; }
+  .services-icons.icon-dark.si-periscope, .services-icons.icon-dark[data-icon="periscope"],
+  .services-icons.icon-light.si-periscope,
+  .services-icons.icon-light[data-icon="periscope"],
+  .services-icons.icon-primary.si-periscope,
+  .services-icons.icon-primary[data-icon="periscope"],
+  .services-icons.icon-accent.si-periscope,
+  .services-icons.icon-accent[data-icon="periscope"],
+  .btn .services-icons.si-periscope,
+  .btn .services-icons[data-icon="periscope"], .fab .services-icons.si-periscope, .fab .services-icons[data-icon="periscope"],
+  .theme-dark .services-icons.si-periscope,
+  .theme-dark .services-icons[data-icon="periscope"] {
+    -webkit-mask-position: -120px -48px;
+            mask-position: -120px -48px; }
+  .services-icons.icon-dark.si-pinterest, .services-icons.icon-dark[data-icon="pinterest"],
+  .services-icons.icon-light.si-pinterest,
+  .services-icons.icon-light[data-icon="pinterest"],
+  .services-icons.icon-primary.si-pinterest,
+  .services-icons.icon-primary[data-icon="pinterest"],
+  .services-icons.icon-accent.si-pinterest,
+  .services-icons.icon-accent[data-icon="pinterest"],
+  .btn .services-icons.si-pinterest,
+  .btn .services-icons[data-icon="pinterest"], .fab .services-icons.si-pinterest, .fab .services-icons[data-icon="pinterest"],
+  .theme-dark .services-icons.si-pinterest,
+  .theme-dark .services-icons[data-icon="pinterest"] {
+    -webkit-mask-position: -192px 0;
+            mask-position: -192px 0; }
+  .services-icons.icon-dark.si-pinterest-box, .services-icons.icon-dark[data-icon="pinterest-box"],
+  .services-icons.icon-light.si-pinterest-box,
+  .services-icons.icon-light[data-icon="pinterest-box"],
+  .services-icons.icon-primary.si-pinterest-box,
+  .services-icons.icon-primary[data-icon="pinterest-box"],
+  .services-icons.icon-accent.si-pinterest-box,
+  .services-icons.icon-accent[data-icon="pinterest-box"],
+  .btn .services-icons.si-pinterest-box,
+  .btn .services-icons[data-icon="pinterest-box"], .fab .services-icons.si-pinterest-box, .fab .services-icons[data-icon="pinterest-box"],
+  .theme-dark .services-icons.si-pinterest-box,
+  .theme-dark .services-icons[data-icon="pinterest-box"] {
+    -webkit-mask-position: -216px 0;
+            mask-position: -216px 0; }
+  .services-icons.icon-dark.si-pocket, .services-icons.icon-dark[data-icon="pocket"],
+  .services-icons.icon-light.si-pocket,
+  .services-icons.icon-light[data-icon="pocket"],
+  .services-icons.icon-primary.si-pocket,
+  .services-icons.icon-primary[data-icon="pocket"],
+  .services-icons.icon-accent.si-pocket,
+  .services-icons.icon-accent[data-icon="pocket"],
+  .btn .services-icons.si-pocket,
+  .btn .services-icons[data-icon="pocket"], .fab .services-icons.si-pocket, .fab .services-icons[data-icon="pocket"],
+  .theme-dark .services-icons.si-pocket,
+  .theme-dark .services-icons[data-icon="pocket"] {
+    -webkit-mask-position: -24px -72px;
+            mask-position: -24px -72px; }
+  .services-icons.icon-dark.si-qqchat, .services-icons.icon-dark[data-icon="qqchat"],
+  .services-icons.icon-light.si-qqchat,
+  .services-icons.icon-light[data-icon="qqchat"],
+  .services-icons.icon-primary.si-qqchat,
+  .services-icons.icon-primary[data-icon="qqchat"],
+  .services-icons.icon-accent.si-qqchat,
+  .services-icons.icon-accent[data-icon="qqchat"],
+  .btn .services-icons.si-qqchat,
+  .btn .services-icons[data-icon="qqchat"], .fab .services-icons.si-qqchat, .fab .services-icons[data-icon="qqchat"],
+  .theme-dark .services-icons.si-qqchat,
+  .theme-dark .services-icons[data-icon="qqchat"] {
+    -webkit-mask-position: -96px -144px;
+            mask-position: -96px -144px; }
+  .services-icons.icon-dark.si-qzone, .services-icons.icon-dark[data-icon="qzone"],
+  .services-icons.icon-light.si-qzone,
+  .services-icons.icon-light[data-icon="qzone"],
+  .services-icons.icon-primary.si-qzone,
+  .services-icons.icon-primary[data-icon="qzone"],
+  .services-icons.icon-accent.si-qzone,
+  .services-icons.icon-accent[data-icon="qzone"],
+  .btn .services-icons.si-qzone,
+  .btn .services-icons[data-icon="qzone"], .fab .services-icons.si-qzone, .fab .services-icons[data-icon="qzone"],
+  .theme-dark .services-icons.si-qzone,
+  .theme-dark .services-icons[data-icon="qzone"] {
+    -webkit-mask-position: -216px -24px;
+            mask-position: -216px -24px; }
+  .services-icons.icon-dark.si-reddit, .services-icons.icon-dark[data-icon="reddit"],
+  .services-icons.icon-light.si-reddit,
+  .services-icons.icon-light[data-icon="reddit"],
+  .services-icons.icon-primary.si-reddit,
+  .services-icons.icon-primary[data-icon="reddit"],
+  .services-icons.icon-accent.si-reddit,
+  .services-icons.icon-accent[data-icon="reddit"],
+  .btn .services-icons.si-reddit,
+  .btn .services-icons[data-icon="reddit"], .fab .services-icons.si-reddit, .fab .services-icons[data-icon="reddit"],
+  .theme-dark .services-icons.si-reddit,
+  .theme-dark .services-icons[data-icon="reddit"] {
+    -webkit-mask-position: -48px -72px;
+            mask-position: -48px -72px; }
+  .services-icons.icon-dark.si-renren, .services-icons.icon-dark[data-icon="renren"],
+  .services-icons.icon-light.si-renren,
+  .services-icons.icon-light[data-icon="renren"],
+  .services-icons.icon-primary.si-renren,
+  .services-icons.icon-primary[data-icon="renren"],
+  .services-icons.icon-accent.si-renren,
+  .services-icons.icon-accent[data-icon="renren"],
+  .btn .services-icons.si-renren,
+  .btn .services-icons[data-icon="renren"], .fab .services-icons.si-renren, .fab .services-icons[data-icon="renren"],
+  .theme-dark .services-icons.si-renren,
+  .theme-dark .services-icons[data-icon="renren"] {
+    -webkit-mask-position: -24px -48px;
+            mask-position: -24px -48px; }
+  .services-icons.icon-dark.si-sina-weibo, .services-icons.icon-dark[data-icon="sina-weibo"],
+  .services-icons.icon-light.si-sina-weibo,
+  .services-icons.icon-light[data-icon="sina-weibo"],
+  .services-icons.icon-primary.si-sina-weibo,
+  .services-icons.icon-primary[data-icon="sina-weibo"],
+  .services-icons.icon-accent.si-sina-weibo,
+  .services-icons.icon-accent[data-icon="sina-weibo"],
+  .btn .services-icons.si-sina-weibo,
+  .btn .services-icons[data-icon="sina-weibo"], .fab .services-icons.si-sina-weibo, .fab .services-icons[data-icon="sina-weibo"],
+  .theme-dark .services-icons.si-sina-weibo,
+  .theme-dark .services-icons[data-icon="sina-weibo"] {
+    -webkit-mask-position: -192px -24px;
+            mask-position: -192px -24px; }
+  .services-icons.icon-dark.si-skype, .services-icons.icon-dark[data-icon="skype"],
+  .services-icons.icon-light.si-skype,
+  .services-icons.icon-light[data-icon="skype"],
+  .services-icons.icon-primary.si-skype,
+  .services-icons.icon-primary[data-icon="skype"],
+  .services-icons.icon-accent.si-skype,
+  .services-icons.icon-accent[data-icon="skype"],
+  .btn .services-icons.si-skype,
+  .btn .services-icons[data-icon="skype"], .fab .services-icons.si-skype, .fab .services-icons[data-icon="skype"],
+  .theme-dark .services-icons.si-skype,
+  .theme-dark .services-icons[data-icon="skype"] {
+    -webkit-mask-position: -24px -144px;
+            mask-position: -24px -144px; }
+  .services-icons.icon-dark.si-skype-outline, .services-icons.icon-dark[data-icon="skype-outline"],
+  .services-icons.icon-light.si-skype-outline,
+  .services-icons.icon-light[data-icon="skype-outline"],
+  .services-icons.icon-primary.si-skype-outline,
+  .services-icons.icon-primary[data-icon="skype-outline"],
+  .services-icons.icon-accent.si-skype-outline,
+  .services-icons.icon-accent[data-icon="skype-outline"],
+  .btn .services-icons.si-skype-outline,
+  .btn .services-icons[data-icon="skype-outline"], .fab .services-icons.si-skype-outline, .fab .services-icons[data-icon="skype-outline"],
+  .theme-dark .services-icons.si-skype-outline,
+  .theme-dark .services-icons[data-icon="skype-outline"] {
+    -webkit-mask-position: 0 -144px;
+            mask-position: 0 -144px; }
+  .services-icons.icon-dark.si-slack, .services-icons.icon-dark[data-icon="slack"],
+  .services-icons.icon-light.si-slack,
+  .services-icons.icon-light[data-icon="slack"],
+  .services-icons.icon-primary.si-slack,
+  .services-icons.icon-primary[data-icon="slack"],
+  .services-icons.icon-accent.si-slack,
+  .services-icons.icon-accent[data-icon="slack"],
+  .btn .services-icons.si-slack,
+  .btn .services-icons[data-icon="slack"], .fab .services-icons.si-slack, .fab .services-icons[data-icon="slack"],
+  .theme-dark .services-icons.si-slack,
+  .theme-dark .services-icons[data-icon="slack"] {
+    -webkit-mask-position: -144px -144px;
+            mask-position: -144px -144px; }
+  .services-icons.icon-dark.si-snapchat, .services-icons.icon-dark[data-icon="snapchat"],
+  .services-icons.icon-light.si-snapchat,
+  .services-icons.icon-light[data-icon="snapchat"],
+  .services-icons.icon-primary.si-snapchat,
+  .services-icons.icon-primary[data-icon="snapchat"],
+  .services-icons.icon-accent.si-snapchat,
+  .services-icons.icon-accent[data-icon="snapchat"],
+  .btn .services-icons.si-snapchat,
+  .btn .services-icons[data-icon="snapchat"], .fab .services-icons.si-snapchat, .fab .services-icons[data-icon="snapchat"],
+  .theme-dark .services-icons.si-snapchat,
+  .theme-dark .services-icons[data-icon="snapchat"] {
+    -webkit-mask-position: -120px -144px;
+            mask-position: -120px -144px; }
+  .services-icons.icon-dark.si-soundcloud, .services-icons.icon-dark[data-icon="soundcloud"],
+  .services-icons.icon-light.si-soundcloud,
+  .services-icons.icon-light[data-icon="soundcloud"],
+  .services-icons.icon-primary.si-soundcloud,
+  .services-icons.icon-primary[data-icon="soundcloud"],
+  .services-icons.icon-accent.si-soundcloud,
+  .services-icons.icon-accent[data-icon="soundcloud"],
+  .btn .services-icons.si-soundcloud,
+  .btn .services-icons[data-icon="soundcloud"], .fab .services-icons.si-soundcloud, .fab .services-icons[data-icon="soundcloud"],
+  .theme-dark .services-icons.si-soundcloud,
+  .theme-dark .services-icons[data-icon="soundcloud"] {
+    -webkit-mask-position: -168px -96px;
+            mask-position: -168px -96px; }
+  .services-icons.icon-dark.si-spotify, .services-icons.icon-dark[data-icon="spotify"],
+  .services-icons.icon-light.si-spotify,
+  .services-icons.icon-light[data-icon="spotify"],
+  .services-icons.icon-primary.si-spotify,
+  .services-icons.icon-primary[data-icon="spotify"],
+  .services-icons.icon-accent.si-spotify,
+  .services-icons.icon-accent[data-icon="spotify"],
+  .btn .services-icons.si-spotify,
+  .btn .services-icons[data-icon="spotify"], .fab .services-icons.si-spotify, .fab .services-icons[data-icon="spotify"],
+  .theme-dark .services-icons.si-spotify,
+  .theme-dark .services-icons[data-icon="spotify"] {
+    -webkit-mask-position: -192px -96px;
+            mask-position: -192px -96px; }
+  .services-icons.icon-dark.si-stackexchange, .services-icons.icon-dark[data-icon="stackexchange"],
+  .services-icons.icon-light.si-stackexchange,
+  .services-icons.icon-light[data-icon="stackexchange"],
+  .services-icons.icon-primary.si-stackexchange,
+  .services-icons.icon-primary[data-icon="stackexchange"],
+  .services-icons.icon-accent.si-stackexchange,
+  .services-icons.icon-accent[data-icon="stackexchange"],
+  .btn .services-icons.si-stackexchange,
+  .btn .services-icons[data-icon="stackexchange"], .fab .services-icons.si-stackexchange, .fab .services-icons[data-icon="stackexchange"],
+  .theme-dark .services-icons.si-stackexchange,
+  .theme-dark .services-icons[data-icon="stackexchange"] {
+    -webkit-mask-position: -48px -120px;
+            mask-position: -48px -120px; }
+  .services-icons.icon-dark.si-stackoverflow, .services-icons.icon-dark[data-icon="stackoverflow"],
+  .services-icons.icon-light.si-stackoverflow,
+  .services-icons.icon-light[data-icon="stackoverflow"],
+  .services-icons.icon-primary.si-stackoverflow,
+  .services-icons.icon-primary[data-icon="stackoverflow"],
+  .services-icons.icon-accent.si-stackoverflow,
+  .services-icons.icon-accent[data-icon="stackoverflow"],
+  .btn .services-icons.si-stackoverflow,
+  .btn .services-icons[data-icon="stackoverflow"], .fab .services-icons.si-stackoverflow, .fab .services-icons[data-icon="stackoverflow"],
+  .theme-dark .services-icons.si-stackoverflow,
+  .theme-dark .services-icons[data-icon="stackoverflow"] {
+    -webkit-mask-position: -72px -120px;
+            mask-position: -72px -120px; }
+  .services-icons.icon-dark.si-swarm, .services-icons.icon-dark[data-icon="swarm"],
+  .services-icons.icon-light.si-swarm,
+  .services-icons.icon-light[data-icon="swarm"],
+  .services-icons.icon-primary.si-swarm,
+  .services-icons.icon-primary[data-icon="swarm"],
+  .services-icons.icon-accent.si-swarm,
+  .services-icons.icon-accent[data-icon="swarm"],
+  .btn .services-icons.si-swarm,
+  .btn .services-icons[data-icon="swarm"], .fab .services-icons.si-swarm, .fab .services-icons[data-icon="swarm"],
+  .theme-dark .services-icons.si-swarm,
+  .theme-dark .services-icons[data-icon="swarm"] {
+    -webkit-mask-position: -72px -96px;
+            mask-position: -72px -96px; }
+  .services-icons.icon-dark.si-telegram, .services-icons.icon-dark[data-icon="telegram"],
+  .services-icons.icon-light.si-telegram,
+  .services-icons.icon-light[data-icon="telegram"],
+  .services-icons.icon-primary.si-telegram,
+  .services-icons.icon-primary[data-icon="telegram"],
+  .services-icons.icon-accent.si-telegram,
+  .services-icons.icon-accent[data-icon="telegram"],
+  .btn .services-icons.si-telegram,
+  .btn .services-icons[data-icon="telegram"], .fab .services-icons.si-telegram, .fab .services-icons[data-icon="telegram"],
+  .theme-dark .services-icons.si-telegram,
+  .theme-dark .services-icons[data-icon="telegram"] {
+    -webkit-mask-position: -216px -120px;
+            mask-position: -216px -120px; }
+  .services-icons.icon-dark.si-trello, .services-icons.icon-dark[data-icon="trello"],
+  .services-icons.icon-light.si-trello,
+  .services-icons.icon-light[data-icon="trello"],
+  .services-icons.icon-primary.si-trello,
+  .services-icons.icon-primary[data-icon="trello"],
+  .services-icons.icon-accent.si-trello,
+  .services-icons.icon-accent[data-icon="trello"],
+  .btn .services-icons.si-trello,
+  .btn .services-icons[data-icon="trello"], .fab .services-icons.si-trello, .fab .services-icons[data-icon="trello"],
+  .theme-dark .services-icons.si-trello,
+  .theme-dark .services-icons[data-icon="trello"] {
+    -webkit-mask-position: -216px -96px;
+            mask-position: -216px -96px; }
+  .services-icons.icon-dark.si-tumblr, .services-icons.icon-dark[data-icon="tumblr"],
+  .services-icons.icon-light.si-tumblr,
+  .services-icons.icon-light[data-icon="tumblr"],
+  .services-icons.icon-primary.si-tumblr,
+  .services-icons.icon-primary[data-icon="tumblr"],
+  .services-icons.icon-accent.si-tumblr,
+  .services-icons.icon-accent[data-icon="tumblr"],
+  .btn .services-icons.si-tumblr,
+  .btn .services-icons[data-icon="tumblr"], .fab .services-icons.si-tumblr, .fab .services-icons[data-icon="tumblr"],
+  .theme-dark .services-icons.si-tumblr,
+  .theme-dark .services-icons[data-icon="tumblr"] {
+    -webkit-mask-position: 0 -48px;
+            mask-position: 0 -48px; }
+  .services-icons.icon-dark.si-twitch, .services-icons.icon-dark[data-icon="twitch"],
+  .services-icons.icon-light.si-twitch,
+  .services-icons.icon-light[data-icon="twitch"],
+  .services-icons.icon-primary.si-twitch,
+  .services-icons.icon-primary[data-icon="twitch"],
+  .services-icons.icon-accent.si-twitch,
+  .services-icons.icon-accent[data-icon="twitch"],
+  .btn .services-icons.si-twitch,
+  .btn .services-icons[data-icon="twitch"], .fab .services-icons.si-twitch, .fab .services-icons[data-icon="twitch"],
+  .theme-dark .services-icons.si-twitch,
+  .theme-dark .services-icons[data-icon="twitch"] {
+    -webkit-mask-position: -96px -72px;
+            mask-position: -96px -72px; }
+  .services-icons.icon-dark.si-twitter, .services-icons.icon-dark[data-icon="twitter"],
+  .services-icons.icon-light.si-twitter,
+  .services-icons.icon-light[data-icon="twitter"],
+  .services-icons.icon-primary.si-twitter,
+  .services-icons.icon-primary[data-icon="twitter"],
+  .services-icons.icon-accent.si-twitter,
+  .services-icons.icon-accent[data-icon="twitter"],
+  .btn .services-icons.si-twitter,
+  .btn .services-icons[data-icon="twitter"], .fab .services-icons.si-twitter, .fab .services-icons[data-icon="twitter"],
+  .theme-dark .services-icons.si-twitter,
+  .theme-dark .services-icons[data-icon="twitter"] {
+    -webkit-mask-position: -48px 0;
+            mask-position: -48px 0; }
+  .services-icons.icon-dark.si-twitter-box, .services-icons.icon-dark[data-icon="twitter-box"],
+  .services-icons.icon-light.si-twitter-box,
+  .services-icons.icon-light[data-icon="twitter-box"],
+  .services-icons.icon-primary.si-twitter-box,
+  .services-icons.icon-primary[data-icon="twitter-box"],
+  .services-icons.icon-accent.si-twitter-box,
+  .services-icons.icon-accent[data-icon="twitter-box"],
+  .btn .services-icons.si-twitter-box,
+  .btn .services-icons[data-icon="twitter-box"], .fab .services-icons.si-twitter-box, .fab .services-icons[data-icon="twitter-box"],
+  .theme-dark .services-icons.si-twitter-box,
+  .theme-dark .services-icons[data-icon="twitter-box"] {
+    -webkit-mask-position: -72px 0;
+            mask-position: -72px 0; }
+  .services-icons.icon-dark.si-viber, .services-icons.icon-dark[data-icon="viber"],
+  .services-icons.icon-light.si-viber,
+  .services-icons.icon-light[data-icon="viber"],
+  .services-icons.icon-primary.si-viber,
+  .services-icons.icon-primary[data-icon="viber"],
+  .services-icons.icon-accent.si-viber,
+  .services-icons.icon-accent[data-icon="viber"],
+  .btn .services-icons.si-viber,
+  .btn .services-icons[data-icon="viber"], .fab .services-icons.si-viber, .fab .services-icons[data-icon="viber"],
+  .theme-dark .services-icons.si-viber,
+  .theme-dark .services-icons[data-icon="viber"] {
+    -webkit-mask-position: -192px -120px;
+            mask-position: -192px -120px; }
+  .services-icons.icon-dark.si-vimeo, .services-icons.icon-dark[data-icon="vimeo"],
+  .services-icons.icon-light.si-vimeo,
+  .services-icons.icon-light[data-icon="vimeo"],
+  .services-icons.icon-primary.si-vimeo,
+  .services-icons.icon-primary[data-icon="vimeo"],
+  .services-icons.icon-accent.si-vimeo,
+  .services-icons.icon-accent[data-icon="vimeo"],
+  .btn .services-icons.si-vimeo,
+  .btn .services-icons[data-icon="vimeo"], .fab .services-icons.si-vimeo, .fab .services-icons[data-icon="vimeo"],
+  .theme-dark .services-icons.si-vimeo,
+  .theme-dark .services-icons[data-icon="vimeo"] {
+    -webkit-mask-position: -72px -48px;
+            mask-position: -72px -48px; }
+  .services-icons.icon-dark.si-vine, .services-icons.icon-dark[data-icon="vine"],
+  .services-icons.icon-light.si-vine,
+  .services-icons.icon-light[data-icon="vine"],
+  .services-icons.icon-primary.si-vine,
+  .services-icons.icon-primary[data-icon="vine"],
+  .services-icons.icon-accent.si-vine,
+  .services-icons.icon-accent[data-icon="vine"],
+  .btn .services-icons.si-vine,
+  .btn .services-icons[data-icon="vine"], .fab .services-icons.si-vine, .fab .services-icons[data-icon="vine"],
+  .theme-dark .services-icons.si-vine,
+  .theme-dark .services-icons[data-icon="vine"] {
+    -webkit-mask-position: -96px -48px;
+            mask-position: -96px -48px; }
+  .services-icons.icon-dark.si-vk, .services-icons.icon-dark[data-icon="vk"],
+  .services-icons.icon-light.si-vk,
+  .services-icons.icon-light[data-icon="vk"],
+  .services-icons.icon-primary.si-vk,
+  .services-icons.icon-primary[data-icon="vk"],
+  .services-icons.icon-accent.si-vk,
+  .services-icons.icon-accent[data-icon="vk"],
+  .btn .services-icons.si-vk,
+  .btn .services-icons[data-icon="vk"], .fab .services-icons.si-vk, .fab .services-icons[data-icon="vk"],
+  .theme-dark .services-icons.si-vk,
+  .theme-dark .services-icons[data-icon="vk"] {
+    -webkit-mask-position: -48px -24px;
+            mask-position: -48px -24px; }
+  .services-icons.icon-dark.si-vk-box, .services-icons.icon-dark[data-icon="vk-box"],
+  .services-icons.icon-light.si-vk-box,
+  .services-icons.icon-light[data-icon="vk-box"],
+  .services-icons.icon-primary.si-vk-box,
+  .services-icons.icon-primary[data-icon="vk-box"],
+  .services-icons.icon-accent.si-vk-box,
+  .services-icons.icon-accent[data-icon="vk-box"],
+  .btn .services-icons.si-vk-box,
+  .btn .services-icons[data-icon="vk-box"], .fab .services-icons.si-vk-box, .fab .services-icons[data-icon="vk-box"],
+  .theme-dark .services-icons.si-vk-box,
+  .theme-dark .services-icons[data-icon="vk-box"] {
+    -webkit-mask-position: -72px -24px;
+            mask-position: -72px -24px; }
+  .services-icons.icon-dark.si-wechat, .services-icons.icon-dark[data-icon="wechat"],
+  .services-icons.icon-light.si-wechat,
+  .services-icons.icon-light[data-icon="wechat"],
+  .services-icons.icon-primary.si-wechat,
+  .services-icons.icon-primary[data-icon="wechat"],
+  .services-icons.icon-accent.si-wechat,
+  .services-icons.icon-accent[data-icon="wechat"],
+  .btn .services-icons.si-wechat,
+  .btn .services-icons[data-icon="wechat"], .fab .services-icons.si-wechat, .fab .services-icons[data-icon="wechat"],
+  .theme-dark .services-icons.si-wechat,
+  .theme-dark .services-icons[data-icon="wechat"] {
+    -webkit-mask-position: -48px -144px;
+            mask-position: -48px -144px; }
+  .services-icons.icon-dark.si-whatsapp, .services-icons.icon-dark[data-icon="whatsapp"],
+  .services-icons.icon-light.si-whatsapp,
+  .services-icons.icon-light[data-icon="whatsapp"],
+  .services-icons.icon-primary.si-whatsapp,
+  .services-icons.icon-primary[data-icon="whatsapp"],
+  .services-icons.icon-accent.si-whatsapp,
+  .services-icons.icon-accent[data-icon="whatsapp"],
+  .btn .services-icons.si-whatsapp,
+  .btn .services-icons[data-icon="whatsapp"], .fab .services-icons.si-whatsapp, .fab .services-icons[data-icon="whatsapp"],
+  .theme-dark .services-icons.si-whatsapp,
+  .theme-dark .services-icons[data-icon="whatsapp"] {
+    -webkit-mask-position: -168px -120px;
+            mask-position: -168px -120px; }
+  .services-icons.icon-dark.si-wordpress, .services-icons.icon-dark[data-icon="wordpress"],
+  .services-icons.icon-light.si-wordpress,
+  .services-icons.icon-light[data-icon="wordpress"],
+  .services-icons.icon-primary.si-wordpress,
+  .services-icons.icon-primary[data-icon="wordpress"],
+  .services-icons.icon-accent.si-wordpress,
+  .services-icons.icon-accent[data-icon="wordpress"],
+  .btn .services-icons.si-wordpress,
+  .btn .services-icons[data-icon="wordpress"], .fab .services-icons.si-wordpress, .fab .services-icons[data-icon="wordpress"],
+  .theme-dark .services-icons.si-wordpress,
+  .theme-dark .services-icons[data-icon="wordpress"] {
+    -webkit-mask-position: -120px -120px;
+            mask-position: -120px -120px; }
+  .services-icons.icon-dark.si-wunderlist, .services-icons.icon-dark[data-icon="wunderlist"],
+  .services-icons.icon-light.si-wunderlist,
+  .services-icons.icon-light[data-icon="wunderlist"],
+  .services-icons.icon-primary.si-wunderlist,
+  .services-icons.icon-primary[data-icon="wunderlist"],
+  .services-icons.icon-accent.si-wunderlist,
+  .services-icons.icon-accent[data-icon="wunderlist"],
+  .btn .services-icons.si-wunderlist,
+  .btn .services-icons[data-icon="wunderlist"], .fab .services-icons.si-wunderlist, .fab .services-icons[data-icon="wunderlist"],
+  .theme-dark .services-icons.si-wunderlist,
+  .theme-dark .services-icons[data-icon="wunderlist"] {
+    -webkit-mask-position: -72px -72px;
+            mask-position: -72px -72px; }
+  .services-icons.icon-dark.si-xing, .services-icons.icon-dark[data-icon="xing"],
+  .services-icons.icon-light.si-xing,
+  .services-icons.icon-light[data-icon="xing"],
+  .services-icons.icon-primary.si-xing,
+  .services-icons.icon-primary[data-icon="xing"],
+  .services-icons.icon-accent.si-xing,
+  .services-icons.icon-accent[data-icon="xing"],
+  .btn .services-icons.si-xing,
+  .btn .services-icons[data-icon="xing"], .fab .services-icons.si-xing, .fab .services-icons[data-icon="xing"],
+  .theme-dark .services-icons.si-xing,
+  .theme-dark .services-icons[data-icon="xing"] {
+    -webkit-mask-position: -144px -24px;
+            mask-position: -144px -24px; }
+  .services-icons.icon-dark.si-xing-box, .services-icons.icon-dark[data-icon="xing-box"],
+  .services-icons.icon-light.si-xing-box,
+  .services-icons.icon-light[data-icon="xing-box"],
+  .services-icons.icon-primary.si-xing-box,
+  .services-icons.icon-primary[data-icon="xing-box"],
+  .services-icons.icon-accent.si-xing-box,
+  .services-icons.icon-accent[data-icon="xing-box"],
+  .btn .services-icons.si-xing-box,
+  .btn .services-icons[data-icon="xing-box"], .fab .services-icons.si-xing-box, .fab .services-icons[data-icon="xing-box"],
+  .theme-dark .services-icons.si-xing-box,
+  .theme-dark .services-icons[data-icon="xing-box"] {
+    -webkit-mask-position: -168px -24px;
+            mask-position: -168px -24px; }
+  .services-icons.icon-dark.si-youtube, .services-icons.icon-dark[data-icon="youtube"],
+  .services-icons.icon-light.si-youtube,
+  .services-icons.icon-light[data-icon="youtube"],
+  .services-icons.icon-primary.si-youtube,
+  .services-icons.icon-primary[data-icon="youtube"],
+  .services-icons.icon-accent.si-youtube,
+  .services-icons.icon-accent[data-icon="youtube"],
+  .btn .services-icons.si-youtube,
+  .btn .services-icons[data-icon="youtube"], .fab .services-icons.si-youtube, .fab .services-icons[data-icon="youtube"],
+  .theme-dark .services-icons.si-youtube,
+  .theme-dark .services-icons[data-icon="youtube"] {
+    -webkit-mask-position: -48px -48px;
+            mask-position: -48px -48px; }
+
+.services-icon-left:before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  content: " ";
+  margin-right: 12px;
+  float: left;
+  background: rgba(0, 0, 0, 0.87);
+  -webkit-mask: url(../img/services-icons.svg) no-repeat;
+          mask: url(../img/services-icons.svg) no-repeat; }
+
+.services-icon-left.icon-dark:before {
+  background: rgba(0, 0, 0, 0.87) !important; }
+
+.services-icon-left.icon-secondary:before {
+  background: rgba(0, 0, 0, 0.54); }
+
+.services-icon-left.icon-disabled:before {
+  background: rgba(0, 0, 0, 0.26); }
+
+.services-icon-left.icon-light:before {
+  background: #FFF !important; }
+
+.services-icon-left.icon-light.icon-disabled:before {
+  background: rgba(255, 255, 255, 0.3) !important; }
+
+.services-icon-left.icon-primary:before {
+  background: #607d8b; }
+
+.services-icon-left.icon-accent:before {
+  background: #00b0ff; }
+
+a.services-icon-left:not(.btn):before {
+  background: #00b0ff; }
+a.services-icon-left:not(.btn):hover:before {
+  background: #0aa2ff; }
+a.services-icon-left:not(.btn):active:before {
+  background: #0091ea; }
+
+.btn.services-icon-left:before, .btn.services-icon-left:hover:before, .btn.services-icon-left:focus:before, .menu a.services-icon-left:before, .menu a.services-icon-left:hover:before, .menu a.services-icon-left:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn-colored.services-icon-left:before, .btn-colored.services-icon-left:hover:before, .btn-colored.services-icon-left:focus:before, .btn.btn-colored.services-icon-left:before, .btn.btn-colored.services-icon-left:hover:before, .btn.btn-colored.services-icon-left:focus:before {
+  background: #546e7a; }
+
+.btn-accent.services-icon-left:before, .btn-accent.services-icon-left:hover:before, .btn-accent.services-icon-left:focus:before, .btn.btn-accent.services-icon-left:before, .btn.btn-accent.services-icon-left:hover:before, .btn.btn-accent.services-icon-left:focus:before {
+  background: #00b0ff; }
+
+.btn-raised.services-icon-left.btn-colored:before, .btn-raised.services-icon-left.btn-colored:hover:before, .btn-raised.services-icon-left.btn-colored:focus:before, .btn.btn-raised.services-icon-left.btn-colored:before, .btn.btn-raised.services-icon-left.btn-colored:hover:before, .btn.btn-raised.services-icon-left.btn-colored:focus:before {
+  background: #FFF; }
+.btn-raised.services-icon-left.btn-accent:before, .btn-raised.services-icon-left.btn-accent:hover:before, .btn-raised.services-icon-left.btn-accent:focus:before, .btn.btn-raised.services-icon-left.btn-accent:before, .btn.btn-raised.services-icon-left.btn-accent:hover:before, .btn.btn-raised.services-icon-left.btn-accent:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn.btn-disabled.services-icon-left:before, .btn.btn-disabled.services-icon-left:hover:before, .btn.btn-disabled.services-icon-left:focus:before, .btn.btn-disabled.services-icon-left:active:before {
+  background: rgba(0, 0, 0, 0.26); }
+
+.fab.services-icon-left:before, .fab.services-icon-left:hover:before, .fab.services-icon-left:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+.fab.services-icon-left.fab-colored:before, .fab.services-icon-left.fab-colored:hover:before, .fab.services-icon-left.fab-colored:focus:before {
+  background: #FFF; }
+.fab.services-icon-left.fab-accent:before, .fab.services-icon-left.fab-accent:hover:before, .fab.services-icon-left.fab-accent:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.services-icon-left.si-behance:before, .services-icon-left[data-icon="behance"]:before {
   -webkit-mask-position: -144px -48px;
           mask-position: -144px -48px; }
-.services-icons.icon-light.si-bitbucket, .services-icons.icon-light[data-icon="bitbucket"],
-.services-icons.icon-primary.si-bitbucket,
-.services-icons.icon-primary[data-icon="bitbucket"],
-.services-icons.icon-accent.si-bitbucket,
-.services-icons.icon-accent[data-icon="bitbucket"] {
+.services-icon-left.si-bitbucket:before, .services-icon-left[data-icon="bitbucket"]:before {
   -webkit-mask-position: -24px -120px;
           mask-position: -24px -120px; }
-.services-icons.icon-light.si-blogger, .services-icons.icon-light[data-icon="blogger"],
-.services-icons.icon-primary.si-blogger,
-.services-icons.icon-primary[data-icon="blogger"],
-.services-icons.icon-accent.si-blogger,
-.services-icons.icon-accent[data-icon="blogger"] {
+.services-icon-left.si-blogger:before, .services-icon-left[data-icon="blogger"]:before {
   -webkit-mask-position: -168px -48px;
           mask-position: -168px -48px; }
-.services-icons.icon-light.si-delicious, .services-icons.icon-light[data-icon="delicious"],
-.services-icons.icon-primary.si-delicious,
-.services-icons.icon-primary[data-icon="delicious"],
-.services-icons.icon-accent.si-delicious,
-.services-icons.icon-accent[data-icon="delicious"] {
+.services-icon-left.si-delicious:before, .services-icon-left[data-icon="delicious"]:before {
   -webkit-mask-position: -144px -72px;
           mask-position: -144px -72px; }
-.services-icons.icon-light.si-delicious-box, .services-icons.icon-light[data-icon="delicious-box"],
-.services-icons.icon-primary.si-delicious-box,
-.services-icons.icon-primary[data-icon="delicious-box"],
-.services-icons.icon-accent.si-delicious-box,
-.services-icons.icon-accent[data-icon="delicious-box"] {
+.services-icon-left.si-delicious-box:before, .services-icon-left[data-icon="delicious-box"]:before {
   -webkit-mask-position: -168px -72px;
           mask-position: -168px -72px; }
-.services-icons.icon-light.si-digg, .services-icons.icon-light[data-icon="digg"],
-.services-icons.icon-primary.si-digg,
-.services-icons.icon-primary[data-icon="digg"],
-.services-icons.icon-accent.si-digg,
-.services-icons.icon-accent[data-icon="digg"] {
+.services-icon-left.si-digg:before, .services-icon-left[data-icon="digg"]:before {
   -webkit-mask-position: -120px -72px;
           mask-position: -120px -72px; }
-.services-icons.icon-light.si-disqus, .services-icons.icon-light[data-icon="disqus"],
-.services-icons.icon-primary.si-disqus,
-.services-icons.icon-primary[data-icon="disqus"],
-.services-icons.icon-accent.si-disqus,
-.services-icons.icon-accent[data-icon="disqus"] {
+.services-icon-left.si-disqus:before, .services-icon-left[data-icon="disqus"]:before {
   -webkit-mask-position: -24px -96px;
           mask-position: -24px -96px; }
-.services-icons.icon-light.si-disqus-outline, .services-icons.icon-light[data-icon="disqus-outline"],
-.services-icons.icon-primary.si-disqus-outline,
-.services-icons.icon-primary[data-icon="disqus-outline"],
-.services-icons.icon-accent.si-disqus-outline,
-.services-icons.icon-accent[data-icon="disqus-outline"] {
+.services-icon-left.si-disqus-outline:before, .services-icon-left[data-icon="disqus-outline"]:before {
   -webkit-mask-position: 0 -96px;
           mask-position: 0 -96px; }
-.services-icons.icon-light.si-dribbble, .services-icons.icon-light[data-icon="dribbble"],
-.services-icons.icon-primary.si-dribbble,
-.services-icons.icon-primary[data-icon="dribbble"],
-.services-icons.icon-accent.si-dribbble,
-.services-icons.icon-accent[data-icon="dribbble"] {
+.services-icon-left.si-dribbble:before, .services-icon-left[data-icon="dribbble"]:before {
   -webkit-mask-position: -192px -48px;
           mask-position: -192px -48px; }
-.services-icons.icon-light.si-dribbble-box, .services-icons.icon-light[data-icon="dribbble-box"],
-.services-icons.icon-primary.si-dribbble-box,
-.services-icons.icon-primary[data-icon="dribbble-box"],
-.services-icons.icon-accent.si-dribbble-box,
-.services-icons.icon-accent[data-icon="dribbble-box"] {
+.services-icon-left.si-dribbble-box:before, .services-icon-left[data-icon="dribbble-box"]:before {
   -webkit-mask-position: -216px -48px;
           mask-position: -216px -48px; }
-.services-icons.icon-light.si-drupal, .services-icons.icon-light[data-icon="drupal"],
-.services-icons.icon-primary.si-drupal,
-.services-icons.icon-primary[data-icon="drupal"],
-.services-icons.icon-accent.si-drupal,
-.services-icons.icon-accent[data-icon="drupal"] {
+.services-icon-left.si-drupal:before, .services-icon-left[data-icon="drupal"]:before {
   -webkit-mask-position: -96px -120px;
           mask-position: -96px -120px; }
-.services-icons.icon-light.si-evernote, .services-icons.icon-light[data-icon="evernote"],
-.services-icons.icon-primary.si-evernote,
-.services-icons.icon-primary[data-icon="evernote"],
-.services-icons.icon-accent.si-evernote,
-.services-icons.icon-accent[data-icon="evernote"] {
+.services-icon-left.si-evernote:before, .services-icon-left[data-icon="evernote"]:before {
   -webkit-mask-position: -216px -72px;
           mask-position: -216px -72px; }
-.services-icons.icon-light.si-facebook, .services-icons.icon-light[data-icon="facebook"],
-.services-icons.icon-primary.si-facebook,
-.services-icons.icon-primary[data-icon="facebook"],
-.services-icons.icon-accent.si-facebook,
-.services-icons.icon-accent[data-icon="facebook"] {
+.services-icon-left.si-facebook:before, .services-icon-left[data-icon="facebook"]:before {
   -webkit-mask-position: 0 0;
           mask-position: 0 0; }
-.services-icons.icon-light.si-facebook-box, .services-icons.icon-light[data-icon="facebook-box"],
-.services-icons.icon-primary.si-facebook-box,
-.services-icons.icon-primary[data-icon="facebook-box"],
-.services-icons.icon-accent.si-facebook-box,
-.services-icons.icon-accent[data-icon="facebook-box"] {
+.services-icon-left.si-facebook-box:before, .services-icon-left[data-icon="facebook-box"]:before {
   -webkit-mask-position: -24px 0;
           mask-position: -24px 0; }
-.services-icons.icon-light.si-facebook-messenger, .services-icons.icon-light[data-icon="facebook-messenger"],
-.services-icons.icon-primary.si-facebook-messenger,
-.services-icons.icon-primary[data-icon="facebook-messenger"],
-.services-icons.icon-accent.si-facebook-messenger,
-.services-icons.icon-accent[data-icon="facebook-messenger"] {
+.services-icon-left.si-facebook-messenger:before, .services-icon-left[data-icon="facebook-messenger"]:before {
   -webkit-mask-position: -144px -120px;
           mask-position: -144px -120px; }
-.services-icons.icon-light.si-flickr, .services-icons.icon-light[data-icon="flickr"],
-.services-icons.icon-primary.si-flickr,
-.services-icons.icon-primary[data-icon="flickr"],
-.services-icons.icon-accent.si-flickr,
-.services-icons.icon-accent[data-icon="flickr"] {
+.services-icon-left.si-flickr:before, .services-icon-left[data-icon="flickr"]:before {
   -webkit-mask-position: -96px -96px;
           mask-position: -96px -96px; }
-.services-icons.icon-light.si-foursquare, .services-icons.icon-light[data-icon="foursquare"],
-.services-icons.icon-primary.si-foursquare,
-.services-icons.icon-primary[data-icon="foursquare"],
-.services-icons.icon-accent.si-foursquare,
-.services-icons.icon-accent[data-icon="foursquare"] {
+.services-icon-left.si-foursquare:before, .services-icon-left[data-icon="foursquare"]:before {
   -webkit-mask-position: -48px -96px;
           mask-position: -48px -96px; }
-.services-icons.icon-light.si-github-box, .services-icons.icon-light[data-icon="github-box"],
-.services-icons.icon-primary.si-github-box,
-.services-icons.icon-primary[data-icon="github-box"],
-.services-icons.icon-accent.si-github-box,
-.services-icons.icon-accent[data-icon="github-box"] {
+.services-icon-left.si-github-box:before, .services-icon-left[data-icon="github-box"]:before {
   -webkit-mask-position: 0 -120px;
           mask-position: 0 -120px; }
-.services-icons.icon-light.si-google-photos, .services-icons.icon-light[data-icon="google-photos"],
-.services-icons.icon-primary.si-google-photos,
-.services-icons.icon-primary[data-icon="google-photos"],
-.services-icons.icon-accent.si-google-photos,
-.services-icons.icon-accent[data-icon="google-photos"] {
+.services-icon-left.si-google-photos:before, .services-icon-left[data-icon="google-photos"]:before {
   -webkit-mask-position: -120px -96px;
           mask-position: -120px -96px; }
-.services-icons.icon-light.si-google-plus, .services-icons.icon-light[data-icon="google-plus"],
-.services-icons.icon-primary.si-google-plus,
-.services-icons.icon-primary[data-icon="google-plus"],
-.services-icons.icon-accent.si-google-plus,
-.services-icons.icon-accent[data-icon="google-plus"] {
+.services-icon-left.si-google-plus:before, .services-icon-left[data-icon="google-plus"]:before {
   -webkit-mask-position: -96px 0;
           mask-position: -96px 0; }
-.services-icons.icon-light.si-google-plus-box, .services-icons.icon-light[data-icon="google-plus-box"],
-.services-icons.icon-primary.si-google-plus-box,
-.services-icons.icon-primary[data-icon="google-plus-box"],
-.services-icons.icon-accent.si-google-plus-box,
-.services-icons.icon-accent[data-icon="google-plus-box"] {
+.services-icon-left.si-google-plus-box:before, .services-icon-left[data-icon="google-plus-box"]:before {
   -webkit-mask-position: -120px 0;
           mask-position: -120px 0; }
-.services-icons.icon-light.si-instagram, .services-icons.icon-light[data-icon="instagram"],
-.services-icons.icon-primary.si-instagram,
-.services-icons.icon-primary[data-icon="instagram"],
-.services-icons.icon-accent.si-instagram,
-.services-icons.icon-accent[data-icon="instagram"] {
+.services-icon-left.si-instagram:before, .services-icon-left[data-icon="instagram"]:before {
   -webkit-mask-position: 0 -24px;
           mask-position: 0 -24px; }
-.services-icons.icon-light.si-instagram-box, .services-icons.icon-light[data-icon="instagram-box"],
-.services-icons.icon-primary.si-instagram-box,
-.services-icons.icon-primary[data-icon="instagram-box"],
-.services-icons.icon-accent.si-instagram-box,
-.services-icons.icon-accent[data-icon="instagram-box"] {
+.services-icon-left.si-instagram-box:before, .services-icon-left[data-icon="instagram-box"]:before {
   -webkit-mask-position: -24px -24px;
           mask-position: -24px -24px; }
-.services-icons.icon-light.si-lastfm, .services-icons.icon-light[data-icon="lastfm"],
-.services-icons.icon-primary.si-lastfm,
-.services-icons.icon-primary[data-icon="lastfm"],
-.services-icons.icon-accent.si-lastfm,
-.services-icons.icon-accent[data-icon="lastfm"] {
+.services-icon-left.si-lastfm:before, .services-icon-left[data-icon="lastfm"]:before {
   -webkit-mask-position: -144px -96px;
           mask-position: -144px -96px; }
-.services-icons.icon-light.si-line, .services-icons.icon-light[data-icon="line"],
-.services-icons.icon-primary.si-line,
-.services-icons.icon-primary[data-icon="line"],
-.services-icons.icon-accent.si-line,
-.services-icons.icon-accent[data-icon="line"] {
+.services-icon-left.si-line:before, .services-icon-left[data-icon="line"]:before {
   -webkit-mask-position: -72px -144px;
           mask-position: -72px -144px; }
-.services-icons.icon-light.si-linkedin, .services-icons.icon-light[data-icon="linkedin"],
-.services-icons.icon-primary.si-linkedin,
-.services-icons.icon-primary[data-icon="linkedin"],
-.services-icons.icon-accent.si-linkedin,
-.services-icons.icon-accent[data-icon="linkedin"] {
+.services-icon-left.si-linkedin:before, .services-icon-left[data-icon="linkedin"]:before {
   -webkit-mask-position: -144px 0;
           mask-position: -144px 0; }
-.services-icons.icon-light.si-linkedin-box, .services-icons.icon-light[data-icon="linkedin-box"],
-.services-icons.icon-primary.si-linkedin-box,
-.services-icons.icon-primary[data-icon="linkedin-box"],
-.services-icons.icon-accent.si-linkedin-box,
-.services-icons.icon-accent[data-icon="linkedin-box"] {
+.services-icon-left.si-linkedin-box:before, .services-icon-left[data-icon="linkedin-box"]:before {
   -webkit-mask-position: -168px 0;
           mask-position: -168px 0; }
-.services-icons.icon-light.si-livejournal, .services-icons.icon-light[data-icon="livejournal"],
-.services-icons.icon-primary.si-livejournal,
-.services-icons.icon-primary[data-icon="livejournal"],
-.services-icons.icon-accent.si-livejournal,
-.services-icons.icon-accent[data-icon="livejournal"] {
+.services-icon-left.si-livejournal:before, .services-icon-left[data-icon="livejournal"]:before {
   -webkit-mask-position: -192px -72px;
           mask-position: -192px -72px; }
-.services-icons.icon-light.si-medium, .services-icons.icon-light[data-icon="medium"],
-.services-icons.icon-primary.si-medium,
-.services-icons.icon-primary[data-icon="medium"],
-.services-icons.icon-accent.si-medium,
-.services-icons.icon-accent[data-icon="medium"] {
+.services-icon-left.si-medium:before, .services-icon-left[data-icon="medium"]:before {
   -webkit-mask-position: 0 -72px;
           mask-position: 0 -72px; }
-.services-icons.icon-light.si-odnoklassniki, .services-icons.icon-light[data-icon="odnoklassniki"],
-.services-icons.icon-primary.si-odnoklassniki,
-.services-icons.icon-primary[data-icon="odnoklassniki"],
-.services-icons.icon-accent.si-odnoklassniki,
-.services-icons.icon-accent[data-icon="odnoklassniki"] {
+.services-icon-left.si-odnoklassniki:before, .services-icon-left[data-icon="odnoklassniki"]:before {
   -webkit-mask-position: -96px -24px;
           mask-position: -96px -24px; }
-.services-icons.icon-light.si-odnoklassniki-box, .services-icons.icon-light[data-icon="odnoklassniki-box"],
-.services-icons.icon-primary.si-odnoklassniki-box,
-.services-icons.icon-primary[data-icon="odnoklassniki-box"],
-.services-icons.icon-accent.si-odnoklassniki-box,
-.services-icons.icon-accent[data-icon="odnoklassniki-box"] {
+.services-icon-left.si-odnoklassniki-box:before, .services-icon-left[data-icon="odnoklassniki-box"]:before {
   -webkit-mask-position: -120px -24px;
           mask-position: -120px -24px; }
-.services-icons.icon-light.si-periscope, .services-icons.icon-light[data-icon="periscope"],
-.services-icons.icon-primary.si-periscope,
-.services-icons.icon-primary[data-icon="periscope"],
-.services-icons.icon-accent.si-periscope,
-.services-icons.icon-accent[data-icon="periscope"] {
+.services-icon-left.si-periscope:before, .services-icon-left[data-icon="periscope"]:before {
   -webkit-mask-position: -120px -48px;
           mask-position: -120px -48px; }
-.services-icons.icon-light.si-pinterest, .services-icons.icon-light[data-icon="pinterest"],
-.services-icons.icon-primary.si-pinterest,
-.services-icons.icon-primary[data-icon="pinterest"],
-.services-icons.icon-accent.si-pinterest,
-.services-icons.icon-accent[data-icon="pinterest"] {
+.services-icon-left.si-pinterest:before, .services-icon-left[data-icon="pinterest"]:before {
   -webkit-mask-position: -192px 0;
           mask-position: -192px 0; }
-.services-icons.icon-light.si-pinterest-box, .services-icons.icon-light[data-icon="pinterest-box"],
-.services-icons.icon-primary.si-pinterest-box,
-.services-icons.icon-primary[data-icon="pinterest-box"],
-.services-icons.icon-accent.si-pinterest-box,
-.services-icons.icon-accent[data-icon="pinterest-box"] {
+.services-icon-left.si-pinterest-box:before, .services-icon-left[data-icon="pinterest-box"]:before {
   -webkit-mask-position: -216px 0;
           mask-position: -216px 0; }
-.services-icons.icon-light.si-pocket, .services-icons.icon-light[data-icon="pocket"],
-.services-icons.icon-primary.si-pocket,
-.services-icons.icon-primary[data-icon="pocket"],
-.services-icons.icon-accent.si-pocket,
-.services-icons.icon-accent[data-icon="pocket"] {
+.services-icon-left.si-pocket:before, .services-icon-left[data-icon="pocket"]:before {
   -webkit-mask-position: -24px -72px;
           mask-position: -24px -72px; }
-.services-icons.icon-light.si-qqchat, .services-icons.icon-light[data-icon="qqchat"],
-.services-icons.icon-primary.si-qqchat,
-.services-icons.icon-primary[data-icon="qqchat"],
-.services-icons.icon-accent.si-qqchat,
-.services-icons.icon-accent[data-icon="qqchat"] {
+.services-icon-left.si-qqchat:before, .services-icon-left[data-icon="qqchat"]:before {
   -webkit-mask-position: -96px -144px;
           mask-position: -96px -144px; }
-.services-icons.icon-light.si-qzone, .services-icons.icon-light[data-icon="qzone"],
-.services-icons.icon-primary.si-qzone,
-.services-icons.icon-primary[data-icon="qzone"],
-.services-icons.icon-accent.si-qzone,
-.services-icons.icon-accent[data-icon="qzone"] {
+.services-icon-left.si-qzone:before, .services-icon-left[data-icon="qzone"]:before {
   -webkit-mask-position: -216px -24px;
           mask-position: -216px -24px; }
-.services-icons.icon-light.si-reddit, .services-icons.icon-light[data-icon="reddit"],
-.services-icons.icon-primary.si-reddit,
-.services-icons.icon-primary[data-icon="reddit"],
-.services-icons.icon-accent.si-reddit,
-.services-icons.icon-accent[data-icon="reddit"] {
+.services-icon-left.si-reddit:before, .services-icon-left[data-icon="reddit"]:before {
   -webkit-mask-position: -48px -72px;
           mask-position: -48px -72px; }
-.services-icons.icon-light.si-renren, .services-icons.icon-light[data-icon="renren"],
-.services-icons.icon-primary.si-renren,
-.services-icons.icon-primary[data-icon="renren"],
-.services-icons.icon-accent.si-renren,
-.services-icons.icon-accent[data-icon="renren"] {
+.services-icon-left.si-renren:before, .services-icon-left[data-icon="renren"]:before {
   -webkit-mask-position: -24px -48px;
           mask-position: -24px -48px; }
-.services-icons.icon-light.si-sina-weibo, .services-icons.icon-light[data-icon="sina-weibo"],
-.services-icons.icon-primary.si-sina-weibo,
-.services-icons.icon-primary[data-icon="sina-weibo"],
-.services-icons.icon-accent.si-sina-weibo,
-.services-icons.icon-accent[data-icon="sina-weibo"] {
+.services-icon-left.si-sina-weibo:before, .services-icon-left[data-icon="sina-weibo"]:before {
   -webkit-mask-position: -192px -24px;
           mask-position: -192px -24px; }
-.services-icons.icon-light.si-skype, .services-icons.icon-light[data-icon="skype"],
-.services-icons.icon-primary.si-skype,
-.services-icons.icon-primary[data-icon="skype"],
-.services-icons.icon-accent.si-skype,
-.services-icons.icon-accent[data-icon="skype"] {
+.services-icon-left.si-skype:before, .services-icon-left[data-icon="skype"]:before {
   -webkit-mask-position: -24px -144px;
           mask-position: -24px -144px; }
-.services-icons.icon-light.si-skype-outline, .services-icons.icon-light[data-icon="skype-outline"],
-.services-icons.icon-primary.si-skype-outline,
-.services-icons.icon-primary[data-icon="skype-outline"],
-.services-icons.icon-accent.si-skype-outline,
-.services-icons.icon-accent[data-icon="skype-outline"] {
+.services-icon-left.si-skype-outline:before, .services-icon-left[data-icon="skype-outline"]:before {
   -webkit-mask-position: 0 -144px;
           mask-position: 0 -144px; }
-.services-icons.icon-light.si-slack, .services-icons.icon-light[data-icon="slack"],
-.services-icons.icon-primary.si-slack,
-.services-icons.icon-primary[data-icon="slack"],
-.services-icons.icon-accent.si-slack,
-.services-icons.icon-accent[data-icon="slack"] {
+.services-icon-left.si-slack:before, .services-icon-left[data-icon="slack"]:before {
   -webkit-mask-position: -144px -144px;
           mask-position: -144px -144px; }
-.services-icons.icon-light.si-snapchat, .services-icons.icon-light[data-icon="snapchat"],
-.services-icons.icon-primary.si-snapchat,
-.services-icons.icon-primary[data-icon="snapchat"],
-.services-icons.icon-accent.si-snapchat,
-.services-icons.icon-accent[data-icon="snapchat"] {
+.services-icon-left.si-snapchat:before, .services-icon-left[data-icon="snapchat"]:before {
   -webkit-mask-position: -120px -144px;
           mask-position: -120px -144px; }
-.services-icons.icon-light.si-soundcloud, .services-icons.icon-light[data-icon="soundcloud"],
-.services-icons.icon-primary.si-soundcloud,
-.services-icons.icon-primary[data-icon="soundcloud"],
-.services-icons.icon-accent.si-soundcloud,
-.services-icons.icon-accent[data-icon="soundcloud"] {
+.services-icon-left.si-soundcloud:before, .services-icon-left[data-icon="soundcloud"]:before {
   -webkit-mask-position: -168px -96px;
           mask-position: -168px -96px; }
-.services-icons.icon-light.si-spotify, .services-icons.icon-light[data-icon="spotify"],
-.services-icons.icon-primary.si-spotify,
-.services-icons.icon-primary[data-icon="spotify"],
-.services-icons.icon-accent.si-spotify,
-.services-icons.icon-accent[data-icon="spotify"] {
+.services-icon-left.si-spotify:before, .services-icon-left[data-icon="spotify"]:before {
   -webkit-mask-position: -192px -96px;
           mask-position: -192px -96px; }
-.services-icons.icon-light.si-stackexchange, .services-icons.icon-light[data-icon="stackexchange"],
-.services-icons.icon-primary.si-stackexchange,
-.services-icons.icon-primary[data-icon="stackexchange"],
-.services-icons.icon-accent.si-stackexchange,
-.services-icons.icon-accent[data-icon="stackexchange"] {
+.services-icon-left.si-stackexchange:before, .services-icon-left[data-icon="stackexchange"]:before {
   -webkit-mask-position: -48px -120px;
           mask-position: -48px -120px; }
-.services-icons.icon-light.si-stackoverflow, .services-icons.icon-light[data-icon="stackoverflow"],
-.services-icons.icon-primary.si-stackoverflow,
-.services-icons.icon-primary[data-icon="stackoverflow"],
-.services-icons.icon-accent.si-stackoverflow,
-.services-icons.icon-accent[data-icon="stackoverflow"] {
+.services-icon-left.si-stackoverflow:before, .services-icon-left[data-icon="stackoverflow"]:before {
   -webkit-mask-position: -72px -120px;
           mask-position: -72px -120px; }
-.services-icons.icon-light.si-swarm, .services-icons.icon-light[data-icon="swarm"],
-.services-icons.icon-primary.si-swarm,
-.services-icons.icon-primary[data-icon="swarm"],
-.services-icons.icon-accent.si-swarm,
-.services-icons.icon-accent[data-icon="swarm"] {
+.services-icon-left.si-swarm:before, .services-icon-left[data-icon="swarm"]:before {
   -webkit-mask-position: -72px -96px;
           mask-position: -72px -96px; }
-.services-icons.icon-light.si-telegram, .services-icons.icon-light[data-icon="telegram"],
-.services-icons.icon-primary.si-telegram,
-.services-icons.icon-primary[data-icon="telegram"],
-.services-icons.icon-accent.si-telegram,
-.services-icons.icon-accent[data-icon="telegram"] {
+.services-icon-left.si-telegram:before, .services-icon-left[data-icon="telegram"]:before {
   -webkit-mask-position: -216px -120px;
           mask-position: -216px -120px; }
-.services-icons.icon-light.si-trello, .services-icons.icon-light[data-icon="trello"],
-.services-icons.icon-primary.si-trello,
-.services-icons.icon-primary[data-icon="trello"],
-.services-icons.icon-accent.si-trello,
-.services-icons.icon-accent[data-icon="trello"] {
+.services-icon-left.si-trello:before, .services-icon-left[data-icon="trello"]:before {
   -webkit-mask-position: -216px -96px;
           mask-position: -216px -96px; }
-.services-icons.icon-light.si-tumblr, .services-icons.icon-light[data-icon="tumblr"],
-.services-icons.icon-primary.si-tumblr,
-.services-icons.icon-primary[data-icon="tumblr"],
-.services-icons.icon-accent.si-tumblr,
-.services-icons.icon-accent[data-icon="tumblr"] {
+.services-icon-left.si-tumblr:before, .services-icon-left[data-icon="tumblr"]:before {
   -webkit-mask-position: 0 -48px;
           mask-position: 0 -48px; }
-.services-icons.icon-light.si-twitch, .services-icons.icon-light[data-icon="twitch"],
-.services-icons.icon-primary.si-twitch,
-.services-icons.icon-primary[data-icon="twitch"],
-.services-icons.icon-accent.si-twitch,
-.services-icons.icon-accent[data-icon="twitch"] {
+.services-icon-left.si-twitch:before, .services-icon-left[data-icon="twitch"]:before {
   -webkit-mask-position: -96px -72px;
           mask-position: -96px -72px; }
-.services-icons.icon-light.si-twitter, .services-icons.icon-light[data-icon="twitter"],
-.services-icons.icon-primary.si-twitter,
-.services-icons.icon-primary[data-icon="twitter"],
-.services-icons.icon-accent.si-twitter,
-.services-icons.icon-accent[data-icon="twitter"] {
+.services-icon-left.si-twitter:before, .services-icon-left[data-icon="twitter"]:before {
   -webkit-mask-position: -48px 0;
           mask-position: -48px 0; }
-.services-icons.icon-light.si-twitter-box, .services-icons.icon-light[data-icon="twitter-box"],
-.services-icons.icon-primary.si-twitter-box,
-.services-icons.icon-primary[data-icon="twitter-box"],
-.services-icons.icon-accent.si-twitter-box,
-.services-icons.icon-accent[data-icon="twitter-box"] {
+.services-icon-left.si-twitter-box:before, .services-icon-left[data-icon="twitter-box"]:before {
   -webkit-mask-position: -72px 0;
           mask-position: -72px 0; }
-.services-icons.icon-light.si-viber, .services-icons.icon-light[data-icon="viber"],
-.services-icons.icon-primary.si-viber,
-.services-icons.icon-primary[data-icon="viber"],
-.services-icons.icon-accent.si-viber,
-.services-icons.icon-accent[data-icon="viber"] {
+.services-icon-left.si-viber:before, .services-icon-left[data-icon="viber"]:before {
   -webkit-mask-position: -192px -120px;
           mask-position: -192px -120px; }
-.services-icons.icon-light.si-vimeo, .services-icons.icon-light[data-icon="vimeo"],
-.services-icons.icon-primary.si-vimeo,
-.services-icons.icon-primary[data-icon="vimeo"],
-.services-icons.icon-accent.si-vimeo,
-.services-icons.icon-accent[data-icon="vimeo"] {
+.services-icon-left.si-vimeo:before, .services-icon-left[data-icon="vimeo"]:before {
   -webkit-mask-position: -72px -48px;
           mask-position: -72px -48px; }
-.services-icons.icon-light.si-vine, .services-icons.icon-light[data-icon="vine"],
-.services-icons.icon-primary.si-vine,
-.services-icons.icon-primary[data-icon="vine"],
-.services-icons.icon-accent.si-vine,
-.services-icons.icon-accent[data-icon="vine"] {
+.services-icon-left.si-vine:before, .services-icon-left[data-icon="vine"]:before {
   -webkit-mask-position: -96px -48px;
           mask-position: -96px -48px; }
-.services-icons.icon-light.si-vk, .services-icons.icon-light[data-icon="vk"],
-.services-icons.icon-primary.si-vk,
-.services-icons.icon-primary[data-icon="vk"],
-.services-icons.icon-accent.si-vk,
-.services-icons.icon-accent[data-icon="vk"] {
+.services-icon-left.si-vk:before, .services-icon-left[data-icon="vk"]:before {
   -webkit-mask-position: -48px -24px;
           mask-position: -48px -24px; }
-.services-icons.icon-light.si-vk-box, .services-icons.icon-light[data-icon="vk-box"],
-.services-icons.icon-primary.si-vk-box,
-.services-icons.icon-primary[data-icon="vk-box"],
-.services-icons.icon-accent.si-vk-box,
-.services-icons.icon-accent[data-icon="vk-box"] {
+.services-icon-left.si-vk-box:before, .services-icon-left[data-icon="vk-box"]:before {
   -webkit-mask-position: -72px -24px;
           mask-position: -72px -24px; }
-.services-icons.icon-light.si-wechat, .services-icons.icon-light[data-icon="wechat"],
-.services-icons.icon-primary.si-wechat,
-.services-icons.icon-primary[data-icon="wechat"],
-.services-icons.icon-accent.si-wechat,
-.services-icons.icon-accent[data-icon="wechat"] {
+.services-icon-left.si-wechat:before, .services-icon-left[data-icon="wechat"]:before {
   -webkit-mask-position: -48px -144px;
           mask-position: -48px -144px; }
-.services-icons.icon-light.si-whatsapp, .services-icons.icon-light[data-icon="whatsapp"],
-.services-icons.icon-primary.si-whatsapp,
-.services-icons.icon-primary[data-icon="whatsapp"],
-.services-icons.icon-accent.si-whatsapp,
-.services-icons.icon-accent[data-icon="whatsapp"] {
+.services-icon-left.si-whatsapp:before, .services-icon-left[data-icon="whatsapp"]:before {
   -webkit-mask-position: -168px -120px;
           mask-position: -168px -120px; }
-.services-icons.icon-light.si-wordpress, .services-icons.icon-light[data-icon="wordpress"],
-.services-icons.icon-primary.si-wordpress,
-.services-icons.icon-primary[data-icon="wordpress"],
-.services-icons.icon-accent.si-wordpress,
-.services-icons.icon-accent[data-icon="wordpress"] {
+.services-icon-left.si-wordpress:before, .services-icon-left[data-icon="wordpress"]:before {
   -webkit-mask-position: -120px -120px;
           mask-position: -120px -120px; }
-.services-icons.icon-light.si-wunderlist, .services-icons.icon-light[data-icon="wunderlist"],
-.services-icons.icon-primary.si-wunderlist,
-.services-icons.icon-primary[data-icon="wunderlist"],
-.services-icons.icon-accent.si-wunderlist,
-.services-icons.icon-accent[data-icon="wunderlist"] {
+.services-icon-left.si-wunderlist:before, .services-icon-left[data-icon="wunderlist"]:before {
   -webkit-mask-position: -72px -72px;
           mask-position: -72px -72px; }
-.services-icons.icon-light.si-xing, .services-icons.icon-light[data-icon="xing"],
-.services-icons.icon-primary.si-xing,
-.services-icons.icon-primary[data-icon="xing"],
-.services-icons.icon-accent.si-xing,
-.services-icons.icon-accent[data-icon="xing"] {
+.services-icon-left.si-xing:before, .services-icon-left[data-icon="xing"]:before {
   -webkit-mask-position: -144px -24px;
           mask-position: -144px -24px; }
-.services-icons.icon-light.si-xing-box, .services-icons.icon-light[data-icon="xing-box"],
-.services-icons.icon-primary.si-xing-box,
-.services-icons.icon-primary[data-icon="xing-box"],
-.services-icons.icon-accent.si-xing-box,
-.services-icons.icon-accent[data-icon="xing-box"] {
+.services-icon-left.si-xing-box:before, .services-icon-left[data-icon="xing-box"]:before {
   -webkit-mask-position: -168px -24px;
           mask-position: -168px -24px; }
-.services-icons.icon-light.si-youtube, .services-icons.icon-light[data-icon="youtube"],
-.services-icons.icon-primary.si-youtube,
-.services-icons.icon-primary[data-icon="youtube"],
-.services-icons.icon-accent.si-youtube,
-.services-icons.icon-accent[data-icon="youtube"] {
+.services-icon-left.si-youtube:before, .services-icon-left[data-icon="youtube"]:before {
   -webkit-mask-position: -48px -48px;
           mask-position: -48px -48px; }
+
+.services-icon-right:after {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  content: " ";
+  margin-left: 12px;
+  float: right;
+  background: rgba(0, 0, 0, 0.87);
+  -webkit-mask: url(../img/services-icons.svg) no-repeat;
+          mask: url(../img/services-icons.svg) no-repeat; }
+
+.services-icon-right.icon-dark:after {
+  background: rgba(0, 0, 0, 0.87) !important; }
+
+.services-icon-right.icon-secondary:after {
+  background: rgba(0, 0, 0, 0.54); }
+
+.services-icon-right.icon-disabled:after {
+  background: rgba(0, 0, 0, 0.26); }
+
+.services-icon-right.icon-light:after {
+  background: #FFF !important; }
+
+.services-icon-right.icon-light.icon-disabled:after {
+  background: rgba(255, 255, 255, 0.3) !important; }
+
+.services-icon-right.icon-primary:after {
+  background: #607d8b; }
+
+.services-icon-right.icon-accent:after {
+  background: #00b0ff; }
+
+a.services-icon-right:not(.btn):after {
+  background: #00b0ff; }
+a.services-icon-right:not(.btn):hover:after {
+  background: #0aa2ff; }
+a.services-icon-right:not(.btn):active:after {
+  background: #0091ea; }
+
+.btn.services-icon-right:after, .btn.services-icon-right:hover:after, .btn.services-icon-right:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn-colored.services-icon-right:after, .btn-colored.services-icon-right:hover:after, .btn-colored.services-icon-right:focus:after, .btn.btn-colored.services-icon-right:after, .btn.btn-colored.services-icon-right:hover:after, .btn.btn-colored.services-icon-right:focus:after {
+  background: #546e7a; }
+
+.btn-accent.services-icon-right:after, .btn-accent.services-icon-right:hover:after, .btn-accent.services-icon-right:focus:after, .btn.btn-accent.services-icon-right:after, .btn.btn-accent.services-icon-right:hover:after, .btn.btn-accent.services-icon-right:focus:after {
+  background: #00b0ff; }
+
+.btn-raised.services-icon-right.btn-colored:after, .btn-raised.services-icon-right.btn-colored:hover:after, .btn-raised.services-icon-right.btn-colored:focus:after, .btn.btn-raised.services-icon-right.btn-colored:after, .btn.btn-raised.services-icon-right.btn-colored:hover:after, .btn.btn-raised.services-icon-right.btn-colored:focus:after {
+  background: #FFF; }
+.btn-raised.services-icon-right.btn-accent:after, .btn-raised.services-icon-right.btn-accent:hover:after, .btn-raised.services-icon-right.btn-accent:focus:after, .btn.btn-raised.services-icon-right.btn-accent:after, .btn.btn-raised.services-icon-right.btn-accent:hover:after, .btn.btn-raised.services-icon-right.btn-accent:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn.btn-disabled.services-icon-right:after, .btn.btn-disabled.services-icon-right:hover:after, .btn.btn-disabled.services-icon-right:focus:after, .btn.btn-disabled.services-icon-right:active:after {
+  background: rgba(0, 0, 0, 0.26); }
+
+.fab.services-icon-right:after, .fab.services-icon-right:hover:after, .fab.services-icon-right:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+.fab.services-icon-right.fab-colored:after, .fab.services-icon-right.fab-colored:hover:after, .fab.services-icon-right.fab-colored:focus:after {
+  background: #FFF; }
+.fab.services-icon-right.fab-accent:after, .fab.services-icon-right.fab-accent:hover:after, .fab.services-icon-right.fab-accent:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.services-icon-right.si-behance:after, .services-icon-right[data-icon="behance"]:after {
+  -webkit-mask-position: -144px -48px;
+          mask-position: -144px -48px; }
+.services-icon-right.si-bitbucket:after, .services-icon-right[data-icon="bitbucket"]:after {
+  -webkit-mask-position: -24px -120px;
+          mask-position: -24px -120px; }
+.services-icon-right.si-blogger:after, .services-icon-right[data-icon="blogger"]:after {
+  -webkit-mask-position: -168px -48px;
+          mask-position: -168px -48px; }
+.services-icon-right.si-delicious:after, .services-icon-right[data-icon="delicious"]:after {
+  -webkit-mask-position: -144px -72px;
+          mask-position: -144px -72px; }
+.services-icon-right.si-delicious-box:after, .services-icon-right[data-icon="delicious-box"]:after {
+  -webkit-mask-position: -168px -72px;
+          mask-position: -168px -72px; }
+.services-icon-right.si-digg:after, .services-icon-right[data-icon="digg"]:after {
+  -webkit-mask-position: -120px -72px;
+          mask-position: -120px -72px; }
+.services-icon-right.si-disqus:after, .services-icon-right[data-icon="disqus"]:after {
+  -webkit-mask-position: -24px -96px;
+          mask-position: -24px -96px; }
+.services-icon-right.si-disqus-outline:after, .services-icon-right[data-icon="disqus-outline"]:after {
+  -webkit-mask-position: 0 -96px;
+          mask-position: 0 -96px; }
+.services-icon-right.si-dribbble:after, .services-icon-right[data-icon="dribbble"]:after {
+  -webkit-mask-position: -192px -48px;
+          mask-position: -192px -48px; }
+.services-icon-right.si-dribbble-box:after, .services-icon-right[data-icon="dribbble-box"]:after {
+  -webkit-mask-position: -216px -48px;
+          mask-position: -216px -48px; }
+.services-icon-right.si-drupal:after, .services-icon-right[data-icon="drupal"]:after {
+  -webkit-mask-position: -96px -120px;
+          mask-position: -96px -120px; }
+.services-icon-right.si-evernote:after, .services-icon-right[data-icon="evernote"]:after {
+  -webkit-mask-position: -216px -72px;
+          mask-position: -216px -72px; }
+.services-icon-right.si-facebook:after, .services-icon-right[data-icon="facebook"]:after {
+  -webkit-mask-position: 0 0;
+          mask-position: 0 0; }
+.services-icon-right.si-facebook-box:after, .services-icon-right[data-icon="facebook-box"]:after {
+  -webkit-mask-position: -24px 0;
+          mask-position: -24px 0; }
+.services-icon-right.si-facebook-messenger:after, .services-icon-right[data-icon="facebook-messenger"]:after {
+  -webkit-mask-position: -144px -120px;
+          mask-position: -144px -120px; }
+.services-icon-right.si-flickr:after, .services-icon-right[data-icon="flickr"]:after {
+  -webkit-mask-position: -96px -96px;
+          mask-position: -96px -96px; }
+.services-icon-right.si-foursquare:after, .services-icon-right[data-icon="foursquare"]:after {
+  -webkit-mask-position: -48px -96px;
+          mask-position: -48px -96px; }
+.services-icon-right.si-github-box:after, .services-icon-right[data-icon="github-box"]:after {
+  -webkit-mask-position: 0 -120px;
+          mask-position: 0 -120px; }
+.services-icon-right.si-google-photos:after, .services-icon-right[data-icon="google-photos"]:after {
+  -webkit-mask-position: -120px -96px;
+          mask-position: -120px -96px; }
+.services-icon-right.si-google-plus:after, .services-icon-right[data-icon="google-plus"]:after {
+  -webkit-mask-position: -96px 0;
+          mask-position: -96px 0; }
+.services-icon-right.si-google-plus-box:after, .services-icon-right[data-icon="google-plus-box"]:after {
+  -webkit-mask-position: -120px 0;
+          mask-position: -120px 0; }
+.services-icon-right.si-instagram:after, .services-icon-right[data-icon="instagram"]:after {
+  -webkit-mask-position: 0 -24px;
+          mask-position: 0 -24px; }
+.services-icon-right.si-instagram-box:after, .services-icon-right[data-icon="instagram-box"]:after {
+  -webkit-mask-position: -24px -24px;
+          mask-position: -24px -24px; }
+.services-icon-right.si-lastfm:after, .services-icon-right[data-icon="lastfm"]:after {
+  -webkit-mask-position: -144px -96px;
+          mask-position: -144px -96px; }
+.services-icon-right.si-line:after, .services-icon-right[data-icon="line"]:after {
+  -webkit-mask-position: -72px -144px;
+          mask-position: -72px -144px; }
+.services-icon-right.si-linkedin:after, .services-icon-right[data-icon="linkedin"]:after {
+  -webkit-mask-position: -144px 0;
+          mask-position: -144px 0; }
+.services-icon-right.si-linkedin-box:after, .services-icon-right[data-icon="linkedin-box"]:after {
+  -webkit-mask-position: -168px 0;
+          mask-position: -168px 0; }
+.services-icon-right.si-livejournal:after, .services-icon-right[data-icon="livejournal"]:after {
+  -webkit-mask-position: -192px -72px;
+          mask-position: -192px -72px; }
+.services-icon-right.si-medium:after, .services-icon-right[data-icon="medium"]:after {
+  -webkit-mask-position: 0 -72px;
+          mask-position: 0 -72px; }
+.services-icon-right.si-odnoklassniki:after, .services-icon-right[data-icon="odnoklassniki"]:after {
+  -webkit-mask-position: -96px -24px;
+          mask-position: -96px -24px; }
+.services-icon-right.si-odnoklassniki-box:after, .services-icon-right[data-icon="odnoklassniki-box"]:after {
+  -webkit-mask-position: -120px -24px;
+          mask-position: -120px -24px; }
+.services-icon-right.si-periscope:after, .services-icon-right[data-icon="periscope"]:after {
+  -webkit-mask-position: -120px -48px;
+          mask-position: -120px -48px; }
+.services-icon-right.si-pinterest:after, .services-icon-right[data-icon="pinterest"]:after {
+  -webkit-mask-position: -192px 0;
+          mask-position: -192px 0; }
+.services-icon-right.si-pinterest-box:after, .services-icon-right[data-icon="pinterest-box"]:after {
+  -webkit-mask-position: -216px 0;
+          mask-position: -216px 0; }
+.services-icon-right.si-pocket:after, .services-icon-right[data-icon="pocket"]:after {
+  -webkit-mask-position: -24px -72px;
+          mask-position: -24px -72px; }
+.services-icon-right.si-qqchat:after, .services-icon-right[data-icon="qqchat"]:after {
+  -webkit-mask-position: -96px -144px;
+          mask-position: -96px -144px; }
+.services-icon-right.si-qzone:after, .services-icon-right[data-icon="qzone"]:after {
+  -webkit-mask-position: -216px -24px;
+          mask-position: -216px -24px; }
+.services-icon-right.si-reddit:after, .services-icon-right[data-icon="reddit"]:after {
+  -webkit-mask-position: -48px -72px;
+          mask-position: -48px -72px; }
+.services-icon-right.si-renren:after, .services-icon-right[data-icon="renren"]:after {
+  -webkit-mask-position: -24px -48px;
+          mask-position: -24px -48px; }
+.services-icon-right.si-sina-weibo:after, .services-icon-right[data-icon="sina-weibo"]:after {
+  -webkit-mask-position: -192px -24px;
+          mask-position: -192px -24px; }
+.services-icon-right.si-skype:after, .services-icon-right[data-icon="skype"]:after {
+  -webkit-mask-position: -24px -144px;
+          mask-position: -24px -144px; }
+.services-icon-right.si-skype-outline:after, .services-icon-right[data-icon="skype-outline"]:after {
+  -webkit-mask-position: 0 -144px;
+          mask-position: 0 -144px; }
+.services-icon-right.si-slack:after, .services-icon-right[data-icon="slack"]:after {
+  -webkit-mask-position: -144px -144px;
+          mask-position: -144px -144px; }
+.services-icon-right.si-snapchat:after, .services-icon-right[data-icon="snapchat"]:after {
+  -webkit-mask-position: -120px -144px;
+          mask-position: -120px -144px; }
+.services-icon-right.si-soundcloud:after, .services-icon-right[data-icon="soundcloud"]:after {
+  -webkit-mask-position: -168px -96px;
+          mask-position: -168px -96px; }
+.services-icon-right.si-spotify:after, .services-icon-right[data-icon="spotify"]:after {
+  -webkit-mask-position: -192px -96px;
+          mask-position: -192px -96px; }
+.services-icon-right.si-stackexchange:after, .services-icon-right[data-icon="stackexchange"]:after {
+  -webkit-mask-position: -48px -120px;
+          mask-position: -48px -120px; }
+.services-icon-right.si-stackoverflow:after, .services-icon-right[data-icon="stackoverflow"]:after {
+  -webkit-mask-position: -72px -120px;
+          mask-position: -72px -120px; }
+.services-icon-right.si-swarm:after, .services-icon-right[data-icon="swarm"]:after {
+  -webkit-mask-position: -72px -96px;
+          mask-position: -72px -96px; }
+.services-icon-right.si-telegram:after, .services-icon-right[data-icon="telegram"]:after {
+  -webkit-mask-position: -216px -120px;
+          mask-position: -216px -120px; }
+.services-icon-right.si-trello:after, .services-icon-right[data-icon="trello"]:after {
+  -webkit-mask-position: -216px -96px;
+          mask-position: -216px -96px; }
+.services-icon-right.si-tumblr:after, .services-icon-right[data-icon="tumblr"]:after {
+  -webkit-mask-position: 0 -48px;
+          mask-position: 0 -48px; }
+.services-icon-right.si-twitch:after, .services-icon-right[data-icon="twitch"]:after {
+  -webkit-mask-position: -96px -72px;
+          mask-position: -96px -72px; }
+.services-icon-right.si-twitter:after, .services-icon-right[data-icon="twitter"]:after {
+  -webkit-mask-position: -48px 0;
+          mask-position: -48px 0; }
+.services-icon-right.si-twitter-box:after, .services-icon-right[data-icon="twitter-box"]:after {
+  -webkit-mask-position: -72px 0;
+          mask-position: -72px 0; }
+.services-icon-right.si-viber:after, .services-icon-right[data-icon="viber"]:after {
+  -webkit-mask-position: -192px -120px;
+          mask-position: -192px -120px; }
+.services-icon-right.si-vimeo:after, .services-icon-right[data-icon="vimeo"]:after {
+  -webkit-mask-position: -72px -48px;
+          mask-position: -72px -48px; }
+.services-icon-right.si-vine:after, .services-icon-right[data-icon="vine"]:after {
+  -webkit-mask-position: -96px -48px;
+          mask-position: -96px -48px; }
+.services-icon-right.si-vk:after, .services-icon-right[data-icon="vk"]:after {
+  -webkit-mask-position: -48px -24px;
+          mask-position: -48px -24px; }
+.services-icon-right.si-vk-box:after, .services-icon-right[data-icon="vk-box"]:after {
+  -webkit-mask-position: -72px -24px;
+          mask-position: -72px -24px; }
+.services-icon-right.si-wechat:after, .services-icon-right[data-icon="wechat"]:after {
+  -webkit-mask-position: -48px -144px;
+          mask-position: -48px -144px; }
+.services-icon-right.si-whatsapp:after, .services-icon-right[data-icon="whatsapp"]:after {
+  -webkit-mask-position: -168px -120px;
+          mask-position: -168px -120px; }
+.services-icon-right.si-wordpress:after, .services-icon-right[data-icon="wordpress"]:after {
+  -webkit-mask-position: -120px -120px;
+          mask-position: -120px -120px; }
+.services-icon-right.si-wunderlist:after, .services-icon-right[data-icon="wunderlist"]:after {
+  -webkit-mask-position: -72px -72px;
+          mask-position: -72px -72px; }
+.services-icon-right.si-xing:after, .services-icon-right[data-icon="xing"]:after {
+  -webkit-mask-position: -144px -24px;
+          mask-position: -144px -24px; }
+.services-icon-right.si-xing-box:after, .services-icon-right[data-icon="xing-box"]:after {
+  -webkit-mask-position: -168px -24px;
+          mask-position: -168px -24px; }
+.services-icon-right.si-youtube:after, .services-icon-right[data-icon="youtube"]:after {
+  -webkit-mask-position: -48px -48px;
+          mask-position: -48px -48px; }
+
+.theme-dark .services-icons {
+  background: #FFF; }
+.theme-dark .services-icons.icon-secondary {
+  background: rgba(255, 255, 255, 0.7); }
+.theme-dark .services-icons.icon-disabled {
+  background: rgba(255, 255, 255, 0.3); }
+.theme-dark .services-icons.icon-primary {
+  background: #78909c; }
+.theme-dark .services-icons.icon-accent {
+  background: #40c4ff; }
+.theme-dark .btn .services-icons, .theme-dark .btn .services-icons:hover, .theme-dark .btn .services-icons:focus {
+  background: #FFF; }
+.theme-dark .btn-colored .services-icons, .theme-dark .btn-colored:hover .services-icons, .theme-dark .btn-colored:focus .services-icons, .theme-dark .btn.btn-colored .services-icons, .theme-dark .btn.btn-colored:hover .services-icons, .theme-dark .btn.btn-colored:focus .services-icons {
+  background: #78909c; }
+.theme-dark .btn-accent .services-icons, .theme-dark .btn-accent:hover .services-icons, .theme-dark .btn-accent:focus .services-icons, .theme-dark .btn.btn-accent .services-icons, .theme-dark .btn.btn-accent:hover .services-icons, .theme-dark .btn.btn-accent:focus .services-icons {
+  background: #40c4ff; }
+.theme-dark .btn-raised.btn-colored .services-icons, .theme-dark .btn-raised.btn-colored:hover .services-icons, .theme-dark .btn-raised.btn-colored:focus .services-icons, .theme-dark .btn.btn-raised.btn-colored .services-icons, .theme-dark .btn.btn-raised.btn-colored:hover .services-icons, .theme-dark .btn.btn-raised.btn-colored:focus .services-icons {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .btn-raised.btn-accent .services-icons, .theme-dark .btn-raised.btn-accent:hover .services-icons, .theme-dark .btn-raised.btn-accent:focus .services-icons, .theme-dark .btn.btn-raised.btn-accent .services-icons, .theme-dark .btn.btn-raised.btn-accent:hover .services-icons, .theme-dark .btn.btn-raised.btn-accent:focus .services-icons {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .btn.btn-disabled .services-icons, .theme-dark .btn.btn-disabled:hover .services-icons, .theme-dark .btn.btn-disabled:focus .services-icons, .theme-dark .btn.btn-disabled:active .services-icons {
+  background: rgba(255, 255, 255, 0.3); }
+.theme-dark .fab .services-icons, .theme-dark .fab:hover .services-icons, .theme-dark .fab:focus .services-icons {
+  background: #FFF; }
+.theme-dark .fab.fab-colored .services-icons, .theme-dark .fab.fab-colored:hover .services-icons, .theme-dark .fab.fab-colored:focus .services-icons {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .fab.fab-accent .services-icons, .theme-dark .fab.fab-accent:hover .services-icons, .theme-dark .fab.fab-accent:focus .services-icons {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .services-icon-left:before, .theme-dark .services-icon-right:after {
+  background: #FFF; }
+.theme-dark .services-icon-left.icon-secondary:before, .theme-dark .services-icon-right.icon-secondary:after {
+  background: rgba(255, 255, 255, 0.7); }
+.theme-dark .services-icon-left.icon-disabled:before, .theme-dark .services-icon-right.icon-disabled:after {
+  background: rgba(255, 255, 255, 0.3); }
+.theme-dark .services-icon-left.icon-primary:before, .theme-dark .services-icon-right.icon-primary:after {
+  background: #78909c; }
+.theme-dark .services-icon-left.icon-accent:before, .theme-dark .services-icon-right.icon-accent:after {
+  background: #40c4ff; }
+.theme-dark a.services-icon-left:not(.btn):before {
+  background: #40c4ff; }
+.theme-dark a.services-icon-left:not(.btn):hover:before {
+  background: #5fcdff; }
+.theme-dark a.services-icon-left:not(.btn):active:before {
+  background: #80d8ff; }
+.theme-dark .btn.services-icon-left:before, .theme-dark .btn.services-icon-left:hover:before, .theme-dark .btn.services-icon-left:focus:before, .theme-dark .menu a.services-icon-left:before, .theme-dark .menu a.services-icon-left:hover:before, .theme-dark .menu a.services-icon-left:focus:before {
+  background: #FFF; }
+.theme-dark .btn-colored.services-icon-left:before, .theme-dark .btn-colored.services-icon-left:hover:before, .theme-dark .btn-colored.services-icon-left:focus:before, .theme-dark .btn.btn-colored.services-icon-left:before, .theme-dark .btn.btn-colored.services-icon-left:hover:before, .theme-dark .btn.btn-colored.services-icon-left:focus:before {
+  background: #78909c; }
+.theme-dark .btn-accent.services-icon-left:before, .theme-dark .btn-accent.services-icon-left:hover:before, .theme-dark .btn-accent.services-icon-left:focus:before, .theme-dark .btn.btn-accent.services-icon-left:before, .theme-dark .btn.btn-accent.services-icon-left:hover:before, .theme-dark .btn.btn-accent.services-icon-left:focus:before {
+  background: #40c4ff; }
+.theme-dark .btn-raised.services-icon-left.btn-colored:before, .theme-dark .btn-raised.services-icon-left.btn-colored:hover:before, .theme-dark .btn-raised.services-icon-left.btn-colored:focus:before, .theme-dark .btn.btn-raised.services-icon-left.btn-colored:before, .theme-dark .btn.btn-raised.services-icon-left.btn-colored:hover:before, .theme-dark .btn.btn-raised.services-icon-left.btn-colored:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .btn-raised.services-icon-left.btn-accent:before, .theme-dark .btn-raised.services-icon-left.btn-accent:hover:before, .theme-dark .btn-raised.services-icon-left.btn-accent:focus:before, .theme-dark .btn.btn-raised.services-icon-left.btn-accent:before, .theme-dark .btn.btn-raised.services-icon-left.btn-accent:hover:before, .theme-dark .btn.btn-raised.services-icon-left.btn-accent:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .btn.btn-disabled.services-icon-left:before, .theme-dark .btn.btn-disabled.services-icon-left:hover:before, .theme-dark .btn.btn-disabled.services-icon-left:focus:before, .theme-dark .btn.btn-disabled.services-icon-left:active:before {
+  background: rgba(255, 255, 255, 0.3); }
+.theme-dark .fab.services-icon-left:before, .theme-dark .fab.services-icon-left:hover:before, .theme-dark .fab.services-icon-left:focus:before {
+  background: #FFF; }
+.theme-dark .fab.services-icon-left.fab-colored:before, .theme-dark .fab.services-icon-left.fab-colored:hover:before, .theme-dark .fab.services-icon-left.fab-colored:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .fab.services-icon-left.fab-accent:before, .theme-dark .fab.services-icon-left.fab-accent:hover:before, .theme-dark .fab.services-icon-left.fab-accent:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark a.services-icon-right:not(.btn):after {
+  background: #40c4ff; }
+.theme-dark a.services-icon-right:not(.btn):hover:after {
+  background: #5fcdff; }
+.theme-dark a.services-icon-right:not(.btn):active:after {
+  background: #80d8ff; }
+.theme-dark .btn.services-icon-right:after, .theme-dark .btn.services-icon-right:hover:after, .theme-dark .btn.services-icon-right:focus:after {
+  background: #FFF; }
+.theme-dark .btn-colored.services-icon-right:after, .theme-dark .btn-colored.services-icon-right:hover:after, .theme-dark .btn-colored.services-icon-right:focus:after, .theme-dark .btn.btn-colored.services-icon-right:after, .theme-dark .btn.btn-colored.services-icon-right:hover:after, .theme-dark .btn.btn-colored.services-icon-right:focus:after {
+  background: #78909c; }
+.theme-dark .btn-accent.services-icon-right:after, .theme-dark .btn-accent.services-icon-right:hover:after, .theme-dark .btn-accent.services-icon-right:focus:after, .theme-dark .btn.btn-accent.services-icon-right:after, .theme-dark .btn.btn-accent.services-icon-right:hover:after, .theme-dark .btn.btn-accent.services-icon-right:focus:after {
+  background: #40c4ff; }
+.theme-dark .btn-raised.services-icon-right.btn-colored:after, .theme-dark .btn-raised.services-icon-right.btn-colored:hover:after, .theme-dark .btn-raised.services-icon-right.btn-colored:focus:after, .theme-dark .btn.btn-raised.services-icon-right.btn-colored:after, .theme-dark .btn.btn-raised.services-icon-right.btn-colored:hover:after, .theme-dark .btn.btn-raised.services-icon-right.btn-colored:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .btn-raised.services-icon-right.btn-accent:after, .theme-dark .btn-raised.services-icon-right.btn-accent:hover:after, .theme-dark .btn-raised.services-icon-right.btn-accent:focus:after, .theme-dark .btn.btn-raised.services-icon-right.btn-accent:after, .theme-dark .btn.btn-raised.services-icon-right.btn-accent:hover:after, .theme-dark .btn.btn-raised.services-icon-right.btn-accent:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .btn.btn-disabled.services-icon-right:after, .theme-dark .btn.btn-disabled.services-icon-right:hover:after, .theme-dark .btn.btn-disabled.services-icon-right:focus:after, .theme-dark .btn.btn-disabled.services-icon-right:active:after {
+  background: rgba(255, 255, 255, 0.3); }
+.theme-dark .fab.services-icon-right:after, .theme-dark .fab.services-icon-right:hover:after, .theme-dark .fab.services-icon-right:focus:after {
+  background: #FFF; }
+.theme-dark .fab.services-icon-right.fab-colored:after, .theme-dark .fab.services-icon-right.fab-colored:hover:after, .theme-dark .fab.services-icon-right.fab-colored:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+.theme-dark .fab.services-icon-right.fab-accent:after, .theme-dark .fab.services-icon-right.fab-accent:hover:after, .theme-dark .fab.services-icon-right.fab-accent:focus:after {
+  background: rgba(0, 0, 0, 0.87); }

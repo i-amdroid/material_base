@@ -29,6 +29,8 @@
   color: #e53935; }
   .primary-red #drawer .menu li.active a.icon-left:before, .primary-red #drawer .menu li.active a.icon-right:after, .primary-red li.active-trail a.icon-left:before, .primary-red li.active-trail a.icon-right:after {
     color: #e53935; }
+  .primary-red #drawer .menu li.active a.services-icon-left:before, .primary-red #drawer .menu li.active a.services-icon-right:after, .primary-red li.active-trail a.services-icon-left:before, .primary-red li.active-trail a.services-icon-right:after {
+    background: #e53935; }
 .primary-red .sidebar .menu li.active a {
   color: #e53935; }
 .primary-red .navbar-item.block-search form .form-item input[type="text"], .primary-red #header .block-search form .form-item input[type="text"], .primary-red .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -121,6 +123,8 @@
   color: #d81b60; }
   .primary-pink #drawer .menu li.active a.icon-left:before, .primary-pink #drawer .menu li.active a.icon-right:after, .primary-pink li.active-trail a.icon-left:before, .primary-pink li.active-trail a.icon-right:after {
     color: #d81b60; }
+  .primary-pink #drawer .menu li.active a.services-icon-left:before, .primary-pink #drawer .menu li.active a.services-icon-right:after, .primary-pink li.active-trail a.services-icon-left:before, .primary-pink li.active-trail a.services-icon-right:after {
+    background: #d81b60; }
 .primary-pink .sidebar .menu li.active a {
   color: #d81b60; }
 .primary-pink .navbar-item.block-search form .form-item input[type="text"], .primary-pink #header .block-search form .form-item input[type="text"], .primary-pink .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -213,6 +217,8 @@
   color: #8e24aa; }
   .primary-purple #drawer .menu li.active a.icon-left:before, .primary-purple #drawer .menu li.active a.icon-right:after, .primary-purple li.active-trail a.icon-left:before, .primary-purple li.active-trail a.icon-right:after {
     color: #8e24aa; }
+  .primary-purple #drawer .menu li.active a.services-icon-left:before, .primary-purple #drawer .menu li.active a.services-icon-right:after, .primary-purple li.active-trail a.services-icon-left:before, .primary-purple li.active-trail a.services-icon-right:after {
+    background: #8e24aa; }
 .primary-purple .sidebar .menu li.active a {
   color: #8e24aa; }
 .primary-purple .navbar-item.block-search form .form-item input[type="text"], .primary-purple #header .block-search form .form-item input[type="text"], .primary-purple .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -305,6 +311,8 @@
   color: #5e35b1; }
   .primary-deep-purple #drawer .menu li.active a.icon-left:before, .primary-deep-purple #drawer .menu li.active a.icon-right:after, .primary-deep-purple li.active-trail a.icon-left:before, .primary-deep-purple li.active-trail a.icon-right:after {
     color: #5e35b1; }
+  .primary-deep-purple #drawer .menu li.active a.services-icon-left:before, .primary-deep-purple #drawer .menu li.active a.services-icon-right:after, .primary-deep-purple li.active-trail a.services-icon-left:before, .primary-deep-purple li.active-trail a.services-icon-right:after {
+    background: #5e35b1; }
 .primary-deep-purple .sidebar .menu li.active a {
   color: #5e35b1; }
 .primary-deep-purple .navbar-item.block-search form .form-item input[type="text"], .primary-deep-purple #header .block-search form .form-item input[type="text"], .primary-deep-purple .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -397,6 +405,8 @@
   color: #3949ab; }
   .primary-indigo #drawer .menu li.active a.icon-left:before, .primary-indigo #drawer .menu li.active a.icon-right:after, .primary-indigo li.active-trail a.icon-left:before, .primary-indigo li.active-trail a.icon-right:after {
     color: #3949ab; }
+  .primary-indigo #drawer .menu li.active a.services-icon-left:before, .primary-indigo #drawer .menu li.active a.services-icon-right:after, .primary-indigo li.active-trail a.services-icon-left:before, .primary-indigo li.active-trail a.services-icon-right:after {
+    background: #3949ab; }
 .primary-indigo .sidebar .menu li.active a {
   color: #3949ab; }
 .primary-indigo .navbar-item.block-search form .form-item input[type="text"], .primary-indigo #header .block-search form .form-item input[type="text"], .primary-indigo .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -489,6 +499,8 @@
   color: #1e88e5; }
   .primary-blue #drawer .menu li.active a.icon-left:before, .primary-blue #drawer .menu li.active a.icon-right:after, .primary-blue li.active-trail a.icon-left:before, .primary-blue li.active-trail a.icon-right:after {
     color: #1e88e5; }
+  .primary-blue #drawer .menu li.active a.services-icon-left:before, .primary-blue #drawer .menu li.active a.services-icon-right:after, .primary-blue li.active-trail a.services-icon-left:before, .primary-blue li.active-trail a.services-icon-right:after {
+    background: #1e88e5; }
 .primary-blue .sidebar .menu li.active a {
   color: #1e88e5; }
 .primary-blue .navbar-item.block-search form .form-item input[type="text"], .primary-blue #header .block-search form .form-item input[type="text"], .primary-blue .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -581,6 +593,8 @@
   color: #039be5; }
   .primary-light-blue #drawer .menu li.active a.icon-left:before, .primary-light-blue #drawer .menu li.active a.icon-right:after, .primary-light-blue li.active-trail a.icon-left:before, .primary-light-blue li.active-trail a.icon-right:after {
     color: #039be5; }
+  .primary-light-blue #drawer .menu li.active a.services-icon-left:before, .primary-light-blue #drawer .menu li.active a.services-icon-right:after, .primary-light-blue li.active-trail a.services-icon-left:before, .primary-light-blue li.active-trail a.services-icon-right:after {
+    background: #039be5; }
 .primary-light-blue .sidebar .menu li.active a {
   color: #039be5; }
 .primary-light-blue .navbar-item.block-search form .form-item input[type="text"], .primary-light-blue #header .block-search form .form-item input[type="text"], .primary-light-blue .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -673,6 +687,8 @@
   color: #00acc1; }
   .primary-cyan #drawer .menu li.active a.icon-left:before, .primary-cyan #drawer .menu li.active a.icon-right:after, .primary-cyan li.active-trail a.icon-left:before, .primary-cyan li.active-trail a.icon-right:after {
     color: #00acc1; }
+  .primary-cyan #drawer .menu li.active a.services-icon-left:before, .primary-cyan #drawer .menu li.active a.services-icon-right:after, .primary-cyan li.active-trail a.services-icon-left:before, .primary-cyan li.active-trail a.services-icon-right:after {
+    background: #00acc1; }
 .primary-cyan .sidebar .menu li.active a {
   color: #00acc1; }
 .primary-cyan .navbar-item.block-search form .form-item input[type="text"], .primary-cyan #header .block-search form .form-item input[type="text"], .primary-cyan .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -765,6 +781,8 @@
   color: #00897b; }
   .primary-teal #drawer .menu li.active a.icon-left:before, .primary-teal #drawer .menu li.active a.icon-right:after, .primary-teal li.active-trail a.icon-left:before, .primary-teal li.active-trail a.icon-right:after {
     color: #00897b; }
+  .primary-teal #drawer .menu li.active a.services-icon-left:before, .primary-teal #drawer .menu li.active a.services-icon-right:after, .primary-teal li.active-trail a.services-icon-left:before, .primary-teal li.active-trail a.services-icon-right:after {
+    background: #00897b; }
 .primary-teal .sidebar .menu li.active a {
   color: #00897b; }
 .primary-teal .navbar-item.block-search form .form-item input[type="text"], .primary-teal #header .block-search form .form-item input[type="text"], .primary-teal .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -857,6 +875,8 @@
   color: #43a047; }
   .primary-green #drawer .menu li.active a.icon-left:before, .primary-green #drawer .menu li.active a.icon-right:after, .primary-green li.active-trail a.icon-left:before, .primary-green li.active-trail a.icon-right:after {
     color: #43a047; }
+  .primary-green #drawer .menu li.active a.services-icon-left:before, .primary-green #drawer .menu li.active a.services-icon-right:after, .primary-green li.active-trail a.services-icon-left:before, .primary-green li.active-trail a.services-icon-right:after {
+    background: #43a047; }
 .primary-green .sidebar .menu li.active a {
   color: #43a047; }
 .primary-green .navbar-item.block-search form .form-item input[type="text"], .primary-green #header .block-search form .form-item input[type="text"], .primary-green .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -949,6 +969,8 @@
   color: #7cb342; }
   .primary-light-green #drawer .menu li.active a.icon-left:before, .primary-light-green #drawer .menu li.active a.icon-right:after, .primary-light-green li.active-trail a.icon-left:before, .primary-light-green li.active-trail a.icon-right:after {
     color: #7cb342; }
+  .primary-light-green #drawer .menu li.active a.services-icon-left:before, .primary-light-green #drawer .menu li.active a.services-icon-right:after, .primary-light-green li.active-trail a.services-icon-left:before, .primary-light-green li.active-trail a.services-icon-right:after {
+    background: #7cb342; }
 .primary-light-green .sidebar .menu li.active a {
   color: #7cb342; }
 .primary-light-green .navbar-item.block-search form .form-item input[type="text"], .primary-light-green #header .block-search form .form-item input[type="text"], .primary-light-green .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -1041,6 +1063,8 @@
   color: #c0ca33; }
   .primary-lime #drawer .menu li.active a.icon-left:before, .primary-lime #drawer .menu li.active a.icon-right:after, .primary-lime li.active-trail a.icon-left:before, .primary-lime li.active-trail a.icon-right:after {
     color: #c0ca33; }
+  .primary-lime #drawer .menu li.active a.services-icon-left:before, .primary-lime #drawer .menu li.active a.services-icon-right:after, .primary-lime li.active-trail a.services-icon-left:before, .primary-lime li.active-trail a.services-icon-right:after {
+    background: #c0ca33; }
 .primary-lime .sidebar .menu li.active a {
   color: #c0ca33; }
 .primary-lime .navbar-item.block-search form .form-item input[type="text"], .primary-lime #header .block-search form .form-item input[type="text"], .primary-lime .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -1133,6 +1157,8 @@
   color: #fdd835; }
   .primary-yellow #drawer .menu li.active a.icon-left:before, .primary-yellow #drawer .menu li.active a.icon-right:after, .primary-yellow li.active-trail a.icon-left:before, .primary-yellow li.active-trail a.icon-right:after {
     color: #fdd835; }
+  .primary-yellow #drawer .menu li.active a.services-icon-left:before, .primary-yellow #drawer .menu li.active a.services-icon-right:after, .primary-yellow li.active-trail a.services-icon-left:before, .primary-yellow li.active-trail a.services-icon-right:after {
+    background: #fdd835; }
 .primary-yellow .sidebar .menu li.active a {
   color: #fdd835; }
 .primary-yellow .navbar-item.block-search form .form-item input[type="text"], .primary-yellow #header .block-search form .form-item input[type="text"], .primary-yellow .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -1225,6 +1251,8 @@
   color: #ffb300; }
   .primary-amber #drawer .menu li.active a.icon-left:before, .primary-amber #drawer .menu li.active a.icon-right:after, .primary-amber li.active-trail a.icon-left:before, .primary-amber li.active-trail a.icon-right:after {
     color: #ffb300; }
+  .primary-amber #drawer .menu li.active a.services-icon-left:before, .primary-amber #drawer .menu li.active a.services-icon-right:after, .primary-amber li.active-trail a.services-icon-left:before, .primary-amber li.active-trail a.services-icon-right:after {
+    background: #ffb300; }
 .primary-amber .sidebar .menu li.active a {
   color: #ffb300; }
 .primary-amber .navbar-item.block-search form .form-item input[type="text"], .primary-amber #header .block-search form .form-item input[type="text"], .primary-amber .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -1317,6 +1345,8 @@
   color: #fb8c00; }
   .primary-orange #drawer .menu li.active a.icon-left:before, .primary-orange #drawer .menu li.active a.icon-right:after, .primary-orange li.active-trail a.icon-left:before, .primary-orange li.active-trail a.icon-right:after {
     color: #fb8c00; }
+  .primary-orange #drawer .menu li.active a.services-icon-left:before, .primary-orange #drawer .menu li.active a.services-icon-right:after, .primary-orange li.active-trail a.services-icon-left:before, .primary-orange li.active-trail a.services-icon-right:after {
+    background: #fb8c00; }
 .primary-orange .sidebar .menu li.active a {
   color: #fb8c00; }
 .primary-orange .navbar-item.block-search form .form-item input[type="text"], .primary-orange #header .block-search form .form-item input[type="text"], .primary-orange .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -1409,6 +1439,8 @@
   color: #f4511e; }
   .primary-deep-orange #drawer .menu li.active a.icon-left:before, .primary-deep-orange #drawer .menu li.active a.icon-right:after, .primary-deep-orange li.active-trail a.icon-left:before, .primary-deep-orange li.active-trail a.icon-right:after {
     color: #f4511e; }
+  .primary-deep-orange #drawer .menu li.active a.services-icon-left:before, .primary-deep-orange #drawer .menu li.active a.services-icon-right:after, .primary-deep-orange li.active-trail a.services-icon-left:before, .primary-deep-orange li.active-trail a.services-icon-right:after {
+    background: #f4511e; }
 .primary-deep-orange .sidebar .menu li.active a {
   color: #f4511e; }
 .primary-deep-orange .navbar-item.block-search form .form-item input[type="text"], .primary-deep-orange #header .block-search form .form-item input[type="text"], .primary-deep-orange .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -1501,6 +1533,8 @@
   color: #6d4c41; }
   .primary-brown #drawer .menu li.active a.icon-left:before, .primary-brown #drawer .menu li.active a.icon-right:after, .primary-brown li.active-trail a.icon-left:before, .primary-brown li.active-trail a.icon-right:after {
     color: #6d4c41; }
+  .primary-brown #drawer .menu li.active a.services-icon-left:before, .primary-brown #drawer .menu li.active a.services-icon-right:after, .primary-brown li.active-trail a.services-icon-left:before, .primary-brown li.active-trail a.services-icon-right:after {
+    background: #6d4c41; }
 .primary-brown .sidebar .menu li.active a {
   color: #6d4c41; }
 .primary-brown .navbar-item.block-search form .form-item input[type="text"], .primary-brown #header .block-search form .form-item input[type="text"], .primary-brown .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -1593,6 +1627,8 @@
   color: #757575; }
   .primary-grey #drawer .menu li.active a.icon-left:before, .primary-grey #drawer .menu li.active a.icon-right:after, .primary-grey li.active-trail a.icon-left:before, .primary-grey li.active-trail a.icon-right:after {
     color: #757575; }
+  .primary-grey #drawer .menu li.active a.services-icon-left:before, .primary-grey #drawer .menu li.active a.services-icon-right:after, .primary-grey li.active-trail a.services-icon-left:before, .primary-grey li.active-trail a.services-icon-right:after {
+    background: #757575; }
 .primary-grey .sidebar .menu li.active a {
   color: #757575; }
 .primary-grey .navbar-item.block-search form .form-item input[type="text"], .primary-grey #header .block-search form .form-item input[type="text"], .primary-grey .card-bg-primary .block-search form .form-item input[type="text"] {
@@ -1685,6 +1721,8 @@
   color: #546e7a; }
   .primary-blue-grey #drawer .menu li.active a.icon-left:before, .primary-blue-grey #drawer .menu li.active a.icon-right:after, .primary-blue-grey li.active-trail a.icon-left:before, .primary-blue-grey li.active-trail a.icon-right:after {
     color: #546e7a; }
+  .primary-blue-grey #drawer .menu li.active a.services-icon-left:before, .primary-blue-grey #drawer .menu li.active a.services-icon-right:after, .primary-blue-grey li.active-trail a.services-icon-left:before, .primary-blue-grey li.active-trail a.services-icon-right:after {
+    background: #546e7a; }
 .primary-blue-grey .sidebar .menu li.active a {
   color: #546e7a; }
 .primary-blue-grey .navbar-item.block-search form .form-item input[type="text"], .primary-blue-grey #header .block-search form .form-item input[type="text"], .primary-blue-grey .card-bg-primary .block-search form .form-item input[type="text"] {

@@ -66,6 +66,7 @@ $accent-colors: (
     article .content blockquote { border-color: color($color-value); }
     #drawer .menu li.active a, li.active-trail a { color: color($color-value, 600);
       &.icon-left:before, &.icon-right:after { color: color($color-value, 600); }
+      &.services-icon-left:before, &.services-icon-right:after { background: color($color-value, 600); }
     }
     .sidebar .menu li.active a { color: color($color-value, 600); }
     .navbar-item.block-search, #header .block-search, .card-bg-primary .block-search {
