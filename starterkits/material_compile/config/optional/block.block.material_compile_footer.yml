@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_class
+    - system
+  theme:
+    - material_base
+third_party_settings:
+  block_class:
+    classes: footer-item
+id: material_compile_footer
+theme: material_compile
+region: footer_content
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

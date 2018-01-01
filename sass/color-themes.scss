@@ -61,6 +61,9 @@ $accent-colors: (
       a { color: contrast-color(color($color-value));
         &:hover { border-color: rgba(contrast-color(color($color-value)), .5); color: contrast-color(color($color-value)); }
       }
+    .navbar-account-menu .menu {
+      a:before { color: contrast-color(color($color-value)); }
+    }
     .active a, .active-trail a, .active { border-color: contrast-color(color($color-value)); }
     }
     article blockquote { border-color: color($color-value); }
@@ -72,7 +75,7 @@ $accent-colors: (
     .sidebar .menu li a.is-active { color: color($color-value, 600); }
     .navbar-item.block-search, #header .block-search, .card-bg-primary .block-search {
       form .form-item {
-        input[type="text"] { color: contrast-color(color($color-value));
+        input[type="text"], input[type="search"] { color: contrast-color(color($color-value));
           border-bottom: 1px solid contrast-color(color($color-value), $color-text, $color-text-light);
           @include input-placeholder { color: contrast-color(color($color-value), $color-text-disabled, $color-text-light-disabled); }
         }
@@ -142,7 +145,7 @@ $accent-colors: (
     }
     .form-item {
       & .focused label { color: color($color-value, a200); }
-      input[type="text"], input[type="email"], input[type="password"], textarea, select {
+      input[type="text"], input[type="email"], input[type="password"], input[type="search"], textarea, select {
         &:focus, &.error:focus { border-color: color($color-value, a200); }
       }
       input[type="checkbox"]:checked:before, input[type="radio"]:checked:before { color: color($color-value, a200); }

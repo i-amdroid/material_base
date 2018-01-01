@@ -77,6 +77,12 @@ function material_base_form_alter(&$form, FormStateInterface $form_state, $form_
       $form['actions']['#attributes']['class'][] = 'card-item card-actions divider-top';
       $form['actions']['submit']['#attributes']['class'][] = 'btn-accent';
       break;
+    case 'search_block_form':
+      $form['keys']['#attributes']['placeholder'] = t('Search');
+      $form['keys']['#wrapper_attributes']['class'][] = 'icon-left';
+      $form['keys']['#wrapper_attributes']['data-icon'] = 'search';
+      $form['actions']['submit']['#attributes']['class'][] = 'hidden';
+      break;
   }
 }
 

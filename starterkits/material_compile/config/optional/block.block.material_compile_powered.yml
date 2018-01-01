@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - material_base
+third_party_settings:
+  block_class:
+    classes: footer-item
+id: material_compile_powered
+theme: material_compile
+region: footer_content
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -237,7 +237,6 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
     a:hover { color: $color-text; border-color: rgba($color-text, .5); }
     .active-trail a, .is-active { border-color: $color-text; } // D7
   }
-  // TO DO add .navbar-item.block-search
 }
 
 .navbar-dark {
@@ -252,10 +251,9 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
     a:hover { color: $color-text-light; border-color: rgba($color-text-light, .5); }
     .active-trail a, .is-active { border-color: $color-text-light; } // D7
   }
-  // TO DO add .navbar-item.block-search
 }
 
-#footer { min-height: 64px; background: $color-bg-bar; @extend .z-level-2; font-size: 14px; } // TDV
+#footer { min-height: 48px; background: $color-bg-bar; @extend .z-level-2; font-size: 14px; } // TDV
 #footer-content { padding: 8px 4px; @extend .clearfix; }
 .region-footer-content { display: flex; flex-wrap: wrap; }
 .footer-item { display: inline-block; min-height: 32px; margin: 0 12px; float: none; line-height: 32px; }
@@ -269,6 +267,7 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 
 @include breakpoint($xs) {
   #navbar { padding: 8px 12px; }
+  #footer { min-height: 64px; }
   #footer-content { padding: 8px 12px; text-align: center; }
   .region-footer-content { display: block; }
   .footer-item { min-height: 48px; float: left; line-height: 48px; }
@@ -502,11 +501,11 @@ tr.selected:hover { background: $color-bg-hover; } // TDV
   input, textarea, select { border: 0; margin: 0; background: none; outline: 0; appearance: none; border-radius: 0;
     color: $color-text; font-family: $font-family; font-size: 16px;
   } // TDV
-  input[type="text"], input[type="email"], input[type="password"], textarea, select { display: block; width: 100%; max-width: 460px; border-bottom: 1px solid $color-divider; padding: 8px 0;
+  input[type="text"], input[type="email"], input[type="password"], input[type="search"], textarea, select { display: block; width: 100%; max-width: 460px; border-bottom: 1px solid $color-divider; padding: 8px 0;
     &:focus, &.error:focus { border-bottom: 2px solid $color-accent; padding-bottom: 7px; }
     &.error { border-bottom: 2px solid color($red); padding: 8px 0 7px; }
     @include input-placeholder { color: $color-text-disabled; }
-  } // TDV CTV
+  } // TDV CTV D7
   input[type="radio"], input[type="checkbox"] { display: inline-block; color: $color-text-secondary; float: left; margin-top: 6px; margin-right: 12px; } // TDV
   input[type="checkbox"]:before { @extend .material-icons; content: 'check_box_outline_blank';  margin-top: -7px; }
   input[type="checkbox"]:checked:before { content: 'check_box'; color: $color-accent; } // TDV CTV
@@ -559,7 +558,6 @@ icon labels
 .navbar-branding { display: flex;
   & > div:not(.contextual) + div { margin: 0 -12px 0 12px; }
 }
-
 .navbar-menu { margin: -8px 0; height: $navbar;
   .menu { display: flex; height: $navbar; padding: 0; margin: 0;
     li { display: block; height: $navbar; }
@@ -574,6 +572,20 @@ icon labels
   // TO DO
   a { display: inline-block; padding: 12px; height: 48px; width: 48px; }
   .navbar-icon { margin: 0; }
+}
+.navbar-account-menu {
+  .menu { margin: 0 -12px; padding: 0; list-style: none; display: flex;
+    a { display: inline-block; padding: 12px; height: 48px; width: 48px; position: relative; text-indent: -99999px; color: transparent;
+      &:before { @extend .material-icons; content: "account_circle"; color: contrast-color($color-primary); position: absolute; top: 12px; left: 12px; text-indent: 0; } // CTV
+      &[data-drupal-link-system-path="user/logout"]:before { content: "exit_to_app"; } // D7
+    }
+  }
+}
+
+/* footer */
+.footer-item .menu { display: inline-block; padding: 0; margin: 0; list-style: none;
+  li { display: inline-block; margin-right: 8px; }
+  a { display: inline-block; }
 }
 
 /* drawer */
@@ -685,14 +697,14 @@ navbar overlaying header-content (for sliders)
   form { display: block; width: 100%; max-width: $search; height: 48px; padding: 4px 0;
     .form-item { margin: 0; display: flex; height: 40px;
       &.icon-left:before { margin: 8px 12px 8px 0; height: 24px; }
-      input[type="text"] { margin: 2px 0; background: none; }
+      input[type="text"], input[type="search"] { margin: 2px 0; background: none; } // D7
     }
   }
   &.search-persistent form {
     .form-item { background: rgba(#FFF, .15); border-radius: 2px; transition: background-color .2s, box-shadow .2s; position: relative; display: block;
       &:hover { background: rgba(#FFF, .25); }
       &.focused { background: #FFF; @extend .z-level-1; }
-      input[type="text"] { margin: 0; padding: 0 12px 0 60px; height: 40px; line-height: 40px; border: 0; } // TDV (color overrrides when .focused)
+      input[type="text"], input[type="search"] { margin: 0; padding: 0 12px 0 60px; height: 40px; line-height: 40px; border: 0; } // TDV (color overrrides when .focused) D7
       &.icon-left:before { margin: 8px 12px 8px 24px; transition: color .2s; position: absolute; top: 0; left: 0; }
       &.focused.icon-left:before { color: $color-text; } 
     }
@@ -704,26 +716,46 @@ navbar overlaying header-content (for sliders)
 .card-bg-primary .block-search { 
   form {
     .form-item {
-      input[type="text"] { color: contrast-color($color-primary);
+      input[type="text"], input[type="search"] { color: contrast-color($color-primary);
         border-bottom: 1px solid contrast-color($color-primary, $color-text, $color-text-light);
         @include input-placeholder { color: contrast-color($color-primary, $color-text-disabled, $color-text-light-disabled); }
         &:focus, &.error:focus { border-bottom: 2px solid; padding-bottom: 7px; }
-      }
+      } // D7
       &.icon-left:before { color: contrast-color($color-primary); }
     } // CTV
   }
   &.search-persistent form {
     .form-item { 
-      input[type="text"] { border: 0;
+      input[type="text"], input[type="search"] { border: 0;
         &:focus, &.error:focus { border: 0; padding-bottom: 0; }
-      }
+      } // D7
       &.focused.icon-left:before { color: $color-text; }
-      &.focused input[type="text"] { color: $color-text;
+      &.focused input[type="text"], input[type="search"] { color: $color-text;
         @include input-placeholder { color: $color-text-disabled; }
+      } // D7
+    }
+  }
+}
+
+.navbar-light:not(.theme-dark) {
+  .navbar-item.block-search {
+    form {
+      // TO DO
+    }
+    &.search-persistent form {
+      .form-item { background: color($grey, 100);
+        &:hover { background: color($grey, 50); }
+        &.focused { background: #FFF; }
+        input[type="text"], input[type="search"] { color: $color-text;
+          @include input-placeholder { color: $color-text-disabled; }
+        } // D7
+        &.icon-left:before { color: $color-text; }
       }
     }
   }
 }
+
+// TO DO add .navbar-dark .navbar-item.block-search
 
 .navbar-item.block-search { margin: 0; padding: 0 12px; max-width: $search + 24px; }
 
@@ -735,12 +767,11 @@ navbar overlaying header-content (for sliders)
 }
 
 // autocomplete
-.ui-autocomplete { border: 0; padding: 0; box-sizing: content-box; background: #FFF;
+.ui-autocomplete.ui-widget.ui-widget-content { border: 0; padding: 0; box-sizing: content-box; background: #FFF;
   padding-top: 8px; padding-bottom: 8px; border-top: 1px solid $color-divider; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; @extend .z-level-1;
   .ui-menu-item { padding: 0; margin: 0; display: block;
-    a { display: block; padding: 8px 12px 8px 12px; color: $color-text; font-family: $font-family; font-size: 16px; line-height: 24px; }
-    &.ui-state-focus, &.ui-state-active { border: 0;
-      a { background: $color-bg-hover; }
+    a { display: block; padding: 8px 12px 8px 12px; color: $color-text; font-family: $font-family; font-size: 16px; line-height: 24px; 
+      &.ui-state-focus, &.ui-state-active { background: $color-bg-hover; border: 0; margin: 0; }
     }
   }
   .search-persistent-autocomplete & {
@@ -748,15 +779,11 @@ navbar overlaying header-content (for sliders)
   }
 } // TDV D7
 
-/* TO DO
-deafault D8 search (input[type="search"])
-*/
-
 /* tabs */
 .tabs ul, ul.tabs { list-style: none; display: flex; padding-left: 0;
   li { display: block;
-    a { display: inline-block; height: 48px; line-height: 20px; padding: 14px 12px 12px 12px; border-bottom: 2px solid transparent; font-size: 14px; font-weight: 500; text-transform: uppercase;
-      color: $color-text-secondary;
+    a { display: inline-block; line-height: 20px; padding: 14px 12px 12px 12px; border-bottom: 2px solid transparent; font-size: 14px; font-weight: 500; text-transform: uppercase;
+      color: $color-text-secondary; text-align: center;
       &:hover { border-color: rgba($color-primary, .5); }
       &.is-active { border-color: $color-primary; color: $color-primary;
         &:hover { border-color: $color-primary; }

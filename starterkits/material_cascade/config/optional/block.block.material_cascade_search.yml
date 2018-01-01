@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - search
+  theme:
+    - material_base
+third_party_settings:
+  block_class:
+    classes: 'block-search mt-24'
+id: material_cascade_search
+theme: material_cascade
+region: sidebar_first
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+visibility: {  }
