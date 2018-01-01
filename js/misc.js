@@ -63,6 +63,7 @@
     });
 
     // smooth scroll for internal links
+    
     var fixedHeight = 24;
     if ( $('body').hasClass('navbar-fixed') ) {
       fixedHeight += 64;
@@ -83,9 +84,14 @@
       var target = this.hash;
       var $target = $(target);
       $('html, body').stop().animate({
-          'scrollTop': $target.offset().top - fixedHeight
-      }, 600, 'swing', function () {
+        'scrollTop': $target.offset().top - fixedHeight
+      }, 600, 'swing', function (e) {
+        if (history.pushState) {
+          history.pushState(null, null, target);
+        }
+        else {
           window.location.hash = target;
+        }
       });
     });
 
@@ -95,12 +101,16 @@
       var target = this.hash;
       var $target = $(target);
       $('html, body').stop().animate({
-          'scrollTop': $target.offset().top - fixedHeight
-      }, 600, 'swing', function () {
+        'scrollTop': $target.offset().top - fixedHeight
+      }, 600, 'swing', function (e) {
+        if (history.pushState) {
+          history.pushState(null, null, target);
+        }
+        else {
           window.location.hash = target;
+        }
       });
     });
-
 
     // collapsible panels
     $('.collapsible-toggle').click(function() {
@@ -111,9 +121,9 @@
 
     // tootips
     $('.tooltip').hover(function() {
-      $( this ).addClass('tooltip-expanded');
+      $(this).addClass('tooltip-expanded');
     }, function() {
-      $( this ).removeClass('tooltip-expanded');
+      $(this).removeClass('tooltip-expanded');
     });
 
     // dropdown menus

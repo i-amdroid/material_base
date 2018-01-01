@@ -6,7 +6,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&subset=latin,cyrillic-ext);
 
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+apacheconf+bash+c+cpp+css-extras+git+java+markdown+php+php-extras+sass+scss+twig+yaml&plugins=line-numbers */
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+apacheconf+c+bash+cpp+csharp+ruby+css-extras+git+java+json+markdown+nginx+php+php-extras+sass+scss+twig+yaml&plugins=line-numbers */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -56,7 +56,7 @@ pre[class*="language-"] { direction: ltr; text-align: left; white-space: pre; wo
 .language-css .token.string,
 .style .token.string {
 	color: #a67f59;
-	background: hsla(0, 0%, 100%, .5);
+	// background: hsla(0, 0%, 100%, .5);
 }
 
 .token.atrule,
@@ -103,6 +103,13 @@ pre.line-numbers > code { position: relative; }
 
 /* theme dark */
 .theme-dark {
+	
+	/* http://prismjs.com/download.html?themes=prism-twilight&languages=markup+css+clike+javascript+apacheconf+c+bash+cpp+csharp+ruby+css-extras+git+java+json+markdown+nginx+php+php-extras+sass+scss+twig+yaml&plugins=line-numbers */
+	/**
+	 * prism.js Twilight theme
+	 * Based (more or less) on the Twilight theme originally of Textmate fame.
+	 * @author Remy Bach
+	 */
 	
 	.token.comment,
 	.token.prolog,
