@@ -81,11 +81,11 @@ ol ul, ol ol, ul ol, ul ul { margin-top: 0; margin-bottom: 0; }
 
 table { width: 100%; margin-top: 16px; margin-bottom: 16px; border-collapse: collapse; background: $color-bg-card; }
 tr { border-bottom: 1px solid #e0e0e0; }
-tr + tr:last-child { border-bottom: 0; }
+tbody tr:last-child { border-bottom: 0; }
 th, td { padding: 12px 12px; }
 th:first-child, td:first-child { padding-left: 16px; }
 th:last-child, td:last-child { padding-right: 16px; }
-th { font-weight: 500; color: $color-text-secondary; }
+th { font-weight: 500; color: $color-text-secondary; text-align: left; }
 tr:hover { background: $color-bg-hover; }
 
 code, kbd, pre, samp { font-family: 'Roboto mono', Consolas, monospace; font-size: 15px; }
@@ -471,7 +471,7 @@ tr.selected:hover { background: $color-bg-hover; }
   input[type="text"], input[type="email"], input[type="password"], textarea, select { display: block; width: 100%; max-width: 460px; border-bottom: 1px solid $color-divider; padding: 8px 0;
     &:focus, &.error:focus { border-bottom: 2px solid $color-accent; padding-bottom: 7px; }
     &.error { border-bottom: 2px solid color($red); padding: 8px 0 7px; }
-    @include input-placeholder { color: $color-text-disabled; }
+    &::placeholder { color: $color-text-disabled; }
   }
   input[type="radio"], input[type="checkbox"] { display: inline-block; color: $color-text-secondary; float: left; margin-top: 6px; margin-right: 12px; }
   input[type="checkbox"]:before { @extend .material-icons; content: 'check_box_outline_blank'; margin-top: -7px; }
@@ -666,7 +666,7 @@ tr.selected:hover { background: $color-bg-hover; }
     .form-item {
       input[type="text"] { color: contrast-color($color-primary);
         border-bottom: 1px solid contrast-color($color-primary, $color-text, $color-text-light);
-        @include input-placeholder { color: contrast-color($color-primary, $color-text-disabled, $color-text-light-disabled); }
+        &::placeholder { color: contrast-color($color-primary, $color-text-disabled, $color-text-light-disabled); }
         &:focus, &.error:focus { border-bottom: 2px solid; padding-bottom: 7px; }
       }
       &.icon-left:before { color: contrast-color($color-primary); }
@@ -679,7 +679,7 @@ tr.selected:hover { background: $color-bg-hover; }
       }
       &.focused.icon-left:before { color: $color-text; }
       &.focused input[type="text"] { color: $color-text;
-        @include input-placeholder { color: $color-text-disabled; }
+        &::placeholder { color: $color-text-disabled; }
       }
     }
   }
@@ -692,7 +692,7 @@ tr.selected:hover { background: $color-bg-hover; }
         &:hover { background: color($grey, 50); }
         &.focused { background: #FFF; }
         input[type="text"] { color: $color-text;
-          @include input-placeholder { color: $color-text-disabled; }
+          &::placeholder { color: $color-text-disabled; }
         }
         &.icon-left:before { color: $color-text; }
       }
@@ -958,9 +958,15 @@ $primary-colors: (
     }
     .pager-item.item-current { display: none; }
   }
+  .card-actions .pager-summary + & { margin-left: -8px; }
 }
 
-.card-actions .pager-summary { display: inline-block; font-size: 14px; line-height: 20px; margin: 18px 8px; color: $color-text-secondary; }
+.card-actions .pager-summary { display: inline-block; font-size: 14px; line-height: 20px; margin: 18px 16px 18px 8px; color: $color-text-secondary; }
+
+@include breakpoint($xs) {
+  .card-actions .pager-summary + .pager { margin-left: -16px; }
+  .card-actions .pager-summary { margin-right: 24px; }
+}
 
 // messages
 .messages-status { @extend .info; background: color($green, 50);

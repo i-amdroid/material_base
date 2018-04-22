@@ -1,6 +1,6 @@
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 var changed = require('gulp-changed');
-var sass = require('gulp-ruby-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 
@@ -9,15 +9,16 @@ var CSS = 'css';
 var IMG = 'img';
 
 gulp.task('sass', function () {
-  return sass(SASS + '/**/*.scss', {
-      compass: true
-    })
-    .on('error', sass.logError)
+  return gulp.src(SASS + '/**/*.scss')
+    .pipe(sass({
+      includePaths: ['./node_modules/breakpoint-sass/stylesheets']
+    }).on('error', sass.logError))
     .pipe(gulp.dest(CSS));
 });
 
 gulp.task('autoprefixer', ['sass'], function() {
   gulp.src(CSS + '/*.css')
+    //.pipe(changed(CSS))
     .pipe(autoprefixer({
         browsers: ['> 1%']
     }))

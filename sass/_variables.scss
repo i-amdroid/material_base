@@ -23,9 +23,6 @@ $color-text-light-secondary: rgba($color-text-light, .70) !default;
 $color-text-light-disabled: rgba($color-text-light, .30) !default;
 $color-light-divider: rgba($color-text-light, .12) !default;
 
-$contrasted-dark-default: $color-text;        //compass contrast
-$contrasted-light-default: $color-text-light; //compass contrast
-
 $color-primary-base: $blue-grey !default; //$blue-grey
 $color-accent-base: $light-blue !default; //$light-blue
 
@@ -79,3 +76,33 @@ $max-sm: $sm - 1px;
 $max-md: $md - 1px;
 $max-lg: $lg - 1px;
 $max-xl: $xl - 1px;
+
+/* mixins and functions */
+
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  color: $normal;
+  @if $visited {
+    &:visited { color: $visited; }
+  }
+  @if $focus {
+    &:focus { color: $focus; }
+  }
+  @if $hover {
+    &:hover { color: $hover; }
+  }
+  @if $active {
+    &:active { color: $active; }
+  }
+}
+
+@function brightness($color) {
+  @return (red($color) + green($color) + blue($color)) / (255 * 3);
+}
+
+@function brightness_ratio($base, $color) {
+  @return abs(brightness($base) - brightness($color));
+}
+
+@function contrast-color($base, $color1: $color-text, $color2: $color-text-light) {
+  @return if(brightness_ratio($base, $color1) > brightness_ratio($base, $color2), $color1, $color2);
+}

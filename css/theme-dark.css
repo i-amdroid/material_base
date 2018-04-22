@@ -1,4 +1,5 @@
 /* break points */
+/* mixins and functions */
 .theme-dark {
   color: #FFF;
   background: #303030; }
@@ -140,13 +141,11 @@
     border-bottom-color: rgba(255, 255, 255, 0.12); }
     .theme-dark .form-item input[type="text"]:focus, .theme-dark .form-item input[type="text"].error:focus, .theme-dark .form-item input[type="email"]:focus, .theme-dark .form-item input[type="email"].error:focus, .theme-dark .form-item input[type="password"]:focus, .theme-dark .form-item input[type="password"].error:focus, .theme-dark .form-item textarea:focus, .theme-dark .form-item textarea.error:focus, .theme-dark .form-item select:focus, .theme-dark .form-item select.error:focus {
       border-bottom-color: #40c4ff; }
-    .theme-dark .form-item input[type="text"]:-moz-placeholder, .theme-dark .form-item input[type="email"]:-moz-placeholder, .theme-dark .form-item input[type="password"]:-moz-placeholder, .theme-dark .form-item textarea:-moz-placeholder, .theme-dark .form-item select:-moz-placeholder {
-      color: rgba(255, 255, 255, 0.3); }
-    .theme-dark .form-item input[type="text"]::-moz-placeholder, .theme-dark .form-item input[type="email"]::-moz-placeholder, .theme-dark .form-item input[type="password"]::-moz-placeholder, .theme-dark .form-item textarea::-moz-placeholder, .theme-dark .form-item select::-moz-placeholder {
+    .theme-dark .form-item input[type="text"]::-webkit-input-placeholder, .theme-dark .form-item input[type="email"]::-webkit-input-placeholder, .theme-dark .form-item input[type="password"]::-webkit-input-placeholder, .theme-dark .form-item textarea::-webkit-input-placeholder, .theme-dark .form-item select::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.3); }
     .theme-dark .form-item input[type="text"]:-ms-input-placeholder, .theme-dark .form-item input[type="email"]:-ms-input-placeholder, .theme-dark .form-item input[type="password"]:-ms-input-placeholder, .theme-dark .form-item textarea:-ms-input-placeholder, .theme-dark .form-item select:-ms-input-placeholder {
       color: rgba(255, 255, 255, 0.3); }
-    .theme-dark .form-item input[type="text"]::-webkit-input-placeholder, .theme-dark .form-item input[type="email"]::-webkit-input-placeholder, .theme-dark .form-item input[type="password"]::-webkit-input-placeholder, .theme-dark .form-item textarea::-webkit-input-placeholder, .theme-dark .form-item select::-webkit-input-placeholder {
+    .theme-dark .form-item input[type="text"]::placeholder, .theme-dark .form-item input[type="email"]::placeholder, .theme-dark .form-item input[type="password"]::placeholder, .theme-dark .form-item textarea::placeholder, .theme-dark .form-item select::placeholder {
       color: rgba(255, 255, 255, 0.3); }
   .theme-dark .form-item input[type="radio"], .theme-dark .form-item input[type="checkbox"] {
     color: rgba(255, 255, 255, 0.7); }
@@ -189,13 +188,11 @@
     color: rgba(255, 255, 255, 0.7); }
   .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"] {
     color: rgba(0, 0, 0, 0.87); }
-    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]:-moz-placeholder {
-      color: rgba(0, 0, 0, 0.26); }
-    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-moz-placeholder {
+    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
     .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
-    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder {
+    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::placeholder {
       color: rgba(0, 0, 0, 0.26); }
   .theme-dark .tabs ul li a, .theme-dark ul.tabs li a {
     color: rgba(255, 255, 255, 0.7); }

@@ -32,10 +32,10 @@ Technologies
 ------------
 
  * CSS preprocessor - [SASS](http://sass-lang.com)
- * SASS Framework - [Compass](http://compass-style.org)
+ * Build stack - [npm](https://www.npmjs.com) / [Gulp](https://gulpjs.com)
  * Syntax highlighter - [Prism](http://prismjs.com)
  * Layout - [Flex box model](http://www.w3.org/TR/css3-flexbox)
- * Grid - [Flexbox Grid](http://flexboxgrid.com/)
+ * Grid - [Flexbox Grid](http://flexboxgrid.com)
 
 Features
 --------

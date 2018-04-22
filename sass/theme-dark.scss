@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-@import "compass";
-@import "compass/css3";
-
 @import "color-palette";
 @import "variables";
 
@@ -97,7 +94,7 @@
     select option { color: $color-text; }
     input[type="text"], input[type="email"], input[type="password"], textarea, select { border-bottom-color: $color-light-divider;
       &:focus, &.error:focus { border-bottom-color: $color-accent-light }
-      @include input-placeholder { color: $color-text-light-disabled; }
+      &::placeholder { color: $color-text-light-disabled; }
     }
     input[type="radio"], input[type="checkbox"] { color: $color-text-light-secondary; }
     input[type="checkbox"]:checked:before { color: $color-accent-light }
@@ -132,7 +129,7 @@
 
   .block-search.search-persistent form {
     .form-item.focused input[type="text"] { color: $color-text;
-      @include input-placeholder { color: $color-text-disabled; }
+      &::placeholder { color: $color-text-disabled; }
     }
   }
 

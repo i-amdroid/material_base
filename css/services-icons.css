@@ -1,4 +1,5 @@
 /* break points */
+/* mixins and functions */
 .services-icons {
   display: inline-block;
   width: 24px;
@@ -14,136 +15,202 @@
 
 .services-icons.si-behance, .services-icons[data-icon="behance"] {
   background-position: -144px -48px; }
+
 .services-icons.si-bitbucket, .services-icons[data-icon="bitbucket"] {
   background-position: -24px -120px; }
+
 .services-icons.si-blogger, .services-icons[data-icon="blogger"] {
   background-position: -168px -48px; }
+
 .services-icons.si-delicious, .services-icons[data-icon="delicious"] {
   background-position: -144px -72px; }
+
 .services-icons.si-delicious-box, .services-icons[data-icon="delicious-box"] {
   background-position: -168px -72px; }
+
 .services-icons.si-digg, .services-icons[data-icon="digg"] {
   background-position: -120px -72px; }
+
 .services-icons.si-disqus, .services-icons[data-icon="disqus"] {
   background-position: -24px -96px; }
+
 .services-icons.si-disqus-outline, .services-icons[data-icon="disqus-outline"] {
   background-position: 0 -96px; }
+
 .services-icons.si-dribbble, .services-icons[data-icon="dribbble"] {
   background-position: -192px -48px; }
+
 .services-icons.si-dribbble-box, .services-icons[data-icon="dribbble-box"] {
   background-position: -216px -48px; }
+
 .services-icons.si-drupal, .services-icons[data-icon="drupal"] {
   background-position: -96px -120px; }
+
 .services-icons.si-evernote, .services-icons[data-icon="evernote"] {
   background-position: -216px -72px; }
+
 .services-icons.si-facebook, .services-icons[data-icon="facebook"] {
   background-position: 0 0; }
+
 .services-icons.si-facebook-box, .services-icons[data-icon="facebook-box"] {
   background-position: -24px 0; }
+
 .services-icons.si-facebook-messenger, .services-icons[data-icon="facebook-messenger"] {
   background-position: -144px -120px; }
+
 .services-icons.si-flickr, .services-icons[data-icon="flickr"] {
   background-position: -96px -96px; }
+
 .services-icons.si-foursquare, .services-icons[data-icon="foursquare"] {
   background-position: -48px -96px; }
+
 .services-icons.si-github-box, .services-icons[data-icon="github-box"] {
   background-position: 0 -120px; }
+
 .services-icons.si-google-photos, .services-icons[data-icon="google-photos"] {
   background-position: -120px -96px; }
+
 .services-icons.si-google-plus, .services-icons[data-icon="google-plus"] {
   background-position: -96px 0; }
+
 .services-icons.si-google-plus-box, .services-icons[data-icon="google-plus-box"] {
   background-position: -120px 0; }
+
 .services-icons.si-instagram, .services-icons[data-icon="instagram"] {
   background-position: 0 -24px; }
+
 .services-icons.si-instagram-box, .services-icons[data-icon="instagram-box"] {
   background-position: -24px -24px; }
+
 .services-icons.si-lastfm, .services-icons[data-icon="lastfm"] {
   background-position: -144px -96px; }
+
 .services-icons.si-line, .services-icons[data-icon="line"] {
   background-position: -72px -144px; }
+
 .services-icons.si-linkedin, .services-icons[data-icon="linkedin"] {
   background-position: -144px 0; }
+
 .services-icons.si-linkedin-box, .services-icons[data-icon="linkedin-box"] {
   background-position: -168px 0; }
+
 .services-icons.si-livejournal, .services-icons[data-icon="livejournal"] {
   background-position: -192px -72px; }
+
 .services-icons.si-medium, .services-icons[data-icon="medium"] {
   background-position: 0 -72px; }
+
 .services-icons.si-odnoklassniki, .services-icons[data-icon="odnoklassniki"] {
   background-position: -96px -24px; }
+
 .services-icons.si-odnoklassniki-box, .services-icons[data-icon="odnoklassniki-box"] {
   background-position: -120px -24px; }
+
 .services-icons.si-periscope, .services-icons[data-icon="periscope"] {
   background-position: -120px -48px; }
+
 .services-icons.si-pinterest, .services-icons[data-icon="pinterest"] {
   background-position: -192px 0; }
+
 .services-icons.si-pinterest-box, .services-icons[data-icon="pinterest-box"] {
   background-position: -216px 0; }
+
 .services-icons.si-pocket, .services-icons[data-icon="pocket"] {
   background-position: -24px -72px; }
+
 .services-icons.si-qqchat, .services-icons[data-icon="qqchat"] {
   background-position: -96px -144px; }
+
 .services-icons.si-qzone, .services-icons[data-icon="qzone"] {
   background-position: -216px -24px; }
+
 .services-icons.si-reddit, .services-icons[data-icon="reddit"] {
   background-position: -48px -72px; }
+
 .services-icons.si-renren, .services-icons[data-icon="renren"] {
   background-position: -24px -48px; }
+
 .services-icons.si-sina-weibo, .services-icons[data-icon="sina-weibo"] {
   background-position: -192px -24px; }
+
 .services-icons.si-skype, .services-icons[data-icon="skype"] {
   background-position: -24px -144px; }
+
 .services-icons.si-skype-outline, .services-icons[data-icon="skype-outline"] {
   background-position: 0 -144px; }
+
 .services-icons.si-slack, .services-icons[data-icon="slack"] {
   background-position: -144px -144px; }
+
 .services-icons.si-snapchat, .services-icons[data-icon="snapchat"] {
   background-position: -120px -144px; }
+
 .services-icons.si-soundcloud, .services-icons[data-icon="soundcloud"] {
   background-position: -168px -96px; }
+
 .services-icons.si-spotify, .services-icons[data-icon="spotify"] {
   background-position: -192px -96px; }
+
 .services-icons.si-stackexchange, .services-icons[data-icon="stackexchange"] {
   background-position: -48px -120px; }
+
 .services-icons.si-stackoverflow, .services-icons[data-icon="stackoverflow"] {
   background-position: -72px -120px; }
+
 .services-icons.si-swarm, .services-icons[data-icon="swarm"] {
   background-position: -72px -96px; }
+
 .services-icons.si-telegram, .services-icons[data-icon="telegram"] {
   background-position: -216px -120px; }
+
 .services-icons.si-trello, .services-icons[data-icon="trello"] {
   background-position: -216px -96px; }
+
 .services-icons.si-tumblr, .services-icons[data-icon="tumblr"] {
   background-position: 0 -48px; }
+
 .services-icons.si-twitch, .services-icons[data-icon="twitch"] {
   background-position: -96px -72px; }
+
 .services-icons.si-twitter, .services-icons[data-icon="twitter"] {
   background-position: -48px 0; }
+
 .services-icons.si-twitter-box, .services-icons[data-icon="twitter-box"] {
   background-position: -72px 0; }
+
 .services-icons.si-viber, .services-icons[data-icon="viber"] {
   background-position: -192px -120px; }
+
 .services-icons.si-vimeo, .services-icons[data-icon="vimeo"] {
   background-position: -72px -48px; }
+
 .services-icons.si-vine, .services-icons[data-icon="vine"] {
   background-position: -96px -48px; }
+
 .services-icons.si-vk, .services-icons[data-icon="vk"] {
   background-position: -48px -24px; }
+
 .services-icons.si-vk-box, .services-icons[data-icon="vk-box"] {
   background-position: -72px -24px; }
+
 .services-icons.si-wechat, .services-icons[data-icon="wechat"] {
   background-position: -48px -144px; }
+
 .services-icons.si-whatsapp, .services-icons[data-icon="whatsapp"] {
   background-position: -168px -120px; }
+
 .services-icons.si-wordpress, .services-icons[data-icon="wordpress"] {
   background-position: -120px -120px; }
+
 .services-icons.si-wunderlist, .services-icons[data-icon="wunderlist"] {
   background-position: -72px -72px; }
+
 .services-icons.si-xing, .services-icons[data-icon="xing"] {
   background-position: -144px -24px; }
+
 .services-icons.si-xing-box, .services-icons[data-icon="xing-box"] {
   background-position: -168px -24px; }
+
 .services-icons.si-youtube, .services-icons[data-icon="youtube"] {
   background-position: -48px -48px; }
 
@@ -173,6 +240,7 @@
 
 .btn-raised.btn-colored .services-icons, .btn-raised.btn-colored:hover .services-icons, .btn-raised.btn-colored:focus .services-icons, .btn.btn-raised.btn-colored .services-icons, .btn.btn-raised.btn-colored:hover .services-icons, .btn.btn-raised.btn-colored:focus .services-icons {
   background: #FFF; }
+
 .btn-raised.btn-accent .services-icons, .btn-raised.btn-accent:hover .services-icons, .btn-raised.btn-accent:focus .services-icons, .btn.btn-raised.btn-accent .services-icons, .btn.btn-raised.btn-accent:hover .services-icons, .btn.btn-raised.btn-accent:focus .services-icons {
   background: rgba(0, 0, 0, 0.87); }
 
@@ -181,8 +249,10 @@
 
 .fab .services-icons, .fab:hover .services-icons, .fab:focus .services-icons {
   background: rgba(0, 0, 0, 0.87); }
+
 .fab.fab-colored .services-icons, .fab.fab-colored:hover .services-icons, .fab.fab-colored:focus .services-icons {
   background: #FFF; }
+
 .fab.fab-accent .services-icons, .fab.fab-accent:hover .services-icons, .fab.fab-accent:focus .services-icons {
   background: rgba(0, 0, 0, 0.87); }
 
@@ -1101,8 +1171,10 @@
 
 a.services-icon-left:not(.btn):before {
   background: #00b0ff; }
+
 a.services-icon-left:not(.btn):hover:before {
   background: #0aa2ff; }
+
 a.services-icon-left:not(.btn):active:before {
   background: #0091ea; }
 
@@ -1117,6 +1189,7 @@ a.services-icon-left:not(.btn):active:before {
 
 .btn-raised.services-icon-left.btn-colored:before, .btn-raised.services-icon-left.btn-colored:hover:before, .btn-raised.services-icon-left.btn-colored:focus:before, .btn.btn-raised.services-icon-left.btn-colored:before, .btn.btn-raised.services-icon-left.btn-colored:hover:before, .btn.btn-raised.services-icon-left.btn-colored:focus:before {
   background: #FFF; }
+
 .btn-raised.services-icon-left.btn-accent:before, .btn-raised.services-icon-left.btn-accent:hover:before, .btn-raised.services-icon-left.btn-accent:focus:before, .btn.btn-raised.services-icon-left.btn-accent:before, .btn.btn-raised.services-icon-left.btn-accent:hover:before, .btn.btn-raised.services-icon-left.btn-accent:focus:before {
   background: rgba(0, 0, 0, 0.87); }
 
@@ -1125,209 +1198,277 @@ a.services-icon-left:not(.btn):active:before {
 
 .fab.services-icon-left:before, .fab.services-icon-left:hover:before, .fab.services-icon-left:focus:before {
   background: rgba(0, 0, 0, 0.87); }
+
 .fab.services-icon-left.fab-colored:before, .fab.services-icon-left.fab-colored:hover:before, .fab.services-icon-left.fab-colored:focus:before {
   background: #FFF; }
+
 .fab.services-icon-left.fab-accent:before, .fab.services-icon-left.fab-accent:hover:before, .fab.services-icon-left.fab-accent:focus:before {
   background: rgba(0, 0, 0, 0.87); }
 
 .services-icon-left.si-behance:before, .services-icon-left[data-icon="behance"]:before {
   -webkit-mask-position: -144px -48px;
           mask-position: -144px -48px; }
+
 .services-icon-left.si-bitbucket:before, .services-icon-left[data-icon="bitbucket"]:before {
   -webkit-mask-position: -24px -120px;
           mask-position: -24px -120px; }
+
 .services-icon-left.si-blogger:before, .services-icon-left[data-icon="blogger"]:before {
   -webkit-mask-position: -168px -48px;
           mask-position: -168px -48px; }
+
 .services-icon-left.si-delicious:before, .services-icon-left[data-icon="delicious"]:before {
   -webkit-mask-position: -144px -72px;
           mask-position: -144px -72px; }
+
 .services-icon-left.si-delicious-box:before, .services-icon-left[data-icon="delicious-box"]:before {
   -webkit-mask-position: -168px -72px;
           mask-position: -168px -72px; }
+
 .services-icon-left.si-digg:before, .services-icon-left[data-icon="digg"]:before {
   -webkit-mask-position: -120px -72px;
           mask-position: -120px -72px; }
+
 .services-icon-left.si-disqus:before, .services-icon-left[data-icon="disqus"]:before {
   -webkit-mask-position: -24px -96px;
           mask-position: -24px -96px; }
+
 .services-icon-left.si-disqus-outline:before, .services-icon-left[data-icon="disqus-outline"]:before {
   -webkit-mask-position: 0 -96px;
           mask-position: 0 -96px; }
+
 .services-icon-left.si-dribbble:before, .services-icon-left[data-icon="dribbble"]:before {
   -webkit-mask-position: -192px -48px;
           mask-position: -192px -48px; }
+
 .services-icon-left.si-dribbble-box:before, .services-icon-left[data-icon="dribbble-box"]:before {
   -webkit-mask-position: -216px -48px;
           mask-position: -216px -48px; }
+
 .services-icon-left.si-drupal:before, .services-icon-left[data-icon="drupal"]:before {
   -webkit-mask-position: -96px -120px;
           mask-position: -96px -120px; }
+
 .services-icon-left.si-evernote:before, .services-icon-left[data-icon="evernote"]:before {
   -webkit-mask-position: -216px -72px;
           mask-position: -216px -72px; }
+
 .services-icon-left.si-facebook:before, .services-icon-left[data-icon="facebook"]:before {
   -webkit-mask-position: 0 0;
           mask-position: 0 0; }
+
 .services-icon-left.si-facebook-box:before, .services-icon-left[data-icon="facebook-box"]:before {
   -webkit-mask-position: -24px 0;
           mask-position: -24px 0; }
+
 .services-icon-left.si-facebook-messenger:before, .services-icon-left[data-icon="facebook-messenger"]:before {
   -webkit-mask-position: -144px -120px;
           mask-position: -144px -120px; }
+
 .services-icon-left.si-flickr:before, .services-icon-left[data-icon="flickr"]:before {
   -webkit-mask-position: -96px -96px;
           mask-position: -96px -96px; }
+
 .services-icon-left.si-foursquare:before, .services-icon-left[data-icon="foursquare"]:before {
   -webkit-mask-position: -48px -96px;
           mask-position: -48px -96px; }
+
 .services-icon-left.si-github-box:before, .services-icon-left[data-icon="github-box"]:before {
   -webkit-mask-position: 0 -120px;
           mask-position: 0 -120px; }
+
 .services-icon-left.si-google-photos:before, .services-icon-left[data-icon="google-photos"]:before {
   -webkit-mask-position: -120px -96px;
           mask-position: -120px -96px; }
+
 .services-icon-left.si-google-plus:before, .services-icon-left[data-icon="google-plus"]:before {
   -webkit-mask-position: -96px 0;
           mask-position: -96px 0; }
+
 .services-icon-left.si-google-plus-box:before, .services-icon-left[data-icon="google-plus-box"]:before {
   -webkit-mask-position: -120px 0;
           mask-position: -120px 0; }
+
 .services-icon-left.si-instagram:before, .services-icon-left[data-icon="instagram"]:before {
   -webkit-mask-position: 0 -24px;
           mask-position: 0 -24px; }
+
 .services-icon-left.si-instagram-box:before, .services-icon-left[data-icon="instagram-box"]:before {
   -webkit-mask-position: -24px -24px;
           mask-position: -24px -24px; }
+
 .services-icon-left.si-lastfm:before, .services-icon-left[data-icon="lastfm"]:before {
   -webkit-mask-position: -144px -96px;
           mask-position: -144px -96px; }
+
 .services-icon-left.si-line:before, .services-icon-left[data-icon="line"]:before {
   -webkit-mask-position: -72px -144px;
           mask-position: -72px -144px; }
+
 .services-icon-left.si-linkedin:before, .services-icon-left[data-icon="linkedin"]:before {
   -webkit-mask-position: -144px 0;
           mask-position: -144px 0; }
+
 .services-icon-left.si-linkedin-box:before, .services-icon-left[data-icon="linkedin-box"]:before {
   -webkit-mask-position: -168px 0;
           mask-position: -168px 0; }
+
 .services-icon-left.si-livejournal:before, .services-icon-left[data-icon="livejournal"]:before {
   -webkit-mask-position: -192px -72px;
           mask-position: -192px -72px; }
+
 .services-icon-left.si-medium:before, .services-icon-left[data-icon="medium"]:before {
   -webkit-mask-position: 0 -72px;
           mask-position: 0 -72px; }
+
 .services-icon-left.si-odnoklassniki:before, .services-icon-left[data-icon="odnoklassniki"]:before {
   -webkit-mask-position: -96px -24px;
           mask-position: -96px -24px; }
+
 .services-icon-left.si-odnoklassniki-box:before, .services-icon-left[data-icon="odnoklassniki-box"]:before {
   -webkit-mask-position: -120px -24px;
           mask-position: -120px -24px; }
+
 .services-icon-left.si-periscope:before, .services-icon-left[data-icon="periscope"]:before {
   -webkit-mask-position: -120px -48px;
           mask-position: -120px -48px; }
+
 .services-icon-left.si-pinterest:before, .services-icon-left[data-icon="pinterest"]:before {
   -webkit-mask-position: -192px 0;
           mask-position: -192px 0; }
+
 .services-icon-left.si-pinterest-box:before, .services-icon-left[data-icon="pinterest-box"]:before {
   -webkit-mask-position: -216px 0;
           mask-position: -216px 0; }
+
 .services-icon-left.si-pocket:before, .services-icon-left[data-icon="pocket"]:before {
   -webkit-mask-position: -24px -72px;
           mask-position: -24px -72px; }
+
 .services-icon-left.si-qqchat:before, .services-icon-left[data-icon="qqchat"]:before {
   -webkit-mask-position: -96px -144px;
           mask-position: -96px -144px; }
+
 .services-icon-left.si-qzone:before, .services-icon-left[data-icon="qzone"]:before {
   -webkit-mask-position: -216px -24px;
           mask-position: -216px -24px; }
+
 .services-icon-left.si-reddit:before, .services-icon-left[data-icon="reddit"]:before {
   -webkit-mask-position: -48px -72px;
           mask-position: -48px -72px; }
+
 .services-icon-left.si-renren:before, .services-icon-left[data-icon="renren"]:before {
   -webkit-mask-position: -24px -48px;
           mask-position: -24px -48px; }
+
 .services-icon-left.si-sina-weibo:before, .services-icon-left[data-icon="sina-weibo"]:before {
   -webkit-mask-position: -192px -24px;
           mask-position: -192px -24px; }
+
 .services-icon-left.si-skype:before, .services-icon-left[data-icon="skype"]:before {
   -webkit-mask-position: -24px -144px;
           mask-position: -24px -144px; }
+
 .services-icon-left.si-skype-outline:before, .services-icon-left[data-icon="skype-outline"]:before {
   -webkit-mask-position: 0 -144px;
           mask-position: 0 -144px; }
+
 .services-icon-left.si-slack:before, .services-icon-left[data-icon="slack"]:before {
   -webkit-mask-position: -144px -144px;
           mask-position: -144px -144px; }
+
 .services-icon-left.si-snapchat:before, .services-icon-left[data-icon="snapchat"]:before {
   -webkit-mask-position: -120px -144px;
           mask-position: -120px -144px; }
+
 .services-icon-left.si-soundcloud:before, .services-icon-left[data-icon="soundcloud"]:before {
   -webkit-mask-position: -168px -96px;
           mask-position: -168px -96px; }
+
 .services-icon-left.si-spotify:before, .services-icon-left[data-icon="spotify"]:before {
   -webkit-mask-position: -192px -96px;
           mask-position: -192px -96px; }
+
 .services-icon-left.si-stackexchange:before, .services-icon-left[data-icon="stackexchange"]:before {
   -webkit-mask-position: -48px -120px;
           mask-position: -48px -120px; }
+
 .services-icon-left.si-stackoverflow:before, .services-icon-left[data-icon="stackoverflow"]:before {
   -webkit-mask-position: -72px -120px;
           mask-position: -72px -120px; }
+
 .services-icon-left.si-swarm:before, .services-icon-left[data-icon="swarm"]:before {
   -webkit-mask-position: -72px -96px;
           mask-position: -72px -96px; }
+
 .services-icon-left.si-telegram:before, .services-icon-left[data-icon="telegram"]:before {
   -webkit-mask-position: -216px -120px;
           mask-position: -216px -120px; }
+
 .services-icon-left.si-trello:before, .services-icon-left[data-icon="trello"]:before {
   -webkit-mask-position: -216px -96px;
           mask-position: -216px -96px; }
+
 .services-icon-left.si-tumblr:before, .services-icon-left[data-icon="tumblr"]:before {
   -webkit-mask-position: 0 -48px;
           mask-position: 0 -48px; }
+
 .services-icon-left.si-twitch:before, .services-icon-left[data-icon="twitch"]:before {
   -webkit-mask-position: -96px -72px;
           mask-position: -96px -72px; }
+
 .services-icon-left.si-twitter:before, .services-icon-left[data-icon="twitter"]:before {
   -webkit-mask-position: -48px 0;
           mask-position: -48px 0; }
+
 .services-icon-left.si-twitter-box:before, .services-icon-left[data-icon="twitter-box"]:before {
   -webkit-mask-position: -72px 0;
           mask-position: -72px 0; }
+
 .services-icon-left.si-viber:before, .services-icon-left[data-icon="viber"]:before {
   -webkit-mask-position: -192px -120px;
           mask-position: -192px -120px; }
+
 .services-icon-left.si-vimeo:before, .services-icon-left[data-icon="vimeo"]:before {
   -webkit-mask-position: -72px -48px;
           mask-position: -72px -48px; }
+
 .services-icon-left.si-vine:before, .services-icon-left[data-icon="vine"]:before {
   -webkit-mask-position: -96px -48px;
           mask-position: -96px -48px; }
+
 .services-icon-left.si-vk:before, .services-icon-left[data-icon="vk"]:before {
   -webkit-mask-position: -48px -24px;
           mask-position: -48px -24px; }
+
 .services-icon-left.si-vk-box:before, .services-icon-left[data-icon="vk-box"]:before {
   -webkit-mask-position: -72px -24px;
           mask-position: -72px -24px; }
+
 .services-icon-left.si-wechat:before, .services-icon-left[data-icon="wechat"]:before {
   -webkit-mask-position: -48px -144px;
           mask-position: -48px -144px; }
+
 .services-icon-left.si-whatsapp:before, .services-icon-left[data-icon="whatsapp"]:before {
   -webkit-mask-position: -168px -120px;
           mask-position: -168px -120px; }
+
 .services-icon-left.si-wordpress:before, .services-icon-left[data-icon="wordpress"]:before {
   -webkit-mask-position: -120px -120px;
           mask-position: -120px -120px; }
+
 .services-icon-left.si-wunderlist:before, .services-icon-left[data-icon="wunderlist"]:before {
   -webkit-mask-position: -72px -72px;
           mask-position: -72px -72px; }
+
 .services-icon-left.si-xing:before, .services-icon-left[data-icon="xing"]:before {
   -webkit-mask-position: -144px -24px;
           mask-position: -144px -24px; }
+
 .services-icon-left.si-xing-box:before, .services-icon-left[data-icon="xing-box"]:before {
   -webkit-mask-position: -168px -24px;
           mask-position: -168px -24px; }
+
 .services-icon-left.si-youtube:before, .services-icon-left[data-icon="youtube"]:before {
   -webkit-mask-position: -48px -48px;
           mask-position: -48px -48px; }
@@ -1366,8 +1507,10 @@ a.services-icon-left:not(.btn):active:before {
 
 a.services-icon-right:not(.btn):after {
   background: #00b0ff; }
+
 a.services-icon-right:not(.btn):hover:after {
   background: #0aa2ff; }
+
 a.services-icon-right:not(.btn):active:after {
   background: #0091ea; }
 
@@ -1382,6 +1525,7 @@ a.services-icon-right:not(.btn):active:after {
 
 .btn-raised.services-icon-right.btn-colored:after, .btn-raised.services-icon-right.btn-colored:hover:after, .btn-raised.services-icon-right.btn-colored:focus:after, .btn.btn-raised.services-icon-right.btn-colored:after, .btn.btn-raised.services-icon-right.btn-colored:hover:after, .btn.btn-raised.services-icon-right.btn-colored:focus:after {
   background: #FFF; }
+
 .btn-raised.services-icon-right.btn-accent:after, .btn-raised.services-icon-right.btn-accent:hover:after, .btn-raised.services-icon-right.btn-accent:focus:after, .btn.btn-raised.services-icon-right.btn-accent:after, .btn.btn-raised.services-icon-right.btn-accent:hover:after, .btn.btn-raised.services-icon-right.btn-accent:focus:after {
   background: rgba(0, 0, 0, 0.87); }
 
@@ -1390,296 +1534,406 @@ a.services-icon-right:not(.btn):active:after {
 
 .fab.services-icon-right:after, .fab.services-icon-right:hover:after, .fab.services-icon-right:focus:after {
   background: rgba(0, 0, 0, 0.87); }
+
 .fab.services-icon-right.fab-colored:after, .fab.services-icon-right.fab-colored:hover:after, .fab.services-icon-right.fab-colored:focus:after {
   background: #FFF; }
+
 .fab.services-icon-right.fab-accent:after, .fab.services-icon-right.fab-accent:hover:after, .fab.services-icon-right.fab-accent:focus:after {
   background: rgba(0, 0, 0, 0.87); }
 
 .services-icon-right.si-behance:after, .services-icon-right[data-icon="behance"]:after {
   -webkit-mask-position: -144px -48px;
           mask-position: -144px -48px; }
+
 .services-icon-right.si-bitbucket:after, .services-icon-right[data-icon="bitbucket"]:after {
   -webkit-mask-position: -24px -120px;
           mask-position: -24px -120px; }
+
 .services-icon-right.si-blogger:after, .services-icon-right[data-icon="blogger"]:after {
   -webkit-mask-position: -168px -48px;
           mask-position: -168px -48px; }
+
 .services-icon-right.si-delicious:after, .services-icon-right[data-icon="delicious"]:after {
   -webkit-mask-position: -144px -72px;
           mask-position: -144px -72px; }
+
 .services-icon-right.si-delicious-box:after, .services-icon-right[data-icon="delicious-box"]:after {
   -webkit-mask-position: -168px -72px;
           mask-position: -168px -72px; }
+
 .services-icon-right.si-digg:after, .services-icon-right[data-icon="digg"]:after {
   -webkit-mask-position: -120px -72px;
           mask-position: -120px -72px; }
+
 .services-icon-right.si-disqus:after, .services-icon-right[data-icon="disqus"]:after {
   -webkit-mask-position: -24px -96px;
           mask-position: -24px -96px; }
+
 .services-icon-right.si-disqus-outline:after, .services-icon-right[data-icon="disqus-outline"]:after {
   -webkit-mask-position: 0 -96px;
           mask-position: 0 -96px; }
+
 .services-icon-right.si-dribbble:after, .services-icon-right[data-icon="dribbble"]:after {
   -webkit-mask-position: -192px -48px;
           mask-position: -192px -48px; }
+
 .services-icon-right.si-dribbble-box:after, .services-icon-right[data-icon="dribbble-box"]:after {
   -webkit-mask-position: -216px -48px;
           mask-position: -216px -48px; }
+
 .services-icon-right.si-drupal:after, .services-icon-right[data-icon="drupal"]:after {
   -webkit-mask-position: -96px -120px;
           mask-position: -96px -120px; }
+
 .services-icon-right.si-evernote:after, .services-icon-right[data-icon="evernote"]:after {
   -webkit-mask-position: -216px -72px;
           mask-position: -216px -72px; }
+
 .services-icon-right.si-facebook:after, .services-icon-right[data-icon="facebook"]:after {
   -webkit-mask-position: 0 0;
           mask-position: 0 0; }
+
 .services-icon-right.si-facebook-box:after, .services-icon-right[data-icon="facebook-box"]:after {
   -webkit-mask-position: -24px 0;
           mask-position: -24px 0; }
+
 .services-icon-right.si-facebook-messenger:after, .services-icon-right[data-icon="facebook-messenger"]:after {
   -webkit-mask-position: -144px -120px;
           mask-position: -144px -120px; }
+
 .services-icon-right.si-flickr:after, .services-icon-right[data-icon="flickr"]:after {
   -webkit-mask-position: -96px -96px;
           mask-position: -96px -96px; }
+
 .services-icon-right.si-foursquare:after, .services-icon-right[data-icon="foursquare"]:after {
   -webkit-mask-position: -48px -96px;
           mask-position: -48px -96px; }
+
 .services-icon-right.si-github-box:after, .services-icon-right[data-icon="github-box"]:after {
   -webkit-mask-position: 0 -120px;
           mask-position: 0 -120px; }
+
 .services-icon-right.si-google-photos:after, .services-icon-right[data-icon="google-photos"]:after {
   -webkit-mask-position: -120px -96px;
           mask-position: -120px -96px; }
+
 .services-icon-right.si-google-plus:after, .services-icon-right[data-icon="google-plus"]:after {
   -webkit-mask-position: -96px 0;
           mask-position: -96px 0; }
+
 .services-icon-right.si-google-plus-box:after, .services-icon-right[data-icon="google-plus-box"]:after {
   -webkit-mask-position: -120px 0;
           mask-position: -120px 0; }
+
 .services-icon-right.si-instagram:after, .services-icon-right[data-icon="instagram"]:after {
   -webkit-mask-position: 0 -24px;
           mask-position: 0 -24px; }
+
 .services-icon-right.si-instagram-box:after, .services-icon-right[data-icon="instagram-box"]:after {
   -webkit-mask-position: -24px -24px;
           mask-position: -24px -24px; }
+
 .services-icon-right.si-lastfm:after, .services-icon-right[data-icon="lastfm"]:after {
   -webkit-mask-position: -144px -96px;
           mask-position: -144px -96px; }
+
 .services-icon-right.si-line:after, .services-icon-right[data-icon="line"]:after {
   -webkit-mask-position: -72px -144px;
           mask-position: -72px -144px; }
+
 .services-icon-right.si-linkedin:after, .services-icon-right[data-icon="linkedin"]:after {
   -webkit-mask-position: -144px 0;
           mask-position: -144px 0; }
+
 .services-icon-right.si-linkedin-box:after, .services-icon-right[data-icon="linkedin-box"]:after {
   -webkit-mask-position: -168px 0;
           mask-position: -168px 0; }
+
 .services-icon-right.si-livejournal:after, .services-icon-right[data-icon="livejournal"]:after {
   -webkit-mask-position: -192px -72px;
           mask-position: -192px -72px; }
+
 .services-icon-right.si-medium:after, .services-icon-right[data-icon="medium"]:after {
   -webkit-mask-position: 0 -72px;
           mask-position: 0 -72px; }
+
 .services-icon-right.si-odnoklassniki:after, .services-icon-right[data-icon="odnoklassniki"]:after {
   -webkit-mask-position: -96px -24px;
           mask-position: -96px -24px; }
+
 .services-icon-right.si-odnoklassniki-box:after, .services-icon-right[data-icon="odnoklassniki-box"]:after {
   -webkit-mask-position: -120px -24px;
           mask-position: -120px -24px; }
+
 .services-icon-right.si-periscope:after, .services-icon-right[data-icon="periscope"]:after {
   -webkit-mask-position: -120px -48px;
           mask-position: -120px -48px; }
+
 .services-icon-right.si-pinterest:after, .services-icon-right[data-icon="pinterest"]:after {
   -webkit-mask-position: -192px 0;
           mask-position: -192px 0; }
+
 .services-icon-right.si-pinterest-box:after, .services-icon-right[data-icon="pinterest-box"]:after {
   -webkit-mask-position: -216px 0;
           mask-position: -216px 0; }
+
 .services-icon-right.si-pocket:after, .services-icon-right[data-icon="pocket"]:after {
   -webkit-mask-position: -24px -72px;
           mask-position: -24px -72px; }
+
 .services-icon-right.si-qqchat:after, .services-icon-right[data-icon="qqchat"]:after {
   -webkit-mask-position: -96px -144px;
           mask-position: -96px -144px; }
+
 .services-icon-right.si-qzone:after, .services-icon-right[data-icon="qzone"]:after {
   -webkit-mask-position: -216px -24px;
           mask-position: -216px -24px; }
+
 .services-icon-right.si-reddit:after, .services-icon-right[data-icon="reddit"]:after {
   -webkit-mask-position: -48px -72px;
           mask-position: -48px -72px; }
+
 .services-icon-right.si-renren:after, .services-icon-right[data-icon="renren"]:after {
   -webkit-mask-position: -24px -48px;
           mask-position: -24px -48px; }
+
 .services-icon-right.si-sina-weibo:after, .services-icon-right[data-icon="sina-weibo"]:after {
   -webkit-mask-position: -192px -24px;
           mask-position: -192px -24px; }
+
 .services-icon-right.si-skype:after, .services-icon-right[data-icon="skype"]:after {
   -webkit-mask-position: -24px -144px;
           mask-position: -24px -144px; }
+
 .services-icon-right.si-skype-outline:after, .services-icon-right[data-icon="skype-outline"]:after {
   -webkit-mask-position: 0 -144px;
           mask-position: 0 -144px; }
+
 .services-icon-right.si-slack:after, .services-icon-right[data-icon="slack"]:after {
   -webkit-mask-position: -144px -144px;
           mask-position: -144px -144px; }
+
 .services-icon-right.si-snapchat:after, .services-icon-right[data-icon="snapchat"]:after {
   -webkit-mask-position: -120px -144px;
           mask-position: -120px -144px; }
+
 .services-icon-right.si-soundcloud:after, .services-icon-right[data-icon="soundcloud"]:after {
   -webkit-mask-position: -168px -96px;
           mask-position: -168px -96px; }
+
 .services-icon-right.si-spotify:after, .services-icon-right[data-icon="spotify"]:after {
   -webkit-mask-position: -192px -96px;
           mask-position: -192px -96px; }
+
 .services-icon-right.si-stackexchange:after, .services-icon-right[data-icon="stackexchange"]:after {
   -webkit-mask-position: -48px -120px;
           mask-position: -48px -120px; }
+
 .services-icon-right.si-stackoverflow:after, .services-icon-right[data-icon="stackoverflow"]:after {
   -webkit-mask-position: -72px -120px;
           mask-position: -72px -120px; }
+
 .services-icon-right.si-swarm:after, .services-icon-right[data-icon="swarm"]:after {
   -webkit-mask-position: -72px -96px;
           mask-position: -72px -96px; }
+
 .services-icon-right.si-telegram:after, .services-icon-right[data-icon="telegram"]:after {
   -webkit-mask-position: -216px -120px;
           mask-position: -216px -120px; }
+
 .services-icon-right.si-trello:after, .services-icon-right[data-icon="trello"]:after {
   -webkit-mask-position: -216px -96px;
           mask-position: -216px -96px; }
+
 .services-icon-right.si-tumblr:after, .services-icon-right[data-icon="tumblr"]:after {
   -webkit-mask-position: 0 -48px;
           mask-position: 0 -48px; }
+
 .services-icon-right.si-twitch:after, .services-icon-right[data-icon="twitch"]:after {
   -webkit-mask-position: -96px -72px;
           mask-position: -96px -72px; }
+
 .services-icon-right.si-twitter:after, .services-icon-right[data-icon="twitter"]:after {
   -webkit-mask-position: -48px 0;
           mask-position: -48px 0; }
+
 .services-icon-right.si-twitter-box:after, .services-icon-right[data-icon="twitter-box"]:after {
   -webkit-mask-position: -72px 0;
           mask-position: -72px 0; }
+
 .services-icon-right.si-viber:after, .services-icon-right[data-icon="viber"]:after {
   -webkit-mask-position: -192px -120px;
           mask-position: -192px -120px; }
+
 .services-icon-right.si-vimeo:after, .services-icon-right[data-icon="vimeo"]:after {
   -webkit-mask-position: -72px -48px;
           mask-position: -72px -48px; }
+
 .services-icon-right.si-vine:after, .services-icon-right[data-icon="vine"]:after {
   -webkit-mask-position: -96px -48px;
           mask-position: -96px -48px; }
+
 .services-icon-right.si-vk:after, .services-icon-right[data-icon="vk"]:after {
   -webkit-mask-position: -48px -24px;
           mask-position: -48px -24px; }
+
 .services-icon-right.si-vk-box:after, .services-icon-right[data-icon="vk-box"]:after {
   -webkit-mask-position: -72px -24px;
           mask-position: -72px -24px; }
+
 .services-icon-right.si-wechat:after, .services-icon-right[data-icon="wechat"]:after {
   -webkit-mask-position: -48px -144px;
           mask-position: -48px -144px; }
+
 .services-icon-right.si-whatsapp:after, .services-icon-right[data-icon="whatsapp"]:after {
   -webkit-mask-position: -168px -120px;
           mask-position: -168px -120px; }
+
 .services-icon-right.si-wordpress:after, .services-icon-right[data-icon="wordpress"]:after {
   -webkit-mask-position: -120px -120px;
           mask-position: -120px -120px; }
+
 .services-icon-right.si-wunderlist:after, .services-icon-right[data-icon="wunderlist"]:after {
   -webkit-mask-position: -72px -72px;
           mask-position: -72px -72px; }
+
 .services-icon-right.si-xing:after, .services-icon-right[data-icon="xing"]:after {
   -webkit-mask-position: -144px -24px;
           mask-position: -144px -24px; }
+
 .services-icon-right.si-xing-box:after, .services-icon-right[data-icon="xing-box"]:after {
   -webkit-mask-position: -168px -24px;
           mask-position: -168px -24px; }
+
 .services-icon-right.si-youtube:after, .services-icon-right[data-icon="youtube"]:after {
   -webkit-mask-position: -48px -48px;
           mask-position: -48px -48px; }
 
 .theme-dark .services-icons {
   background: #FFF; }
+
 .theme-dark .services-icons.icon-secondary {
   background: rgba(255, 255, 255, 0.7); }
+
 .theme-dark .services-icons.icon-disabled {
   background: rgba(255, 255, 255, 0.3); }
+
 .theme-dark .services-icons.icon-primary {
   background: #78909c; }
+
 .theme-dark .services-icons.icon-accent {
   background: #40c4ff; }
+
 .theme-dark .btn .services-icons, .theme-dark .btn .services-icons:hover, .theme-dark .btn .services-icons:focus {
   background: #FFF; }
+
 .theme-dark .btn-colored .services-icons, .theme-dark .btn-colored:hover .services-icons, .theme-dark .btn-colored:focus .services-icons, .theme-dark .btn.btn-colored .services-icons, .theme-dark .btn.btn-colored:hover .services-icons, .theme-dark .btn.btn-colored:focus .services-icons {
   background: #78909c; }
+
 .theme-dark .btn-accent .services-icons, .theme-dark .btn-accent:hover .services-icons, .theme-dark .btn-accent:focus .services-icons, .theme-dark .btn.btn-accent .services-icons, .theme-dark .btn.btn-accent:hover .services-icons, .theme-dark .btn.btn-accent:focus .services-icons {
   background: #40c4ff; }
+
 .theme-dark .btn-raised.btn-colored .services-icons, .theme-dark .btn-raised.btn-colored:hover .services-icons, .theme-dark .btn-raised.btn-colored:focus .services-icons, .theme-dark .btn.btn-raised.btn-colored .services-icons, .theme-dark .btn.btn-raised.btn-colored:hover .services-icons, .theme-dark .btn.btn-raised.btn-colored:focus .services-icons {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .btn-raised.btn-accent .services-icons, .theme-dark .btn-raised.btn-accent:hover .services-icons, .theme-dark .btn-raised.btn-accent:focus .services-icons, .theme-dark .btn.btn-raised.btn-accent .services-icons, .theme-dark .btn.btn-raised.btn-accent:hover .services-icons, .theme-dark .btn.btn-raised.btn-accent:focus .services-icons {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .btn.btn-disabled .services-icons, .theme-dark .btn.btn-disabled:hover .services-icons, .theme-dark .btn.btn-disabled:focus .services-icons, .theme-dark .btn.btn-disabled:active .services-icons {
   background: rgba(255, 255, 255, 0.3); }
+
 .theme-dark .fab .services-icons, .theme-dark .fab:hover .services-icons, .theme-dark .fab:focus .services-icons {
   background: #FFF; }
+
 .theme-dark .fab.fab-colored .services-icons, .theme-dark .fab.fab-colored:hover .services-icons, .theme-dark .fab.fab-colored:focus .services-icons {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .fab.fab-accent .services-icons, .theme-dark .fab.fab-accent:hover .services-icons, .theme-dark .fab.fab-accent:focus .services-icons {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .services-icon-left:before, .theme-dark .services-icon-right:after {
   background: #FFF; }
+
 .theme-dark .services-icon-left.icon-secondary:before, .theme-dark .services-icon-right.icon-secondary:after {
   background: rgba(255, 255, 255, 0.7); }
+
 .theme-dark .services-icon-left.icon-disabled:before, .theme-dark .services-icon-right.icon-disabled:after {
   background: rgba(255, 255, 255, 0.3); }
+
 .theme-dark .services-icon-left.icon-primary:before, .theme-dark .services-icon-right.icon-primary:after {
   background: #78909c; }
+
 .theme-dark .services-icon-left.icon-accent:before, .theme-dark .services-icon-right.icon-accent:after {
   background: #40c4ff; }
+
 .theme-dark a.services-icon-left:not(.btn):before {
   background: #40c4ff; }
+
 .theme-dark a.services-icon-left:not(.btn):hover:before {
   background: #5fcdff; }
+
 .theme-dark a.services-icon-left:not(.btn):active:before {
   background: #80d8ff; }
+
 .theme-dark .btn.services-icon-left:before, .theme-dark .btn.services-icon-left:hover:before, .theme-dark .btn.services-icon-left:focus:before, .theme-dark .menu a.services-icon-left:before, .theme-dark .menu a.services-icon-left:hover:before, .theme-dark .menu a.services-icon-left:focus:before {
   background: #FFF; }
+
 .theme-dark .btn-colored.services-icon-left:before, .theme-dark .btn-colored.services-icon-left:hover:before, .theme-dark .btn-colored.services-icon-left:focus:before, .theme-dark .btn.btn-colored.services-icon-left:before, .theme-dark .btn.btn-colored.services-icon-left:hover:before, .theme-dark .btn.btn-colored.services-icon-left:focus:before {
   background: #78909c; }
+
 .theme-dark .btn-accent.services-icon-left:before, .theme-dark .btn-accent.services-icon-left:hover:before, .theme-dark .btn-accent.services-icon-left:focus:before, .theme-dark .btn.btn-accent.services-icon-left:before, .theme-dark .btn.btn-accent.services-icon-left:hover:before, .theme-dark .btn.btn-accent.services-icon-left:focus:before {
   background: #40c4ff; }
+
 .theme-dark .btn-raised.services-icon-left.btn-colored:before, .theme-dark .btn-raised.services-icon-left.btn-colored:hover:before, .theme-dark .btn-raised.services-icon-left.btn-colored:focus:before, .theme-dark .btn.btn-raised.services-icon-left.btn-colored:before, .theme-dark .btn.btn-raised.services-icon-left.btn-colored:hover:before, .theme-dark .btn.btn-raised.services-icon-left.btn-colored:focus:before {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .btn-raised.services-icon-left.btn-accent:before, .theme-dark .btn-raised.services-icon-left.btn-accent:hover:before, .theme-dark .btn-raised.services-icon-left.btn-accent:focus:before, .theme-dark .btn.btn-raised.services-icon-left.btn-accent:before, .theme-dark .btn.btn-raised.services-icon-left.btn-accent:hover:before, .theme-dark .btn.btn-raised.services-icon-left.btn-accent:focus:before {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .btn.btn-disabled.services-icon-left:before, .theme-dark .btn.btn-disabled.services-icon-left:hover:before, .theme-dark .btn.btn-disabled.services-icon-left:focus:before, .theme-dark .btn.btn-disabled.services-icon-left:active:before {
   background: rgba(255, 255, 255, 0.3); }
+
 .theme-dark .fab.services-icon-left:before, .theme-dark .fab.services-icon-left:hover:before, .theme-dark .fab.services-icon-left:focus:before {
   background: #FFF; }
+
 .theme-dark .fab.services-icon-left.fab-colored:before, .theme-dark .fab.services-icon-left.fab-colored:hover:before, .theme-dark .fab.services-icon-left.fab-colored:focus:before {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .fab.services-icon-left.fab-accent:before, .theme-dark .fab.services-icon-left.fab-accent:hover:before, .theme-dark .fab.services-icon-left.fab-accent:focus:before {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark a.services-icon-right:not(.btn):after {
   background: #40c4ff; }
+
 .theme-dark a.services-icon-right:not(.btn):hover:after {
   background: #5fcdff; }
+
 .theme-dark a.services-icon-right:not(.btn):active:after {
   background: #80d8ff; }
+
 .theme-dark .btn.services-icon-right:after, .theme-dark .btn.services-icon-right:hover:after, .theme-dark .btn.services-icon-right:focus:after {
   background: #FFF; }
+
 .theme-dark .btn-colored.services-icon-right:after, .theme-dark .btn-colored.services-icon-right:hover:after, .theme-dark .btn-colored.services-icon-right:focus:after, .theme-dark .btn.btn-colored.services-icon-right:after, .theme-dark .btn.btn-colored.services-icon-right:hover:after, .theme-dark .btn.btn-colored.services-icon-right:focus:after {
   background: #78909c; }
+
 .theme-dark .btn-accent.services-icon-right:after, .theme-dark .btn-accent.services-icon-right:hover:after, .theme-dark .btn-accent.services-icon-right:focus:after, .theme-dark .btn.btn-accent.services-icon-right:after, .theme-dark .btn.btn-accent.services-icon-right:hover:after, .theme-dark .btn.btn-accent.services-icon-right:focus:after {
   background: #40c4ff; }
+
 .theme-dark .btn-raised.services-icon-right.btn-colored:after, .theme-dark .btn-raised.services-icon-right.btn-colored:hover:after, .theme-dark .btn-raised.services-icon-right.btn-colored:focus:after, .theme-dark .btn.btn-raised.services-icon-right.btn-colored:after, .theme-dark .btn.btn-raised.services-icon-right.btn-colored:hover:after, .theme-dark .btn.btn-raised.services-icon-right.btn-colored:focus:after {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .btn-raised.services-icon-right.btn-accent:after, .theme-dark .btn-raised.services-icon-right.btn-accent:hover:after, .theme-dark .btn-raised.services-icon-right.btn-accent:focus:after, .theme-dark .btn.btn-raised.services-icon-right.btn-accent:after, .theme-dark .btn.btn-raised.services-icon-right.btn-accent:hover:after, .theme-dark .btn.btn-raised.services-icon-right.btn-accent:focus:after {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .btn.btn-disabled.services-icon-right:after, .theme-dark .btn.btn-disabled.services-icon-right:hover:after, .theme-dark .btn.btn-disabled.services-icon-right:focus:after, .theme-dark .btn.btn-disabled.services-icon-right:active:after {
   background: rgba(255, 255, 255, 0.3); }
+
 .theme-dark .fab.services-icon-right:after, .theme-dark .fab.services-icon-right:hover:after, .theme-dark .fab.services-icon-right:focus:after {
   background: #FFF; }
+
 .theme-dark .fab.services-icon-right.fab-colored:after, .theme-dark .fab.services-icon-right.fab-colored:hover:after, .theme-dark .fab.services-icon-right.fab-colored:focus:after {
   background: rgba(0, 0, 0, 0.87); }
+
 .theme-dark .fab.services-icon-right.fab-accent:after, .theme-dark .fab.services-icon-right.fab-accent:hover:after, .theme-dark .fab.services-icon-right.fab-accent:focus:after {
   background: rgba(0, 0, 0, 0.87); }
