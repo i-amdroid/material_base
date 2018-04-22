@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-@import "compass";
-@import "compass/css3";
-
 @import "color-palette";
 @import "variables";
 
@@ -77,7 +74,7 @@ $accent-colors: (
       form .form-item {
         input[type="text"], input[type="search"] { color: contrast-color(color($color-value));
           border-bottom: 1px solid contrast-color(color($color-value), $color-text, $color-text-light);
-          @include input-placeholder { color: contrast-color(color($color-value), $color-text-disabled, $color-text-light-disabled); }
+          &::placeholder { color: contrast-color(color($color-value), $color-text-disabled, $color-text-light-disabled); }
         }
         &.icon-left:before { color: contrast-color(color($color-value)); }
       }
@@ -145,7 +142,7 @@ $accent-colors: (
     }
     .form-item {
       & .focused label { color: color($color-value, a200); }
-      input[type="text"], input[type="email"], input[type="password"], input[type="search"], textarea, select {
+      input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="tel"], textarea, select {
         &:focus, &.error:focus { border-color: color($color-value, a200); }
       }
       input[type="checkbox"]:checked:before, input[type="radio"]:checked:before { color: color($color-value, a200); }

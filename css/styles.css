@@ -38,9 +38,10 @@ caption, th, td {
 
 q, blockquote {
   quotes: none; }
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
 
 a img {
   border: none; }
@@ -49,6 +50,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 /* break points */
+/* mixins and functions */
 /**
  * Legend:
  * TDV - theme dark values
@@ -87,6 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 #page * {
   box-sizing: border-box; }
+
 #page .cke * {
   box-sizing: content-box; }
 
@@ -142,10 +145,22 @@ h6, .h6 {
   margin-top: 16px;
   margin-bottom: 8px; }
 
-h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6, h1 + .h1, h1 + .h2, h1 + .h3, h1 + .h4, h1 + .h5, h1 + .h6, .h1 + h1, .h1 + h2, .h1 + h3, .h1 + h4, .h1 + h5, .h1 + h6, .h1 + .h1, .h1 + .h2, .h1 + .h3, .h1 + .h4, .h1 + .h5, .h1 + .h6, h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6, h2 + .h1, h2 + .h2, h2 + .h3, h2 + .h4, h2 + .h5, h2 + .h6, .h2 + h1, .h2 + h2, .h2 + h3, .h2 + h4, .h2 + h5, .h2 + h6, .h2 + .h1, .h2 + .h2, .h2 + .h3, .h2 + .h4, .h2 + .h5, .h2 + .h6 {
+h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6,
+h1 + .h1, h1 + .h2, h1 + .h3, h1 + .h4, h1 + .h5, h1 + .h6, .h1 + h1, .h1 + h2, .h1 + h3, .h1 + h4, .h1 + h5, .h1 + h6,
+.h1 + .h1, .h1 + .h2, .h1 + .h3, .h1 + .h4, .h1 + .h5, .h1 + .h6, h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6,
+h2 + .h1, h2 + .h2, h2 + .h3, h2 + .h4, h2 + .h5, h2 + .h6, .h2 + h1, .h2 + h2, .h2 + h3, .h2 + h4, .h2 + h5, .h2 + h6,
+.h2 + .h1, .h2 + .h2, .h2 + .h3, .h2 + .h4, .h2 + .h5, .h2 + .h6 {
   margin-top: -8px; }
 
-h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6, h3 + .h1, h3 + .h2, h3 + .h3, h3 + .h4, h3 + .h5, h3 + .h6, .h3 + h1, .h3 + h2, .h3 + h3, .h3 + h4, .h3 + h5, .h3 + h6, .h3 + .h1, .h3 + .h2, .h3 + .h3, .h3 + .h4, .h3 + .h5, .h3 + .h6, h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6, h4 + .h1, h4 + .h2, h4 + .h3, h4 + .h4, h4 + .h5, h4 + .h6, .h4 + h1, .h4 + h2, .h4 + h3, .h4 + h4, .h4 + h5, .h4 + h6, .h4 + .h1, .h4 + .h2, .h4 + .h3, .h4 + .h4, .h4 + .h5, .h4 + .h6, h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6, h5 + .h1, h5 + .h2, h5 + .h3, h5 + .h4, h5 + .h5, h5 + .h6, .h5 + h1, .h5 + h2, .h5 + h3, .h5 + h4, .h5 + h5, .h5 + h6, .h5 + .h1, .h5 + .h2, .h5 + .h3, .h5 + .h4, .h5 + .h5, .h5 + .h6, h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6, h6 + .h1, h6 + .h2, h6 + .h3, h6 + .h4, h6 + .h5, h6 + .h6, .h6 + h1, .h6 + h2, .h6 + h3, .h6 + h4, .h6 + h5, .h6 + h6, .h6 + .h1, .h6 + .h2, .h6 + .h3, .h6 + .h4, .h6 + .h5, .h6 + .h6 {
+h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6,
+h3 + .h1, h3 + .h2, h3 + .h3, h3 + .h4, h3 + .h5, h3 + .h6, .h3 + h1, .h3 + h2, .h3 + h3, .h3 + h4, .h3 + h5, .h3 + h6,
+.h3 + .h1, .h3 + .h2, .h3 + .h3, .h3 + .h4, .h3 + .h5, .h3 + .h6, h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6,
+h4 + .h1, h4 + .h2, h4 + .h3, h4 + .h4, h4 + .h5, h4 + .h6, .h4 + h1, .h4 + h2, .h4 + h3, .h4 + h4, .h4 + h5, .h4 + h6,
+.h4 + .h1, .h4 + .h2, .h4 + .h3, .h4 + .h4, .h4 + .h5, .h4 + .h6, h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6,
+h5 + .h1, h5 + .h2, h5 + .h3, h5 + .h4, h5 + .h5, h5 + .h6, .h5 + h1, .h5 + h2, .h5 + h3, .h5 + h4, .h5 + h5, .h5 + h6,
+.h5 + .h1, .h5 + .h2, .h5 + .h3, .h5 + .h4, .h5 + .h5, .h5 + .h6, h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6,
+h6 + .h1, h6 + .h2, h6 + .h3, h6 + .h4, h6 + .h5, h6 + .h6, .h6 + h1, .h6 + h2, .h6 + h3, .h6 + h4, .h6 + h5, .h6 + h6,
+.h6 + .h1, .h6 + .h2, .h6 + .h3, .h6 + .h4, .h6 + .h5, .h6 + .h6 {
   margin-top: -4px; }
 
 .font-heading {
@@ -333,6 +348,7 @@ p a.icon-left:not(.btn), p a.services-icon-left:not(.btn), ul:not(.menu) li a.ic
   display: inline-block; }
   p a.icon-left:not(.btn):before, p a.services-icon-left:not(.btn):before, ul:not(.menu) li a.icon-left:not(.btn):before, ul:not(.menu) li a.services-icon-left:not(.btn):before, td a.icon-left:not(.btn):before, td a.services-icon-left:not(.btn):before, th a.icon-left:not(.btn):before, th a.services-icon-left:not(.btn):before {
     margin-right: 4px; }
+
 p a.icon-right:not(.btn), p a.services-icon-right:not(.btn), ul:not(.menu) li a.icon-right:not(.btn), ul:not(.menu) li a.services-icon-right:not(.btn), td a.icon-right:not(.btn), td a.services-icon-right:not(.btn), th a.icon-right:not(.btn), th a.services-icon-right:not(.btn) {
   display: inline-block; }
   p a.icon-right:not(.btn):after, p a.services-icon-right:not(.btn):after, ul:not(.menu) li a.icon-right:not(.btn):after, ul:not(.menu) li a.services-icon-right:not(.btn):after, td a.icon-right:not(.btn):after, td a.services-icon-right:not(.btn):after, th a.icon-right:not(.btn):after, th a.services-icon-right:not(.btn):after {
@@ -387,7 +403,7 @@ table {
 tr {
   border-bottom: 1px solid #e0e0e0; }
 
-tr + tr:last-child {
+tbody tr:last-child {
   border-bottom: 0; }
 
 th, td {
@@ -401,7 +417,8 @@ th:last-child, td:last-child {
 
 th {
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.54); }
+  color: rgba(0, 0, 0, 0.54);
+  text-align: left; }
 
 tr:hover {
   background: #eeeeee; }
@@ -454,7 +471,6 @@ pre {
       margin-left: -264px;
       margin-top: 8px;
       margin-bottom: 8px; }
-
   .media-right {
     padding-right: 264px; }
     .media-right .img-right, .media-right .pull-right, .media-right .align-right {
@@ -463,11 +479,10 @@ pre {
       margin-right: -264px;
       margin-top: 8px;
       margin-bottom: 8px; } }
+
 .full-height, .row.full-height > div {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center; }
+  justify-content: center; }
 
 .rippleAnimate {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -528,12 +543,11 @@ pre {
 @media (min-width: 568px) {
   th:first-child, td:first-child {
     padding-left: 24px; }
-
   th:last-child, td:last-child {
     padding-right: 24px; }
-
   pre {
     padding: 12px 24px; } }
+
 .z-level-0, .navbar-transparent #navbar, .navbar-transparent.navbar-fixed .navbar-shadow, .footer-transparent #footer, .card .table-card, .content-card .card-holder .table-card, .card-grid .card, .card-grid .content-card .card-holder, .content-card .card-grid .card-holder {
   box-shadow: none; }
 
@@ -600,16 +614,12 @@ pre {
 */
 /* layout */
 #page {
-  display: -webkit-box;
   display: flex;
   min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column; }
+  flex-direction: column; }
 
 #content {
-  -webkit-box-flex: 1;
-          flex: 1 0 auto; }
+  flex: 1 0 auto; }
 
 #main-content {
   outline: none; }
@@ -658,6 +668,7 @@ pre {
   width: 100%;
   background: #607d8b;
   z-index: 30; }
+
 .navbar-fixed #header {
   padding-top: 64px;
   position: relative;
@@ -669,38 +680,51 @@ pre {
   pointer-events: none; }
   .navbar-transparent #navbar .navbar-item {
     pointer-events: auto; }
+
 .navbar-transparent #navbar.navbar-bg {
   background: none; }
 
 .navbar-light #navbar {
   color: rgba(0, 0, 0, 0.87); }
+
 .navbar-light #header {
   background: #FFFFFF; }
+
 .navbar-light.navbar-fixed #navbar {
   background: #FFFFFF; }
+
 .navbar-light .navbar-item .navbar-icon, .navbar-light .navbar-slogan, .navbar-light .navbar-title a {
   color: rgba(0, 0, 0, 0.87); }
+
 .navbar-light .navbar-menu .menu a {
   color: rgba(0, 0, 0, 0.87); }
+
 .navbar-light .navbar-menu .menu a:hover {
   color: rgba(0, 0, 0, 0.87);
   border-color: rgba(0, 0, 0, 0.5); }
+
 .navbar-light .navbar-menu .menu .active-trail a, .navbar-light .navbar-menu .menu .is-active {
   border-color: rgba(0, 0, 0, 0.87); }
 
 .navbar-dark #navbar {
   color: #FFF; }
+
 .navbar-dark #header {
   background: #212121; }
+
 .navbar-dark.navbar-fixed #navbar {
   background: #212121; }
+
 .navbar-dark .navbar-item .navbar-icon, .navbar-dark .navbar-slogan, .navbar-dark .navbar-title a {
   color: #FFF; }
+
 .navbar-dark .navbar-menu .menu a {
   color: #FFF; }
+
 .navbar-dark .navbar-menu .menu a:hover {
   color: #FFF;
   border-color: rgba(255, 255, 255, 0.5); }
+
 .navbar-dark .navbar-menu .menu .active-trail a, .navbar-dark .navbar-menu .menu .is-active {
   border-color: #FFF; }
 
@@ -713,7 +737,6 @@ pre {
   padding: 8px 4px; }
 
 .region-footer-content {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
 
@@ -725,10 +748,8 @@ pre {
   line-height: 32px; }
 
 .footer-icons {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   min-height: 32px; }
 
 .footer-transparent #footer {
@@ -740,30 +761,24 @@ pre {
 @media (min-width: 568px) {
   #navbar {
     padding: 8px 12px; }
-
   #footer {
     min-height: 64px; }
-
   #footer-content {
     padding: 8px 12px;
     text-align: center; }
-
   .region-footer-content {
     display: block; }
-
   .footer-item {
     min-height: 48px;
     float: left;
     line-height: 48px; }
-
   .footer-item.pull-center {
     float: none; }
-
   .footer-item.pull-right {
     float: right; }
-
   .footer-icons {
     min-height: 48px; } }
+
 /* TO DO
 .navbar-gray
 .footer-dark
@@ -771,57 +786,42 @@ pre {
 @media (min-width: 568px) {
   .container {
     padding: 0 24px; }
-
   .two-sidebars #main {
-    display: -webkit-box;
     display: flex;
     flex-wrap: wrap; }
   .two-sidebars #main-content {
-    -webkit-box-flex: 0;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 100%; }
   .two-sidebars #sidebar-first {
-    -webkit-box-flex: 0;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     margin-right: 12px;
     width: calc(50% - 12px); }
   .two-sidebars #sidebar-second {
-    -webkit-box-flex: 0;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     margin-left: 12px;
     width: calc(50% - 12px); } }
+
 @media (min-width: 992px) {
   .no-sidebars .container {
     width: 992px; }
-
   .no-sidebars.wide-one-side .container {
     width: auto; }
-
   .no-sidebars.wide-two-side .container {
     width: auto; }
-
   .one-sidebar #main {
-    display: -webkit-box;
     display: flex; }
   .one-sidebar #main-content {
-    -webkit-box-ordinal-group: 3;
-            order: 2;
-    -webkit-box-flex: 0;
-            flex: 0 0 auto;
+    order: 2;
+    flex: 0 0 auto;
     width: calc(100% - 264px); }
   .one-sidebar #sidebar-first {
-    -webkit-box-ordinal-group: 2;
-            order: 1;
-    -webkit-box-flex: 0;
-            flex: 0 0 240px;
+    order: 1;
+    flex: 0 0 240px;
     margin-right: 24px; }
   .one-sidebar #sidebar-second {
-    -webkit-box-ordinal-group: 4;
-            order: 3;
-    -webkit-box-flex: 0;
-            flex: 0 0 240px;
+    order: 3;
+    flex: 0 0 240px;
     margin-left: 24px; }
-
   .two-sidebars #main {
     display: block; }
   .two-sidebars #main-content {
@@ -834,48 +834,39 @@ pre {
   .two-sidebars #sidebar-second {
     width: calc(100% - 264px);
     float: right; } }
+
 @media (min-width: 1280px) {
   .no-sidebars.wide-one-side .container {
     width: 1256px; }
-
   .one-sidebar .container {
     width: 1256px; }
-
   .one-sidebar.wide-two-side .container {
     width: auto; }
-
   .two-sidebars #main {
-    display: -webkit-box;
     display: flex;
     flex-wrap: nowrap; }
   .two-sidebars #main-content {
-    -webkit-box-ordinal-group: 3;
-            order: 2;
-    -webkit-box-flex: 0;
-            flex: 0 0 auto;
+    order: 2;
+    flex: 0 0 auto;
     width: calc(100% - 528px); }
   .two-sidebars #sidebar-first {
-    -webkit-box-ordinal-group: 2;
-            order: 1;
-    -webkit-box-flex: 0;
-            flex: 0 0 240px;
+    order: 1;
+    flex: 0 0 240px;
     margin-right: 24px; }
   .two-sidebars #sidebar-second {
-    -webkit-box-ordinal-group: 4;
-            order: 3;
-    -webkit-box-flex: 0;
-            flex: 0 0 240px;
+    order: 3;
+    flex: 0 0 240px;
     width: 240px;
     margin-left: 24px; } }
+
 @media (min-width: 1544px) {
   .no-sidebars.wide-two-side .container {
     width: 1520px; }
-
   .one-sidebar.wide-two-side .container {
     width: 1520px; }
-
   .two-sidebars .container {
     width: 1520px; } }
+
 @media (min-width: 992px) {
   .drawer-permanent #header, .drawer-permanent #content, .drawer-permanent #navbar, .drawer-permanent #footer {
     margin-left: 240px; }
@@ -897,9 +888,11 @@ pre {
     box-shadow: none; }
   .drawer-permanent.no-sidebars .container {
     width: auto; } }
+
 @media (min-width: 1280px) {
   .drawer-permanent.no-sidebars .container {
     width: 992px; } }
+
 .text-box {
   max-width: 944px; }
 
@@ -951,23 +944,129 @@ pre {
 .btn-raised.btn-colored, .btn.btn-raised.btn-colored, .pager .pager-item > a.btn-raised.btn-colored, .pager .pager-item > span.btn-raised.btn-colored {
   background: #607d8b;
   color: #FFF; }
+
 .btn-raised.btn-accent, .pager .pager-item > a.btn-raised, .pager .pager-item > span.btn-raised, .btn.btn-raised.btn-accent, .pager .pager-item > a.btn-raised, .pager .pager-item > span.btn-raised {
   background: #00b0ff;
   color: rgba(0, 0, 0, 0.87); }
+
 .btn-raised.btn-colored .rippleAnimate, .btn-raised.btn-accent .rippleAnimate, .pager .pager-item > a.btn-raised .rippleAnimate, .pager .pager-item > span.btn-raised .rippleAnimate, .btn.btn-raised.btn-colored .rippleAnimate, .pager .pager-item > a.btn-raised.btn-colored .rippleAnimate, .pager .pager-item > span.btn-raised.btn-colored .rippleAnimate, .btn.btn-raised.btn-accent .rippleAnimate, .pager .pager-item > a.btn-raised .rippleAnimate, .pager .pager-item > span.btn-raised .rippleAnimate {
   background-color: rgba(255, 255, 255, 0.3); }
+
 .btn-raised.btn-colored:hover, .btn-raised.btn-colored:focus, .btn.btn-raised.btn-colored:hover, .pager .pager-item > a.btn-raised.btn-colored:hover, .pager .pager-item > span.btn-raised.btn-colored:hover, .btn.btn-raised.btn-colored:focus, .pager .pager-item > a.btn-raised.btn-colored:focus, .pager .pager-item > span.btn-raised.btn-colored:focus {
   background: #546e7a;
   color: #FFF; }
+
 .btn-raised.btn-colored:active, .btn.btn-raised.btn-colored:active, .pager .pager-item > a.btn-raised.btn-colored:active, .pager .pager-item > span.btn-raised.btn-colored:active {
   background: #455a64; }
+
 .btn-raised.btn-accent:hover, .pager .pager-item > a.btn-raised:hover, .pager .pager-item > span.btn-raised:hover, .btn-raised.btn-accent:focus, .pager .pager-item > a.btn-raised:focus, .pager .pager-item > span.btn-raised:focus, .btn.btn-raised.btn-accent:hover, .pager .pager-item > a.btn-raised:hover, .pager .pager-item > span.btn-raised:hover, .btn.btn-raised.btn-accent:focus, .pager .pager-item > a.btn-raised:focus, .pager .pager-item > span.btn-raised:focus {
   background: #0aa2ff;
   color: rgba(0, 0, 0, 0.87); }
+
 .btn-raised.btn-accent:active, .pager .pager-item > a.btn-raised:active, .pager .pager-item > span.btn-raised:active, .btn.btn-raised.btn-accent:active, .pager .pager-item > a.btn-raised:active, .pager .pager-item > span.btn-raised:active {
   background: #0091ea; }
 
-.btn.icon-left:before, .pager .pager-item > a.icon-left:before, .pager .pager-item > span.icon-left:before, .btn.icon-right:after, .pager .pager-item > a.icon-right:after, .pager .pager-item > span.icon-right:after, .btn .material-icons, .pager .pager-item > a .material-icons, .pager .pager-item > span .material-icons, .btn .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .btn li:not(:last-child):after, .pager .pager-item > a .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .pager .pager-item > a li:not(:last-child):after, .pager .pager-item > span .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .pager .pager-item > span li:not(:last-child):after, .btn .info:before, .pager .pager-item > a .info:before, .pager .pager-item > span .info:before, .btn .important:before, .pager .pager-item > a .important:before, .pager .pager-item > span .important:before, .btn .messages-status:before, .pager .pager-item > a .messages-status:before, .pager .pager-item > span .messages-status:before, .btn .messages-warning:before, .pager .pager-item > a .messages-warning:before, .pager .pager-item > span .messages-warning:before, .btn .messages-error:before, .pager .pager-item > a .messages-error:before, .pager .pager-item > span .messages-error:before, .btn .form-item input[type="checkbox"]:before, .form-item .btn input[type="checkbox"]:before, .pager .pager-item > a .form-item input[type="checkbox"]:before, .form-item .pager .pager-item > a input[type="checkbox"]:before, .pager .pager-item > span .form-item input[type="checkbox"]:before, .form-item .pager .pager-item > span input[type="checkbox"]:before, .btn .form-item input[type="radio"]:before, .form-item .btn input[type="radio"]:before, .pager .pager-item > a .form-item input[type="radio"]:before, .form-item .pager .pager-item > a input[type="radio"]:before, .pager .pager-item > span .form-item input[type="radio"]:before, .form-item .pager .pager-item > span input[type="radio"]:before, .btn .form-item.form-type-select:after, .pager .pager-item > a .form-item.form-type-select:after, .pager .pager-item > span .form-item.form-type-select:after, .btn .navbar-account-menu .menu a:before, .navbar-account-menu .menu .btn a:before, .pager .pager-item > a .navbar-account-menu .menu a:before, .navbar-account-menu .menu .pager .pager-item > a a:before, .pager .pager-item > span .navbar-account-menu .menu a:before, .navbar-account-menu .menu .pager .pager-item > span a:before, .btn .sidebar .menu .collapsed > a:after, .sidebar .menu .btn .collapsed > a:after, .pager .pager-item > a .sidebar .menu .collapsed > a:after, .sidebar .menu .pager .pager-item > a .collapsed > a:after, .pager .pager-item > span .sidebar .menu .collapsed > a:after, .sidebar .menu .pager .pager-item > span .collapsed > a:after, .btn .sidebar .menu .expanded > a:after, .sidebar .menu .btn .expanded > a:after, .pager .pager-item > a .sidebar .menu .expanded > a:after, .sidebar .menu .pager .pager-item > a .expanded > a:after, .pager .pager-item > span .sidebar .menu .expanded > a:after, .sidebar .menu .pager .pager-item > span .expanded > a:after, .btn .collapsible-toggle:before, .pager .pager-item > a .collapsible-toggle:before, .pager .pager-item > span .collapsible-toggle:before, .btn .pager .pager-item.item-first > a:before, .pager .btn .pager-item.item-first > a:before, .pager .pager-item > a .pager-item.item-first > a:before, .pager .pager-item > span .pager-item.item-first > a:before, .btn .pager .pager-item.item-first > span:before, .pager .btn .pager-item.item-first > span:before, .pager .pager-item > a .pager-item.item-first > span:before, .pager .pager-item > span .pager-item.item-first > span:before, .btn .pager .pager-item.item-previous > a:before, .pager .btn .pager-item.item-previous > a:before, .pager .pager-item > a .pager-item.item-previous > a:before, .pager .pager-item > span .pager-item.item-previous > a:before, .btn .pager .pager-item.item-previous > span:before, .pager .btn .pager-item.item-previous > span:before, .pager .pager-item > a .pager-item.item-previous > span:before, .pager .pager-item > span .pager-item.item-previous > span:before, .btn .pager .pager-item.item-ellipsis > a:before, .pager .btn .pager-item.item-ellipsis > a:before, .pager .pager-item > a .pager-item.item-ellipsis > a:before, .pager .pager-item > span .pager-item.item-ellipsis > a:before, .btn .pager .pager-item.item-ellipsis > span:before, .pager .btn .pager-item.item-ellipsis > span:before, .pager .pager-item > a .pager-item.item-ellipsis > span:before, .pager .pager-item > span .pager-item.item-ellipsis > span:before, .btn .pager .pager-item.item-next > a:before, .pager .btn .pager-item.item-next > a:before, .pager .pager-item > a .pager-item.item-next > a:before, .pager .pager-item > span .pager-item.item-next > a:before, .btn .pager .pager-item.item-next > span:before, .pager .btn .pager-item.item-next > span:before, .pager .pager-item > a .pager-item.item-next > span:before, .pager .pager-item > span .pager-item.item-next > span:before, .btn .pager .pager-item.item-last > a:before, .pager .btn .pager-item.item-last > a:before, .pager .pager-item > a .pager-item.item-last > a:before, .pager .pager-item > span .pager-item.item-last > a:before, .btn .pager .pager-item.item-last > span:before, .pager .btn .pager-item.item-last > span:before, .pager .pager-item > a .pager-item.item-last > span:before, .pager .pager-item > span .pager-item.item-last > span:before {
+.btn.icon-left:before, .pager .pager-item > a.icon-left:before, .pager .pager-item > span.icon-left:before, .btn.icon-right:after, .pager .pager-item > a.icon-right:after, .pager .pager-item > span.icon-right:after,
+.btn .material-icons,
+.pager .pager-item > a .material-icons,
+.pager .pager-item > span .material-icons,
+.btn .breadcrumb ol li:not(:last-child):after,
+.breadcrumb ol .btn li:not(:last-child):after,
+.pager .pager-item > a .breadcrumb ol li:not(:last-child):after,
+.breadcrumb ol .pager .pager-item > a li:not(:last-child):after,
+.pager .pager-item > span .breadcrumb ol li:not(:last-child):after,
+.breadcrumb ol .pager .pager-item > span li:not(:last-child):after,
+.btn .info:before,
+.pager .pager-item > a .info:before,
+.pager .pager-item > span .info:before,
+.btn .important:before,
+.pager .pager-item > a .important:before,
+.pager .pager-item > span .important:before,
+.btn .messages-status:before,
+.pager .pager-item > a .messages-status:before,
+.pager .pager-item > span .messages-status:before,
+.btn .messages-warning:before,
+.pager .pager-item > a .messages-warning:before,
+.pager .pager-item > span .messages-warning:before,
+.btn .messages-error:before,
+.pager .pager-item > a .messages-error:before,
+.pager .pager-item > span .messages-error:before,
+.btn .form-item input[type="checkbox"]:before,
+.form-item .btn input[type="checkbox"]:before,
+.pager .pager-item > a .form-item input[type="checkbox"]:before,
+.form-item .pager .pager-item > a input[type="checkbox"]:before,
+.pager .pager-item > span .form-item input[type="checkbox"]:before,
+.form-item .pager .pager-item > span input[type="checkbox"]:before,
+.btn .form-item input[type="radio"]:before,
+.form-item .btn input[type="radio"]:before,
+.pager .pager-item > a .form-item input[type="radio"]:before,
+.form-item .pager .pager-item > a input[type="radio"]:before,
+.pager .pager-item > span .form-item input[type="radio"]:before,
+.form-item .pager .pager-item > span input[type="radio"]:before,
+.btn .form-item.form-type-select:after,
+.pager .pager-item > a .form-item.form-type-select:after,
+.pager .pager-item > span .form-item.form-type-select:after,
+.btn .navbar-account-menu .menu a:before,
+.navbar-account-menu .menu .btn a:before,
+.pager .pager-item > a .navbar-account-menu .menu a:before,
+.navbar-account-menu .menu .pager .pager-item > a a:before,
+.pager .pager-item > span .navbar-account-menu .menu a:before,
+.navbar-account-menu .menu .pager .pager-item > span a:before,
+.btn .sidebar .menu .collapsed > a:after,
+.sidebar .menu .btn .collapsed > a:after,
+.pager .pager-item > a .sidebar .menu .collapsed > a:after,
+.sidebar .menu .pager .pager-item > a .collapsed > a:after,
+.pager .pager-item > span .sidebar .menu .collapsed > a:after,
+.sidebar .menu .pager .pager-item > span .collapsed > a:after,
+.btn .sidebar .menu .expanded > a:after,
+.sidebar .menu .btn .expanded > a:after,
+.pager .pager-item > a .sidebar .menu .expanded > a:after,
+.sidebar .menu .pager .pager-item > a .expanded > a:after,
+.pager .pager-item > span .sidebar .menu .expanded > a:after,
+.sidebar .menu .pager .pager-item > span .expanded > a:after,
+.btn .collapsible-toggle:before,
+.pager .pager-item > a .collapsible-toggle:before,
+.pager .pager-item > span .collapsible-toggle:before,
+.btn .pager .pager-item.item-first > a:before,
+.pager .btn .pager-item.item-first > a:before,
+.pager .pager-item > a .pager-item.item-first > a:before,
+.pager .pager-item > span .pager-item.item-first > a:before,
+.btn .pager .pager-item.item-first > span:before,
+.pager .btn .pager-item.item-first > span:before,
+.pager .pager-item > a .pager-item.item-first > span:before,
+.pager .pager-item > span .pager-item.item-first > span:before,
+.btn .pager .pager-item.item-previous > a:before,
+.pager .btn .pager-item.item-previous > a:before,
+.pager .pager-item > a .pager-item.item-previous > a:before,
+.pager .pager-item > span .pager-item.item-previous > a:before,
+.btn .pager .pager-item.item-previous > span:before,
+.pager .btn .pager-item.item-previous > span:before,
+.pager .pager-item > a .pager-item.item-previous > span:before,
+.pager .pager-item > span .pager-item.item-previous > span:before,
+.btn .pager .pager-item.item-ellipsis > a:before,
+.pager .btn .pager-item.item-ellipsis > a:before,
+.pager .pager-item > a .pager-item.item-ellipsis > a:before,
+.pager .pager-item > span .pager-item.item-ellipsis > a:before,
+.btn .pager .pager-item.item-ellipsis > span:before,
+.pager .btn .pager-item.item-ellipsis > span:before,
+.pager .pager-item > a .pager-item.item-ellipsis > span:before,
+.pager .pager-item > span .pager-item.item-ellipsis > span:before,
+.btn .pager .pager-item.item-next > a:before,
+.pager .btn .pager-item.item-next > a:before,
+.pager .pager-item > a .pager-item.item-next > a:before,
+.pager .pager-item > span .pager-item.item-next > a:before,
+.btn .pager .pager-item.item-next > span:before,
+.pager .btn .pager-item.item-next > span:before,
+.pager .pager-item > a .pager-item.item-next > span:before,
+.pager .pager-item > span .pager-item.item-next > span:before,
+.btn .pager .pager-item.item-last > a:before,
+.pager .btn .pager-item.item-last > a:before,
+.pager .pager-item > a .pager-item.item-last > a:before,
+.pager .pager-item > span .pager-item.item-last > a:before,
+.btn .pager .pager-item.item-last > span:before,
+.pager .btn .pager-item.item-last > span:before,
+.pager .pager-item > a .pager-item.item-last > span:before,
+.pager .pager-item > span .pager-item.item-last > span:before {
   margin-top: -2px;
   margin-bottom: -2px; }
 
@@ -975,16 +1074,210 @@ pre {
   margin-top: -2px;
   margin-bottom: -1px; }
 
-.btn.icon-left:before, .pager .pager-item > a.icon-left:before, .pager .pager-item > span.icon-left:before, .btn .material-icons, .pager .pager-item > a .material-icons, .pager .pager-item > span .material-icons, .btn .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .btn li:not(:last-child):after, .pager .pager-item > a .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .pager .pager-item > a li:not(:last-child):after, .pager .pager-item > span .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .pager .pager-item > span li:not(:last-child):after, .btn .info:before, .pager .pager-item > a .info:before, .pager .pager-item > span .info:before, .btn .important:before, .pager .pager-item > a .important:before, .pager .pager-item > span .important:before, .btn .messages-status:before, .pager .pager-item > a .messages-status:before, .pager .pager-item > span .messages-status:before, .btn .messages-warning:before, .pager .pager-item > a .messages-warning:before, .pager .pager-item > span .messages-warning:before, .btn .messages-error:before, .pager .pager-item > a .messages-error:before, .pager .pager-item > span .messages-error:before, .btn .form-item input[type="checkbox"]:before, .form-item .btn input[type="checkbox"]:before, .pager .pager-item > a .form-item input[type="checkbox"]:before, .form-item .pager .pager-item > a input[type="checkbox"]:before, .pager .pager-item > span .form-item input[type="checkbox"]:before, .form-item .pager .pager-item > span input[type="checkbox"]:before, .btn .form-item input[type="radio"]:before, .form-item .btn input[type="radio"]:before, .pager .pager-item > a .form-item input[type="radio"]:before, .form-item .pager .pager-item > a input[type="radio"]:before, .pager .pager-item > span .form-item input[type="radio"]:before, .form-item .pager .pager-item > span input[type="radio"]:before, .btn .form-item.form-type-select:after, .pager .pager-item > a .form-item.form-type-select:after, .pager .pager-item > span .form-item.form-type-select:after, .btn .navbar-account-menu .menu a:before, .navbar-account-menu .menu .btn a:before, .pager .pager-item > a .navbar-account-menu .menu a:before, .navbar-account-menu .menu .pager .pager-item > a a:before, .pager .pager-item > span .navbar-account-menu .menu a:before, .navbar-account-menu .menu .pager .pager-item > span a:before, .btn .sidebar .menu .collapsed > a:after, .sidebar .menu .btn .collapsed > a:after, .pager .pager-item > a .sidebar .menu .collapsed > a:after, .sidebar .menu .pager .pager-item > a .collapsed > a:after, .pager .pager-item > span .sidebar .menu .collapsed > a:after, .sidebar .menu .pager .pager-item > span .collapsed > a:after, .btn .sidebar .menu .expanded > a:after, .sidebar .menu .btn .expanded > a:after, .pager .pager-item > a .sidebar .menu .expanded > a:after, .sidebar .menu .pager .pager-item > a .expanded > a:after, .pager .pager-item > span .sidebar .menu .expanded > a:after, .sidebar .menu .pager .pager-item > span .expanded > a:after, .btn .collapsible-toggle:before, .pager .pager-item > a .collapsible-toggle:before, .pager .pager-item > span .collapsible-toggle:before, .btn .pager .pager-item.item-first > a:before, .pager .btn .pager-item.item-first > a:before, .pager .pager-item > a .pager-item.item-first > a:before, .pager .pager-item > span .pager-item.item-first > a:before, .btn .pager .pager-item.item-first > span:before, .pager .btn .pager-item.item-first > span:before, .pager .pager-item > a .pager-item.item-first > span:before, .pager .pager-item > span .pager-item.item-first > span:before, .btn .pager .pager-item.item-previous > a:before, .pager .btn .pager-item.item-previous > a:before, .pager .pager-item > a .pager-item.item-previous > a:before, .pager .pager-item > span .pager-item.item-previous > a:before, .btn .pager .pager-item.item-previous > span:before, .pager .btn .pager-item.item-previous > span:before, .pager .pager-item > a .pager-item.item-previous > span:before, .pager .pager-item > span .pager-item.item-previous > span:before, .btn .pager .pager-item.item-ellipsis > a:before, .pager .btn .pager-item.item-ellipsis > a:before, .pager .pager-item > a .pager-item.item-ellipsis > a:before, .pager .pager-item > span .pager-item.item-ellipsis > a:before, .btn .pager .pager-item.item-ellipsis > span:before, .pager .btn .pager-item.item-ellipsis > span:before, .pager .pager-item > a .pager-item.item-ellipsis > span:before, .pager .pager-item > span .pager-item.item-ellipsis > span:before, .btn .pager .pager-item.item-next > a:before, .pager .btn .pager-item.item-next > a:before, .pager .pager-item > a .pager-item.item-next > a:before, .pager .pager-item > span .pager-item.item-next > a:before, .btn .pager .pager-item.item-next > span:before, .pager .btn .pager-item.item-next > span:before, .pager .pager-item > a .pager-item.item-next > span:before, .pager .pager-item > span .pager-item.item-next > span:before, .btn .pager .pager-item.item-last > a:before, .pager .btn .pager-item.item-last > a:before, .pager .pager-item > a .pager-item.item-last > a:before, .pager .pager-item > span .pager-item.item-last > a:before, .btn .pager .pager-item.item-last > span:before, .pager .btn .pager-item.item-last > span:before, .pager .pager-item > a .pager-item.item-last > span:before, .pager .pager-item > span .pager-item.item-last > span:before,
-.btn.services-icon-left:before,
-.pager .pager-item > a.services-icon-left:before,
-.pager .pager-item > span.services-icon-left:before, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons {
+.btn.icon-left:before, .pager .pager-item > a.icon-left:before, .pager .pager-item > span.icon-left:before,
+.btn .material-icons,
+.pager .pager-item > a .material-icons,
+.pager .pager-item > span .material-icons,
+.btn .breadcrumb ol li:not(:last-child):after,
+.breadcrumb ol .btn li:not(:last-child):after,
+.pager .pager-item > a .breadcrumb ol li:not(:last-child):after,
+.breadcrumb ol .pager .pager-item > a li:not(:last-child):after,
+.pager .pager-item > span .breadcrumb ol li:not(:last-child):after,
+.breadcrumb ol .pager .pager-item > span li:not(:last-child):after,
+.btn .info:before,
+.pager .pager-item > a .info:before,
+.pager .pager-item > span .info:before,
+.btn .important:before,
+.pager .pager-item > a .important:before,
+.pager .pager-item > span .important:before,
+.btn .messages-status:before,
+.pager .pager-item > a .messages-status:before,
+.pager .pager-item > span .messages-status:before,
+.btn .messages-warning:before,
+.pager .pager-item > a .messages-warning:before,
+.pager .pager-item > span .messages-warning:before,
+.btn .messages-error:before,
+.pager .pager-item > a .messages-error:before,
+.pager .pager-item > span .messages-error:before,
+.btn .form-item input[type="checkbox"]:before,
+.form-item .btn input[type="checkbox"]:before,
+.pager .pager-item > a .form-item input[type="checkbox"]:before,
+.form-item .pager .pager-item > a input[type="checkbox"]:before,
+.pager .pager-item > span .form-item input[type="checkbox"]:before,
+.form-item .pager .pager-item > span input[type="checkbox"]:before,
+.btn .form-item input[type="radio"]:before,
+.form-item .btn input[type="radio"]:before,
+.pager .pager-item > a .form-item input[type="radio"]:before,
+.form-item .pager .pager-item > a input[type="radio"]:before,
+.pager .pager-item > span .form-item input[type="radio"]:before,
+.form-item .pager .pager-item > span input[type="radio"]:before,
+.btn .form-item.form-type-select:after,
+.pager .pager-item > a .form-item.form-type-select:after,
+.pager .pager-item > span .form-item.form-type-select:after,
+.btn .navbar-account-menu .menu a:before,
+.navbar-account-menu .menu .btn a:before,
+.pager .pager-item > a .navbar-account-menu .menu a:before,
+.navbar-account-menu .menu .pager .pager-item > a a:before,
+.pager .pager-item > span .navbar-account-menu .menu a:before,
+.navbar-account-menu .menu .pager .pager-item > span a:before,
+.btn .sidebar .menu .collapsed > a:after,
+.sidebar .menu .btn .collapsed > a:after,
+.pager .pager-item > a .sidebar .menu .collapsed > a:after,
+.sidebar .menu .pager .pager-item > a .collapsed > a:after,
+.pager .pager-item > span .sidebar .menu .collapsed > a:after,
+.sidebar .menu .pager .pager-item > span .collapsed > a:after,
+.btn .sidebar .menu .expanded > a:after,
+.sidebar .menu .btn .expanded > a:after,
+.pager .pager-item > a .sidebar .menu .expanded > a:after,
+.sidebar .menu .pager .pager-item > a .expanded > a:after,
+.pager .pager-item > span .sidebar .menu .expanded > a:after,
+.sidebar .menu .pager .pager-item > span .expanded > a:after,
+.btn .collapsible-toggle:before,
+.pager .pager-item > a .collapsible-toggle:before,
+.pager .pager-item > span .collapsible-toggle:before,
+.btn .pager .pager-item.item-first > a:before,
+.pager .btn .pager-item.item-first > a:before,
+.pager .pager-item > a .pager-item.item-first > a:before,
+.pager .pager-item > span .pager-item.item-first > a:before,
+.btn .pager .pager-item.item-first > span:before,
+.pager .btn .pager-item.item-first > span:before,
+.pager .pager-item > a .pager-item.item-first > span:before,
+.pager .pager-item > span .pager-item.item-first > span:before,
+.btn .pager .pager-item.item-previous > a:before,
+.pager .btn .pager-item.item-previous > a:before,
+.pager .pager-item > a .pager-item.item-previous > a:before,
+.pager .pager-item > span .pager-item.item-previous > a:before,
+.btn .pager .pager-item.item-previous > span:before,
+.pager .btn .pager-item.item-previous > span:before,
+.pager .pager-item > a .pager-item.item-previous > span:before,
+.pager .pager-item > span .pager-item.item-previous > span:before,
+.btn .pager .pager-item.item-ellipsis > a:before,
+.pager .btn .pager-item.item-ellipsis > a:before,
+.pager .pager-item > a .pager-item.item-ellipsis > a:before,
+.pager .pager-item > span .pager-item.item-ellipsis > a:before,
+.btn .pager .pager-item.item-ellipsis > span:before,
+.pager .btn .pager-item.item-ellipsis > span:before,
+.pager .pager-item > a .pager-item.item-ellipsis > span:before,
+.pager .pager-item > span .pager-item.item-ellipsis > span:before,
+.btn .pager .pager-item.item-next > a:before,
+.pager .btn .pager-item.item-next > a:before,
+.pager .pager-item > a .pager-item.item-next > a:before,
+.pager .pager-item > span .pager-item.item-next > a:before,
+.btn .pager .pager-item.item-next > span:before,
+.pager .btn .pager-item.item-next > span:before,
+.pager .pager-item > a .pager-item.item-next > span:before,
+.pager .pager-item > span .pager-item.item-next > span:before,
+.btn .pager .pager-item.item-last > a:before,
+.pager .btn .pager-item.item-last > a:before,
+.pager .pager-item > a .pager-item.item-last > a:before,
+.pager .pager-item > span .pager-item.item-last > a:before,
+.btn .pager .pager-item.item-last > span:before,
+.pager .btn .pager-item.item-last > span:before,
+.pager .pager-item > a .pager-item.item-last > span:before,
+.pager .pager-item > span .pager-item.item-last > span:before, .btn.services-icon-left:before, .pager .pager-item > a.services-icon-left:before, .pager .pager-item > span.services-icon-left:before, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons {
   margin-left: -2px; }
 
-.btn.icon-right:after, .pager .pager-item > a.icon-right:after, .pager .pager-item > span.icon-right:after, .btn .material-icons, .pager .pager-item > a .material-icons, .pager .pager-item > span .material-icons, .btn .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .btn li:not(:last-child):after, .pager .pager-item > a .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .pager .pager-item > a li:not(:last-child):after, .pager .pager-item > span .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .pager .pager-item > span li:not(:last-child):after, .btn .info:before, .pager .pager-item > a .info:before, .pager .pager-item > span .info:before, .btn .important:before, .pager .pager-item > a .important:before, .pager .pager-item > span .important:before, .btn .messages-status:before, .pager .pager-item > a .messages-status:before, .pager .pager-item > span .messages-status:before, .btn .messages-warning:before, .pager .pager-item > a .messages-warning:before, .pager .pager-item > span .messages-warning:before, .btn .messages-error:before, .pager .pager-item > a .messages-error:before, .pager .pager-item > span .messages-error:before, .btn .form-item input[type="checkbox"]:before, .form-item .btn input[type="checkbox"]:before, .pager .pager-item > a .form-item input[type="checkbox"]:before, .form-item .pager .pager-item > a input[type="checkbox"]:before, .pager .pager-item > span .form-item input[type="checkbox"]:before, .form-item .pager .pager-item > span input[type="checkbox"]:before, .btn .form-item input[type="radio"]:before, .form-item .btn input[type="radio"]:before, .pager .pager-item > a .form-item input[type="radio"]:before, .form-item .pager .pager-item > a input[type="radio"]:before, .pager .pager-item > span .form-item input[type="radio"]:before, .form-item .pager .pager-item > span input[type="radio"]:before, .btn .form-item.form-type-select:after, .pager .pager-item > a .form-item.form-type-select:after, .pager .pager-item > span .form-item.form-type-select:after, .btn .navbar-account-menu .menu a:before, .navbar-account-menu .menu .btn a:before, .pager .pager-item > a .navbar-account-menu .menu a:before, .navbar-account-menu .menu .pager .pager-item > a a:before, .pager .pager-item > span .navbar-account-menu .menu a:before, .navbar-account-menu .menu .pager .pager-item > span a:before, .btn .sidebar .menu .collapsed > a:after, .sidebar .menu .btn .collapsed > a:after, .pager .pager-item > a .sidebar .menu .collapsed > a:after, .sidebar .menu .pager .pager-item > a .collapsed > a:after, .pager .pager-item > span .sidebar .menu .collapsed > a:after, .sidebar .menu .pager .pager-item > span .collapsed > a:after, .btn .sidebar .menu .expanded > a:after, .sidebar .menu .btn .expanded > a:after, .pager .pager-item > a .sidebar .menu .expanded > a:after, .sidebar .menu .pager .pager-item > a .expanded > a:after, .pager .pager-item > span .sidebar .menu .expanded > a:after, .sidebar .menu .pager .pager-item > span .expanded > a:after, .btn .collapsible-toggle:before, .pager .pager-item > a .collapsible-toggle:before, .pager .pager-item > span .collapsible-toggle:before, .btn .pager .pager-item.item-first > a:before, .pager .btn .pager-item.item-first > a:before, .pager .pager-item > a .pager-item.item-first > a:before, .pager .pager-item > span .pager-item.item-first > a:before, .btn .pager .pager-item.item-first > span:before, .pager .btn .pager-item.item-first > span:before, .pager .pager-item > a .pager-item.item-first > span:before, .pager .pager-item > span .pager-item.item-first > span:before, .btn .pager .pager-item.item-previous > a:before, .pager .btn .pager-item.item-previous > a:before, .pager .pager-item > a .pager-item.item-previous > a:before, .pager .pager-item > span .pager-item.item-previous > a:before, .btn .pager .pager-item.item-previous > span:before, .pager .btn .pager-item.item-previous > span:before, .pager .pager-item > a .pager-item.item-previous > span:before, .pager .pager-item > span .pager-item.item-previous > span:before, .btn .pager .pager-item.item-ellipsis > a:before, .pager .btn .pager-item.item-ellipsis > a:before, .pager .pager-item > a .pager-item.item-ellipsis > a:before, .pager .pager-item > span .pager-item.item-ellipsis > a:before, .btn .pager .pager-item.item-ellipsis > span:before, .pager .btn .pager-item.item-ellipsis > span:before, .pager .pager-item > a .pager-item.item-ellipsis > span:before, .pager .pager-item > span .pager-item.item-ellipsis > span:before, .btn .pager .pager-item.item-next > a:before, .pager .btn .pager-item.item-next > a:before, .pager .pager-item > a .pager-item.item-next > a:before, .pager .pager-item > span .pager-item.item-next > a:before, .btn .pager .pager-item.item-next > span:before, .pager .btn .pager-item.item-next > span:before, .pager .pager-item > a .pager-item.item-next > span:before, .pager .pager-item > span .pager-item.item-next > span:before, .btn .pager .pager-item.item-last > a:before, .pager .btn .pager-item.item-last > a:before, .pager .pager-item > a .pager-item.item-last > a:before, .pager .pager-item > span .pager-item.item-last > a:before, .btn .pager .pager-item.item-last > span:before, .pager .btn .pager-item.item-last > span:before, .pager .pager-item > a .pager-item.item-last > span:before, .pager .pager-item > span .pager-item.item-last > span:before,
-.btn.services-icon-right:after,
-.pager .pager-item > a.services-icon-right:after,
-.pager .pager-item > span.services-icon-right:after, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons {
+.btn.icon-right:after, .pager .pager-item > a.icon-right:after, .pager .pager-item > span.icon-right:after,
+.btn .material-icons,
+.pager .pager-item > a .material-icons,
+.pager .pager-item > span .material-icons,
+.btn .breadcrumb ol li:not(:last-child):after,
+.breadcrumb ol .btn li:not(:last-child):after,
+.pager .pager-item > a .breadcrumb ol li:not(:last-child):after,
+.breadcrumb ol .pager .pager-item > a li:not(:last-child):after,
+.pager .pager-item > span .breadcrumb ol li:not(:last-child):after,
+.breadcrumb ol .pager .pager-item > span li:not(:last-child):after,
+.btn .info:before,
+.pager .pager-item > a .info:before,
+.pager .pager-item > span .info:before,
+.btn .important:before,
+.pager .pager-item > a .important:before,
+.pager .pager-item > span .important:before,
+.btn .messages-status:before,
+.pager .pager-item > a .messages-status:before,
+.pager .pager-item > span .messages-status:before,
+.btn .messages-warning:before,
+.pager .pager-item > a .messages-warning:before,
+.pager .pager-item > span .messages-warning:before,
+.btn .messages-error:before,
+.pager .pager-item > a .messages-error:before,
+.pager .pager-item > span .messages-error:before,
+.btn .form-item input[type="checkbox"]:before,
+.form-item .btn input[type="checkbox"]:before,
+.pager .pager-item > a .form-item input[type="checkbox"]:before,
+.form-item .pager .pager-item > a input[type="checkbox"]:before,
+.pager .pager-item > span .form-item input[type="checkbox"]:before,
+.form-item .pager .pager-item > span input[type="checkbox"]:before,
+.btn .form-item input[type="radio"]:before,
+.form-item .btn input[type="radio"]:before,
+.pager .pager-item > a .form-item input[type="radio"]:before,
+.form-item .pager .pager-item > a input[type="radio"]:before,
+.pager .pager-item > span .form-item input[type="radio"]:before,
+.form-item .pager .pager-item > span input[type="radio"]:before,
+.btn .form-item.form-type-select:after,
+.pager .pager-item > a .form-item.form-type-select:after,
+.pager .pager-item > span .form-item.form-type-select:after,
+.btn .navbar-account-menu .menu a:before,
+.navbar-account-menu .menu .btn a:before,
+.pager .pager-item > a .navbar-account-menu .menu a:before,
+.navbar-account-menu .menu .pager .pager-item > a a:before,
+.pager .pager-item > span .navbar-account-menu .menu a:before,
+.navbar-account-menu .menu .pager .pager-item > span a:before,
+.btn .sidebar .menu .collapsed > a:after,
+.sidebar .menu .btn .collapsed > a:after,
+.pager .pager-item > a .sidebar .menu .collapsed > a:after,
+.sidebar .menu .pager .pager-item > a .collapsed > a:after,
+.pager .pager-item > span .sidebar .menu .collapsed > a:after,
+.sidebar .menu .pager .pager-item > span .collapsed > a:after,
+.btn .sidebar .menu .expanded > a:after,
+.sidebar .menu .btn .expanded > a:after,
+.pager .pager-item > a .sidebar .menu .expanded > a:after,
+.sidebar .menu .pager .pager-item > a .expanded > a:after,
+.pager .pager-item > span .sidebar .menu .expanded > a:after,
+.sidebar .menu .pager .pager-item > span .expanded > a:after,
+.btn .collapsible-toggle:before,
+.pager .pager-item > a .collapsible-toggle:before,
+.pager .pager-item > span .collapsible-toggle:before,
+.btn .pager .pager-item.item-first > a:before,
+.pager .btn .pager-item.item-first > a:before,
+.pager .pager-item > a .pager-item.item-first > a:before,
+.pager .pager-item > span .pager-item.item-first > a:before,
+.btn .pager .pager-item.item-first > span:before,
+.pager .btn .pager-item.item-first > span:before,
+.pager .pager-item > a .pager-item.item-first > span:before,
+.pager .pager-item > span .pager-item.item-first > span:before,
+.btn .pager .pager-item.item-previous > a:before,
+.pager .btn .pager-item.item-previous > a:before,
+.pager .pager-item > a .pager-item.item-previous > a:before,
+.pager .pager-item > span .pager-item.item-previous > a:before,
+.btn .pager .pager-item.item-previous > span:before,
+.pager .btn .pager-item.item-previous > span:before,
+.pager .pager-item > a .pager-item.item-previous > span:before,
+.pager .pager-item > span .pager-item.item-previous > span:before,
+.btn .pager .pager-item.item-ellipsis > a:before,
+.pager .btn .pager-item.item-ellipsis > a:before,
+.pager .pager-item > a .pager-item.item-ellipsis > a:before,
+.pager .pager-item > span .pager-item.item-ellipsis > a:before,
+.btn .pager .pager-item.item-ellipsis > span:before,
+.pager .btn .pager-item.item-ellipsis > span:before,
+.pager .pager-item > a .pager-item.item-ellipsis > span:before,
+.pager .pager-item > span .pager-item.item-ellipsis > span:before,
+.btn .pager .pager-item.item-next > a:before,
+.pager .btn .pager-item.item-next > a:before,
+.pager .pager-item > a .pager-item.item-next > a:before,
+.pager .pager-item > span .pager-item.item-next > a:before,
+.btn .pager .pager-item.item-next > span:before,
+.pager .btn .pager-item.item-next > span:before,
+.pager .pager-item > a .pager-item.item-next > span:before,
+.pager .pager-item > span .pager-item.item-next > span:before,
+.btn .pager .pager-item.item-last > a:before,
+.pager .btn .pager-item.item-last > a:before,
+.pager .pager-item > a .pager-item.item-last > a:before,
+.pager .pager-item > span .pager-item.item-last > a:before,
+.btn .pager .pager-item.item-last > span:before,
+.pager .btn .pager-item.item-last > span:before,
+.pager .pager-item > a .pager-item.item-last > span:before,
+.pager .pager-item > span .pager-item.item-last > span:before, .btn.services-icon-right:after, .pager .pager-item > a.services-icon-right:after, .pager .pager-item > span.services-icon-right:after, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons {
   margin-right: -2px; }
 
 .btn.icon-right > span, .pager .pager-item > a.icon-right > span, .pager .pager-item > span.icon-right > span, .btn.services-icon-right > span, .pager .pager-item > a.services-icon-right > span, .pager .pager-item > span.services-icon-right > span {
@@ -1075,25 +1368,21 @@ colored but not raised
     bottom: calc(100% + 16px);
     left: 50%;
     pointer-events: none;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); }
+    transform: translate(-50%, 0); }
   .tooltip.tooltip-expanded:before {
     opacity: 1; }
   .tooltip.tooltip-top-left:before {
     left: 0;
-    -webkit-transform: translate(0%, 0);
-            transform: translate(0%, 0); }
+    transform: translate(0%, 0); }
   .tooltip.tooltip-top-right:before {
     left: auto;
     right: 0;
-    -webkit-transform: translate(0%, 0);
-            transform: translate(0%, 0); }
+    transform: translate(0%, 0); }
   .tooltip.tooltip-bottom-left:before {
     bottom: auto;
     top: calc(100% + 16px);
     left: 0;
-    -webkit-transform: translate(0%, 0);
-            transform: translate(0%, 0); }
+    transform: translate(0%, 0); }
   .tooltip.tooltip-bottom:before {
     bottom: auto;
     top: calc(100% + 16px); }
@@ -1102,18 +1391,15 @@ colored but not raised
     top: calc(100% + 16px);
     left: auto;
     right: 0;
-    -webkit-transform: translate(0%, 0);
-            transform: translate(0%, 0); }
+    transform: translate(0%, 0); }
   .tooltip.tooltip-left:before {
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
+    transform: translate(0, -50%);
     right: calc(100% + 12px);
     top: 50%;
     bottom: auto;
     left: auto; }
   .tooltip.tooltip-right:before {
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
+    transform: translate(0, -50%);
     left: calc(100% + 12px);
     top: 50%;
     bottom: auto; }
@@ -1132,8 +1418,10 @@ tr.selected:hover {
 
 .table-striped tbody tr:nth-child(even) {
   background: #FAFAFA; }
+
 .table-striped tbody tr:nth-child(even):hover, .table-striped tbody tr.selected:nth-child(even):hover {
   background: #eeeeee; }
+
 .table-striped tbody tr.selected:nth-child(even) {
   background: #f5f5f5; }
 
@@ -1166,11 +1454,13 @@ tr.selected:hover {
       content: attr(data-label) ": ";
       font-weight: 500;
       color: rgba(0, 0, 0, 0.54); } }
+
 @media (min-width: 568px) {
   .card .table-card, .content-card .card-holder .table-card {
     margin-left: -24px;
     margin-right: -24px;
     width: calc(100% + 48px); } }
+
 @media (min-width: 768px) {
   .table-responsive-wrapper {
     overflow-x: auto;
@@ -1179,6 +1469,7 @@ tr.selected:hover {
     .table-responsive-wrapper table {
       margin-bottom: 0;
       margin-top: 0; } }
+
 /* forms */
 .form-item {
   margin-top: 16px;
@@ -1212,25 +1503,23 @@ tr.selected:hover {
     color: rgba(0, 0, 0, 0.87);
     font-family: "Roboto", sans-serif;
     font-size: 16px; }
-  .form-item input[type="text"], .form-item input[type="email"], .form-item input[type="password"], .form-item input[type="search"], .form-item textarea, .form-item select {
+  .form-item input[type="text"], .form-item input[type="email"], .form-item input[type="password"], .form-item input[type="search"], .form-item input[type="tel"], .form-item textarea, .form-item select {
     display: block;
     width: 100%;
     max-width: 460px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     padding: 8px 0; }
-    .form-item input[type="text"]:focus, .form-item input[type="text"].error:focus, .form-item input[type="email"]:focus, .form-item input[type="email"].error:focus, .form-item input[type="password"]:focus, .form-item input[type="password"].error:focus, .form-item input[type="search"]:focus, .form-item input[type="search"].error:focus, .form-item textarea:focus, .form-item textarea.error:focus, .form-item select:focus, .form-item select.error:focus {
+    .form-item input[type="text"]:focus, .form-item input[type="text"].error:focus, .form-item input[type="email"]:focus, .form-item input[type="email"].error:focus, .form-item input[type="password"]:focus, .form-item input[type="password"].error:focus, .form-item input[type="search"]:focus, .form-item input[type="search"].error:focus, .form-item input[type="tel"]:focus, .form-item input[type="tel"].error:focus, .form-item textarea:focus, .form-item textarea.error:focus, .form-item select:focus, .form-item select.error:focus {
       border-bottom: 2px solid #00b0ff;
       padding-bottom: 7px; }
-    .form-item input[type="text"].error, .form-item input[type="email"].error, .form-item input[type="password"].error, .form-item input[type="search"].error, .form-item textarea.error, .form-item select.error {
+    .form-item input[type="text"].error, .form-item input[type="email"].error, .form-item input[type="password"].error, .form-item input[type="search"].error, .form-item input[type="tel"].error, .form-item textarea.error, .form-item select.error {
       border-bottom: 2px solid #f44336;
       padding: 8px 0 7px; }
-    .form-item input[type="text"]:-moz-placeholder, .form-item input[type="email"]:-moz-placeholder, .form-item input[type="password"]:-moz-placeholder, .form-item input[type="search"]:-moz-placeholder, .form-item textarea:-moz-placeholder, .form-item select:-moz-placeholder {
+    .form-item input[type="text"]::-webkit-input-placeholder, .form-item input[type="email"]::-webkit-input-placeholder, .form-item input[type="password"]::-webkit-input-placeholder, .form-item input[type="search"]::-webkit-input-placeholder, .form-item input[type="tel"]::-webkit-input-placeholder, .form-item textarea::-webkit-input-placeholder, .form-item select::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
-    .form-item input[type="text"]::-moz-placeholder, .form-item input[type="email"]::-moz-placeholder, .form-item input[type="password"]::-moz-placeholder, .form-item input[type="search"]::-moz-placeholder, .form-item textarea::-moz-placeholder, .form-item select::-moz-placeholder {
+    .form-item input[type="text"]:-ms-input-placeholder, .form-item input[type="email"]:-ms-input-placeholder, .form-item input[type="password"]:-ms-input-placeholder, .form-item input[type="search"]:-ms-input-placeholder, .form-item input[type="tel"]:-ms-input-placeholder, .form-item textarea:-ms-input-placeholder, .form-item select:-ms-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
-    .form-item input[type="text"]:-ms-input-placeholder, .form-item input[type="email"]:-ms-input-placeholder, .form-item input[type="password"]:-ms-input-placeholder, .form-item input[type="search"]:-ms-input-placeholder, .form-item textarea:-ms-input-placeholder, .form-item select:-ms-input-placeholder {
-      color: rgba(0, 0, 0, 0.26); }
-    .form-item input[type="text"]::-webkit-input-placeholder, .form-item input[type="email"]::-webkit-input-placeholder, .form-item input[type="password"]::-webkit-input-placeholder, .form-item input[type="search"]::-webkit-input-placeholder, .form-item textarea::-webkit-input-placeholder, .form-item select::-webkit-input-placeholder {
+    .form-item input[type="text"]::placeholder, .form-item input[type="email"]::placeholder, .form-item input[type="password"]::placeholder, .form-item input[type="search"]::placeholder, .form-item input[type="tel"]::placeholder, .form-item textarea::placeholder, .form-item select::placeholder {
       color: rgba(0, 0, 0, 0.26); }
   .form-item input[type="radio"], .form-item input[type="checkbox"] {
     display: inline-block;
@@ -1287,6 +1576,7 @@ tr.selected:hover {
   .card .form-actions, .content-card .card-holder .form-actions {
     margin-left: -24px;
     margin-right: -24px; } }
+
 /* TO DO
 improve input file
 improve secect
@@ -1353,7 +1643,6 @@ icon labels
   color: #FFF; }
 
 .navbar-branding {
-  display: -webkit-box;
   display: flex; }
   .navbar-branding > div:not(.contextual) + div {
     margin: 0 -12px 0 12px; }
@@ -1362,7 +1651,6 @@ icon labels
   margin: -8px 0;
   height: 64px; }
   .navbar-menu .menu {
-    display: -webkit-box;
     display: flex;
     height: 64px;
     padding: 0;
@@ -1400,7 +1688,6 @@ icon labels
   margin: 0 -12px;
   padding: 0;
   list-style: none;
-  display: -webkit-box;
   display: flex; }
   .navbar-account-menu .menu a {
     display: inline-block;
@@ -1516,19 +1803,24 @@ closing drawer by swipe
   margin: 160px auto 160px; }
 
 .header-bg-image #header {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 64px), #607d8b url(../img/header-bg.jpg) top center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 64px), #607d8b url(../img/header-bg.jpg) top center;
   background-size: auto, cover; }
+
 .header-bg-image #bg-video {
   display: none; }
+
 .header-bg-image.navbar-fixed #navbar {
   background: none; }
+
 .header-bg-image.navbar-fixed #navbar.navbar-bg {
   background: #607d8b; }
+
 .header-bg-image.navbar-fixed #header {
   background: #607d8b; }
+
 .header-bg-image.navbar-fixed #header-bg {
   display: block;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 64px), url(../img/header-bg.jpg) top center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 64px), url(../img/header-bg.jpg) top center;
   background-size: auto, cover;
   opacity: 1;
   top: 0;
@@ -1539,9 +1831,11 @@ closing drawer by swipe
   z-index: -1; }
 
 .header-bg-object #navbar {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 64px); }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 64px); }
+
 .header-bg-object #header {
   background: #607d8b; }
+
 .header-bg-object #header-bg {
   display: block;
   z-index: -1;
@@ -1551,6 +1845,7 @@ closing drawer by swipe
   bottom: 0;
   right: 0;
   overflow: hidden; }
+
 .header-bg-object #bg-object {
   display: block;
   position: absolute;
@@ -1559,17 +1854,16 @@ closing drawer by swipe
   width: 100%;
   min-width: 100%;
   min-height: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -o-object-fit: cover;
      object-fit: cover;
   pointer-events: none; }
+
 .header-bg-object #header-bg .object-16by9 {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   min-width: 100%;
   min-height: 100%; }
@@ -1578,12 +1872,14 @@ closing drawer by swipe
     left: 0;
     width: 100%;
     height: 100%;
-    -webkit-transform: none;
-            transform: none; }
+    transform: none; }
+
 .header-bg-object.navbar-fixed #navbar {
   background: none; }
+
 .header-bg-object.navbar-fixed #navbar.navbar-bg {
   background: #607d8b; }
+
 .header-bg-object.navbar-fixed #header-bg:before {
   content: " ";
   display: block;
@@ -1593,10 +1889,11 @@ closing drawer by swipe
   right: 0;
   z-index: 1;
   height: 64px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 64px); }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 64px); }
 
 .main-shift-up #header {
   padding-bottom: 128px; }
+
 .main-shift-up .card-main, .main-shift-up .content-card .card-holder, .content-card .main-shift-up .card-holder, .main-shift-up.content-card .card-holder {
   position: relative;
   z-index: 20;
@@ -1604,6 +1901,7 @@ closing drawer by swipe
 
 .main-shift-up.shift-big #header {
   padding-bottom: 280px; }
+
 .main-shift-up.shift-big .card-main, .main-shift-up.shift-big .content-card .card-holder, .content-card .main-shift-up.shift-big .card-holder, .main-shift-up.shift-big.content-card .card-holder {
   margin-top: -240px; }
 
@@ -1659,7 +1957,6 @@ navbar overlaying header-content (for sliders)
     padding: 4px 0; }
     .block-search form .form-item {
       margin: 0;
-      display: -webkit-box;
       display: flex;
       height: 40px; }
       .block-search form .form-item.icon-left:before {
@@ -1700,17 +1997,11 @@ navbar overlaying header-content (for sliders)
 .card-bg-primary .block-search form .form-item input[type="search"] {
   color: #FFF;
   border-bottom: 1px solid #FFF; }
-  .navbar-item.block-search form .form-item input[type="text"]:-moz-placeholder, .navbar-item.block-search form .form-item input[type="search"]:-moz-placeholder,
-  #header .block-search form .form-item input[type="text"]:-moz-placeholder,
-  #header .block-search form .form-item input[type="search"]:-moz-placeholder,
-  .card-bg-primary .block-search form .form-item input[type="text"]:-moz-placeholder,
-  .card-bg-primary .block-search form .form-item input[type="search"]:-moz-placeholder {
-    color: rgba(255, 255, 255, 0.3); }
-  .navbar-item.block-search form .form-item input[type="text"]::-moz-placeholder, .navbar-item.block-search form .form-item input[type="search"]::-moz-placeholder,
-  #header .block-search form .form-item input[type="text"]::-moz-placeholder,
-  #header .block-search form .form-item input[type="search"]::-moz-placeholder,
-  .card-bg-primary .block-search form .form-item input[type="text"]::-moz-placeholder,
-  .card-bg-primary .block-search form .form-item input[type="search"]::-moz-placeholder {
+  .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .navbar-item.block-search form .form-item input[type="search"]::-webkit-input-placeholder,
+  #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder,
+  #header .block-search form .form-item input[type="search"]::-webkit-input-placeholder,
+  .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder,
+  .card-bg-primary .block-search form .form-item input[type="search"]::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .navbar-item.block-search form .form-item input[type="search"]:-ms-input-placeholder,
   #header .block-search form .form-item input[type="text"]:-ms-input-placeholder,
@@ -1718,11 +2009,11 @@ navbar overlaying header-content (for sliders)
   .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder,
   .card-bg-primary .block-search form .form-item input[type="search"]:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
-  .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .navbar-item.block-search form .form-item input[type="search"]::-webkit-input-placeholder,
-  #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder,
-  #header .block-search form .form-item input[type="search"]::-webkit-input-placeholder,
-  .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder,
-  .card-bg-primary .block-search form .form-item input[type="search"]::-webkit-input-placeholder {
+  .navbar-item.block-search form .form-item input[type="text"]::placeholder, .navbar-item.block-search form .form-item input[type="search"]::placeholder,
+  #header .block-search form .form-item input[type="text"]::placeholder,
+  #header .block-search form .form-item input[type="search"]::placeholder,
+  .card-bg-primary .block-search form .form-item input[type="text"]::placeholder,
+  .card-bg-primary .block-search form .form-item input[type="search"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .navbar-item.block-search form .form-item input[type="text"]:focus, .navbar-item.block-search form .form-item input[type="text"].error:focus, .navbar-item.block-search form .form-item input[type="search"]:focus, .navbar-item.block-search form .form-item input[type="search"].error:focus,
   #header .block-search form .form-item input[type="text"]:focus,
@@ -1735,10 +2026,12 @@ navbar overlaying header-content (for sliders)
   .card-bg-primary .block-search form .form-item input[type="search"].error:focus {
     border-bottom: 2px solid;
     padding-bottom: 7px; }
+
 .navbar-item.block-search form .form-item.icon-left:before,
 #header .block-search form .form-item.icon-left:before,
 .card-bg-primary .block-search form .form-item.icon-left:before {
   color: #FFF; }
+
 .navbar-item.block-search.search-persistent form .form-item input[type="text"], .navbar-item.block-search.search-persistent form .form-item input[type="search"],
 #header .block-search.search-persistent form .form-item input[type="text"],
 #header .block-search.search-persistent form .form-item input[type="search"],
@@ -1756,27 +2049,23 @@ navbar overlaying header-content (for sliders)
   .card-bg-primary .block-search.search-persistent form .form-item input[type="search"].error:focus {
     border: 0;
     padding-bottom: 0; }
+
 .navbar-item.block-search.search-persistent form .form-item.focused.icon-left:before,
 #header .block-search.search-persistent form .form-item.focused.icon-left:before,
 .card-bg-primary .block-search.search-persistent form .form-item.focused.icon-left:before {
   color: rgba(0, 0, 0, 0.87); }
+
 .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"], .navbar-item.block-search.search-persistent form .form-item input[type="search"],
 #header .block-search.search-persistent form .form-item.focused input[type="text"],
 #header .block-search.search-persistent form .form-item input[type="search"],
 .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"],
 .card-bg-primary .block-search.search-persistent form .form-item input[type="search"] {
   color: rgba(0, 0, 0, 0.87); }
-  .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]:-moz-placeholder, .navbar-item.block-search.search-persistent form .form-item input[type="search"]:-moz-placeholder,
-  #header .block-search.search-persistent form .form-item.focused input[type="text"]:-moz-placeholder,
-  #header .block-search.search-persistent form .form-item input[type="search"]:-moz-placeholder,
-  .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]:-moz-placeholder,
-  .card-bg-primary .block-search.search-persistent form .form-item input[type="search"]:-moz-placeholder {
-    color: rgba(0, 0, 0, 0.26); }
-  .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]::-moz-placeholder, .navbar-item.block-search.search-persistent form .form-item input[type="search"]::-moz-placeholder,
-  #header .block-search.search-persistent form .form-item.focused input[type="text"]::-moz-placeholder,
-  #header .block-search.search-persistent form .form-item input[type="search"]::-moz-placeholder,
-  .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]::-moz-placeholder,
-  .card-bg-primary .block-search.search-persistent form .form-item input[type="search"]::-moz-placeholder {
+  .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder, .navbar-item.block-search.search-persistent form .form-item input[type="search"]::-webkit-input-placeholder,
+  #header .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder,
+  #header .block-search.search-persistent form .form-item input[type="search"]::-webkit-input-placeholder,
+  .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder,
+  .card-bg-primary .block-search.search-persistent form .form-item input[type="search"]::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder, .navbar-item.block-search.search-persistent form .form-item input[type="search"]:-ms-input-placeholder,
   #header .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder,
@@ -1784,11 +2073,11 @@ navbar overlaying header-content (for sliders)
   .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder,
   .card-bg-primary .block-search.search-persistent form .form-item input[type="search"]:-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
-  .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder, .navbar-item.block-search.search-persistent form .form-item input[type="search"]::-webkit-input-placeholder,
-  #header .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder,
-  #header .block-search.search-persistent form .form-item input[type="search"]::-webkit-input-placeholder,
-  .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder,
-  .card-bg-primary .block-search.search-persistent form .form-item input[type="search"]::-webkit-input-placeholder {
+  .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]::placeholder, .navbar-item.block-search.search-persistent form .form-item input[type="search"]::placeholder,
+  #header .block-search.search-persistent form .form-item.focused input[type="text"]::placeholder,
+  #header .block-search.search-persistent form .form-item input[type="search"]::placeholder,
+  .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]::placeholder,
+  .card-bg-primary .block-search.search-persistent form .form-item input[type="search"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
 
 .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item {
@@ -1799,13 +2088,11 @@ navbar overlaying header-content (for sliders)
     background: #FFF; }
   .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"], .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="search"] {
     color: rgba(0, 0, 0, 0.87); }
-    .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]:-moz-placeholder, .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="search"]:-moz-placeholder {
-      color: rgba(0, 0, 0, 0.26); }
-    .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]::-moz-placeholder, .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="search"]::-moz-placeholder {
+    .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]::-webkit-input-placeholder, .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="search"]::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
     .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]:-ms-input-placeholder, .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="search"]:-ms-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
-    .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]::-webkit-input-placeholder, .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="search"]::-webkit-input-placeholder {
+    .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]::placeholder, .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="search"]::placeholder {
       color: rgba(0, 0, 0, 0.26); }
   .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item.icon-left:before {
     color: rgba(0, 0, 0, 0.87); }
@@ -1846,10 +2133,13 @@ navbar overlaying header-content (for sliders)
   .search-persistent-autocomplete .ui-autocomplete.ui-widget.ui-widget-content .ui-menu-item a {
     padding: 8px 12px 8px 60px; }
 
+.search-api-autocomplete-search .ui-menu-item-wrapper.ui-state-active .search-api-autocomplete-suggestion {
+  background: none;
+  color: inherit; }
+
 /* tabs */
 .tabs ul, ul.tabs {
   list-style: none;
-  display: -webkit-box;
   display: flex;
   padding-left: 0; }
   .tabs ul li, ul.tabs li {
@@ -1885,7 +2175,9 @@ color themes
     padding: 0; }
     .card.card-vertical .card-column-left, .content-card .card-vertical.card-holder .card-column-left, .card.card-vertical .card-column-right, .content-card .card-vertical.card-holder .card-column-right {
       padding: 24px; }
-  .card > .breadcrumbs:first-child, .content-card .card-holder > .breadcrumbs:first-child, .card > .title:first-child, .content-card .card-holder > .title:first-child, .card > .block:first-child, .content-card .card-holder > .block:first-child, .card > div > .breadcrumbs:first-child, .content-card .card-holder > div > .breadcrumbs:first-child, .card > div > .title:first-child, .content-card .card-holder > div > .title:first-child, .card > div > .block:first-child, .content-card .card-holder > div > .block:first-child {
+  .card > .breadcrumbs:first-child, .content-card .card-holder > .breadcrumbs:first-child, .card > .title:first-child, .content-card .card-holder > .title:first-child, .card > .block:first-child, .content-card .card-holder > .block:first-child,
+  .card > div > .breadcrumbs:first-child,
+  .content-card .card-holder > div > .breadcrumbs:first-child, .card > div > .title:first-child, .content-card .card-holder > div > .title:first-child, .card > div > .block:first-child, .content-card .card-holder > div > .block:first-child {
     margin-top: 0 !important; }
   .card > .block:last-child, .content-card .card-holder > .block:last-child, .card > div > .block:last-child, .content-card .card-holder > div > .block:last-child {
     margin-bottom: 0 !important; }
@@ -1900,43 +2192,34 @@ color themes
   border-radius: 0; }
 
 .card-column-fix, .card-column-240 {
-  -webkit-box-flex: 0;
-          flex: 0 0 240px; }
+  flex: 0 0 240px; }
   .card-column-fix .media-cover img, .card-column-240 .media-cover img {
     height: 240px; }
 
 .card-column-360 {
-  -webkit-box-flex: 0;
-          flex: 0 0 360px; }
+  flex: 0 0 360px; }
   .card-column-360 .media-cover img {
     height: 360px; }
 
 .card-column-180 {
-  -webkit-box-flex: 0;
-          flex: 0 0 180px; }
+  flex: 0 0 180px; }
   .card-column-180 .media-cover img {
     height: 180px; }
 
 .card-column-120 {
-  -webkit-box-flex: 0;
-          flex: 0 0 120px; }
+  flex: 0 0 120px; }
   .card-column-120 .media-cover img {
     height: 120px; }
 
 .card-column-80 {
-  -webkit-box-flex: 0;
-          flex: 0 0 80px; }
+  flex: 0 0 80px; }
   .card-column-80 .media-cover img {
     height: 80px; }
 
 .card-column-stretch {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%; }
 
 .card-item {
@@ -2098,20 +2381,20 @@ color themes
 
 .card-bg-blue {
   background-color: #2196f3;
-  color: #FFF; }
+  color: rgba(0, 0, 0, 0.87); }
   .card-bg-blue .text-secondary {
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(0, 0, 0, 0.54); }
   .card-bg-blue .btn, .card-bg-blue .pager .pager-item > a, .pager .card-bg-blue .pager-item > a, .card-bg-blue .pager .pager-item > span, .pager .card-bg-blue .pager-item > span {
-    color: #FFF; }
+    color: rgba(0, 0, 0, 0.87); }
     .card-bg-blue .btn:hover, .card-bg-blue .pager .pager-item > a:hover, .pager .card-bg-blue .pager-item > a:hover, .card-bg-blue .pager .pager-item > span:hover, .pager .card-bg-blue .pager-item > span:hover, .card-bg-blue .btn:focus, .card-bg-blue .pager .pager-item > a:focus, .pager .card-bg-blue .pager-item > a:focus, .card-bg-blue .pager .pager-item > span:focus, .pager .card-bg-blue .pager-item > span:focus {
       background: rgba(204, 204, 204, 0.15);
-      color: #FFF; }
+      color: rgba(0, 0, 0, 0.87); }
     .card-bg-blue .btn:active, .card-bg-blue .pager .pager-item > a:active, .pager .card-bg-blue .pager-item > a:active, .card-bg-blue .pager .pager-item > span:active, .pager .card-bg-blue .pager-item > span:active {
       background: rgba(204, 204, 204, 0.25); }
   .card-bg-blue .divider-top, .card-bg-blue .divider-bottom {
-    border-color: rgba(255, 255, 255, 0.12); }
+    border-color: rgba(0, 0, 0, 0.12); }
   .card-bg-blue .rippleAnimate {
-    background-color: rgba(255, 255, 255, 0.1); }
+    background-color: rgba(0, 0, 0, 0.3); }
 
 .card-bg-light-blue {
   background-color: #03a9f4;
@@ -2166,20 +2449,20 @@ color themes
 
 .card-bg-green {
   background-color: #4caf50;
-  color: rgba(0, 0, 0, 0.87); }
+  color: #FFF; }
   .card-bg-green .text-secondary {
-    color: rgba(0, 0, 0, 0.54); }
+    color: rgba(255, 255, 255, 0.7); }
   .card-bg-green .btn, .card-bg-green .pager .pager-item > a, .pager .card-bg-green .pager-item > a, .card-bg-green .pager .pager-item > span, .pager .card-bg-green .pager-item > span {
-    color: rgba(0, 0, 0, 0.87); }
+    color: #FFF; }
     .card-bg-green .btn:hover, .card-bg-green .pager .pager-item > a:hover, .pager .card-bg-green .pager-item > a:hover, .card-bg-green .pager .pager-item > span:hover, .pager .card-bg-green .pager-item > span:hover, .card-bg-green .btn:focus, .card-bg-green .pager .pager-item > a:focus, .pager .card-bg-green .pager-item > a:focus, .card-bg-green .pager .pager-item > span:focus, .pager .card-bg-green .pager-item > span:focus {
       background: rgba(204, 204, 204, 0.15);
-      color: rgba(0, 0, 0, 0.87); }
+      color: #FFF; }
     .card-bg-green .btn:active, .card-bg-green .pager .pager-item > a:active, .pager .card-bg-green .pager-item > a:active, .card-bg-green .pager .pager-item > span:active, .pager .card-bg-green .pager-item > span:active {
       background: rgba(204, 204, 204, 0.25); }
   .card-bg-green .divider-top, .card-bg-green .divider-bottom {
-    border-color: rgba(0, 0, 0, 0.12); }
+    border-color: rgba(255, 255, 255, 0.12); }
   .card-bg-green .rippleAnimate {
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(255, 255, 255, 0.1); }
 
 .card-bg-light-green {
   background-color: #8bc34a;
@@ -2206,10 +2489,10 @@ color themes
   .card-bg-lime .btn, .card-bg-lime .pager .pager-item > a, .pager .card-bg-lime .pager-item > a, .card-bg-lime .pager .pager-item > span, .pager .card-bg-lime .pager-item > span {
     color: rgba(0, 0, 0, 0.87); }
     .card-bg-lime .btn:hover, .card-bg-lime .pager .pager-item > a:hover, .pager .card-bg-lime .pager-item > a:hover, .card-bg-lime .pager .pager-item > span:hover, .pager .card-bg-lime .pager-item > span:hover, .card-bg-lime .btn:focus, .card-bg-lime .pager .pager-item > a:focus, .pager .card-bg-lime .pager-item > a:focus, .card-bg-lime .pager .pager-item > span:focus, .pager .card-bg-lime .pager-item > span:focus {
-      background: rgba(153, 153, 153, 0.2);
+      background: rgba(204, 204, 204, 0.15);
       color: rgba(0, 0, 0, 0.87); }
     .card-bg-lime .btn:active, .card-bg-lime .pager .pager-item > a:active, .pager .card-bg-lime .pager-item > a:active, .card-bg-lime .pager .pager-item > span:active, .pager .card-bg-lime .pager-item > span:active {
-      background: rgba(153, 153, 153, 0.4); }
+      background: rgba(204, 204, 204, 0.25); }
   .card-bg-lime .divider-top, .card-bg-lime .divider-bottom {
     border-color: rgba(0, 0, 0, 0.12); }
   .card-bg-lime .rippleAnimate {
@@ -2240,10 +2523,10 @@ color themes
   .card-bg-amber .btn, .card-bg-amber .pager .pager-item > a, .pager .card-bg-amber .pager-item > a, .card-bg-amber .pager .pager-item > span, .pager .card-bg-amber .pager-item > span {
     color: rgba(0, 0, 0, 0.87); }
     .card-bg-amber .btn:hover, .card-bg-amber .pager .pager-item > a:hover, .pager .card-bg-amber .pager-item > a:hover, .card-bg-amber .pager .pager-item > span:hover, .pager .card-bg-amber .pager-item > span:hover, .card-bg-amber .btn:focus, .card-bg-amber .pager .pager-item > a:focus, .pager .card-bg-amber .pager-item > a:focus, .card-bg-amber .pager .pager-item > span:focus, .pager .card-bg-amber .pager-item > span:focus {
-      background: rgba(153, 153, 153, 0.2);
+      background: rgba(204, 204, 204, 0.15);
       color: rgba(0, 0, 0, 0.87); }
     .card-bg-amber .btn:active, .card-bg-amber .pager .pager-item > a:active, .pager .card-bg-amber .pager-item > a:active, .card-bg-amber .pager .pager-item > span:active, .pager .card-bg-amber .pager-item > span:active {
-      background: rgba(153, 153, 153, 0.4); }
+      background: rgba(204, 204, 204, 0.25); }
   .card-bg-amber .divider-top, .card-bg-amber .divider-bottom {
     border-color: rgba(0, 0, 0, 0.12); }
   .card-bg-amber .rippleAnimate {
@@ -2268,20 +2551,20 @@ color themes
 
 .card-bg-deep-orange {
   background-color: #ff5722;
-  color: rgba(0, 0, 0, 0.87); }
+  color: #FFF; }
   .card-bg-deep-orange .text-secondary {
-    color: rgba(0, 0, 0, 0.54); }
+    color: rgba(255, 255, 255, 0.7); }
   .card-bg-deep-orange .btn, .card-bg-deep-orange .pager .pager-item > a, .pager .card-bg-deep-orange .pager-item > a, .card-bg-deep-orange .pager .pager-item > span, .pager .card-bg-deep-orange .pager-item > span {
-    color: rgba(0, 0, 0, 0.87); }
+    color: #FFF; }
     .card-bg-deep-orange .btn:hover, .card-bg-deep-orange .pager .pager-item > a:hover, .pager .card-bg-deep-orange .pager-item > a:hover, .card-bg-deep-orange .pager .pager-item > span:hover, .pager .card-bg-deep-orange .pager-item > span:hover, .card-bg-deep-orange .btn:focus, .card-bg-deep-orange .pager .pager-item > a:focus, .pager .card-bg-deep-orange .pager-item > a:focus, .card-bg-deep-orange .pager .pager-item > span:focus, .pager .card-bg-deep-orange .pager-item > span:focus {
       background: rgba(204, 204, 204, 0.15);
-      color: rgba(0, 0, 0, 0.87); }
+      color: #FFF; }
     .card-bg-deep-orange .btn:active, .card-bg-deep-orange .pager .pager-item > a:active, .pager .card-bg-deep-orange .pager-item > a:active, .card-bg-deep-orange .pager .pager-item > span:active, .pager .card-bg-deep-orange .pager-item > span:active {
       background: rgba(204, 204, 204, 0.25); }
   .card-bg-deep-orange .divider-top, .card-bg-deep-orange .divider-bottom {
-    border-color: rgba(0, 0, 0, 0.12); }
+    border-color: rgba(255, 255, 255, 0.12); }
   .card-bg-deep-orange .rippleAnimate {
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(255, 255, 255, 0.1); }
 
 .card-bg-brown {
   background-color: #795548;
@@ -2412,13 +2695,14 @@ color themes
         margin-top: -24px; }
       .card-main .card-item:last-child, .content-card .card-holder .card-item:last-child {
         margin-bottom: -24px; } }
+
 @media (min-width: 768px) {
   .card.card-vertical, .content-card .card-vertical.card-holder {
-    display: -webkit-box;
     display: flex; }
     .card.card-vertical .card-media, .content-card .card-vertical.card-holder .card-media {
       border-top-right-radius: 0;
       border-bottom-left-radius: 2px; } }
+
 .card-grid {
   padding-left: 10px;
   padding-right: 10px; }
@@ -2443,9 +2727,7 @@ card title and actions overlay for card-bg-image and card-media
     left: 12px;
     top: 14px;
     color: rgba(0, 0, 0, 0.54);
-    transition: -webkit-transform 0.25s ease;
-    transition: transform 0.25s ease;
-    transition: transform 0.25s ease, -webkit-transform 0.25s ease; }
+    transition: transform 0.25s ease; }
   .collapsible-toggle span {
     color: #00b0ff;
     border-bottom: 1px dotted #00b0ff;
@@ -2457,8 +2739,7 @@ card title and actions overlay for card-bg-image and card-media
       color: #0091ea;
       border-color: #0091ea; }
   .collapsible-toggle.expanded:before {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    transform: rotate(90deg); }
 
 .collapsible-content {
   display: none;
@@ -2501,43 +2782,51 @@ card title and actions overlay for card-bg-image and card-media
   margin: 16px 0;
   text-align: center;
   list-style: none; }
+
 .pager .pager-item {
   display: inline-block; }
   .pager .pager-item > a, .pager .pager-item > span {
     margin: 8px 2px;
     min-width: 48px; }
+
 .pager .pager-item.item-current > a, .pager .pager-item.item-current > span {
   color: #546e7a; }
+
 .pager .pager-item.item-first > a, .pager .pager-item.item-first > span {
   padding: 6px 12px; }
   .pager .pager-item.item-first > a:before, .pager .pager-item.item-first > span:before {
     content: "first_page"; }
   .pager .pager-item.item-first > a span, .pager .pager-item.item-first > span span {
     display: none; }
+
 .pager .pager-item.item-previous > a, .pager .pager-item.item-previous > span {
   padding: 6px 12px; }
   .pager .pager-item.item-previous > a:before, .pager .pager-item.item-previous > span:before {
     content: "chevron_left"; }
   .pager .pager-item.item-previous > a span, .pager .pager-item.item-previous > span span {
     display: none; }
+
 .pager .pager-item.item-ellipsis > a, .pager .pager-item.item-ellipsis > span {
   padding: 6px 12px; }
   .pager .pager-item.item-ellipsis > a:before, .pager .pager-item.item-ellipsis > span:before {
     content: "more_horiz"; }
   .pager .pager-item.item-ellipsis > a span, .pager .pager-item.item-ellipsis > span span {
     display: none; }
+
 .pager .pager-item.item-next > a, .pager .pager-item.item-next > span {
   padding: 6px 12px; }
   .pager .pager-item.item-next > a:before, .pager .pager-item.item-next > span:before {
     content: "chevron_right"; }
   .pager .pager-item.item-next > a span, .pager .pager-item.item-next > span span {
     display: none; }
+
 .pager .pager-item.item-last > a, .pager .pager-item.item-last > span {
   padding: 6px 12px; }
   .pager .pager-item.item-last > a:before, .pager .pager-item.item-last > span:before {
     content: "last_page"; }
   .pager .pager-item.item-last > a span, .pager .pager-item.item-last > span span {
     display: none; }
+
 .card-actions .pager {
   display: inline-block; }
   .card-actions .pager .pager-items {
@@ -2551,12 +2840,21 @@ card title and actions overlay for card-bg-image and card-media
   .card-actions .pager .pager-item.item-current {
     display: none; }
 
+.card-actions .pager-summary + .pager {
+  margin-left: -8px; }
+
 .card-actions .pager-summary {
   display: inline-block;
   font-size: 14px;
   line-height: 20px;
-  margin: 18px 8px;
+  margin: 18px 16px 18px 8px;
   color: rgba(0, 0, 0, 0.54); }
+
+@media (min-width: 568px) {
+  .card-actions .pager-summary + .pager {
+    margin-left: -16px; }
+  .card-actions .pager-summary {
+    margin-right: 24px; } }
 
 .messages-status {
   background: #e8f5e9; }
@@ -2612,10 +2910,13 @@ ul.messages-list {
 
 .toolbar-horizontal.navbar-fixed #navbar, .toolbar-horizontal #drawer {
   top: 39px; }
+
 .toolbar-horizontal.toolbar-tray-open.navbar-fixed #navbar, .toolbar-horizontal.toolbar-tray-open #drawer {
   top: 79px; }
+
 .toolbar-horizontal.toolbar-tray-open.admin-toolbar.navbar-fixed #navbar, .toolbar-horizontal.toolbar-tray-open.admin-toolbar #drawer {
   top: 80px; }
+
 .toolbar-horizontal.toolbar-tray-open.admin-toolbar.adminimal-admin-toolbar.navbar-fixed #navbar, .toolbar-horizontal.toolbar-tray-open.admin-toolbar.adminimal-admin-toolbar #drawer {
   top: 79px; }
 
@@ -2628,7 +2929,6 @@ ul.messages-list {
 @media (min-width: 992px) {
   .toolbar-vertical.drawer-below-navbar #drawer {
     top: 103px; }
-
   .toolbar-horizontal.drawer-below-navbar #drawer {
     top: 103px; }
   .toolbar-horizontal.toolbar-tray-open.drawer-below-navbar #drawer {
@@ -2637,6 +2937,7 @@ ul.messages-list {
     top: 144px; }
   .toolbar-horizontal.toolbar-tray-open.admin-toolbar.adminimal-admin-toolbar.drawer-below-navbar #drawer {
     top: 143px; } }
+
 /* user pages */
 .layout-container {
   margin: 0; }
@@ -2649,19 +2950,14 @@ ul.messages-list {
   background: #607d8b;
   color: #FFF; }
   .maintenance-page #page {
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center; }
+    justify-content: center;
+    align-items: center; }
   .maintenance-page #logo-box {
     width: 320px;
     height: 320px;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center; }
+    justify-content: center;
+    align-items: center; }
     .maintenance-page #logo-box img {
       width: 240px;
       height: auto; }

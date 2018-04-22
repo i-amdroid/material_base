@@ -1,4 +1,5 @@
 /* break points */
+/* mixins and functions */
 .pull-left, .align-left {
   float: left; }
 
@@ -224,27 +225,23 @@
 @media (min-width: 768px) {
   .hidden-sm, .navbar-item.hidden-sm {
     display: none; }
-
   .visible-sm {
     display: block; }
-
   .navbar-item.visible-sm {
     display: inline-block; } }
+
 @media (min-width: 992px) {
   .hidden-md, .navbar-item.hidden-md {
     display: none; }
-
   .visible-md {
     display: block; }
-
   .navbar-item.visible-md {
     display: inline-block; } }
+
 @media (min-width: 1256px) {
   .hidden-lg, .navbar-item.hidden-lg {
     display: none; }
-
   .visible-lg {
     display: block; }
-
   .navbar-item.visible-lg {
     display: inline-block; } }

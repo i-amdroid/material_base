@@ -94,11 +94,11 @@ ol ul, ol ol, ul ol, ul ul { margin-top: 0; margin-bottom: 0; }
 
 table { width: 100%; margin-top: 16px; margin-bottom: 16px; border-collapse: collapse; background: $color-bg-card; } // TDV
 tr { border-bottom: 1px solid #e0e0e0; }
-tr + tr:last-child { border-bottom: 0; }
+tbody tr:last-child { border-bottom: 0; }
 th, td { padding: 12px 12px; }
 th:first-child, td:first-child { padding-left: 16px; }
 th:last-child, td:last-child { padding-right: 16px; }
-th { font-weight: 500; color: $color-text-secondary; } // TDV
+th { font-weight: 500; color: $color-text-secondary; text-align: left; } // TDV
 tr:hover { background: $color-bg-hover; } // TDV
 
 code, kbd, pre, samp { font-family: 'Roboto mono', Consolas, monospace; font-size: 15px; }
@@ -501,10 +501,10 @@ tr.selected:hover { background: $color-bg-hover; } // TDV
   input, textarea, select { border: 0; margin: 0; background: none; outline: 0; appearance: none; border-radius: 0;
     color: $color-text; font-family: $font-family; font-size: 16px;
   } // TDV
-  input[type="text"], input[type="email"], input[type="password"], input[type="search"], textarea, select { display: block; width: 100%; max-width: 460px; border-bottom: 1px solid $color-divider; padding: 8px 0;
+  input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="tel"], textarea, select { display: block; width: 100%; max-width: 460px; border-bottom: 1px solid $color-divider; padding: 8px 0;
     &:focus, &.error:focus { border-bottom: 2px solid $color-accent; padding-bottom: 7px; }
     &.error { border-bottom: 2px solid color($red); padding: 8px 0 7px; }
-    @include input-placeholder { color: $color-text-disabled; }
+    &::placeholder { color: $color-text-disabled; }
   } // TDV CTV D7
   input[type="radio"], input[type="checkbox"] { display: inline-block; color: $color-text-secondary; float: left; margin-top: 6px; margin-right: 12px; } // TDV
   input[type="checkbox"]:before { @extend .material-icons; content: 'check_box_outline_blank';  margin-top: -7px; }
@@ -718,7 +718,7 @@ navbar overlaying header-content (for sliders)
     .form-item {
       input[type="text"], input[type="search"] { color: contrast-color($color-primary);
         border-bottom: 1px solid contrast-color($color-primary, $color-text, $color-text-light);
-        @include input-placeholder { color: contrast-color($color-primary, $color-text-disabled, $color-text-light-disabled); }
+        &::placeholder { color: contrast-color($color-primary, $color-text-disabled, $color-text-light-disabled); }
         &:focus, &.error:focus { border-bottom: 2px solid; padding-bottom: 7px; }
       } // D7
       &.icon-left:before { color: contrast-color($color-primary); }
@@ -731,7 +731,7 @@ navbar overlaying header-content (for sliders)
       } // D7
       &.focused.icon-left:before { color: $color-text; }
       &.focused input[type="text"], input[type="search"] { color: $color-text;
-        @include input-placeholder { color: $color-text-disabled; }
+        &::placeholder { color: $color-text-disabled; }
       } // D7
     }
   }
@@ -747,7 +747,7 @@ navbar overlaying header-content (for sliders)
         &:hover { background: color($grey, 50); }
         &.focused { background: #FFF; }
         input[type="text"], input[type="search"] { color: $color-text;
-          @include input-placeholder { color: $color-text-disabled; }
+          &::placeholder { color: $color-text-disabled; }
         } // D7
         &.icon-left:before { color: $color-text; }
       }
@@ -778,6 +778,7 @@ navbar overlaying header-content (for sliders)
     .ui-menu-item a { padding: 8px 12px 8px 60px; }
   }
 } // TDV D7
+.search-api-autocomplete-search .ui-menu-item-wrapper.ui-state-active .search-api-autocomplete-suggestion { background: none; color: inherit; }
 
 /* tabs */
 .tabs ul, ul.tabs { list-style: none; display: flex; padding-left: 0;
@@ -1025,9 +1026,15 @@ card title and actions overlay for card-bg-image and card-media
     }
     .pager-item.item-current { display: none; }
   }
+  .card-actions .pager-summary + & { margin-left: -8px; }
 }
 
-.card-actions .pager-summary { display: inline-block; font-size: 14px; line-height: 20px; margin: 18px 8px; color: $color-text-secondary; } // TDV
+.card-actions .pager-summary { display: inline-block; font-size: 14px; line-height: 20px; margin: 18px 16px 18px 8px; color: $color-text-secondary; } // TDV
+
+@include breakpoint($xs) {
+  .card-actions .pager-summary + .pager { margin-left: -16px; }
+  .card-actions .pager-summary { margin-right: 24px; }
+}
 
 // messages
 .messages-status { @extend .info; background: color($green, 50);
