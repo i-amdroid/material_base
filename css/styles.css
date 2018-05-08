@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1471,23 +1471,25 @@ tr.selected:hover {
     color: rgba(0, 0, 0, 0.87);
     font-family: "Roboto", sans-serif;
     font-size: 16px; }
-  .form-item input[type="text"], .form-item input[type="email"], .form-item input[type="password"], .form-item textarea, .form-item select {
+  .form-item input[type="text"], .form-item input[type="email"], .form-item input[type="password"], .form-item input[type="search"], .form-item input[type="tel"], .form-item textarea, .form-item select {
     display: block;
     width: 100%;
     max-width: 460px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     padding: 8px 0; }
-    .form-item input[type="text"]:focus, .form-item input[type="text"].error:focus, .form-item input[type="email"]:focus, .form-item input[type="email"].error:focus, .form-item input[type="password"]:focus, .form-item input[type="password"].error:focus, .form-item textarea:focus, .form-item textarea.error:focus, .form-item select:focus, .form-item select.error:focus {
+    .form-item input[type="text"]:focus, .form-item input[type="text"].error:focus, .form-item input[type="email"]:focus, .form-item input[type="email"].error:focus, .form-item input[type="password"]:focus, .form-item input[type="password"].error:focus, .form-item input[type="search"]:focus, .form-item input[type="search"].error:focus, .form-item input[type="tel"]:focus, .form-item input[type="tel"].error:focus, .form-item textarea:focus, .form-item textarea.error:focus, .form-item select:focus, .form-item select.error:focus {
       border-bottom: 2px solid #00b0ff;
       padding-bottom: 7px; }
-    .form-item input[type="text"].error, .form-item input[type="email"].error, .form-item input[type="password"].error, .form-item textarea.error, .form-item select.error {
+    .form-item input[type="text"].error, .form-item input[type="email"].error, .form-item input[type="password"].error, .form-item input[type="search"].error, .form-item input[type="tel"].error, .form-item textarea.error, .form-item select.error {
       border-bottom: 2px solid #f44336;
       padding: 8px 0 7px; }
-    .form-item input[type="text"]::-webkit-input-placeholder, .form-item input[type="email"]::-webkit-input-placeholder, .form-item input[type="password"]::-webkit-input-placeholder, .form-item textarea::-webkit-input-placeholder, .form-item select::-webkit-input-placeholder {
+    .form-item input[type="text"]::-webkit-input-placeholder, .form-item input[type="email"]::-webkit-input-placeholder, .form-item input[type="password"]::-webkit-input-placeholder, .form-item input[type="search"]::-webkit-input-placeholder, .form-item input[type="tel"]::-webkit-input-placeholder, .form-item textarea::-webkit-input-placeholder, .form-item select::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
-    .form-item input[type="text"]:-ms-input-placeholder, .form-item input[type="email"]:-ms-input-placeholder, .form-item input[type="password"]:-ms-input-placeholder, .form-item textarea:-ms-input-placeholder, .form-item select:-ms-input-placeholder {
+    .form-item input[type="text"]:-ms-input-placeholder, .form-item input[type="email"]:-ms-input-placeholder, .form-item input[type="password"]:-ms-input-placeholder, .form-item input[type="search"]:-ms-input-placeholder, .form-item input[type="tel"]:-ms-input-placeholder, .form-item textarea:-ms-input-placeholder, .form-item select:-ms-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
-    .form-item input[type="text"]::placeholder, .form-item input[type="email"]::placeholder, .form-item input[type="password"]::placeholder, .form-item textarea::placeholder, .form-item select::placeholder {
+    .form-item input[type="text"]::-ms-input-placeholder, .form-item input[type="email"]::-ms-input-placeholder, .form-item input[type="password"]::-ms-input-placeholder, .form-item input[type="search"]::-ms-input-placeholder, .form-item input[type="tel"]::-ms-input-placeholder, .form-item textarea::-ms-input-placeholder, .form-item select::-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+    .form-item input[type="text"]::placeholder, .form-item input[type="email"]::placeholder, .form-item input[type="password"]::placeholder, .form-item input[type="search"]::placeholder, .form-item input[type="tel"]::placeholder, .form-item textarea::placeholder, .form-item select::placeholder {
       color: rgba(0, 0, 0, 0.26); }
   .form-item input[type="radio"], .form-item input[type="checkbox"] {
     display: inline-block;
@@ -1759,7 +1761,7 @@ tr.selected:hover {
   margin: 160px auto 160px; }
 
 .header-bg-image #header {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 64px), #607d8b url(../img/header-bg.jpg) top center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 64px), #607d8b url(../img/header-bg.jpg) top center;
   background-size: auto, cover; }
 
 .header-bg-image #bg-video {
@@ -1776,7 +1778,7 @@ tr.selected:hover {
 
 .header-bg-image.navbar-fixed #header-bg {
   display: block;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 64px), url(../img/header-bg.jpg) top center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 64px), url(../img/header-bg.jpg) top center;
   background-size: auto, cover;
   opacity: 1;
   top: 0;
@@ -1787,7 +1789,7 @@ tr.selected:hover {
   z-index: -1; }
 
 .header-bg-object #navbar {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 64px); }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 64px); }
 
 .header-bg-object #header {
   background: #607d8b; }
@@ -1845,7 +1847,7 @@ tr.selected:hover {
   right: 0;
   z-index: 1;
   height: 64px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 64px); }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 64px); }
 
 .main-shift-up #header {
   padding-bottom: 128px; }
@@ -1956,6 +1958,10 @@ tr.selected:hover {
   #header .block-search form .form-item input[type="text"]:-ms-input-placeholder,
   .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
+  .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder,
+  #header .block-search form .form-item input[type="text"]::-ms-input-placeholder,
+  .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
   .navbar-item.block-search form .form-item input[type="text"]::placeholder,
   #header .block-search form .form-item input[type="text"]::placeholder,
   .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
@@ -2002,6 +2008,10 @@ tr.selected:hover {
   #header .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder,
   .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
+  .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]::-ms-input-placeholder,
+  #header .block-search.search-persistent form .form-item.focused input[type="text"]::-ms-input-placeholder,
+  .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
   .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]::placeholder,
   #header .block-search.search-persistent form .form-item.focused input[type="text"]::placeholder,
   .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]::placeholder {
@@ -2018,6 +2028,8 @@ tr.selected:hover {
     .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
     .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+    .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]::-ms-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
     .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]::placeholder {
       color: rgba(0, 0, 0, 0.26); }

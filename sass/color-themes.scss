@@ -138,7 +138,7 @@ $accent-colors: (
     }
     .form-item {
       & .focused label { color: color($color-value, a200); }
-      input[type="text"], input[type="email"], input[type="password"], textarea, select {
+      input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="tel"], textarea, select {
         &:focus, &.error:focus { border-color: color($color-value, a200); }
       }
       input[type="checkbox"]:checked:before, input[type="radio"]:checked:before { color: color($color-value, a200); }

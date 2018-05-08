@@ -54,6 +54,8 @@
     color: rgba(255, 255, 255, 0.3); }
   .primary-red .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-red #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-red .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
+  .primary-red .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-red #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-red .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
   .primary-red .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-red #header .block-search form .form-item input[type="text"]::placeholder, .primary-red .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
 
@@ -172,6 +174,8 @@
   .primary-pink .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-pink #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-pink .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .primary-pink .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-pink #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-pink .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
+  .primary-pink .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-pink #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-pink .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .primary-pink .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-pink #header .block-search form .form-item input[type="text"]::placeholder, .primary-pink .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
@@ -292,6 +296,8 @@
     color: rgba(255, 255, 255, 0.3); }
   .primary-purple .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-purple #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-purple .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
+  .primary-purple .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-purple #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-purple .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
   .primary-purple .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-purple #header .block-search form .form-item input[type="text"]::placeholder, .primary-purple .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
 
@@ -410,6 +416,8 @@
   .primary-deep-purple .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-deep-purple #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-deep-purple .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .primary-deep-purple .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-deep-purple #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-deep-purple .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
+  .primary-deep-purple .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-deep-purple #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-deep-purple .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .primary-deep-purple .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-deep-purple #header .block-search form .form-item input[type="text"]::placeholder, .primary-deep-purple .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
@@ -530,6 +538,8 @@
     color: rgba(255, 255, 255, 0.3); }
   .primary-indigo .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-indigo #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-indigo .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
+  .primary-indigo .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-indigo #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-indigo .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
   .primary-indigo .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-indigo #header .block-search form .form-item input[type="text"]::placeholder, .primary-indigo .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
 
@@ -648,6 +658,8 @@
   .primary-blue .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-blue #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-blue .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-blue .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-blue #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-blue .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
+  .primary-blue .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-blue #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-blue .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-blue .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-blue #header .block-search form .form-item input[type="text"]::placeholder, .primary-blue .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
@@ -768,6 +780,8 @@
     color: rgba(0, 0, 0, 0.26); }
   .primary-light-blue .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-light-blue #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-light-blue .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
+  .primary-light-blue .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-light-blue #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-light-blue .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
   .primary-light-blue .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-light-blue #header .block-search form .form-item input[type="text"]::placeholder, .primary-light-blue .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
 
@@ -886,6 +900,8 @@
   .primary-cyan .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-cyan #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-cyan .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-cyan .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-cyan #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-cyan .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
+  .primary-cyan .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-cyan #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-cyan .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-cyan .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-cyan #header .block-search form .form-item input[type="text"]::placeholder, .primary-cyan .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
@@ -1006,6 +1022,8 @@
     color: rgba(255, 255, 255, 0.3); }
   .primary-teal .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-teal #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-teal .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
+  .primary-teal .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-teal #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-teal .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
   .primary-teal .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-teal #header .block-search form .form-item input[type="text"]::placeholder, .primary-teal .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
 
@@ -1124,6 +1142,8 @@
   .primary-green .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-green #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-green .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .primary-green .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-green #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-green .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
+  .primary-green .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-green #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-green .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .primary-green .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-green #header .block-search form .form-item input[type="text"]::placeholder, .primary-green .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
@@ -1244,6 +1264,8 @@
     color: rgba(0, 0, 0, 0.26); }
   .primary-light-green .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-light-green #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-light-green .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
+  .primary-light-green .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-light-green #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-light-green .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
   .primary-light-green .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-light-green #header .block-search form .form-item input[type="text"]::placeholder, .primary-light-green .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
 
@@ -1362,6 +1384,8 @@
   .primary-lime .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-lime #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-lime .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-lime .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-lime #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-lime .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
+  .primary-lime .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-lime #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-lime .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-lime .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-lime #header .block-search form .form-item input[type="text"]::placeholder, .primary-lime .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
@@ -1482,6 +1506,8 @@
     color: rgba(0, 0, 0, 0.26); }
   .primary-yellow .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-yellow #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-yellow .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
+  .primary-yellow .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-yellow #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-yellow .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
   .primary-yellow .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-yellow #header .block-search form .form-item input[type="text"]::placeholder, .primary-yellow .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
 
@@ -1600,6 +1626,8 @@
   .primary-amber .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-amber #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-amber .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-amber .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-amber #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-amber .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
+  .primary-amber .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-amber #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-amber .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-amber .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-amber #header .block-search form .form-item input[type="text"]::placeholder, .primary-amber .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
@@ -1720,6 +1748,8 @@
     color: rgba(0, 0, 0, 0.26); }
   .primary-orange .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-orange #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-orange .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
+  .primary-orange .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-orange #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-orange .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
   .primary-orange .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-orange #header .block-search form .form-item input[type="text"]::placeholder, .primary-orange .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
 
@@ -1838,6 +1868,8 @@
   .primary-deep-orange .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-deep-orange #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-deep-orange .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .primary-deep-orange .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-deep-orange #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-deep-orange .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
+  .primary-deep-orange .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-deep-orange #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-deep-orange .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
   .primary-deep-orange .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-deep-orange #header .block-search form .form-item input[type="text"]::placeholder, .primary-deep-orange .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
@@ -1958,6 +1990,8 @@
     color: rgba(255, 255, 255, 0.3); }
   .primary-brown .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-brown #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-brown .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
+  .primary-brown .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-brown #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-brown .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
   .primary-brown .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-brown #header .block-search form .form-item input[type="text"]::placeholder, .primary-brown .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
 
@@ -2076,6 +2110,8 @@
   .primary-grey .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-grey #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder, .primary-grey .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-grey .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-grey #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-grey .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
+  .primary-grey .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-grey #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-grey .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.26); }
   .primary-grey .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-grey #header .block-search form .form-item input[type="text"]::placeholder, .primary-grey .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(0, 0, 0, 0.26); }
@@ -2196,6 +2232,8 @@
     color: rgba(255, 255, 255, 0.3); }
   .primary-blue-grey .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-blue-grey #header .block-search form .form-item input[type="text"]:-ms-input-placeholder, .primary-blue-grey .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.3); }
+  .primary-blue-grey .navbar-item.block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-blue-grey #header .block-search form .form-item input[type="text"]::-ms-input-placeholder, .primary-blue-grey .card-bg-primary .block-search form .form-item input[type="text"]::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
   .primary-blue-grey .navbar-item.block-search form .form-item input[type="text"]::placeholder, .primary-blue-grey #header .block-search form .form-item input[type="text"]::placeholder, .primary-blue-grey .card-bg-primary .block-search form .form-item input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3); }
 
@@ -2313,7 +2351,7 @@
 .accent-red .form-item .focused label {
   color: #ff5252; }
 
-.accent-red .form-item input[type="text"]:focus, .accent-red .form-item input[type="text"].error:focus, .accent-red .form-item input[type="email"]:focus, .accent-red .form-item input[type="email"].error:focus, .accent-red .form-item input[type="password"]:focus, .accent-red .form-item input[type="password"].error:focus, .accent-red .form-item textarea:focus, .accent-red .form-item textarea.error:focus, .accent-red .form-item select:focus, .accent-red .form-item select.error:focus {
+.accent-red .form-item input[type="text"]:focus, .accent-red .form-item input[type="text"].error:focus, .accent-red .form-item input[type="email"]:focus, .accent-red .form-item input[type="email"].error:focus, .accent-red .form-item input[type="password"]:focus, .accent-red .form-item input[type="password"].error:focus, .accent-red .form-item input[type="search"]:focus, .accent-red .form-item input[type="search"].error:focus, .accent-red .form-item input[type="tel"]:focus, .accent-red .form-item input[type="tel"].error:focus, .accent-red .form-item textarea:focus, .accent-red .form-item textarea.error:focus, .accent-red .form-item select:focus, .accent-red .form-item select.error:focus {
   border-color: #ff5252; }
 
 .accent-red .form-item input[type="checkbox"]:checked:before, .accent-red .form-item input[type="radio"]:checked:before {
@@ -2405,7 +2443,7 @@
 .accent-pink .form-item .focused label {
   color: #ff4081; }
 
-.accent-pink .form-item input[type="text"]:focus, .accent-pink .form-item input[type="text"].error:focus, .accent-pink .form-item input[type="email"]:focus, .accent-pink .form-item input[type="email"].error:focus, .accent-pink .form-item input[type="password"]:focus, .accent-pink .form-item input[type="password"].error:focus, .accent-pink .form-item textarea:focus, .accent-pink .form-item textarea.error:focus, .accent-pink .form-item select:focus, .accent-pink .form-item select.error:focus {
+.accent-pink .form-item input[type="text"]:focus, .accent-pink .form-item input[type="text"].error:focus, .accent-pink .form-item input[type="email"]:focus, .accent-pink .form-item input[type="email"].error:focus, .accent-pink .form-item input[type="password"]:focus, .accent-pink .form-item input[type="password"].error:focus, .accent-pink .form-item input[type="search"]:focus, .accent-pink .form-item input[type="search"].error:focus, .accent-pink .form-item input[type="tel"]:focus, .accent-pink .form-item input[type="tel"].error:focus, .accent-pink .form-item textarea:focus, .accent-pink .form-item textarea.error:focus, .accent-pink .form-item select:focus, .accent-pink .form-item select.error:focus {
   border-color: #ff4081; }
 
 .accent-pink .form-item input[type="checkbox"]:checked:before, .accent-pink .form-item input[type="radio"]:checked:before {
@@ -2497,7 +2535,7 @@
 .accent-purple .form-item .focused label {
   color: #e040fb; }
 
-.accent-purple .form-item input[type="text"]:focus, .accent-purple .form-item input[type="text"].error:focus, .accent-purple .form-item input[type="email"]:focus, .accent-purple .form-item input[type="email"].error:focus, .accent-purple .form-item input[type="password"]:focus, .accent-purple .form-item input[type="password"].error:focus, .accent-purple .form-item textarea:focus, .accent-purple .form-item textarea.error:focus, .accent-purple .form-item select:focus, .accent-purple .form-item select.error:focus {
+.accent-purple .form-item input[type="text"]:focus, .accent-purple .form-item input[type="text"].error:focus, .accent-purple .form-item input[type="email"]:focus, .accent-purple .form-item input[type="email"].error:focus, .accent-purple .form-item input[type="password"]:focus, .accent-purple .form-item input[type="password"].error:focus, .accent-purple .form-item input[type="search"]:focus, .accent-purple .form-item input[type="search"].error:focus, .accent-purple .form-item input[type="tel"]:focus, .accent-purple .form-item input[type="tel"].error:focus, .accent-purple .form-item textarea:focus, .accent-purple .form-item textarea.error:focus, .accent-purple .form-item select:focus, .accent-purple .form-item select.error:focus {
   border-color: #e040fb; }
 
 .accent-purple .form-item input[type="checkbox"]:checked:before, .accent-purple .form-item input[type="radio"]:checked:before {
@@ -2589,7 +2627,7 @@
 .accent-deep-purple .form-item .focused label {
   color: #7c4dff; }
 
-.accent-deep-purple .form-item input[type="text"]:focus, .accent-deep-purple .form-item input[type="text"].error:focus, .accent-deep-purple .form-item input[type="email"]:focus, .accent-deep-purple .form-item input[type="email"].error:focus, .accent-deep-purple .form-item input[type="password"]:focus, .accent-deep-purple .form-item input[type="password"].error:focus, .accent-deep-purple .form-item textarea:focus, .accent-deep-purple .form-item textarea.error:focus, .accent-deep-purple .form-item select:focus, .accent-deep-purple .form-item select.error:focus {
+.accent-deep-purple .form-item input[type="text"]:focus, .accent-deep-purple .form-item input[type="text"].error:focus, .accent-deep-purple .form-item input[type="email"]:focus, .accent-deep-purple .form-item input[type="email"].error:focus, .accent-deep-purple .form-item input[type="password"]:focus, .accent-deep-purple .form-item input[type="password"].error:focus, .accent-deep-purple .form-item input[type="search"]:focus, .accent-deep-purple .form-item input[type="search"].error:focus, .accent-deep-purple .form-item input[type="tel"]:focus, .accent-deep-purple .form-item input[type="tel"].error:focus, .accent-deep-purple .form-item textarea:focus, .accent-deep-purple .form-item textarea.error:focus, .accent-deep-purple .form-item select:focus, .accent-deep-purple .form-item select.error:focus {
   border-color: #7c4dff; }
 
 .accent-deep-purple .form-item input[type="checkbox"]:checked:before, .accent-deep-purple .form-item input[type="radio"]:checked:before {
@@ -2681,7 +2719,7 @@
 .accent-indigo .form-item .focused label {
   color: #536dfe; }
 
-.accent-indigo .form-item input[type="text"]:focus, .accent-indigo .form-item input[type="text"].error:focus, .accent-indigo .form-item input[type="email"]:focus, .accent-indigo .form-item input[type="email"].error:focus, .accent-indigo .form-item input[type="password"]:focus, .accent-indigo .form-item input[type="password"].error:focus, .accent-indigo .form-item textarea:focus, .accent-indigo .form-item textarea.error:focus, .accent-indigo .form-item select:focus, .accent-indigo .form-item select.error:focus {
+.accent-indigo .form-item input[type="text"]:focus, .accent-indigo .form-item input[type="text"].error:focus, .accent-indigo .form-item input[type="email"]:focus, .accent-indigo .form-item input[type="email"].error:focus, .accent-indigo .form-item input[type="password"]:focus, .accent-indigo .form-item input[type="password"].error:focus, .accent-indigo .form-item input[type="search"]:focus, .accent-indigo .form-item input[type="search"].error:focus, .accent-indigo .form-item input[type="tel"]:focus, .accent-indigo .form-item input[type="tel"].error:focus, .accent-indigo .form-item textarea:focus, .accent-indigo .form-item textarea.error:focus, .accent-indigo .form-item select:focus, .accent-indigo .form-item select.error:focus {
   border-color: #536dfe; }
 
 .accent-indigo .form-item input[type="checkbox"]:checked:before, .accent-indigo .form-item input[type="radio"]:checked:before {
@@ -2773,7 +2811,7 @@
 .accent-blue .form-item .focused label {
   color: #448aff; }
 
-.accent-blue .form-item input[type="text"]:focus, .accent-blue .form-item input[type="text"].error:focus, .accent-blue .form-item input[type="email"]:focus, .accent-blue .form-item input[type="email"].error:focus, .accent-blue .form-item input[type="password"]:focus, .accent-blue .form-item input[type="password"].error:focus, .accent-blue .form-item textarea:focus, .accent-blue .form-item textarea.error:focus, .accent-blue .form-item select:focus, .accent-blue .form-item select.error:focus {
+.accent-blue .form-item input[type="text"]:focus, .accent-blue .form-item input[type="text"].error:focus, .accent-blue .form-item input[type="email"]:focus, .accent-blue .form-item input[type="email"].error:focus, .accent-blue .form-item input[type="password"]:focus, .accent-blue .form-item input[type="password"].error:focus, .accent-blue .form-item input[type="search"]:focus, .accent-blue .form-item input[type="search"].error:focus, .accent-blue .form-item input[type="tel"]:focus, .accent-blue .form-item input[type="tel"].error:focus, .accent-blue .form-item textarea:focus, .accent-blue .form-item textarea.error:focus, .accent-blue .form-item select:focus, .accent-blue .form-item select.error:focus {
   border-color: #448aff; }
 
 .accent-blue .form-item input[type="checkbox"]:checked:before, .accent-blue .form-item input[type="radio"]:checked:before {
@@ -2865,7 +2903,7 @@
 .accent-light-blue .form-item .focused label {
   color: #40c4ff; }
 
-.accent-light-blue .form-item input[type="text"]:focus, .accent-light-blue .form-item input[type="text"].error:focus, .accent-light-blue .form-item input[type="email"]:focus, .accent-light-blue .form-item input[type="email"].error:focus, .accent-light-blue .form-item input[type="password"]:focus, .accent-light-blue .form-item input[type="password"].error:focus, .accent-light-blue .form-item textarea:focus, .accent-light-blue .form-item textarea.error:focus, .accent-light-blue .form-item select:focus, .accent-light-blue .form-item select.error:focus {
+.accent-light-blue .form-item input[type="text"]:focus, .accent-light-blue .form-item input[type="text"].error:focus, .accent-light-blue .form-item input[type="email"]:focus, .accent-light-blue .form-item input[type="email"].error:focus, .accent-light-blue .form-item input[type="password"]:focus, .accent-light-blue .form-item input[type="password"].error:focus, .accent-light-blue .form-item input[type="search"]:focus, .accent-light-blue .form-item input[type="search"].error:focus, .accent-light-blue .form-item input[type="tel"]:focus, .accent-light-blue .form-item input[type="tel"].error:focus, .accent-light-blue .form-item textarea:focus, .accent-light-blue .form-item textarea.error:focus, .accent-light-blue .form-item select:focus, .accent-light-blue .form-item select.error:focus {
   border-color: #40c4ff; }
 
 .accent-light-blue .form-item input[type="checkbox"]:checked:before, .accent-light-blue .form-item input[type="radio"]:checked:before {
@@ -2957,7 +2995,7 @@
 .accent-cyan .form-item .focused label {
   color: #18ffff; }
 
-.accent-cyan .form-item input[type="text"]:focus, .accent-cyan .form-item input[type="text"].error:focus, .accent-cyan .form-item input[type="email"]:focus, .accent-cyan .form-item input[type="email"].error:focus, .accent-cyan .form-item input[type="password"]:focus, .accent-cyan .form-item input[type="password"].error:focus, .accent-cyan .form-item textarea:focus, .accent-cyan .form-item textarea.error:focus, .accent-cyan .form-item select:focus, .accent-cyan .form-item select.error:focus {
+.accent-cyan .form-item input[type="text"]:focus, .accent-cyan .form-item input[type="text"].error:focus, .accent-cyan .form-item input[type="email"]:focus, .accent-cyan .form-item input[type="email"].error:focus, .accent-cyan .form-item input[type="password"]:focus, .accent-cyan .form-item input[type="password"].error:focus, .accent-cyan .form-item input[type="search"]:focus, .accent-cyan .form-item input[type="search"].error:focus, .accent-cyan .form-item input[type="tel"]:focus, .accent-cyan .form-item input[type="tel"].error:focus, .accent-cyan .form-item textarea:focus, .accent-cyan .form-item textarea.error:focus, .accent-cyan .form-item select:focus, .accent-cyan .form-item select.error:focus {
   border-color: #18ffff; }
 
 .accent-cyan .form-item input[type="checkbox"]:checked:before, .accent-cyan .form-item input[type="radio"]:checked:before {
@@ -3049,7 +3087,7 @@
 .accent-teal .form-item .focused label {
   color: #64ffda; }
 
-.accent-teal .form-item input[type="text"]:focus, .accent-teal .form-item input[type="text"].error:focus, .accent-teal .form-item input[type="email"]:focus, .accent-teal .form-item input[type="email"].error:focus, .accent-teal .form-item input[type="password"]:focus, .accent-teal .form-item input[type="password"].error:focus, .accent-teal .form-item textarea:focus, .accent-teal .form-item textarea.error:focus, .accent-teal .form-item select:focus, .accent-teal .form-item select.error:focus {
+.accent-teal .form-item input[type="text"]:focus, .accent-teal .form-item input[type="text"].error:focus, .accent-teal .form-item input[type="email"]:focus, .accent-teal .form-item input[type="email"].error:focus, .accent-teal .form-item input[type="password"]:focus, .accent-teal .form-item input[type="password"].error:focus, .accent-teal .form-item input[type="search"]:focus, .accent-teal .form-item input[type="search"].error:focus, .accent-teal .form-item input[type="tel"]:focus, .accent-teal .form-item input[type="tel"].error:focus, .accent-teal .form-item textarea:focus, .accent-teal .form-item textarea.error:focus, .accent-teal .form-item select:focus, .accent-teal .form-item select.error:focus {
   border-color: #64ffda; }
 
 .accent-teal .form-item input[type="checkbox"]:checked:before, .accent-teal .form-item input[type="radio"]:checked:before {
@@ -3141,7 +3179,7 @@
 .accent-green .form-item .focused label {
   color: #69f0ae; }
 
-.accent-green .form-item input[type="text"]:focus, .accent-green .form-item input[type="text"].error:focus, .accent-green .form-item input[type="email"]:focus, .accent-green .form-item input[type="email"].error:focus, .accent-green .form-item input[type="password"]:focus, .accent-green .form-item input[type="password"].error:focus, .accent-green .form-item textarea:focus, .accent-green .form-item textarea.error:focus, .accent-green .form-item select:focus, .accent-green .form-item select.error:focus {
+.accent-green .form-item input[type="text"]:focus, .accent-green .form-item input[type="text"].error:focus, .accent-green .form-item input[type="email"]:focus, .accent-green .form-item input[type="email"].error:focus, .accent-green .form-item input[type="password"]:focus, .accent-green .form-item input[type="password"].error:focus, .accent-green .form-item input[type="search"]:focus, .accent-green .form-item input[type="search"].error:focus, .accent-green .form-item input[type="tel"]:focus, .accent-green .form-item input[type="tel"].error:focus, .accent-green .form-item textarea:focus, .accent-green .form-item textarea.error:focus, .accent-green .form-item select:focus, .accent-green .form-item select.error:focus {
   border-color: #69f0ae; }
 
 .accent-green .form-item input[type="checkbox"]:checked:before, .accent-green .form-item input[type="radio"]:checked:before {
@@ -3233,7 +3271,7 @@
 .accent-light-green .form-item .focused label {
   color: #b2ff59; }
 
-.accent-light-green .form-item input[type="text"]:focus, .accent-light-green .form-item input[type="text"].error:focus, .accent-light-green .form-item input[type="email"]:focus, .accent-light-green .form-item input[type="email"].error:focus, .accent-light-green .form-item input[type="password"]:focus, .accent-light-green .form-item input[type="password"].error:focus, .accent-light-green .form-item textarea:focus, .accent-light-green .form-item textarea.error:focus, .accent-light-green .form-item select:focus, .accent-light-green .form-item select.error:focus {
+.accent-light-green .form-item input[type="text"]:focus, .accent-light-green .form-item input[type="text"].error:focus, .accent-light-green .form-item input[type="email"]:focus, .accent-light-green .form-item input[type="email"].error:focus, .accent-light-green .form-item input[type="password"]:focus, .accent-light-green .form-item input[type="password"].error:focus, .accent-light-green .form-item input[type="search"]:focus, .accent-light-green .form-item input[type="search"].error:focus, .accent-light-green .form-item input[type="tel"]:focus, .accent-light-green .form-item input[type="tel"].error:focus, .accent-light-green .form-item textarea:focus, .accent-light-green .form-item textarea.error:focus, .accent-light-green .form-item select:focus, .accent-light-green .form-item select.error:focus {
   border-color: #b2ff59; }
 
 .accent-light-green .form-item input[type="checkbox"]:checked:before, .accent-light-green .form-item input[type="radio"]:checked:before {
@@ -3325,7 +3363,7 @@
 .accent-lime .form-item .focused label {
   color: #eeff41; }
 
-.accent-lime .form-item input[type="text"]:focus, .accent-lime .form-item input[type="text"].error:focus, .accent-lime .form-item input[type="email"]:focus, .accent-lime .form-item input[type="email"].error:focus, .accent-lime .form-item input[type="password"]:focus, .accent-lime .form-item input[type="password"].error:focus, .accent-lime .form-item textarea:focus, .accent-lime .form-item textarea.error:focus, .accent-lime .form-item select:focus, .accent-lime .form-item select.error:focus {
+.accent-lime .form-item input[type="text"]:focus, .accent-lime .form-item input[type="text"].error:focus, .accent-lime .form-item input[type="email"]:focus, .accent-lime .form-item input[type="email"].error:focus, .accent-lime .form-item input[type="password"]:focus, .accent-lime .form-item input[type="password"].error:focus, .accent-lime .form-item input[type="search"]:focus, .accent-lime .form-item input[type="search"].error:focus, .accent-lime .form-item input[type="tel"]:focus, .accent-lime .form-item input[type="tel"].error:focus, .accent-lime .form-item textarea:focus, .accent-lime .form-item textarea.error:focus, .accent-lime .form-item select:focus, .accent-lime .form-item select.error:focus {
   border-color: #eeff41; }
 
 .accent-lime .form-item input[type="checkbox"]:checked:before, .accent-lime .form-item input[type="radio"]:checked:before {
@@ -3417,7 +3455,7 @@
 .accent-yellow .form-item .focused label {
   color: #ffff00; }
 
-.accent-yellow .form-item input[type="text"]:focus, .accent-yellow .form-item input[type="text"].error:focus, .accent-yellow .form-item input[type="email"]:focus, .accent-yellow .form-item input[type="email"].error:focus, .accent-yellow .form-item input[type="password"]:focus, .accent-yellow .form-item input[type="password"].error:focus, .accent-yellow .form-item textarea:focus, .accent-yellow .form-item textarea.error:focus, .accent-yellow .form-item select:focus, .accent-yellow .form-item select.error:focus {
+.accent-yellow .form-item input[type="text"]:focus, .accent-yellow .form-item input[type="text"].error:focus, .accent-yellow .form-item input[type="email"]:focus, .accent-yellow .form-item input[type="email"].error:focus, .accent-yellow .form-item input[type="password"]:focus, .accent-yellow .form-item input[type="password"].error:focus, .accent-yellow .form-item input[type="search"]:focus, .accent-yellow .form-item input[type="search"].error:focus, .accent-yellow .form-item input[type="tel"]:focus, .accent-yellow .form-item input[type="tel"].error:focus, .accent-yellow .form-item textarea:focus, .accent-yellow .form-item textarea.error:focus, .accent-yellow .form-item select:focus, .accent-yellow .form-item select.error:focus {
   border-color: #ffff00; }
 
 .accent-yellow .form-item input[type="checkbox"]:checked:before, .accent-yellow .form-item input[type="radio"]:checked:before {
@@ -3509,7 +3547,7 @@
 .accent-amber .form-item .focused label {
   color: #ffd740; }
 
-.accent-amber .form-item input[type="text"]:focus, .accent-amber .form-item input[type="text"].error:focus, .accent-amber .form-item input[type="email"]:focus, .accent-amber .form-item input[type="email"].error:focus, .accent-amber .form-item input[type="password"]:focus, .accent-amber .form-item input[type="password"].error:focus, .accent-amber .form-item textarea:focus, .accent-amber .form-item textarea.error:focus, .accent-amber .form-item select:focus, .accent-amber .form-item select.error:focus {
+.accent-amber .form-item input[type="text"]:focus, .accent-amber .form-item input[type="text"].error:focus, .accent-amber .form-item input[type="email"]:focus, .accent-amber .form-item input[type="email"].error:focus, .accent-amber .form-item input[type="password"]:focus, .accent-amber .form-item input[type="password"].error:focus, .accent-amber .form-item input[type="search"]:focus, .accent-amber .form-item input[type="search"].error:focus, .accent-amber .form-item input[type="tel"]:focus, .accent-amber .form-item input[type="tel"].error:focus, .accent-amber .form-item textarea:focus, .accent-amber .form-item textarea.error:focus, .accent-amber .form-item select:focus, .accent-amber .form-item select.error:focus {
   border-color: #ffd740; }
 
 .accent-amber .form-item input[type="checkbox"]:checked:before, .accent-amber .form-item input[type="radio"]:checked:before {
@@ -3601,7 +3639,7 @@
 .accent-orange .form-item .focused label {
   color: #ffab40; }
 
-.accent-orange .form-item input[type="text"]:focus, .accent-orange .form-item input[type="text"].error:focus, .accent-orange .form-item input[type="email"]:focus, .accent-orange .form-item input[type="email"].error:focus, .accent-orange .form-item input[type="password"]:focus, .accent-orange .form-item input[type="password"].error:focus, .accent-orange .form-item textarea:focus, .accent-orange .form-item textarea.error:focus, .accent-orange .form-item select:focus, .accent-orange .form-item select.error:focus {
+.accent-orange .form-item input[type="text"]:focus, .accent-orange .form-item input[type="text"].error:focus, .accent-orange .form-item input[type="email"]:focus, .accent-orange .form-item input[type="email"].error:focus, .accent-orange .form-item input[type="password"]:focus, .accent-orange .form-item input[type="password"].error:focus, .accent-orange .form-item input[type="search"]:focus, .accent-orange .form-item input[type="search"].error:focus, .accent-orange .form-item input[type="tel"]:focus, .accent-orange .form-item input[type="tel"].error:focus, .accent-orange .form-item textarea:focus, .accent-orange .form-item textarea.error:focus, .accent-orange .form-item select:focus, .accent-orange .form-item select.error:focus {
   border-color: #ffab40; }
 
 .accent-orange .form-item input[type="checkbox"]:checked:before, .accent-orange .form-item input[type="radio"]:checked:before {
@@ -3693,7 +3731,7 @@
 .accent-deep-orange .form-item .focused label {
   color: #ff6e40; }
 
-.accent-deep-orange .form-item input[type="text"]:focus, .accent-deep-orange .form-item input[type="text"].error:focus, .accent-deep-orange .form-item input[type="email"]:focus, .accent-deep-orange .form-item input[type="email"].error:focus, .accent-deep-orange .form-item input[type="password"]:focus, .accent-deep-orange .form-item input[type="password"].error:focus, .accent-deep-orange .form-item textarea:focus, .accent-deep-orange .form-item textarea.error:focus, .accent-deep-orange .form-item select:focus, .accent-deep-orange .form-item select.error:focus {
+.accent-deep-orange .form-item input[type="text"]:focus, .accent-deep-orange .form-item input[type="text"].error:focus, .accent-deep-orange .form-item input[type="email"]:focus, .accent-deep-orange .form-item input[type="email"].error:focus, .accent-deep-orange .form-item input[type="password"]:focus, .accent-deep-orange .form-item input[type="password"].error:focus, .accent-deep-orange .form-item input[type="search"]:focus, .accent-deep-orange .form-item input[type="search"].error:focus, .accent-deep-orange .form-item input[type="tel"]:focus, .accent-deep-orange .form-item input[type="tel"].error:focus, .accent-deep-orange .form-item textarea:focus, .accent-deep-orange .form-item textarea.error:focus, .accent-deep-orange .form-item select:focus, .accent-deep-orange .form-item select.error:focus {
   border-color: #ff6e40; }
 
 .accent-deep-orange .form-item input[type="checkbox"]:checked:before, .accent-deep-orange .form-item input[type="radio"]:checked:before {

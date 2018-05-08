@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /* fonts */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 /* helpful classes */
 .clearfix {
@@ -468,7 +468,7 @@ tr.selected:hover { background: $color-bg-hover; }
   input, textarea, select { border: 0; margin: 0; background: none; outline: 0; appearance: none; border-radius: 0;
     color: $color-text; font-family: $font-family; font-size: 16px;
   }
-  input[type="text"], input[type="email"], input[type="password"], textarea, select { display: block; width: 100%; max-width: 460px; border-bottom: 1px solid $color-divider; padding: 8px 0;
+  input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="tel"], textarea, select { display: block; width: 100%; max-width: 460px; border-bottom: 1px solid $color-divider; padding: 8px 0;
     &:focus, &.error:focus { border-bottom: 2px solid $color-accent; padding-bottom: 7px; }
     &.error { border-bottom: 2px solid color($red); padding: 8px 0 7px; }
     &::placeholder { color: $color-text-disabled; }

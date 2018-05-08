@@ -92,7 +92,7 @@
     &.focused label { color: $color-accent-light }
     input, textarea, select { color: $color-text-light; }
     select option { color: $color-text; }
-    input[type="text"], input[type="email"], input[type="password"], textarea, select { border-bottom-color: $color-light-divider;
+    input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="tel"], textarea, select { border-bottom-color: $color-light-divider;
       &:focus, &.error:focus { border-bottom-color: $color-accent-light }
       &::placeholder { color: $color-text-light-disabled; }
     }
