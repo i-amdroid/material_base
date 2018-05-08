@@ -1,11 +1,11 @@
 (function ($) {
-  $(document).ready(function() {
+  $(document).ready(function () {
 
     //form-item focused
-    $('.form-item > *').focus(function() {
+    $('.form-item > *').focus(function () {
       $(this).parent().addClass('focused');
     });
-    $('.form-item > *').blur(function() {
+    $('.form-item > *').blur(function () {
       $(this).parent().removeClass('focused');
     });
 
@@ -17,7 +17,7 @@
     var navbar = $('.navbar-fixed #navbar');
     var headerBgHeight = headerHeight - 192;
 
-    $(document).scroll(function(e){
+    $(document).scroll(function (e) {
       var scrollPercent = (headerBgHeight - window.scrollY) / headerBgHeight;
       if (scrollPercent >= 0) {
         headerBg.css('opacity', scrollPercent);
@@ -37,28 +37,28 @@
     });
 
     // drawer
-    $('#navbar-menu-toggle').click(function(e) {
+    $('#navbar-menu-toggle').click(function (e) {
       $('body').addClass('drawer-open');
       e.stopPropagation();
       e.preventDefault();
     });
 
-    $('#drawer-overlay').click(function(e) {
+    $('#drawer-overlay').click(function (e) {
       $('body').removeClass('drawer-open');
     });
 
-    $('#drawer-menu-close').click(function(e) {
+    $('#drawer-menu-close').click(function (e) {
       $('body').removeClass('drawer-open');
       e.stopPropagation();
       e.preventDefault();
     });
 
     // jquery touch events https://github.com/benmajor/jQuery-Touch-Events
-    $('#drawer').swipeleft(function() {
+    $('#drawer').swipeleft(function () {
       $('body').removeClass('drawer-open');
     });
 
-    $('#drawer-overlay').swipeleft(function() {
+    $('#drawer-overlay').swipeleft(function () {
       $('body').removeClass('drawer-open');
     });
 
@@ -77,7 +77,7 @@
       }
     }
 
-    $('a[href^="#"]:not([href="#"])').on('click', function(e) {
+    $('a[href^="#"]:not([href="#"])').on('click', function (e) {
       e.preventDefault();
       var target = this.hash;
       var $target = $(target);
@@ -94,7 +94,7 @@
     });
 
     var pathname = window.location.pathname;
-    $('a[href^="' + pathname + '#"]').on('click', function(e) {
+    $('a[href^="' + pathname + '#"]').on('click', function (e) {
       e.preventDefault();
       var target = this.hash;
       var $target = $(target);
@@ -111,21 +111,21 @@
     });
 
     // collapsible panels
-    $('.collapsible-toggle').click(function() {
+    $('.collapsible-toggle').click(function () {
       var target = '#'.concat($(this).attr('data-target'));
       $(target).slideToggle('fast');
       $(this).toggleClass('expanded');
     });
 
     // tootips
-    $('.tooltip').hover(function() {
+    $('.tooltip').hover(function () {
       $(this).addClass('tooltip-expanded');
     }, function() {
       $(this).removeClass('tooltip-expanded');
     });
 
     // dropdown menus
-    $('.menu-dropdown-toggle').click(function(e) {
+    $('.menu-dropdown-toggle').click(function (e) {
       $(this).removeClass('tooltip-expanded');
       $(this).find('.tooltip').removeClass('tooltip-expanded');
       var target = '#'.concat($(this).attr('data-target'));
@@ -135,9 +135,9 @@
       e.preventDefault();
     });
 
-    $(document).click(function(){
+    $(document).click(function () {
       $('.menu-dropdown').slideUp('fast');
     });
 
   });
-})(jQuery);
+}(jQuery));

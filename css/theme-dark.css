@@ -144,6 +144,8 @@
       color: rgba(255, 255, 255, 0.3); }
     .theme-dark .form-item input[type="text"]:-ms-input-placeholder, .theme-dark .form-item input[type="email"]:-ms-input-placeholder, .theme-dark .form-item input[type="password"]:-ms-input-placeholder, .theme-dark .form-item input[type="search"]:-ms-input-placeholder, .theme-dark .form-item input[type="tel"]:-ms-input-placeholder, .theme-dark .form-item textarea:-ms-input-placeholder, .theme-dark .form-item select:-ms-input-placeholder {
       color: rgba(255, 255, 255, 0.3); }
+    .theme-dark .form-item input[type="text"]::-ms-input-placeholder, .theme-dark .form-item input[type="email"]::-ms-input-placeholder, .theme-dark .form-item input[type="password"]::-ms-input-placeholder, .theme-dark .form-item input[type="search"]::-ms-input-placeholder, .theme-dark .form-item input[type="tel"]::-ms-input-placeholder, .theme-dark .form-item textarea::-ms-input-placeholder, .theme-dark .form-item select::-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.3); }
     .theme-dark .form-item input[type="text"]::placeholder, .theme-dark .form-item input[type="email"]::placeholder, .theme-dark .form-item input[type="password"]::placeholder, .theme-dark .form-item input[type="search"]::placeholder, .theme-dark .form-item input[type="tel"]::placeholder, .theme-dark .form-item textarea::placeholder, .theme-dark .form-item select::placeholder {
       color: rgba(255, 255, 255, 0.3); }
   .theme-dark .form-item input[type="radio"], .theme-dark .form-item input[type="checkbox"] {
@@ -190,6 +192,8 @@
     .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder, .theme-dark .block-search.search-persistent form input[type="search"]::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
     .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder, .theme-dark .block-search.search-persistent form input[type="search"]:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-ms-input-placeholder, .theme-dark .block-search.search-persistent form input[type="search"]::-ms-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
     .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::placeholder, .theme-dark .block-search.search-persistent form input[type="search"]::placeholder {
       color: rgba(0, 0, 0, 0.26); }
