@@ -82,7 +82,7 @@ ol ul, ol ol, ul ol, ul ul { margin-top: 0; margin-bottom: 0; }
 table { width: 100%; margin-top: 16px; margin-bottom: 16px; border-collapse: collapse; background: $color-bg-card; }
 tr { border-bottom: 1px solid #e0e0e0; }
 tbody tr:last-child { border-bottom: 0; }
-th, td { padding: 12px 12px; }
+th, td { padding: 12px; }
 th:first-child, td:first-child { padding-left: 16px; }
 th:last-child, td:last-child { padding-right: 16px; }
 th { font-weight: 500; color: $color-text-secondary; text-align: left; }

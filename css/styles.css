@@ -385,7 +385,7 @@ tbody tr:last-child {
   border-bottom: 0; }
 
 th, td {
-  padding: 12px 12px; }
+  padding: 12px; }
 
 th:first-child, td:first-child {
   padding-left: 16px; }
