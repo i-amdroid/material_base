@@ -2981,3 +2981,8 @@ ul.messages-list {
     text-align: center;
     max-width: 320px;
     padding: 12px; }
+
+/* comments and other text inputs */
+.js-text-format-wrapper.form-item .form-type-textarea {
+  margin-top: 0;
+  margin-bottom: 0; }

@@ -1115,3 +1115,6 @@ ul.messages-list { padding-left: 24px; } // D7
   }
   .maintenance-info { text-align: center; max-width: 320px; padding: 12px; }
 } // CTV
+
+/* comments and other text inputs */
+.js-text-format-wrapper.form-item .form-type-textarea { margin-top: 0; margin-bottom: 0; }
