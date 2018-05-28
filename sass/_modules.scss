@@ -114,6 +114,7 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 .full-height, .row.full-height > div { display: flex; justify-content: center; }
 
 .rippleAnimate { background-color: rgba(#000, 0.3); }
+.rippleWrap { pointer-events: none; }
 
 .card-holder { margin-top: 24px; margin-bottom: 24px; }
 
