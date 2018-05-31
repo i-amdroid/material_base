@@ -1119,3 +1119,8 @@ ul.messages-list { padding-left: 24px; } // D7
 
 /* comments and other text inputs */
 .js-text-format-wrapper.form-item .form-type-textarea { margin-top: 0; margin-bottom: 0; }
+
+/* nested comments */
+.indented {
+  margin-left: 40px;
+}

@@ -2989,3 +2989,7 @@ ul.messages-list {
 .js-text-format-wrapper.form-item .form-type-textarea {
   margin-top: 0;
   margin-bottom: 0; }
+
+/* nested comments */
+.indented {
+  margin-left: 40px; }
