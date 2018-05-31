@@ -2993,3 +2993,17 @@ ul.messages-list {
 /* nested comments */
 .indented {
   margin-left: 40px; }
+
+/* comment mark */
+.js-comment mark {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 1px 12px;
+  height: 24px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  background: #607d8b;
+  color: #FFF; }
+  .js-comment mark.hidden {
+    display: none; }

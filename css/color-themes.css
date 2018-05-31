@@ -105,6 +105,10 @@
 .primary-red .pager .pager-item.item-current > a, .primary-red .pager .pager-item.item-current > span {
   color: #e53935; }
 
+.primary-red .js-comment mark {
+  background: #f44336;
+  color: #FFF; }
+
 .primary-red.theme-dark .text-primary, .primary-red.theme-dark a.text-primary, .primary-red.theme-dark a.text-primary:hover, .primary-red.theme-dark a.text-primary:focus {
   color: #ef5350; }
 
@@ -228,6 +232,10 @@
 
 .primary-pink .pager .pager-item.item-current > a, .primary-pink .pager .pager-item.item-current > span {
   color: #d81b60; }
+
+.primary-pink .js-comment mark {
+  background: #e91e63;
+  color: #FFF; }
 
 .primary-pink.theme-dark .text-primary, .primary-pink.theme-dark a.text-primary, .primary-pink.theme-dark a.text-primary:hover, .primary-pink.theme-dark a.text-primary:focus {
   color: #ec407a; }
@@ -353,6 +361,10 @@
 .primary-purple .pager .pager-item.item-current > a, .primary-purple .pager .pager-item.item-current > span {
   color: #8e24aa; }
 
+.primary-purple .js-comment mark {
+  background: #9c27b0;
+  color: #FFF; }
+
 .primary-purple.theme-dark .text-primary, .primary-purple.theme-dark a.text-primary, .primary-purple.theme-dark a.text-primary:hover, .primary-purple.theme-dark a.text-primary:focus {
   color: #ab47bc; }
 
@@ -476,6 +488,10 @@
 
 .primary-deep-purple .pager .pager-item.item-current > a, .primary-deep-purple .pager .pager-item.item-current > span {
   color: #5e35b1; }
+
+.primary-deep-purple .js-comment mark {
+  background: #673ab7;
+  color: #FFF; }
 
 .primary-deep-purple.theme-dark .text-primary, .primary-deep-purple.theme-dark a.text-primary, .primary-deep-purple.theme-dark a.text-primary:hover, .primary-deep-purple.theme-dark a.text-primary:focus {
   color: #7e57c2; }
@@ -601,6 +617,10 @@
 .primary-indigo .pager .pager-item.item-current > a, .primary-indigo .pager .pager-item.item-current > span {
   color: #3949ab; }
 
+.primary-indigo .js-comment mark {
+  background: #3f51b5;
+  color: #FFF; }
+
 .primary-indigo.theme-dark .text-primary, .primary-indigo.theme-dark a.text-primary, .primary-indigo.theme-dark a.text-primary:hover, .primary-indigo.theme-dark a.text-primary:focus {
   color: #5c6bc0; }
 
@@ -724,6 +744,10 @@
 
 .primary-blue .pager .pager-item.item-current > a, .primary-blue .pager .pager-item.item-current > span {
   color: #1e88e5; }
+
+.primary-blue .js-comment mark {
+  background: #2196f3;
+  color: rgba(0, 0, 0, 0.87); }
 
 .primary-blue.theme-dark .text-primary, .primary-blue.theme-dark a.text-primary, .primary-blue.theme-dark a.text-primary:hover, .primary-blue.theme-dark a.text-primary:focus {
   color: #42a5f5; }
@@ -849,6 +873,10 @@
 .primary-light-blue .pager .pager-item.item-current > a, .primary-light-blue .pager .pager-item.item-current > span {
   color: #039be5; }
 
+.primary-light-blue .js-comment mark {
+  background: #03a9f4;
+  color: rgba(0, 0, 0, 0.87); }
+
 .primary-light-blue.theme-dark .text-primary, .primary-light-blue.theme-dark a.text-primary, .primary-light-blue.theme-dark a.text-primary:hover, .primary-light-blue.theme-dark a.text-primary:focus {
   color: #29b6f6; }
 
@@ -972,6 +1000,10 @@
 
 .primary-cyan .pager .pager-item.item-current > a, .primary-cyan .pager .pager-item.item-current > span {
   color: #00acc1; }
+
+.primary-cyan .js-comment mark {
+  background: #00bcd4;
+  color: rgba(0, 0, 0, 0.87); }
 
 .primary-cyan.theme-dark .text-primary, .primary-cyan.theme-dark a.text-primary, .primary-cyan.theme-dark a.text-primary:hover, .primary-cyan.theme-dark a.text-primary:focus {
   color: #26c6da; }
@@ -1097,6 +1129,10 @@
 .primary-teal .pager .pager-item.item-current > a, .primary-teal .pager .pager-item.item-current > span {
   color: #00897b; }
 
+.primary-teal .js-comment mark {
+  background: #009688;
+  color: #FFF; }
+
 .primary-teal.theme-dark .text-primary, .primary-teal.theme-dark a.text-primary, .primary-teal.theme-dark a.text-primary:hover, .primary-teal.theme-dark a.text-primary:focus {
   color: #26a69a; }
 
@@ -1220,6 +1256,10 @@
 
 .primary-green .pager .pager-item.item-current > a, .primary-green .pager .pager-item.item-current > span {
   color: #43a047; }
+
+.primary-green .js-comment mark {
+  background: #4caf50;
+  color: #FFF; }
 
 .primary-green.theme-dark .text-primary, .primary-green.theme-dark a.text-primary, .primary-green.theme-dark a.text-primary:hover, .primary-green.theme-dark a.text-primary:focus {
   color: #66bb6a; }
@@ -1345,6 +1385,10 @@
 .primary-light-green .pager .pager-item.item-current > a, .primary-light-green .pager .pager-item.item-current > span {
   color: #7cb342; }
 
+.primary-light-green .js-comment mark {
+  background: #8bc34a;
+  color: rgba(0, 0, 0, 0.87); }
+
 .primary-light-green.theme-dark .text-primary, .primary-light-green.theme-dark a.text-primary, .primary-light-green.theme-dark a.text-primary:hover, .primary-light-green.theme-dark a.text-primary:focus {
   color: #9ccc65; }
 
@@ -1468,6 +1512,10 @@
 
 .primary-lime .pager .pager-item.item-current > a, .primary-lime .pager .pager-item.item-current > span {
   color: #c0ca33; }
+
+.primary-lime .js-comment mark {
+  background: #cddc39;
+  color: rgba(0, 0, 0, 0.87); }
 
 .primary-lime.theme-dark .text-primary, .primary-lime.theme-dark a.text-primary, .primary-lime.theme-dark a.text-primary:hover, .primary-lime.theme-dark a.text-primary:focus {
   color: #d4e157; }
@@ -1593,6 +1641,10 @@
 .primary-yellow .pager .pager-item.item-current > a, .primary-yellow .pager .pager-item.item-current > span {
   color: #fdd835; }
 
+.primary-yellow .js-comment mark {
+  background: #ffeb3b;
+  color: rgba(0, 0, 0, 0.87); }
+
 .primary-yellow.theme-dark .text-primary, .primary-yellow.theme-dark a.text-primary, .primary-yellow.theme-dark a.text-primary:hover, .primary-yellow.theme-dark a.text-primary:focus {
   color: #ffee58; }
 
@@ -1716,6 +1768,10 @@
 
 .primary-amber .pager .pager-item.item-current > a, .primary-amber .pager .pager-item.item-current > span {
   color: #ffb300; }
+
+.primary-amber .js-comment mark {
+  background: #ffc107;
+  color: rgba(0, 0, 0, 0.87); }
 
 .primary-amber.theme-dark .text-primary, .primary-amber.theme-dark a.text-primary, .primary-amber.theme-dark a.text-primary:hover, .primary-amber.theme-dark a.text-primary:focus {
   color: #ffca28; }
@@ -1841,6 +1897,10 @@
 .primary-orange .pager .pager-item.item-current > a, .primary-orange .pager .pager-item.item-current > span {
   color: #fb8c00; }
 
+.primary-orange .js-comment mark {
+  background: #ff9800;
+  color: rgba(0, 0, 0, 0.87); }
+
 .primary-orange.theme-dark .text-primary, .primary-orange.theme-dark a.text-primary, .primary-orange.theme-dark a.text-primary:hover, .primary-orange.theme-dark a.text-primary:focus {
   color: #ffa726; }
 
@@ -1964,6 +2024,10 @@
 
 .primary-deep-orange .pager .pager-item.item-current > a, .primary-deep-orange .pager .pager-item.item-current > span {
   color: #f4511e; }
+
+.primary-deep-orange .js-comment mark {
+  background: #ff5722;
+  color: #FFF; }
 
 .primary-deep-orange.theme-dark .text-primary, .primary-deep-orange.theme-dark a.text-primary, .primary-deep-orange.theme-dark a.text-primary:hover, .primary-deep-orange.theme-dark a.text-primary:focus {
   color: #ff7043; }
@@ -2089,6 +2153,10 @@
 .primary-brown .pager .pager-item.item-current > a, .primary-brown .pager .pager-item.item-current > span {
   color: #6d4c41; }
 
+.primary-brown .js-comment mark {
+  background: #795548;
+  color: #FFF; }
+
 .primary-brown.theme-dark .text-primary, .primary-brown.theme-dark a.text-primary, .primary-brown.theme-dark a.text-primary:hover, .primary-brown.theme-dark a.text-primary:focus {
   color: #8d6e63; }
 
@@ -2213,6 +2281,10 @@
 .primary-grey .pager .pager-item.item-current > a, .primary-grey .pager .pager-item.item-current > span {
   color: #757575; }
 
+.primary-grey .js-comment mark {
+  background: #9e9e9e;
+  color: rgba(0, 0, 0, 0.87); }
+
 .primary-grey.theme-dark .text-primary, .primary-grey.theme-dark a.text-primary, .primary-grey.theme-dark a.text-primary:hover, .primary-grey.theme-dark a.text-primary:focus {
   color: #bdbdbd; }
 
@@ -2336,6 +2408,10 @@
 
 .primary-blue-grey .pager .pager-item.item-current > a, .primary-blue-grey .pager .pager-item.item-current > span {
   color: #546e7a; }
+
+.primary-blue-grey .js-comment mark {
+  background: #607d8b;
+  color: #FFF; }
 
 .primary-blue-grey.theme-dark .text-primary, .primary-blue-grey.theme-dark a.text-primary, .primary-blue-grey.theme-dark a.text-primary:hover, .primary-blue-grey.theme-dark a.text-primary:focus {
   color: #78909c; }

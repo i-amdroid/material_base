@@ -1124,3 +1124,11 @@ ul.messages-list { padding-left: 24px; } // D7
 .indented {
   margin-left: 40px;
 }
+
+/* comment mark */
+.js-comment {
+  mark { display: inline-block; font-size: 14px; line-height: 22px; padding: 1px 12px; height: 24px; border-radius: 2px; margin-bottom: 8px;
+    background: $color-primary; color: contrast-color($color-primary);
+    &.hidden { display: none; }
+  } // CTV
+}

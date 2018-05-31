@@ -102,6 +102,7 @@ $accent-colors: (
         & > a, & > span { color: color($color-value, 600); }
       }
     }
+    .js-comment mark { background: color($color-value); color: contrast-color(color($color-value)); }
     &.theme-dark {
       .text-primary, a.text-primary, a.text-primary:hover, a.text-primary:focus { color: color($color-value, 400); }
       .btn-colored, .btn-colored:hover, .btn-colored:focus,
