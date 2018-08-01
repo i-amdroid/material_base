@@ -820,10 +820,12 @@ pre {
   .one-sidebar #sidebar-first {
     order: 1;
     flex: 0 0 240px;
+    width: 240px;
     margin-right: 24px; }
   .one-sidebar #sidebar-second {
     order: 3;
     flex: 0 0 240px;
+    width: 240px;
     margin-left: 24px; }
   .two-sidebars #main {
     display: block; }

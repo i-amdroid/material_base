@@ -287,8 +287,8 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
   .two-sidebars {
     #main { display: flex; flex-wrap: wrap; }
     #main-content { flex: 0 0 auto; width: 100%; }
-    #sidebar-first { flex: 0 0 auto; margin-right: $gutter / 2; width: calc(50% - 12px); }
-    #sidebar-second { flex: 0 0 auto; margin-left: $gutter / 2; width: calc(50% - 12px); }
+    #sidebar-first { flex: 0 0 auto; margin-right: $gutter / 2; width: calc(50% - #{$gutter / 2}); }
+    #sidebar-second { flex: 0 0 auto; margin-left: $gutter / 2; width: calc(50% - #{$gutter / 2}); }
   }
 }
 
@@ -298,15 +298,15 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
   .no-sidebars.wide-two-side .container { width: auto; }
   .one-sidebar {
     #main { display: flex; }
-    #main-content { order: 2; flex: 0 0 auto; width: calc(100% - 264px); }
-    #sidebar-first { order: 1; flex: 0 0 $sidebar; margin-right: $gutter; }
-    #sidebar-second { order: 3; flex: 0 0 $sidebar; margin-left: $gutter; }
+    #main-content { order: 2; flex: 0 0 auto; width: calc(100% - #{$sidebar + $gutter}); }
+    #sidebar-first { order: 1; flex: 0 0 $sidebar; width: $sidebar; margin-right: $gutter; }
+    #sidebar-second { order: 3; flex: 0 0 $sidebar; width: $sidebar; margin-left: $gutter; }
   }
   .two-sidebars {
     #main { display: block; }
-    #main-content { width: calc(100% - 264px); float: right; }
+    #main-content { width: calc(100% - #{$sidebar + $gutter}); float: right; }
     #sidebar-first { width: $sidebar; margin-right: $gutter; float: left; }
-    #sidebar-second { width: calc(100% - 264px); float: right; }
+    #sidebar-second { width: calc(100% - #{$sidebar + $gutter}); float: right; }
   }
 }
 
@@ -316,7 +316,7 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
   .one-sidebar.wide-two-side .container { width: auto; }
   .two-sidebars {
     #main { display: flex; flex-wrap: nowrap; }
-    #main-content { order: 2; flex: 0 0 auto; width: calc(100% - 528px); }
+    #main-content { order: 2; flex: 0 0 auto; width: calc(100% - #{$sidebar * 2 + $gutter * 2}); }
     #sidebar-first { order: 1; flex: 0 0 $sidebar; margin-right: $gutter; }
     #sidebar-second { order: 3; flex: 0 0 $sidebar; width: $sidebar; margin-left: $gutter; }
   }
