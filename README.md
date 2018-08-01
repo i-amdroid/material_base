@@ -9,7 +9,7 @@ Base theme inspirited by [Material Design](https://material.io/) concept from Go
 Demo
 -------------
 
-[mb.4dx.pw](http://mb.4dx.pw/)
+[mb.4dd.pw](https://mb.4dd.pw/)
 
 Requirements
 ------------
@@ -26,7 +26,7 @@ Installation
 Documentation
 -------------
 
- * Official project page - [mb.4dx.pw](http://mb.4dx.pw/)
+ * Official project page - [mb.4dd.pw](https://mb.4dd.pw/)
 
 Technologies
 ------------
