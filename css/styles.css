@@ -59,7 +59,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   clear: both; }
 
 .material-icons, .breadcrumb .delimiter:before, .info:before, .important:before, .messages-status:before, .messages-warning:before, .messages-error:before, .form-item input[type="checkbox"]:before, .form-item input[type="radio"]:before, .form-item.form-type-select:after, .navbar-account-menu .menu a:before, .sidebar .menu .collapsed > a:after, .sidebar .menu .expanded > a:after, .collapsible-toggle:before, .pager .pager-item.item-first > a:before, .pager .pager-item.item-first > span:before, .pager .pager-item.item-previous > a:before, .pager .pager-item.item-previous > span:before, .pager .pager-item.item-ellipsis > a:before, .pager .pager-item.item-ellipsis > span:before, .pager .pager-item.item-next > a:before, .pager .pager-item.item-next > span:before, .pager .pager-item.item-last > a:before, .pager .pager-item.item-last > span:before {
-  font-family: 'Material Icons';
+  font-family: 'Material Icons', 'Material Icons Local';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -173,12 +173,12 @@ article .content blockquote {
 p {
   margin-bottom: 8px; }
 
-p.icon-left, p.services-icon-left {
+p.icon-left, p.services-icon-left, p.filetypes-icon-left {
   padding-left: 36px; }
-  p.icon-left:before, p.services-icon-left:before {
+  p.icon-left:before, p.services-icon-left:before, p.filetypes-icon-left:before {
     margin-left: -36px; }
 
-p .material-icons, p .breadcrumb .delimiter:before, .breadcrumb p .delimiter:before, p .info:before, p .important:before, p .messages-status:before, p .messages-warning:before, p .messages-error:before, p .form-item input[type="checkbox"]:before, .form-item p input[type="checkbox"]:before, p .form-item input[type="radio"]:before, .form-item p input[type="radio"]:before, p .form-item.form-type-select:after, p .navbar-account-menu .menu a:before, .navbar-account-menu .menu p a:before, p .sidebar .menu .collapsed > a:after, .sidebar .menu p .collapsed > a:after, p .sidebar .menu .expanded > a:after, .sidebar .menu p .expanded > a:after, p .collapsible-toggle:before, p .pager .pager-item.item-first > a:before, .pager p .pager-item.item-first > a:before, p .pager .pager-item.item-first > span:before, .pager p .pager-item.item-first > span:before, p .pager .pager-item.item-previous > a:before, .pager p .pager-item.item-previous > a:before, p .pager .pager-item.item-previous > span:before, .pager p .pager-item.item-previous > span:before, p .pager .pager-item.item-ellipsis > a:before, .pager p .pager-item.item-ellipsis > a:before, p .pager .pager-item.item-ellipsis > span:before, .pager p .pager-item.item-ellipsis > span:before, p .pager .pager-item.item-next > a:before, .pager p .pager-item.item-next > a:before, p .pager .pager-item.item-next > span:before, .pager p .pager-item.item-next > span:before, p .pager .pager-item.item-last > a:before, .pager p .pager-item.item-last > a:before, p .pager .pager-item.item-last > span:before, .pager p .pager-item.item-last > span:before, p .services-icons,
+p .material-icons, p .breadcrumb .delimiter:before, .breadcrumb p .delimiter:before, p .info:before, p .important:before, p .messages-status:before, p .messages-warning:before, p .messages-error:before, p .form-item input[type="checkbox"]:before, .form-item p input[type="checkbox"]:before, p .form-item input[type="radio"]:before, .form-item p input[type="radio"]:before, p .form-item.form-type-select:after, p .navbar-account-menu .menu a:before, .navbar-account-menu .menu p a:before, p .sidebar .menu .collapsed > a:after, .sidebar .menu p .collapsed > a:after, p .sidebar .menu .expanded > a:after, .sidebar .menu p .expanded > a:after, p .collapsible-toggle:before, p .pager .pager-item.item-first > a:before, .pager p .pager-item.item-first > a:before, p .pager .pager-item.item-first > span:before, .pager p .pager-item.item-first > span:before, p .pager .pager-item.item-previous > a:before, .pager p .pager-item.item-previous > a:before, p .pager .pager-item.item-previous > span:before, .pager p .pager-item.item-previous > span:before, p .pager .pager-item.item-ellipsis > a:before, .pager p .pager-item.item-ellipsis > a:before, p .pager .pager-item.item-ellipsis > span:before, .pager p .pager-item.item-ellipsis > span:before, p .pager .pager-item.item-next > a:before, .pager p .pager-item.item-next > a:before, p .pager .pager-item.item-next > span:before, .pager p .pager-item.item-next > span:before, p .pager .pager-item.item-last > a:before, .pager p .pager-item.item-last > a:before, p .pager .pager-item.item-last > span:before, .pager p .pager-item.item-last > span:before, p .services-icons, p .filetypes-icons,
 ul:not(.menu) li .material-icons,
 ul:not(.menu) li .breadcrumb .delimiter:before,
 .breadcrumb ul:not(.menu) li .delimiter:before,
@@ -220,6 +220,7 @@ ul:not(.menu) li .pager .pager-item.item-last > a:before,
 ul:not(.menu) li .pager .pager-item.item-last > span:before,
 .pager ul:not(.menu) li .pager-item.item-last > span:before,
 ul:not(.menu) li .services-icons,
+ul:not(.menu) li .filetypes-icons,
 .btn .material-icons,
 .pager .pager-item > a .material-icons,
 .pager .pager-item > span .material-icons,
@@ -319,17 +320,17 @@ ul:not(.menu) li .services-icons,
 .btn .pager .pager-item.item-last > span:before,
 .pager .btn .pager-item.item-last > span:before,
 .pager .pager-item > a .pager-item.item-last > span:before,
-.pager .pager-item > span .pager-item.item-last > span:before, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons {
+.pager .pager-item > span .pager-item.item-last > span:before, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons, .btn .filetypes-icons, .pager .pager-item > a .filetypes-icons, .pager .pager-item > span .filetypes-icons {
   vertical-align: -30%; }
 
-p a.icon-left:not(.btn), p a.services-icon-left:not(.btn), ul:not(.menu) li a.icon-left:not(.btn), ul:not(.menu) li a.services-icon-left:not(.btn), td a.icon-left:not(.btn), td a.services-icon-left:not(.btn), th a.icon-left:not(.btn), th a.services-icon-left:not(.btn) {
+p a.icon-left:not(.btn), p a.services-icon-left:not(.btn), p a.filetypes-icon-left:not(.btn), ul:not(.menu) li a.icon-left:not(.btn), ul:not(.menu) li a.services-icon-left:not(.btn), ul:not(.menu) li a.filetypes-icon-left:not(.btn), td a.icon-left:not(.btn), td a.services-icon-left:not(.btn), td a.filetypes-icon-left:not(.btn), th a.icon-left:not(.btn), th a.services-icon-left:not(.btn), th a.filetypes-icon-left:not(.btn) {
   display: inline-block; }
-  p a.icon-left:not(.btn):before, p a.services-icon-left:not(.btn):before, ul:not(.menu) li a.icon-left:not(.btn):before, ul:not(.menu) li a.services-icon-left:not(.btn):before, td a.icon-left:not(.btn):before, td a.services-icon-left:not(.btn):before, th a.icon-left:not(.btn):before, th a.services-icon-left:not(.btn):before {
+  p a.icon-left:not(.btn):before, p a.services-icon-left:not(.btn):before, p a.filetypes-icon-left:not(.btn):before, ul:not(.menu) li a.icon-left:not(.btn):before, ul:not(.menu) li a.services-icon-left:not(.btn):before, ul:not(.menu) li a.filetypes-icon-left:not(.btn):before, td a.icon-left:not(.btn):before, td a.services-icon-left:not(.btn):before, td a.filetypes-icon-left:not(.btn):before, th a.icon-left:not(.btn):before, th a.services-icon-left:not(.btn):before, th a.filetypes-icon-left:not(.btn):before {
     margin-right: 4px; }
 
-p a.icon-right:not(.btn), p a.services-icon-right:not(.btn), ul:not(.menu) li a.icon-right:not(.btn), ul:not(.menu) li a.services-icon-right:not(.btn), td a.icon-right:not(.btn), td a.services-icon-right:not(.btn), th a.icon-right:not(.btn), th a.services-icon-right:not(.btn) {
+p a.icon-right:not(.btn), p a.services-icon-right:not(.btn), p a.filetypes-icon-right:not(.btn), ul:not(.menu) li a.icon-right:not(.btn), ul:not(.menu) li a.services-icon-right:not(.btn), ul:not(.menu) li a.filetypes-icon-right:not(.btn), td a.icon-right:not(.btn), td a.services-icon-right:not(.btn), td a.filetypes-icon-right:not(.btn), th a.icon-right:not(.btn), th a.services-icon-right:not(.btn), th a.filetypes-icon-right:not(.btn) {
   display: inline-block; }
-  p a.icon-right:not(.btn):after, p a.services-icon-right:not(.btn):after, ul:not(.menu) li a.icon-right:not(.btn):after, ul:not(.menu) li a.services-icon-right:not(.btn):after, td a.icon-right:not(.btn):after, td a.services-icon-right:not(.btn):after, th a.icon-right:not(.btn):after, th a.services-icon-right:not(.btn):after {
+  p a.icon-right:not(.btn):after, p a.services-icon-right:not(.btn):after, p a.filetypes-icon-right:not(.btn):after, ul:not(.menu) li a.icon-right:not(.btn):after, ul:not(.menu) li a.services-icon-right:not(.btn):after, ul:not(.menu) li a.filetypes-icon-right:not(.btn):after, td a.icon-right:not(.btn):after, td a.services-icon-right:not(.btn):after, td a.filetypes-icon-right:not(.btn):after, th a.icon-right:not(.btn):after, th a.services-icon-right:not(.btn):after, th a.filetypes-icon-right:not(.btn):after {
     margin-left: 4px; }
 
 strong {
@@ -1048,7 +1049,10 @@ pre {
   margin-top: -2px;
   margin-bottom: -2px; }
 
-.btn.services-icon-left:before, .pager .pager-item > a.services-icon-left:before, .pager .pager-item > span.services-icon-left:before, .btn.services-icon-right:after, .pager .pager-item > a.services-icon-right:after, .pager .pager-item > span.services-icon-right:after, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons {
+.btn.services-icon-left:before, .pager .pager-item > a.services-icon-left:before, .pager .pager-item > span.services-icon-left:before, .btn.services-icon-right:after, .pager .pager-item > a.services-icon-right:after, .pager .pager-item > span.services-icon-right:after, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons,
+.btn.filetypes-icon-left:before,
+.pager .pager-item > a.filetypes-icon-left:before,
+.pager .pager-item > span.filetypes-icon-left:before, .btn.filetypes-icon-right:after, .pager .pager-item > a.filetypes-icon-right:after, .pager .pager-item > span.filetypes-icon-right:after, .btn .filetypes-icons, .pager .pager-item > a .filetypes-icons, .pager .pager-item > span .filetypes-icons {
   margin-top: -2px;
   margin-bottom: -1px; }
 
@@ -1152,7 +1156,10 @@ pre {
 .btn .pager .pager-item.item-last > span:before,
 .pager .btn .pager-item.item-last > span:before,
 .pager .pager-item > a .pager-item.item-last > span:before,
-.pager .pager-item > span .pager-item.item-last > span:before, .btn.services-icon-left:before, .pager .pager-item > a.services-icon-left:before, .pager .pager-item > span.services-icon-left:before, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons {
+.pager .pager-item > span .pager-item.item-last > span:before, .btn.services-icon-left:before, .pager .pager-item > a.services-icon-left:before, .pager .pager-item > span.services-icon-left:before, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons,
+.btn.filetypes-icon-left:before,
+.pager .pager-item > a.filetypes-icon-left:before,
+.pager .pager-item > span.filetypes-icon-left:before, .btn .filetypes-icons, .pager .pager-item > a .filetypes-icons, .pager .pager-item > span .filetypes-icons {
   margin-left: -2px; }
 
 .btn.icon-right:after, .pager .pager-item > a.icon-right:after, .pager .pager-item > span.icon-right:after,
@@ -1255,10 +1262,10 @@ pre {
 .btn .pager .pager-item.item-last > span:before,
 .pager .btn .pager-item.item-last > span:before,
 .pager .pager-item > a .pager-item.item-last > span:before,
-.pager .pager-item > span .pager-item.item-last > span:before, .btn.services-icon-right:after, .pager .pager-item > a.services-icon-right:after, .pager .pager-item > span.services-icon-right:after, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons {
+.pager .pager-item > span .pager-item.item-last > span:before, .btn.services-icon-right:after, .pager .pager-item > a.services-icon-right:after, .pager .pager-item > span.services-icon-right:after, .btn .services-icons, .pager .pager-item > a .services-icons, .pager .pager-item > span .services-icons, .btn.filetypes-icon-right:after, .pager .pager-item > a.filetypes-icon-right:after, .pager .pager-item > span.filetypes-icon-right:after, .btn .filetypes-icons, .pager .pager-item > a .filetypes-icons, .pager .pager-item > span .filetypes-icons {
   margin-right: -2px; }
 
-.btn.icon-right > span, .pager .pager-item > a.icon-right > span, .pager .pager-item > span.icon-right > span, .btn.services-icon-right > span, .pager .pager-item > a.services-icon-right > span, .pager .pager-item > span.services-icon-right > span {
+.btn.icon-right > span, .pager .pager-item > a.icon-right > span, .pager .pager-item > span.icon-right > span, .btn.services-icon-right > span, .pager .pager-item > a.services-icon-right > span, .pager .pager-item > span.services-icon-right > span, .btn.filetypes-icon-right > span, .pager .pager-item > a.filetypes-icon-right > span, .pager .pager-item > span.filetypes-icon-right > span {
   float: left; }
 
 .btn-disabled, .pager .pager-item.item-ellipsis > a, .pager .pager-item.item-ellipsis > span, .pager .pager-item.item-current > a, .pager .pager-item.item-current > span, .pager .pager-item.item-first > span, .pager .pager-item.item-previous > span, .pager .pager-item.item-next > span, .pager .pager-item.item-last > span {
@@ -1748,13 +1755,13 @@ tr.selected:hover {
         background: #eeeeee; }
       #drawer .menu li a.icon-left:before, #drawer .menu li a.icon-right:after {
         color: rgba(0, 0, 0, 0.54); }
-      #drawer .menu li a.services-icon-left:before, #drawer .menu li a.services-icon-right:after {
+      #drawer .menu li a.services-icon-left:before, #drawer .menu li a.services-icon-right:after, #drawer .menu li a.filetypes-icon-left:before, #drawer .menu li a.filetypes-icon-right:after {
         background: rgba(0, 0, 0, 0.54); }
     #drawer .menu li.active a, #drawer .menu li.active-trail a {
       color: #607d8b; }
       #drawer .menu li.active a.icon-left:before, #drawer .menu li.active a.icon-right:after, #drawer .menu li.active-trail a.icon-left:before, #drawer .menu li.active-trail a.icon-right:after {
         color: #607d8b; }
-      #drawer .menu li.active a.services-icon-left:before, #drawer .menu li.active a.services-icon-right:after, #drawer .menu li.active-trail a.services-icon-left:before, #drawer .menu li.active-trail a.services-icon-right:after {
+      #drawer .menu li.active a.services-icon-left:before, #drawer .menu li.active a.services-icon-right:after, #drawer .menu li.active a.filetypes-icon-left:before, #drawer .menu li.active a.filetypes-icon-right:after, #drawer .menu li.active-trail a.services-icon-left:before, #drawer .menu li.active-trail a.services-icon-right:after, #drawer .menu li.active-trail a.filetypes-icon-left:before, #drawer .menu li.active-trail a.filetypes-icon-right:after {
         background: #607d8b; }
 
 /* header and title */
@@ -2882,3 +2889,5 @@ tr.selected:hover {
     text-align: center;
     max-width: 320px;
     padding: 12px; }
+
+/*# sourceMappingURL=../css/styles.css.map */

@@ -4,6 +4,7 @@ var batch = require('gulp-batch');
 var sass = require('gulp-sass');
 var sasslint = require('gulp-sass-lint');
 var eslint = require('gulp-eslint');
+var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 
@@ -24,8 +25,10 @@ var autoprefixerOptions = {
 
 gulp.task('sass', function () {
   return gulp.src(SASS + '/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass.sync(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(sourcemaps.write('../css'))
     .pipe(gulp.dest(CSS));
 });
 

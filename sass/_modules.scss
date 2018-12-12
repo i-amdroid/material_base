@@ -8,7 +8,7 @@
 .clearfix {
   &:after { content: ""; display: table; clear: both; }
 }
-.material-icons { font-family: 'Material Icons'; font-weight: normal; font-style: normal; font-size: 24px; display: inline-block;
+.material-icons { font-family: 'Material Icons', 'Material Icons Local'; font-weight: normal; font-style: normal; font-size: 24px; display: inline-block;
   width: 1em; height: 1em; line-height: 1; text-transform: none; letter-spacing: normal; word-wrap: normal;
   -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; font-feature-settings: 'liga';
 }
@@ -47,19 +47,20 @@ article .content a[href^="#"]:not([href="#"]):not(.btn) { border-bottom: dotted 
 article .content blockquote { border-left: 2px solid $color-primary; padding-left: 36px; color: $color-text-secondary; }
 
 p { margin-bottom: 8px; }
-p.icon-left, p.services-icon-left { padding-left: 36px;
+p.icon-left, p.services-icon-left, p.filetypes-icon-left { padding-left: 36px;
   &:before { margin-left: -36px; }
 }
-p .material-icons, p .services-icons,
+p .material-icons, p .services-icons, p .filetypes-icons,
 ul:not(.menu) li .material-icons,
 ul:not(.menu) li .services-icons,
-.btn .material-icons, .btn .services-icons { vertical-align: -30%; }
+ul:not(.menu) li .filetypes-icons,
+.btn .material-icons, .btn .services-icons, .btn .filetypes-icons { vertical-align: -30%; }
 
 p, ul:not(.menu) li, td, th {
-  a.icon-left:not(.btn), a.services-icon-left:not(.btn) { display: inline-block;
+  a.icon-left:not(.btn), a.services-icon-left:not(.btn), a.filetypes-icon-left:not(.btn) { display: inline-block;
     &:before { margin-right: 4px; }
   }
-  a.icon-right:not(.btn), a.services-icon-right:not(.btn) { display: inline-block;
+  a.icon-right:not(.btn), a.services-icon-right:not(.btn), a.filetypes-icon-right:not(.btn) { display: inline-block;
     &:after { margin-left: 4px; }
   }
 }
@@ -356,12 +357,15 @@ pre { margin-top: 16px; margin-bottom: 16px; padding: 12px 16px; overflow: auto;
 }
 
 .btn.icon-left:before, .btn.icon-right:after, .btn .material-icons { margin-top: -2px; margin-bottom: -2px; }
-.btn.services-icon-left:before, .btn.services-icon-right:after, .btn .services-icons { margin-top: -2px; margin-bottom: -1px; }
+.btn.services-icon-left:before, .btn.services-icon-right:after, .btn .services-icons,
+.btn.filetypes-icon-left:before, .btn.filetypes-icon-right:after, .btn .filetypes-icons { margin-top: -2px; margin-bottom: -1px; }
 .btn.icon-left:before, .btn .material-icons,
-.btn.services-icon-left:before, .btn .services-icons { margin-left: -2px; }
+.btn.services-icon-left:before, .btn .services-icons,
+.btn.filetypes-icon-left:before, .btn .filetypes-icons { margin-left: -2px; }
 .btn.icon-right:after, .btn .material-icons,
-.btn.services-icon-right:after, .btn .services-icons { margin-right: -2px; }
-.btn.icon-right > span, .btn.services-icon-right > span { float: left; }
+.btn.services-icon-right:after, .btn .services-icons,
+.btn.filetypes-icon-right:after, .btn .filetypes-icons { margin-right: -2px; }
+.btn.icon-right > span, .btn.services-icon-right > span, .btn.filetypes-icon-right > span { float: left; }
 
 .btn-disabled { color: $color-text-disabled; cursor: default; pointer-events: none;
   &:hover, &:focus, &:active { background: none; color: $color-text-disabled; }
@@ -564,11 +568,13 @@ tr.selected:hover { background: $color-bg-hover; }
     li a { display: block; padding: 12px 24px; font-weight: 500; color: $color-text;
       &:hover { background: $color-bg-hover; }
       &.icon-left:before, &.icon-right:after { color: $color-text-secondary; }
-      &.services-icon-left:before, &.services-icon-right:after { background: $color-text-secondary; }
+      &.services-icon-left:before, &.services-icon-right:after,
+      &.filetypes-icon-left:before, &.filetypes-icon-right:after { background: $color-text-secondary; }
     }
     li.active a, li.active-trail a { color: $color-primary;
       &.icon-left:before, &.icon-right:after { color: $color-primary; }
-      &.services-icon-left:before, &.services-icon-right:after { background: $color-primary; }
+      &.services-icon-left:before, &.services-icon-right:after,
+      &.filetypes-icon-left:before, &.filetypes-icon-right:after { background: $color-primary; }
     }
   }
 }

@@ -8,9 +8,11 @@ stylesheets[all][]   = css/color-themes.css
 stylesheets[all][]   = css/theme-dark.css
 stylesheets[all][]   = css/icons.css
 stylesheets[all][]   = css/services-icons.css
+stylesheets[all][]   = css/filetypes-icons.css
 stylesheets[all][]   = css/helpers.css
 stylesheets[all][]   = css/code-highlight.css
 stylesheets[all][]   = css/styles.css
+stylesheets[all][]   = css/fonts.css
 
 scripts[] = js/misc.js
 scripts[] = js/jquery.ripple.js

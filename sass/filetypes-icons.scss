@@ -1,0 +1,731 @@
+@charset "UTF-8";
+
+@import "color-palette";
+@import "variables";
+
+.filetypes-icons { display: inline-block; width: 24px; height: 24px;
+  background: url(../img/filetypes-icons.svg) no-repeat; opacity: .87;
+} // TO DO: TDV
+
+.filetypes-icons.icon-secondary { opacity: .54; } // TO DO: TDV
+.filetypes-icons.icon-disabled { opacity: .26; } // TO DO: TDV
+.filetypes-icons.icon-colored { opacity: 1; background-position: 0 -24px; } // TO DO: TDV
+
+.filetypes-icons {
+  &.fi-doc, &[data-icon="doc"],
+  &.fi-txt, &[data-icon="txt"],
+  &.fi-docx, &[data-icon="docx"],
+  &.fi-rtf, &[data-icon="rtf"],
+  &.fi-odt, &[data-icon="odt"] { background-position: -24px 0; }
+
+  &.fi-sheet, &[data-icon="sheet"],
+  &.fi-xls, &[data-icon="xls"],
+  &.fi-xlsx, &[data-icon="xlsx"],
+  &.fi-csv, &[data-icon="csv"],
+  &.fi-ods, &[data-icon="ods"] { background-position: -48px 0; }
+
+  &.fi-ppt, &[data-icon="presentation"],
+  &.fi-ppt, &[data-icon="ppt"],
+  &.fi-pptx, &[data-icon="pptx"],
+  &.fi-key, &[data-icon="key"],
+  &.fi-odp, &[data-icon="odp"] { background-position: -72px 0; }
+
+  &.fi-pdf, &[data-icon="pdf"] { background-position: -96px 0; }
+
+  &.fi-image, &[data-icon="image"],
+  &.fi-jpg, &[data-icon="jpg"],
+  &.fi-jpeg, &[data-icon="jpeg"],
+  &.fi-png, &[data-icon="png"],
+  &.fi-gif, &[data-icon="gif"],
+  &.fi-psd, &[data-icon="psd"],
+  &.fi-svg, &[data-icon="svg"],
+  &.fi-ai, &[data-icon="ai"],
+  &.fi-eps, &[data-icon="eps"],
+  &.fi-cdr, &[data-icon="cdr"] { background-position: -120px 0; }
+
+  &.fi-video, &[data-icon="video"],
+  &.fi-avi, &[data-icon="avi"],
+  &.fi-mpg, &[data-icon="mpg"],
+  &.fi-mpeg, &[data-icon="mpeg"],
+  &.fi-mp4, &[data-icon="mp4"],
+  &.fi-mov, &[data-icon="mov"],
+  &.fi-flv, &[data-icon="flv"],
+  &.fi-mkv, &[data-icon="mkv"] { background-position: -144px 0; }
+
+  &.fi-audio, &[data-icon="audio"],
+  &.fi-mp3, &[data-icon="mp3"],
+  &.fi-flac, &[data-icon="flac"],
+  &.fi-ogg, &[data-icon="ogg"],
+  &.fi-wav, &[data-icon="wav"],
+  &.fi-ape, &[data-icon="ape"],
+  &.fi-m4a, &[data-icon="m4a"],
+  &.fi-aac, &[data-icon="aac"] { background-position: -168px 0; }
+
+  &.fi-archive, &[data-icon="archive"],
+  &.fi-zip, &[data-icon="zip"],
+  &.fi-rar, &[data-icon="rar"],
+  &.fi-gz, &[data-icon="gz"],
+  &.fi-7z, &[data-icon="7z"],
+  &.fi-jar, &[data-icon="jar"],
+  &.fi-app, &[data-icon="app"],
+  &.fi-exe, &[data-icon="exe"],
+  &.fi-apk, &[data-icon="apk"],
+  &.fi-deb, &[data-icon="deb"],
+  &.fi-msi, &[data-icon="msi"],
+  &.fi-rpm, &[data-icon="rpm"] { background-position: -192px 0; }
+
+  &.fi-code, &[data-icon="code"],
+  &.fi-php, &[data-icon="php"],
+  &.fi-module, &[data-icon="module"],
+  &.fi-inc, &[data-icon="inc"],
+  &.fi-info, &[data-icon="info"],
+  &.fi-yml, &[data-icon="yml"],
+  &.fi-css, &[data-icon="css"],
+  &.fi-scss, &[data-icon="scss"],
+  &.fi-html, &[data-icon="html"],
+  &.fi-htm, &[data-icon="htm"],
+  &.fi-xml, &[data-icon="xml"],
+  &.fi-class, &[data-icon="class"],
+  &.fi-java, &[data-icon="java"],
+  &.fi-c, &[data-icon="c"],
+  &.fi-cpp, &[data-icon="cpp"],
+  &.fi-h, &[data-icon="h"],
+  &.fi-js, &[data-icon="js"],
+  &.fi-pl, &[data-icon="pl"],
+  &.fi-py, &[data-icon="py"],
+  &.fi-sh, &[data-icon="sh"] { background-position: -216px 0; }
+
+}
+
+.filetypes-icons.icon-colored {
+  &.fi-doc, &[data-icon="doc"],
+  &.fi-txt, &[data-icon="txt"],
+  &.fi-docx, &[data-icon="docx"],
+  &.fi-rtf, &[data-icon="rtf"],
+  &.fi-odt, &[data-icon="odt"] { background-position: -24px -24px; }
+
+  &.fi-sheet, &[data-icon="sheet"],
+  &.fi-xls, &[data-icon="xls"],
+  &.fi-xlsx, &[data-icon="xlsx"],
+  &.fi-csv, &[data-icon="csv"],
+  &.fi-ods, &[data-icon="ods"] { background-position: -48px -24px; }
+
+  &.fi-ppt, &[data-icon="presentation"],
+  &.fi-ppt, &[data-icon="ppt"],
+  &.fi-pptx, &[data-icon="pptx"],
+  &.fi-key, &[data-icon="key"],
+  &.fi-odp, &[data-icon="odp"] { background-position: -72px -24px; }
+
+  &.fi-pdf, &[data-icon="pdf"] { background-position: -96px -24px; }
+
+  &.fi-image, &[data-icon="image"],
+  &.fi-jpg, &[data-icon="jpg"],
+  &.fi-jpeg, &[data-icon="jpeg"],
+  &.fi-png, &[data-icon="png"],
+  &.fi-gif, &[data-icon="gif"],
+  &.fi-psd, &[data-icon="psd"],
+  &.fi-svg, &[data-icon="svg"],
+  &.fi-ai, &[data-icon="ai"],
+  &.fi-eps, &[data-icon="eps"],
+  &.fi-cdr, &[data-icon="cdr"] { background-position: -120px -24px; }
+
+  &.fi-video, &[data-icon="video"],
+  &.fi-avi, &[data-icon="avi"],
+  &.fi-mpg, &[data-icon="mpg"],
+  &.fi-mpeg, &[data-icon="mpeg"],
+  &.fi-mp4, &[data-icon="mp4"],
+  &.fi-mov, &[data-icon="mov"],
+  &.fi-flv, &[data-icon="flv"],
+  &.fi-mkv, &[data-icon="mkv"] { background-position: -144px -24px; }
+
+  &.fi-audio, &[data-icon="audio"],
+  &.fi-mp3, &[data-icon="mp3"],
+  &.fi-flac, &[data-icon="flac"],
+  &.fi-ogg, &[data-icon="ogg"],
+  &.fi-wav, &[data-icon="wav"],
+  &.fi-ape, &[data-icon="ape"],
+  &.fi-m4a, &[data-icon="m4a"],
+  &.fi-aac, &[data-icon="aac"] { background-position: -168px -24px; }
+
+  &.fi-archive, &[data-icon="archive"],
+  &.fi-zip, &[data-icon="zip"],
+  &.fi-rar, &[data-icon="rar"],
+  &.fi-gz, &[data-icon="gz"],
+  &.fi-7z, &[data-icon="7z"],
+  &.fi-jar, &[data-icon="jar"],
+  &.fi-app, &[data-icon="app"],
+  &.fi-exe, &[data-icon="exe"],
+  &.fi-apk, &[data-icon="apk"],
+  &.fi-deb, &[data-icon="deb"],
+  &.fi-msi, &[data-icon="msi"],
+  &.fi-rpm, &[data-icon="rpm"] { background-position: -192px -24px; }
+
+  &.fi-code, &[data-icon="code"],
+  &.fi-php, &[data-icon="php"],
+  &.fi-module, &[data-icon="module"],
+  &.fi-inc, &[data-icon="inc"],
+  &.fi-info, &[data-icon="info"],
+  &.fi-yml, &[data-icon="yml"],
+  &.fi-css, &[data-icon="css"],
+  &.fi-scss, &[data-icon="scss"],
+  &.fi-html, &[data-icon="html"],
+  &.fi-htm, &[data-icon="htm"],
+  &.fi-xml, &[data-icon="xml"],
+  &.fi-class, &[data-icon="class"],
+  &.fi-java, &[data-icon="java"],
+  &.fi-c, &[data-icon="c"],
+  &.fi-cpp, &[data-icon="cpp"],
+  &.fi-h, &[data-icon="h"],
+  &.fi-js, &[data-icon="js"],
+  &.fi-pl, &[data-icon="pl"],
+  &.fi-py, &[data-icon="py"],
+  &.fi-sh, &[data-icon="sh"] { background-position: -216px -24px; }
+
+}
+
+.filetypes-icons.icon-dark { background: $color-text !important; }
+.filetypes-icons.icon-light { background: $color-text-light !important; }
+.filetypes-icons.icon-light.icon-disabled { background: $color-text-light-disabled !important; }
+.filetypes-icons.icon-primary { background: $color-primary; } // TO DO: TDV, CTV
+.filetypes-icons.icon-accent { background: $color-accent; } // TO DO: TDV, CTV
+
+.btn .filetypes-icons {
+  &, &:hover, &:focus { background: $color-text; }
+} // TO DO: TDV
+
+.btn-colored, .btn.btn-colored {
+  &, &:hover, &:focus {
+    .filetypes-icons { background: $color-primary-hover; }
+  }
+} // TO DO: TDV, CTV
+
+.btn-accent, .btn.btn-accent {
+  &, &:hover, &:focus {
+    .filetypes-icons { background: $color-accent; }
+  }
+} // TO DO: TDV, CTV
+
+.btn-raised, .btn.btn-raised {
+  &.btn-colored {
+    &, &:hover, &:focus {
+      .filetypes-icons { background: contrast-color($color-primary); }
+    }
+  }
+  &.btn-accent {
+    &, &:hover, &:focus {
+      .filetypes-icons { background: contrast-color($color-accent); }
+    }
+  }
+} // TO DO: TDV, CTV
+
+.btn.btn-disabled {
+  &, &:hover, &:focus, &:active {
+    .filetypes-icons { background: $color-text-disabled; }
+  }
+} // TO DO: TDV
+
+.fab {
+  &, &:hover, &:focus {
+    .filetypes-icons { background: $color-text; }
+  }
+  &.fab-colored {
+    &, &:hover, &:focus {
+      .filetypes-icons { background: contrast-color($color-primary); }
+    }
+  }
+  &.fab-accent {
+    &, &:hover, &:focus {
+      .filetypes-icons { background: contrast-color($color-accent); }
+    }
+  }
+} // TO DO: TDV, CTV
+
+.filetypes-icons.icon-dark,
+.filetypes-icons.icon-light,
+.filetypes-icons.icon-primary,
+.filetypes-icons.icon-accent,
+.btn .filetypes-icons, .fab .filetypes-icons,
+.theme-dark .filetypes-icons { opacity: 1; mask: url(../img/filetypes-icons.svg) no-repeat;
+  &.fi-doc, &[data-icon="doc"],
+  &.fi-txt, &[data-icon="txt"],
+  &.fi-docx, &[data-icon="docx"],
+  &.fi-rtf, &[data-icon="rtf"],
+  &.fi-odt, &[data-icon="odt"] { mask-position: -24px 0; }
+
+  &.fi-sheet, &[data-icon="sheet"],
+  &.fi-xls, &[data-icon="xls"],
+  &.fi-xlsx, &[data-icon="xlsx"],
+  &.fi-csv, &[data-icon="csv"],
+  &.fi-ods, &[data-icon="ods"] { mask-position: -48px 0; }
+
+  &.fi-ppt, &[data-icon="presentation"],
+  &.fi-ppt, &[data-icon="ppt"],
+  &.fi-pptx, &[data-icon="pptx"],
+  &.fi-key, &[data-icon="key"],
+  &.fi-odp, &[data-icon="odp"] { mask-position: -72px 0; }
+
+  &.fi-pdf, &[data-icon="pdf"] { mask-position: -96px 0; }
+
+  &.fi-image, &[data-icon="image"],
+  &.fi-jpg, &[data-icon="jpg"],
+  &.fi-jpeg, &[data-icon="jpeg"],
+  &.fi-png, &[data-icon="png"],
+  &.fi-gif, &[data-icon="gif"],
+  &.fi-psd, &[data-icon="psd"],
+  &.fi-svg, &[data-icon="svg"],
+  &.fi-ai, &[data-icon="ai"],
+  &.fi-eps, &[data-icon="eps"],
+  &.fi-cdr, &[data-icon="cdr"] { mask-position: -120px 0; }
+
+  &.fi-video, &[data-icon="video"],
+  &.fi-avi, &[data-icon="avi"],
+  &.fi-mpg, &[data-icon="mpg"],
+  &.fi-mpeg, &[data-icon="mpeg"],
+  &.fi-mp4, &[data-icon="mp4"],
+  &.fi-mov, &[data-icon="mov"],
+  &.fi-flv, &[data-icon="flv"],
+  &.fi-mkv, &[data-icon="mkv"] { mask-position: -144px 0; }
+
+  &.fi-audio, &[data-icon="audio"],
+  &.fi-mp3, &[data-icon="mp3"],
+  &.fi-flac, &[data-icon="flac"],
+  &.fi-ogg, &[data-icon="ogg"],
+  &.fi-wav, &[data-icon="wav"],
+  &.fi-ape, &[data-icon="ape"],
+  &.fi-m4a, &[data-icon="m4a"],
+  &.fi-aac, &[data-icon="aac"] { mask-position: -168px 0; }
+
+  &.fi-archive, &[data-icon="archive"],
+  &.fi-zip, &[data-icon="zip"],
+  &.fi-rar, &[data-icon="rar"],
+  &.fi-gz, &[data-icon="gz"],
+  &.fi-7z, &[data-icon="7z"],
+  &.fi-jar, &[data-icon="jar"],
+  &.fi-app, &[data-icon="app"],
+  &.fi-exe, &[data-icon="exe"],
+  &.fi-apk, &[data-icon="apk"],
+  &.fi-deb, &[data-icon="deb"],
+  &.fi-msi, &[data-icon="msi"],
+  &.fi-rpm, &[data-icon="rpm"] { mask-position: -192px 0; }
+
+  &.fi-code, &[data-icon="code"],
+  &.fi-php, &[data-icon="php"],
+  &.fi-module, &[data-icon="module"],
+  &.fi-inc, &[data-icon="inc"],
+  &.fi-info, &[data-icon="info"],
+  &.fi-yml, &[data-icon="yml"],
+  &.fi-css, &[data-icon="css"],
+  &.fi-scss, &[data-icon="scss"],
+  &.fi-html, &[data-icon="html"],
+  &.fi-htm, &[data-icon="htm"],
+  &.fi-xml, &[data-icon="xml"],
+  &.fi-class, &[data-icon="class"],
+  &.fi-java, &[data-icon="java"],
+  &.fi-c, &[data-icon="c"],
+  &.fi-cpp, &[data-icon="cpp"],
+  &.fi-h, &[data-icon="h"],
+  &.fi-js, &[data-icon="js"],
+  &.fi-pl, &[data-icon="pl"],
+  &.fi-py, &[data-icon="py"],
+  &.fi-sh, &[data-icon="sh"] { mask-position: -216px 0; }
+
+}
+
+.filetypes-icon-left:before { display: inline-block; width: 24px; height: 24px; content: " "; margin-right: 12px; float: left; background: $color-text; mask: url(../img/filetypes-icons.svg) no-repeat; } // TO DO: TDV
+
+.filetypes-icon-left.icon-dark:before { background: $color-text !important; }
+.filetypes-icon-left.icon-secondary:before { background: $color-text-secondary; } // TO DO: TDV
+.filetypes-icon-left.icon-disabled:before { background: $color-text-disabled; } // TO DO: TDV
+.filetypes-icon-left.icon-light:before { background: $color-text-light !important; }
+.filetypes-icon-left.icon-light.icon-disabled:before { background: $color-text-light-disabled !important; }
+.filetypes-icon-left.icon-primary:before { background: $color-primary; } // TO DO: TDV, CTV
+.filetypes-icon-left.icon-accent:before { background: $color-accent; } // TO DO: TDV, CTV
+
+a.filetypes-icon-left:not(.btn) {
+  &:before { background: $color-accent; }
+  &:hover:before { background: $color-accent-hover; }
+  &:active:before { background: $color-accent-active; }
+} // TO DO: TDV, CTV
+
+.btn.filetypes-icon-left, .menu a.filetypes-icon-left {
+  &:before, &:hover:before, &:focus:before { background: $color-text; }
+} // TO DO: TDV
+
+.btn-colored.filetypes-icon-left, .btn.btn-colored.filetypes-icon-left { 
+  &:before, &:hover:before, &:focus:before { background: $color-primary-hover; }
+} // TO DO: TDV, CTV
+.btn-accent.filetypes-icon-left, .btn.btn-accent.filetypes-icon-left { 
+  &:before, &:hover:before, &:focus:before { background: $color-accent; }
+} // TO DO: TDV, CTV
+
+.btn-raised.filetypes-icon-left, .btn.btn-raised.filetypes-icon-left {
+  &.btn-colored {
+    &:before, &:hover:before, &:focus:before { background: contrast-color($color-primary); }
+  }
+  &.btn-accent { 
+    &:before, &:hover:before, &:focus:before { background: contrast-color($color-accent); }
+  }
+} // TO DO: TDV, CTV
+
+.btn.btn-disabled.filetypes-icon-left { 
+  &:before, &:hover:before, &:focus:before, &:active:before { background: $color-text-disabled; }
+} // TO DO: TDV
+
+.fab.filetypes-icon-left {
+  &:before, &:hover:before, &:focus:before { background: $color-text; }
+  &.fab-colored {
+    &:before, &:hover:before, &:focus:before { background: contrast-color($color-primary); }
+  }
+  &.fab-accent {
+    &:before, &:hover:before, &:focus:before { background: contrast-color($color-accent); }
+  }
+} // TO DO: TDV, CTV
+
+.filetypes-icon-left {
+  &.fi-doc, &[data-icon="doc"],
+  &.fi-txt, &[data-icon="txt"],
+  &.fi-docx, &[data-icon="docx"],
+  &.fi-rtf, &[data-icon="rtf"],
+  &.fi-odt, &[data-icon="odt"] { &:before { mask-position: -24px 0; } }
+
+  &.fi-sheet, &[data-icon="sheet"],
+  &.fi-xls, &[data-icon="xls"],
+  &.fi-xlsx, &[data-icon="xlsx"],
+  &.fi-csv, &[data-icon="csv"],
+  &.fi-ods, &[data-icon="ods"] { &:before { mask-position: -48px 0; } }
+
+  &.fi-ppt, &[data-icon="presentation"],
+  &.fi-ppt, &[data-icon="ppt"],
+  &.fi-pptx, &[data-icon="pptx"],
+  &.fi-key, &[data-icon="key"],
+  &.fi-odp, &[data-icon="odp"] { &:before { mask-position: -72px 0; } }
+
+  &.fi-pdf, &[data-icon="pdf"] { &:before { mask-position: -96px 0; } }
+
+  &.fi-image, &[data-icon="image"],
+  &.fi-jpg, &[data-icon="jpg"],
+  &.fi-jpeg, &[data-icon="jpeg"],
+  &.fi-png, &[data-icon="png"],
+  &.fi-gif, &[data-icon="gif"],
+  &.fi-psd, &[data-icon="psd"],
+  &.fi-svg, &[data-icon="svg"],
+  &.fi-ai, &[data-icon="ai"],
+  &.fi-eps, &[data-icon="eps"],
+  &.fi-cdr, &[data-icon="cdr"] { &:before { mask-position: -120px 0; } }
+
+  &.fi-video, &[data-icon="video"],
+  &.fi-avi, &[data-icon="avi"],
+  &.fi-mpg, &[data-icon="mpg"],
+  &.fi-mpeg, &[data-icon="mpeg"],
+  &.fi-mp4, &[data-icon="mp4"],
+  &.fi-mov, &[data-icon="mov"],
+  &.fi-flv, &[data-icon="flv"],
+  &.fi-mkv, &[data-icon="mkv"] { &:before { mask-position: -144px 0; } }
+
+  &.fi-audio, &[data-icon="audio"],
+  &.fi-mp3, &[data-icon="mp3"],
+  &.fi-flac, &[data-icon="flac"],
+  &.fi-ogg, &[data-icon="ogg"],
+  &.fi-wav, &[data-icon="wav"],
+  &.fi-ape, &[data-icon="ape"],
+  &.fi-m4a, &[data-icon="m4a"],
+  &.fi-aac, &[data-icon="aac"] { &:before { mask-position: -168px 0; } }
+
+  &.fi-archive, &[data-icon="archive"],
+  &.fi-zip, &[data-icon="zip"],
+  &.fi-rar, &[data-icon="rar"],
+  &.fi-gz, &[data-icon="gz"],
+  &.fi-7z, &[data-icon="7z"],
+  &.fi-jar, &[data-icon="jar"],
+  &.fi-app, &[data-icon="app"],
+  &.fi-exe, &[data-icon="exe"],
+  &.fi-apk, &[data-icon="apk"],
+  &.fi-deb, &[data-icon="deb"],
+  &.fi-msi, &[data-icon="msi"],
+  &.fi-rpm, &[data-icon="rpm"] { &:before { mask-position: -192px 0; } }
+
+  &.fi-code, &[data-icon="code"],
+  &.fi-php, &[data-icon="php"],
+  &.fi-module, &[data-icon="module"],
+  &.fi-inc, &[data-icon="inc"],
+  &.fi-info, &[data-icon="info"],
+  &.fi-yml, &[data-icon="yml"],
+  &.fi-css, &[data-icon="css"],
+  &.fi-scss, &[data-icon="scss"],
+  &.fi-html, &[data-icon="html"],
+  &.fi-htm, &[data-icon="htm"],
+  &.fi-xml, &[data-icon="xml"],
+  &.fi-class, &[data-icon="class"],
+  &.fi-java, &[data-icon="java"],
+  &.fi-c, &[data-icon="c"],
+  &.fi-cpp, &[data-icon="cpp"],
+  &.fi-h, &[data-icon="h"],
+  &.fi-js, &[data-icon="js"],
+  &.fi-pl, &[data-icon="pl"],
+  &.fi-py, &[data-icon="py"],
+  &.fi-sh, &[data-icon="sh"] { &:before { mask-position: -216px 0; } }
+}
+
+.filetypes-icon-right:after { display: inline-block; width: 24px; height: 24px; content: " "; margin-left: 12px; float: right; background: $color-text; mask: url(../img/filetypes-icons.svg) no-repeat; }
+
+.filetypes-icon-right.icon-dark:after { background: $color-text !important; }
+.filetypes-icon-right.icon-secondary:after { background: $color-text-secondary; } // TO DO: TDV
+.filetypes-icon-right.icon-disabled:after { background: $color-text-disabled; } // TO DO: TDV
+.filetypes-icon-right.icon-light:after { background: $color-text-light !important; }
+.filetypes-icon-right.icon-light.icon-disabled:after { background: $color-text-light-disabled !important; }
+.filetypes-icon-right.icon-primary:after { background: $color-primary; } // TO DO: TDV, CTV
+.filetypes-icon-right.icon-accent:after { background: $color-accent; } // TO DO: TDV, CTV
+
+a.filetypes-icon-right:not(.btn) {
+  &:after { background: $color-accent; }
+  &:hover:after { background: $color-accent-hover; }
+  &:active:after { background: $color-accent-active; }
+} // TO DO: TDV, CTV
+
+.btn.filetypes-icon-right {
+  &:after, &:hover:after, &:focus:after { background: $color-text; }
+} // TO DO: TDV
+
+.btn-colored.filetypes-icon-right, .btn.btn-colored.filetypes-icon-right { 
+  &:after, &:hover:after, &:focus:after { background: $color-primary-hover; }
+} // TO DO: TDV, CTV
+.btn-accent.filetypes-icon-right, .btn.btn-accent.filetypes-icon-right { 
+  &:after, &:hover:after, &:focus:after { background: $color-accent; }
+} // TO DO: TDV, CTV
+
+.btn-raised.filetypes-icon-right, .btn.btn-raised.filetypes-icon-right {
+  &.btn-colored {
+    &:after, &:hover:after, &:focus:after { background: contrast-color($color-primary); }
+  }
+  &.btn-accent { 
+    &:after, &:hover:after, &:focus:after { background: contrast-color($color-accent); }
+  }
+} // TO DO: TDV, CTV
+
+.btn.btn-disabled.filetypes-icon-right { 
+  &:after, &:hover:after, &:focus:after, &:active:after { background: $color-text-disabled; }
+} // TO DO: TDV
+
+.fab.filetypes-icon-right {
+  &:after, &:hover:after, &:focus:after { background: $color-text; }
+  &.fab-colored {
+    &:after, &:hover:after, &:focus:after { background: contrast-color($color-primary); }
+  }
+  &.fab-accent {
+    &:after, &:hover:after, &:focus:after { background: contrast-color($color-accent); }
+  }
+} // TO DO: TDV, CTV
+
+.filetypes-icon-right {
+  &.fi-doc, &[data-icon="doc"],
+  &.fi-txt, &[data-icon="txt"],
+  &.fi-docx, &[data-icon="docx"],
+  &.fi-rtf, &[data-icon="rtf"],
+  &.fi-odt, &[data-icon="odt"] { &:after { mask-position: -24px 0; } }
+
+  &.fi-sheet, &[data-icon="sheet"],
+  &.fi-xls, &[data-icon="xls"],
+  &.fi-xlsx, &[data-icon="xlsx"],
+  &.fi-csv, &[data-icon="csv"],
+  &.fi-ods, &[data-icon="ods"] { &:after { mask-position: -48px 0; } }
+
+  &.fi-ppt, &[data-icon="presentation"],
+  &.fi-ppt, &[data-icon="ppt"],
+  &.fi-pptx, &[data-icon="pptx"],
+  &.fi-key, &[data-icon="key"],
+  &.fi-odp, &[data-icon="odp"] { &:after { mask-position: -72px 0; } }
+
+  &.fi-pdf, &[data-icon="pdf"] { &:after { mask-position: -96px 0; } }
+
+  &.fi-image, &[data-icon="image"],
+  &.fi-jpg, &[data-icon="jpg"],
+  &.fi-jpeg, &[data-icon="jpeg"],
+  &.fi-png, &[data-icon="png"],
+  &.fi-gif, &[data-icon="gif"],
+  &.fi-psd, &[data-icon="psd"],
+  &.fi-svg, &[data-icon="svg"],
+  &.fi-ai, &[data-icon="ai"],
+  &.fi-eps, &[data-icon="eps"],
+  &.fi-cdr, &[data-icon="cdr"] { &:after { mask-position: -120px 0; } }
+
+  &.fi-video, &[data-icon="video"],
+  &.fi-avi, &[data-icon="avi"],
+  &.fi-mpg, &[data-icon="mpg"],
+  &.fi-mpeg, &[data-icon="mpeg"],
+  &.fi-mp4, &[data-icon="mp4"],
+  &.fi-mov, &[data-icon="mov"],
+  &.fi-flv, &[data-icon="flv"],
+  &.fi-mkv, &[data-icon="mkv"] { &:after { mask-position: -144px 0; } }
+
+  &.fi-audio, &[data-icon="audio"],
+  &.fi-mp3, &[data-icon="mp3"],
+  &.fi-flac, &[data-icon="flac"],
+  &.fi-ogg, &[data-icon="ogg"],
+  &.fi-wav, &[data-icon="wav"],
+  &.fi-ape, &[data-icon="ape"],
+  &.fi-m4a, &[data-icon="m4a"],
+  &.fi-aac, &[data-icon="aac"] { &:after { mask-position: -168px 0; } }
+
+  &.fi-archive, &[data-icon="archive"],
+  &.fi-zip, &[data-icon="zip"],
+  &.fi-rar, &[data-icon="rar"],
+  &.fi-gz, &[data-icon="gz"],
+  &.fi-7z, &[data-icon="7z"],
+  &.fi-jar, &[data-icon="jar"],
+  &.fi-app, &[data-icon="app"],
+  &.fi-exe, &[data-icon="exe"],
+  &.fi-apk, &[data-icon="apk"],
+  &.fi-deb, &[data-icon="deb"],
+  &.fi-msi, &[data-icon="msi"],
+  &.fi-rpm, &[data-icon="rpm"] { &:after { mask-position: -192px 0; } }
+
+  &.fi-code, &[data-icon="code"],
+  &.fi-php, &[data-icon="php"],
+  &.fi-module, &[data-icon="module"],
+  &.fi-inc, &[data-icon="inc"],
+  &.fi-info, &[data-icon="info"],
+  &.fi-yml, &[data-icon="yml"],
+  &.fi-css, &[data-icon="css"],
+  &.fi-scss, &[data-icon="scss"],
+  &.fi-html, &[data-icon="html"],
+  &.fi-htm, &[data-icon="htm"],
+  &.fi-xml, &[data-icon="xml"],
+  &.fi-class, &[data-icon="class"],
+  &.fi-java, &[data-icon="java"],
+  &.fi-c, &[data-icon="c"],
+  &.fi-cpp, &[data-icon="cpp"],
+  &.fi-h, &[data-icon="h"],
+  &.fi-js, &[data-icon="js"],
+  &.fi-pl, &[data-icon="pl"],
+  &.fi-py, &[data-icon="py"],
+  &.fi-sh, &[data-icon="sh"] { &:after { mask-position: -216px 0; } }
+}
+
+.theme-dark {
+  .filetypes-icons { background: $color-text-light; }
+  .filetypes-icons.icon-secondary { background: $color-text-light-secondary; }
+  .filetypes-icons.icon-disabled { background: $color-text-light-disabled; }
+  .filetypes-icons.icon-primary { background: $color-primary-light; } // TO DO: CTV
+  .filetypes-icons.icon-accent { background: $color-accent-light; } // TO DO: CTV
+  .btn .filetypes-icons {
+    &, &:hover, &:focus { background: $color-text-light; }
+  }
+  .btn-colored, .btn.btn-colored {
+    &, &:hover, &:focus {
+      .filetypes-icons { background: $color-primary-light; }
+    }
+  } // TO DO: CTV
+  .btn-accent, .btn.btn-accent {
+    &, &:hover, &:focus {
+      .filetypes-icons { background: $color-accent-light; }
+    }
+  } // TO DO: CTV
+  .btn-raised, .btn.btn-raised {
+    &.btn-colored {
+      &, &:hover, &:focus {
+        .filetypes-icons { background: contrast-color($color-primary-light); }
+      }
+    }
+    &.btn-accent {
+      &, &:hover, &:focus {
+        .filetypes-icons { background: contrast-color($color-accent-light); }
+      }
+    }
+  } // TO DO: CTV
+  .btn.btn-disabled {
+    &, &:hover, &:focus, &:active {
+      .filetypes-icons { background: $color-text-light-disabled; }
+    }
+  }
+  .fab {
+    &, &:hover, &:focus {
+      .filetypes-icons { background: $color-text-light; }
+    }
+    &.fab-colored {
+      &, &:hover, &:focus {
+        .filetypes-icons { background: contrast-color($color-primary-light); }
+      }
+    }
+    &.fab-accent {
+      &, &:hover, &:focus {
+        .filetypes-icons { background: contrast-color($color-accent-light); }
+      }
+    }
+  } // TO DO: CTV
+
+  .filetypes-icon-left:before, .filetypes-icon-right:after { background: $color-text-light; }
+  .filetypes-icon-left.icon-secondary:before, .filetypes-icon-right.icon-secondary:after { background: $color-text-light-secondary; }
+  .filetypes-icon-left.icon-disabled:before, .filetypes-icon-right.icon-disabled:after { background: $color-text-light-disabled; }
+  .filetypes-icon-left.icon-primary:before, .filetypes-icon-right.icon-primary:after { background: $color-primary-light; } // TO DO: CTV
+  .filetypes-icon-left.icon-accent:before, .filetypes-icon-right.icon-accent:after { background: $color-accent-light; } // TO DO: CTV
+
+  a.filetypes-icon-left:not(.btn) {
+    &:before { background: $color-accent-light; }
+    &:hover:before { background: $color-accent-light-hover; }
+    &:active:before { background: $color-accent-light-active; }
+  } // TO DO: CTV
+  .btn.filetypes-icon-left, .menu a.filetypes-icon-left {
+    &:before, &:hover:before, &:focus:before { background: $color-text-light; }
+  } 
+  .btn-colored.filetypes-icon-left, .btn.btn-colored.filetypes-icon-left { 
+    &:before, &:hover:before, &:focus:before { background: $color-primary-light; }
+  } // TO DO: CTV
+  .btn-accent.filetypes-icon-left, .btn.btn-accent.filetypes-icon-left { 
+    &:before, &:hover:before, &:focus:before { background: $color-accent-light; }
+  } // TO DO: CTV
+  .btn-raised.filetypes-icon-left, .btn.btn-raised.filetypes-icon-left {
+    &.btn-colored {
+      &:before, &:hover:before, &:focus:before { background: contrast-color($color-primary-light); }
+    }
+    &.btn-accent { 
+      &:before, &:hover:before, &:focus:before { background: contrast-color($color-accent-light); }
+    }
+  } // TO DO: CTV
+  .btn.btn-disabled.filetypes-icon-left { 
+    &:before, &:hover:before, &:focus:before, &:active:before { background: $color-text-light-disabled; }
+  }
+  .fab.filetypes-icon-left {
+    &:before, &:hover:before, &:focus:before { background: $color-text-light; }
+    &.fab-colored {
+      &:before, &:hover:before, &:focus:before { background: contrast-color($color-primary-light); }
+    }
+    &.fab-accent {
+      &:before, &:hover:before, &:focus:before { background: contrast-color($color-accent-light); }
+    }
+  } // TO DO: CTV
+  
+  a.filetypes-icon-right:not(.btn) {
+    &:after { background: $color-accent-light; }
+    &:hover:after { background: $color-accent-light-hover; }
+    &:active:after { background: $color-accent-light-active; }
+  } // TO DO: CTV
+  .btn.filetypes-icon-right {
+    &:after, &:hover:after, &:focus:after { background: $color-text-light; }
+  }
+  .btn-colored.filetypes-icon-right, .btn.btn-colored.filetypes-icon-right { 
+    &:after, &:hover:after, &:focus:after { background: $color-primary-light; }
+  } // TO DO: CTV
+  .btn-accent.filetypes-icon-right, .btn.btn-accent.filetypes-icon-right { 
+    &:after, &:hover:after, &:focus:after { background: $color-accent-light; }
+  } // TO DO: CTV
+  .btn-raised.filetypes-icon-right, .btn.btn-raised.filetypes-icon-right {
+    &.btn-colored {
+      &:after, &:hover:after, &:focus:after { background: contrast-color($color-primary-light); }
+    }
+    &.btn-accent { 
+      &:after, &:hover:after, &:focus:after { background: contrast-color($color-accent-light); }
+    }
+  } // TO DO: CTV
+  .btn.btn-disabled.filetypes-icon-right { 
+    &:after, &:hover:after, &:focus:after, &:active:after { background: $color-text-light-disabled; }
+  }
+  .fab.filetypes-icon-right {
+    &:after, &:hover:after, &:focus:after { background: $color-text-light; }
+    &.fab-colored {
+      &:after, &:hover:after, &:focus:after { background: contrast-color($color-primary-light); }
+    }
+    &.fab-accent {
+      &:after, &:hover:after, &:focus:after { background: contrast-color($color-accent-light); }
+    }
+  } // TO DO: CTV
+} 

@@ -1,7 +1,7 @@
 /* break points */
 /* mixins and functions */
 .material-icons, .icon-left:before, .icon-right:after {
-  font-family: 'Material Icons';
+  font-family: 'Material Icons', 'Material Icons Local';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -72,3 +72,5 @@
 
 .theme-dark .icon-accent.icon-left:before, .theme-dark .icon-accent.icon-right:after {
   color: #40c4ff; }
+
+/*# sourceMappingURL=../css/icons.css.map */
