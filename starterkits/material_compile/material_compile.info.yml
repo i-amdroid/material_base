@@ -7,6 +7,17 @@ core: 8.x
 base theme: material_base
 
 # Defines libraries group in which we can add css/js.
+libraries-override:
+  # Remove an asset, it will be replaced by subtheme's one
+  material_base/styles:
+    css:
+      theme:
+        css/styles.css: false
+        
+  # Remove libraries, which will not be used in most cases 
+  material_base/color-themes: false
+  material_base/theme-dark: false
+
 libraries:
   - material_compile/styles
 

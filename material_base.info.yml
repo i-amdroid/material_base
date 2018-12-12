@@ -16,15 +16,10 @@ libraries:
   - material_base/theme-dark
   - material_base/icons
   - material_base/services-icons
+  - material_base/filetypes-icons
   - material_base/helpers
   - material_base/code-highlight
   - material_base/styles
-
-#stylesheets-remove:
-#  - core/assets/vendor/normalize-css/normalize.css
-#  - core/modules/system/css/system.module.css
-#  - core/modules/system/css/system.theme.css
-#  - core/modules/views/css/views.module.css
 
 # Regions
 regions:

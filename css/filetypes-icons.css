@@ -1,0 +1,1230 @@
+/* break points */
+/* mixins and functions */
+.filetypes-icons {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/filetypes-icons.svg) no-repeat;
+  opacity: .87; }
+
+.filetypes-icons.icon-secondary {
+  opacity: .54; }
+
+.filetypes-icons.icon-disabled {
+  opacity: .26; }
+
+.filetypes-icons.icon-colored {
+  opacity: 1;
+  background-position: 0 -24px; }
+
+.filetypes-icons.fi-doc, .filetypes-icons[data-icon="doc"], .filetypes-icons.fi-txt, .filetypes-icons[data-icon="txt"], .filetypes-icons.fi-docx, .filetypes-icons[data-icon="docx"], .filetypes-icons.fi-rtf, .filetypes-icons[data-icon="rtf"], .filetypes-icons.fi-odt, .filetypes-icons[data-icon="odt"] {
+  background-position: -24px 0; }
+
+.filetypes-icons.fi-sheet, .filetypes-icons[data-icon="sheet"], .filetypes-icons.fi-xls, .filetypes-icons[data-icon="xls"], .filetypes-icons.fi-xlsx, .filetypes-icons[data-icon="xlsx"], .filetypes-icons.fi-csv, .filetypes-icons[data-icon="csv"], .filetypes-icons.fi-ods, .filetypes-icons[data-icon="ods"] {
+  background-position: -48px 0; }
+
+.filetypes-icons.fi-ppt, .filetypes-icons[data-icon="presentation"], .filetypes-icons.fi-ppt, .filetypes-icons[data-icon="ppt"], .filetypes-icons.fi-pptx, .filetypes-icons[data-icon="pptx"], .filetypes-icons.fi-key, .filetypes-icons[data-icon="key"], .filetypes-icons.fi-odp, .filetypes-icons[data-icon="odp"] {
+  background-position: -72px 0; }
+
+.filetypes-icons.fi-pdf, .filetypes-icons[data-icon="pdf"] {
+  background-position: -96px 0; }
+
+.filetypes-icons.fi-image, .filetypes-icons[data-icon="image"], .filetypes-icons.fi-jpg, .filetypes-icons[data-icon="jpg"], .filetypes-icons.fi-jpeg, .filetypes-icons[data-icon="jpeg"], .filetypes-icons.fi-png, .filetypes-icons[data-icon="png"], .filetypes-icons.fi-gif, .filetypes-icons[data-icon="gif"], .filetypes-icons.fi-psd, .filetypes-icons[data-icon="psd"], .filetypes-icons.fi-svg, .filetypes-icons[data-icon="svg"], .filetypes-icons.fi-ai, .filetypes-icons[data-icon="ai"], .filetypes-icons.fi-eps, .filetypes-icons[data-icon="eps"], .filetypes-icons.fi-cdr, .filetypes-icons[data-icon="cdr"] {
+  background-position: -120px 0; }
+
+.filetypes-icons.fi-video, .filetypes-icons[data-icon="video"], .filetypes-icons.fi-avi, .filetypes-icons[data-icon="avi"], .filetypes-icons.fi-mpg, .filetypes-icons[data-icon="mpg"], .filetypes-icons.fi-mpeg, .filetypes-icons[data-icon="mpeg"], .filetypes-icons.fi-mp4, .filetypes-icons[data-icon="mp4"], .filetypes-icons.fi-mov, .filetypes-icons[data-icon="mov"], .filetypes-icons.fi-flv, .filetypes-icons[data-icon="flv"], .filetypes-icons.fi-mkv, .filetypes-icons[data-icon="mkv"] {
+  background-position: -144px 0; }
+
+.filetypes-icons.fi-audio, .filetypes-icons[data-icon="audio"], .filetypes-icons.fi-mp3, .filetypes-icons[data-icon="mp3"], .filetypes-icons.fi-flac, .filetypes-icons[data-icon="flac"], .filetypes-icons.fi-ogg, .filetypes-icons[data-icon="ogg"], .filetypes-icons.fi-wav, .filetypes-icons[data-icon="wav"], .filetypes-icons.fi-ape, .filetypes-icons[data-icon="ape"], .filetypes-icons.fi-m4a, .filetypes-icons[data-icon="m4a"], .filetypes-icons.fi-aac, .filetypes-icons[data-icon="aac"] {
+  background-position: -168px 0; }
+
+.filetypes-icons.fi-archive, .filetypes-icons[data-icon="archive"], .filetypes-icons.fi-zip, .filetypes-icons[data-icon="zip"], .filetypes-icons.fi-rar, .filetypes-icons[data-icon="rar"], .filetypes-icons.fi-gz, .filetypes-icons[data-icon="gz"], .filetypes-icons.fi-7z, .filetypes-icons[data-icon="7z"], .filetypes-icons.fi-jar, .filetypes-icons[data-icon="jar"], .filetypes-icons.fi-app, .filetypes-icons[data-icon="app"], .filetypes-icons.fi-exe, .filetypes-icons[data-icon="exe"], .filetypes-icons.fi-apk, .filetypes-icons[data-icon="apk"], .filetypes-icons.fi-deb, .filetypes-icons[data-icon="deb"], .filetypes-icons.fi-msi, .filetypes-icons[data-icon="msi"], .filetypes-icons.fi-rpm, .filetypes-icons[data-icon="rpm"] {
+  background-position: -192px 0; }
+
+.filetypes-icons.fi-code, .filetypes-icons[data-icon="code"], .filetypes-icons.fi-php, .filetypes-icons[data-icon="php"], .filetypes-icons.fi-module, .filetypes-icons[data-icon="module"], .filetypes-icons.fi-inc, .filetypes-icons[data-icon="inc"], .filetypes-icons.fi-info, .filetypes-icons[data-icon="info"], .filetypes-icons.fi-yml, .filetypes-icons[data-icon="yml"], .filetypes-icons.fi-css, .filetypes-icons[data-icon="css"], .filetypes-icons.fi-scss, .filetypes-icons[data-icon="scss"], .filetypes-icons.fi-html, .filetypes-icons[data-icon="html"], .filetypes-icons.fi-htm, .filetypes-icons[data-icon="htm"], .filetypes-icons.fi-xml, .filetypes-icons[data-icon="xml"], .filetypes-icons.fi-class, .filetypes-icons[data-icon="class"], .filetypes-icons.fi-java, .filetypes-icons[data-icon="java"], .filetypes-icons.fi-c, .filetypes-icons[data-icon="c"], .filetypes-icons.fi-cpp, .filetypes-icons[data-icon="cpp"], .filetypes-icons.fi-h, .filetypes-icons[data-icon="h"], .filetypes-icons.fi-js, .filetypes-icons[data-icon="js"], .filetypes-icons.fi-pl, .filetypes-icons[data-icon="pl"], .filetypes-icons.fi-py, .filetypes-icons[data-icon="py"], .filetypes-icons.fi-sh, .filetypes-icons[data-icon="sh"] {
+  background-position: -216px 0; }
+
+.filetypes-icons.icon-colored.fi-doc, .filetypes-icons.icon-colored[data-icon="doc"], .filetypes-icons.icon-colored.fi-txt, .filetypes-icons.icon-colored[data-icon="txt"], .filetypes-icons.icon-colored.fi-docx, .filetypes-icons.icon-colored[data-icon="docx"], .filetypes-icons.icon-colored.fi-rtf, .filetypes-icons.icon-colored[data-icon="rtf"], .filetypes-icons.icon-colored.fi-odt, .filetypes-icons.icon-colored[data-icon="odt"] {
+  background-position: -24px -24px; }
+
+.filetypes-icons.icon-colored.fi-sheet, .filetypes-icons.icon-colored[data-icon="sheet"], .filetypes-icons.icon-colored.fi-xls, .filetypes-icons.icon-colored[data-icon="xls"], .filetypes-icons.icon-colored.fi-xlsx, .filetypes-icons.icon-colored[data-icon="xlsx"], .filetypes-icons.icon-colored.fi-csv, .filetypes-icons.icon-colored[data-icon="csv"], .filetypes-icons.icon-colored.fi-ods, .filetypes-icons.icon-colored[data-icon="ods"] {
+  background-position: -48px -24px; }
+
+.filetypes-icons.icon-colored.fi-ppt, .filetypes-icons.icon-colored[data-icon="presentation"], .filetypes-icons.icon-colored.fi-ppt, .filetypes-icons.icon-colored[data-icon="ppt"], .filetypes-icons.icon-colored.fi-pptx, .filetypes-icons.icon-colored[data-icon="pptx"], .filetypes-icons.icon-colored.fi-key, .filetypes-icons.icon-colored[data-icon="key"], .filetypes-icons.icon-colored.fi-odp, .filetypes-icons.icon-colored[data-icon="odp"] {
+  background-position: -72px -24px; }
+
+.filetypes-icons.icon-colored.fi-pdf, .filetypes-icons.icon-colored[data-icon="pdf"] {
+  background-position: -96px -24px; }
+
+.filetypes-icons.icon-colored.fi-image, .filetypes-icons.icon-colored[data-icon="image"], .filetypes-icons.icon-colored.fi-jpg, .filetypes-icons.icon-colored[data-icon="jpg"], .filetypes-icons.icon-colored.fi-jpeg, .filetypes-icons.icon-colored[data-icon="jpeg"], .filetypes-icons.icon-colored.fi-png, .filetypes-icons.icon-colored[data-icon="png"], .filetypes-icons.icon-colored.fi-gif, .filetypes-icons.icon-colored[data-icon="gif"], .filetypes-icons.icon-colored.fi-psd, .filetypes-icons.icon-colored[data-icon="psd"], .filetypes-icons.icon-colored.fi-svg, .filetypes-icons.icon-colored[data-icon="svg"], .filetypes-icons.icon-colored.fi-ai, .filetypes-icons.icon-colored[data-icon="ai"], .filetypes-icons.icon-colored.fi-eps, .filetypes-icons.icon-colored[data-icon="eps"], .filetypes-icons.icon-colored.fi-cdr, .filetypes-icons.icon-colored[data-icon="cdr"] {
+  background-position: -120px -24px; }
+
+.filetypes-icons.icon-colored.fi-video, .filetypes-icons.icon-colored[data-icon="video"], .filetypes-icons.icon-colored.fi-avi, .filetypes-icons.icon-colored[data-icon="avi"], .filetypes-icons.icon-colored.fi-mpg, .filetypes-icons.icon-colored[data-icon="mpg"], .filetypes-icons.icon-colored.fi-mpeg, .filetypes-icons.icon-colored[data-icon="mpeg"], .filetypes-icons.icon-colored.fi-mp4, .filetypes-icons.icon-colored[data-icon="mp4"], .filetypes-icons.icon-colored.fi-mov, .filetypes-icons.icon-colored[data-icon="mov"], .filetypes-icons.icon-colored.fi-flv, .filetypes-icons.icon-colored[data-icon="flv"], .filetypes-icons.icon-colored.fi-mkv, .filetypes-icons.icon-colored[data-icon="mkv"] {
+  background-position: -144px -24px; }
+
+.filetypes-icons.icon-colored.fi-audio, .filetypes-icons.icon-colored[data-icon="audio"], .filetypes-icons.icon-colored.fi-mp3, .filetypes-icons.icon-colored[data-icon="mp3"], .filetypes-icons.icon-colored.fi-flac, .filetypes-icons.icon-colored[data-icon="flac"], .filetypes-icons.icon-colored.fi-ogg, .filetypes-icons.icon-colored[data-icon="ogg"], .filetypes-icons.icon-colored.fi-wav, .filetypes-icons.icon-colored[data-icon="wav"], .filetypes-icons.icon-colored.fi-ape, .filetypes-icons.icon-colored[data-icon="ape"], .filetypes-icons.icon-colored.fi-m4a, .filetypes-icons.icon-colored[data-icon="m4a"], .filetypes-icons.icon-colored.fi-aac, .filetypes-icons.icon-colored[data-icon="aac"] {
+  background-position: -168px -24px; }
+
+.filetypes-icons.icon-colored.fi-archive, .filetypes-icons.icon-colored[data-icon="archive"], .filetypes-icons.icon-colored.fi-zip, .filetypes-icons.icon-colored[data-icon="zip"], .filetypes-icons.icon-colored.fi-rar, .filetypes-icons.icon-colored[data-icon="rar"], .filetypes-icons.icon-colored.fi-gz, .filetypes-icons.icon-colored[data-icon="gz"], .filetypes-icons.icon-colored.fi-7z, .filetypes-icons.icon-colored[data-icon="7z"], .filetypes-icons.icon-colored.fi-jar, .filetypes-icons.icon-colored[data-icon="jar"], .filetypes-icons.icon-colored.fi-app, .filetypes-icons.icon-colored[data-icon="app"], .filetypes-icons.icon-colored.fi-exe, .filetypes-icons.icon-colored[data-icon="exe"], .filetypes-icons.icon-colored.fi-apk, .filetypes-icons.icon-colored[data-icon="apk"], .filetypes-icons.icon-colored.fi-deb, .filetypes-icons.icon-colored[data-icon="deb"], .filetypes-icons.icon-colored.fi-msi, .filetypes-icons.icon-colored[data-icon="msi"], .filetypes-icons.icon-colored.fi-rpm, .filetypes-icons.icon-colored[data-icon="rpm"] {
+  background-position: -192px -24px; }
+
+.filetypes-icons.icon-colored.fi-code, .filetypes-icons.icon-colored[data-icon="code"], .filetypes-icons.icon-colored.fi-php, .filetypes-icons.icon-colored[data-icon="php"], .filetypes-icons.icon-colored.fi-module, .filetypes-icons.icon-colored[data-icon="module"], .filetypes-icons.icon-colored.fi-inc, .filetypes-icons.icon-colored[data-icon="inc"], .filetypes-icons.icon-colored.fi-info, .filetypes-icons.icon-colored[data-icon="info"], .filetypes-icons.icon-colored.fi-yml, .filetypes-icons.icon-colored[data-icon="yml"], .filetypes-icons.icon-colored.fi-css, .filetypes-icons.icon-colored[data-icon="css"], .filetypes-icons.icon-colored.fi-scss, .filetypes-icons.icon-colored[data-icon="scss"], .filetypes-icons.icon-colored.fi-html, .filetypes-icons.icon-colored[data-icon="html"], .filetypes-icons.icon-colored.fi-htm, .filetypes-icons.icon-colored[data-icon="htm"], .filetypes-icons.icon-colored.fi-xml, .filetypes-icons.icon-colored[data-icon="xml"], .filetypes-icons.icon-colored.fi-class, .filetypes-icons.icon-colored[data-icon="class"], .filetypes-icons.icon-colored.fi-java, .filetypes-icons.icon-colored[data-icon="java"], .filetypes-icons.icon-colored.fi-c, .filetypes-icons.icon-colored[data-icon="c"], .filetypes-icons.icon-colored.fi-cpp, .filetypes-icons.icon-colored[data-icon="cpp"], .filetypes-icons.icon-colored.fi-h, .filetypes-icons.icon-colored[data-icon="h"], .filetypes-icons.icon-colored.fi-js, .filetypes-icons.icon-colored[data-icon="js"], .filetypes-icons.icon-colored.fi-pl, .filetypes-icons.icon-colored[data-icon="pl"], .filetypes-icons.icon-colored.fi-py, .filetypes-icons.icon-colored[data-icon="py"], .filetypes-icons.icon-colored.fi-sh, .filetypes-icons.icon-colored[data-icon="sh"] {
+  background-position: -216px -24px; }
+
+.filetypes-icons.icon-dark {
+  background: rgba(0, 0, 0, 0.87) !important; }
+
+.filetypes-icons.icon-light {
+  background: #FFF !important; }
+
+.filetypes-icons.icon-light.icon-disabled {
+  background: rgba(255, 255, 255, 0.3) !important; }
+
+.filetypes-icons.icon-primary {
+  background: #607d8b; }
+
+.filetypes-icons.icon-accent {
+  background: #00b0ff; }
+
+.btn .filetypes-icons, .btn .filetypes-icons:hover, .btn .filetypes-icons:focus {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn-colored .filetypes-icons, .btn-colored:hover .filetypes-icons, .btn-colored:focus .filetypes-icons, .btn.btn-colored .filetypes-icons, .btn.btn-colored:hover .filetypes-icons, .btn.btn-colored:focus .filetypes-icons {
+  background: #546e7a; }
+
+.btn-accent .filetypes-icons, .btn-accent:hover .filetypes-icons, .btn-accent:focus .filetypes-icons, .btn.btn-accent .filetypes-icons, .btn.btn-accent:hover .filetypes-icons, .btn.btn-accent:focus .filetypes-icons {
+  background: #00b0ff; }
+
+.btn-raised.btn-colored .filetypes-icons, .btn-raised.btn-colored:hover .filetypes-icons, .btn-raised.btn-colored:focus .filetypes-icons, .btn.btn-raised.btn-colored .filetypes-icons, .btn.btn-raised.btn-colored:hover .filetypes-icons, .btn.btn-raised.btn-colored:focus .filetypes-icons {
+  background: #FFF; }
+
+.btn-raised.btn-accent .filetypes-icons, .btn-raised.btn-accent:hover .filetypes-icons, .btn-raised.btn-accent:focus .filetypes-icons, .btn.btn-raised.btn-accent .filetypes-icons, .btn.btn-raised.btn-accent:hover .filetypes-icons, .btn.btn-raised.btn-accent:focus .filetypes-icons {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn.btn-disabled .filetypes-icons, .btn.btn-disabled:hover .filetypes-icons, .btn.btn-disabled:focus .filetypes-icons, .btn.btn-disabled:active .filetypes-icons {
+  background: rgba(0, 0, 0, 0.26); }
+
+.fab .filetypes-icons, .fab:hover .filetypes-icons, .fab:focus .filetypes-icons {
+  background: rgba(0, 0, 0, 0.87); }
+
+.fab.fab-colored .filetypes-icons, .fab.fab-colored:hover .filetypes-icons, .fab.fab-colored:focus .filetypes-icons {
+  background: #FFF; }
+
+.fab.fab-accent .filetypes-icons, .fab.fab-accent:hover .filetypes-icons, .fab.fab-accent:focus .filetypes-icons {
+  background: rgba(0, 0, 0, 0.87); }
+
+.filetypes-icons.icon-dark,
+.filetypes-icons.icon-light,
+.filetypes-icons.icon-primary,
+.filetypes-icons.icon-accent,
+.btn .filetypes-icons, .fab .filetypes-icons,
+.theme-dark .filetypes-icons {
+  opacity: 1;
+  -webkit-mask: url(../img/filetypes-icons.svg) no-repeat;
+          mask: url(../img/filetypes-icons.svg) no-repeat; }
+  .filetypes-icons.icon-dark.fi-doc, .filetypes-icons.icon-dark[data-icon="doc"], .filetypes-icons.icon-dark.fi-txt, .filetypes-icons.icon-dark[data-icon="txt"], .filetypes-icons.icon-dark.fi-docx, .filetypes-icons.icon-dark[data-icon="docx"], .filetypes-icons.icon-dark.fi-rtf, .filetypes-icons.icon-dark[data-icon="rtf"], .filetypes-icons.icon-dark.fi-odt, .filetypes-icons.icon-dark[data-icon="odt"],
+  .filetypes-icons.icon-light.fi-doc,
+  .filetypes-icons.icon-light[data-icon="doc"],
+  .filetypes-icons.icon-light.fi-txt,
+  .filetypes-icons.icon-light[data-icon="txt"],
+  .filetypes-icons.icon-light.fi-docx,
+  .filetypes-icons.icon-light[data-icon="docx"],
+  .filetypes-icons.icon-light.fi-rtf,
+  .filetypes-icons.icon-light[data-icon="rtf"],
+  .filetypes-icons.icon-light.fi-odt,
+  .filetypes-icons.icon-light[data-icon="odt"],
+  .filetypes-icons.icon-primary.fi-doc,
+  .filetypes-icons.icon-primary[data-icon="doc"],
+  .filetypes-icons.icon-primary.fi-txt,
+  .filetypes-icons.icon-primary[data-icon="txt"],
+  .filetypes-icons.icon-primary.fi-docx,
+  .filetypes-icons.icon-primary[data-icon="docx"],
+  .filetypes-icons.icon-primary.fi-rtf,
+  .filetypes-icons.icon-primary[data-icon="rtf"],
+  .filetypes-icons.icon-primary.fi-odt,
+  .filetypes-icons.icon-primary[data-icon="odt"],
+  .filetypes-icons.icon-accent.fi-doc,
+  .filetypes-icons.icon-accent[data-icon="doc"],
+  .filetypes-icons.icon-accent.fi-txt,
+  .filetypes-icons.icon-accent[data-icon="txt"],
+  .filetypes-icons.icon-accent.fi-docx,
+  .filetypes-icons.icon-accent[data-icon="docx"],
+  .filetypes-icons.icon-accent.fi-rtf,
+  .filetypes-icons.icon-accent[data-icon="rtf"],
+  .filetypes-icons.icon-accent.fi-odt,
+  .filetypes-icons.icon-accent[data-icon="odt"],
+  .btn .filetypes-icons.fi-doc,
+  .btn .filetypes-icons[data-icon="doc"],
+  .btn .filetypes-icons.fi-txt,
+  .btn .filetypes-icons[data-icon="txt"],
+  .btn .filetypes-icons.fi-docx,
+  .btn .filetypes-icons[data-icon="docx"],
+  .btn .filetypes-icons.fi-rtf,
+  .btn .filetypes-icons[data-icon="rtf"],
+  .btn .filetypes-icons.fi-odt,
+  .btn .filetypes-icons[data-icon="odt"], .fab .filetypes-icons.fi-doc, .fab .filetypes-icons[data-icon="doc"], .fab .filetypes-icons.fi-txt, .fab .filetypes-icons[data-icon="txt"], .fab .filetypes-icons.fi-docx, .fab .filetypes-icons[data-icon="docx"], .fab .filetypes-icons.fi-rtf, .fab .filetypes-icons[data-icon="rtf"], .fab .filetypes-icons.fi-odt, .fab .filetypes-icons[data-icon="odt"],
+  .theme-dark .filetypes-icons.fi-doc,
+  .theme-dark .filetypes-icons[data-icon="doc"],
+  .theme-dark .filetypes-icons.fi-txt,
+  .theme-dark .filetypes-icons[data-icon="txt"],
+  .theme-dark .filetypes-icons.fi-docx,
+  .theme-dark .filetypes-icons[data-icon="docx"],
+  .theme-dark .filetypes-icons.fi-rtf,
+  .theme-dark .filetypes-icons[data-icon="rtf"],
+  .theme-dark .filetypes-icons.fi-odt,
+  .theme-dark .filetypes-icons[data-icon="odt"] {
+    -webkit-mask-position: -24px 0;
+            mask-position: -24px 0; }
+  .filetypes-icons.icon-dark.fi-sheet, .filetypes-icons.icon-dark[data-icon="sheet"], .filetypes-icons.icon-dark.fi-xls, .filetypes-icons.icon-dark[data-icon="xls"], .filetypes-icons.icon-dark.fi-xlsx, .filetypes-icons.icon-dark[data-icon="xlsx"], .filetypes-icons.icon-dark.fi-csv, .filetypes-icons.icon-dark[data-icon="csv"], .filetypes-icons.icon-dark.fi-ods, .filetypes-icons.icon-dark[data-icon="ods"],
+  .filetypes-icons.icon-light.fi-sheet,
+  .filetypes-icons.icon-light[data-icon="sheet"],
+  .filetypes-icons.icon-light.fi-xls,
+  .filetypes-icons.icon-light[data-icon="xls"],
+  .filetypes-icons.icon-light.fi-xlsx,
+  .filetypes-icons.icon-light[data-icon="xlsx"],
+  .filetypes-icons.icon-light.fi-csv,
+  .filetypes-icons.icon-light[data-icon="csv"],
+  .filetypes-icons.icon-light.fi-ods,
+  .filetypes-icons.icon-light[data-icon="ods"],
+  .filetypes-icons.icon-primary.fi-sheet,
+  .filetypes-icons.icon-primary[data-icon="sheet"],
+  .filetypes-icons.icon-primary.fi-xls,
+  .filetypes-icons.icon-primary[data-icon="xls"],
+  .filetypes-icons.icon-primary.fi-xlsx,
+  .filetypes-icons.icon-primary[data-icon="xlsx"],
+  .filetypes-icons.icon-primary.fi-csv,
+  .filetypes-icons.icon-primary[data-icon="csv"],
+  .filetypes-icons.icon-primary.fi-ods,
+  .filetypes-icons.icon-primary[data-icon="ods"],
+  .filetypes-icons.icon-accent.fi-sheet,
+  .filetypes-icons.icon-accent[data-icon="sheet"],
+  .filetypes-icons.icon-accent.fi-xls,
+  .filetypes-icons.icon-accent[data-icon="xls"],
+  .filetypes-icons.icon-accent.fi-xlsx,
+  .filetypes-icons.icon-accent[data-icon="xlsx"],
+  .filetypes-icons.icon-accent.fi-csv,
+  .filetypes-icons.icon-accent[data-icon="csv"],
+  .filetypes-icons.icon-accent.fi-ods,
+  .filetypes-icons.icon-accent[data-icon="ods"],
+  .btn .filetypes-icons.fi-sheet,
+  .btn .filetypes-icons[data-icon="sheet"],
+  .btn .filetypes-icons.fi-xls,
+  .btn .filetypes-icons[data-icon="xls"],
+  .btn .filetypes-icons.fi-xlsx,
+  .btn .filetypes-icons[data-icon="xlsx"],
+  .btn .filetypes-icons.fi-csv,
+  .btn .filetypes-icons[data-icon="csv"],
+  .btn .filetypes-icons.fi-ods,
+  .btn .filetypes-icons[data-icon="ods"], .fab .filetypes-icons.fi-sheet, .fab .filetypes-icons[data-icon="sheet"], .fab .filetypes-icons.fi-xls, .fab .filetypes-icons[data-icon="xls"], .fab .filetypes-icons.fi-xlsx, .fab .filetypes-icons[data-icon="xlsx"], .fab .filetypes-icons.fi-csv, .fab .filetypes-icons[data-icon="csv"], .fab .filetypes-icons.fi-ods, .fab .filetypes-icons[data-icon="ods"],
+  .theme-dark .filetypes-icons.fi-sheet,
+  .theme-dark .filetypes-icons[data-icon="sheet"],
+  .theme-dark .filetypes-icons.fi-xls,
+  .theme-dark .filetypes-icons[data-icon="xls"],
+  .theme-dark .filetypes-icons.fi-xlsx,
+  .theme-dark .filetypes-icons[data-icon="xlsx"],
+  .theme-dark .filetypes-icons.fi-csv,
+  .theme-dark .filetypes-icons[data-icon="csv"],
+  .theme-dark .filetypes-icons.fi-ods,
+  .theme-dark .filetypes-icons[data-icon="ods"] {
+    -webkit-mask-position: -48px 0;
+            mask-position: -48px 0; }
+  .filetypes-icons.icon-dark.fi-ppt, .filetypes-icons.icon-dark[data-icon="presentation"], .filetypes-icons.icon-dark.fi-ppt, .filetypes-icons.icon-dark[data-icon="ppt"], .filetypes-icons.icon-dark.fi-pptx, .filetypes-icons.icon-dark[data-icon="pptx"], .filetypes-icons.icon-dark.fi-key, .filetypes-icons.icon-dark[data-icon="key"], .filetypes-icons.icon-dark.fi-odp, .filetypes-icons.icon-dark[data-icon="odp"],
+  .filetypes-icons.icon-light.fi-ppt,
+  .filetypes-icons.icon-light[data-icon="presentation"],
+  .filetypes-icons.icon-light.fi-ppt,
+  .filetypes-icons.icon-light[data-icon="ppt"],
+  .filetypes-icons.icon-light.fi-pptx,
+  .filetypes-icons.icon-light[data-icon="pptx"],
+  .filetypes-icons.icon-light.fi-key,
+  .filetypes-icons.icon-light[data-icon="key"],
+  .filetypes-icons.icon-light.fi-odp,
+  .filetypes-icons.icon-light[data-icon="odp"],
+  .filetypes-icons.icon-primary.fi-ppt,
+  .filetypes-icons.icon-primary[data-icon="presentation"],
+  .filetypes-icons.icon-primary.fi-ppt,
+  .filetypes-icons.icon-primary[data-icon="ppt"],
+  .filetypes-icons.icon-primary.fi-pptx,
+  .filetypes-icons.icon-primary[data-icon="pptx"],
+  .filetypes-icons.icon-primary.fi-key,
+  .filetypes-icons.icon-primary[data-icon="key"],
+  .filetypes-icons.icon-primary.fi-odp,
+  .filetypes-icons.icon-primary[data-icon="odp"],
+  .filetypes-icons.icon-accent.fi-ppt,
+  .filetypes-icons.icon-accent[data-icon="presentation"],
+  .filetypes-icons.icon-accent.fi-ppt,
+  .filetypes-icons.icon-accent[data-icon="ppt"],
+  .filetypes-icons.icon-accent.fi-pptx,
+  .filetypes-icons.icon-accent[data-icon="pptx"],
+  .filetypes-icons.icon-accent.fi-key,
+  .filetypes-icons.icon-accent[data-icon="key"],
+  .filetypes-icons.icon-accent.fi-odp,
+  .filetypes-icons.icon-accent[data-icon="odp"],
+  .btn .filetypes-icons.fi-ppt,
+  .btn .filetypes-icons[data-icon="presentation"],
+  .btn .filetypes-icons.fi-ppt,
+  .btn .filetypes-icons[data-icon="ppt"],
+  .btn .filetypes-icons.fi-pptx,
+  .btn .filetypes-icons[data-icon="pptx"],
+  .btn .filetypes-icons.fi-key,
+  .btn .filetypes-icons[data-icon="key"],
+  .btn .filetypes-icons.fi-odp,
+  .btn .filetypes-icons[data-icon="odp"], .fab .filetypes-icons.fi-ppt, .fab .filetypes-icons[data-icon="presentation"], .fab .filetypes-icons.fi-ppt, .fab .filetypes-icons[data-icon="ppt"], .fab .filetypes-icons.fi-pptx, .fab .filetypes-icons[data-icon="pptx"], .fab .filetypes-icons.fi-key, .fab .filetypes-icons[data-icon="key"], .fab .filetypes-icons.fi-odp, .fab .filetypes-icons[data-icon="odp"],
+  .theme-dark .filetypes-icons.fi-ppt,
+  .theme-dark .filetypes-icons[data-icon="presentation"],
+  .theme-dark .filetypes-icons.fi-ppt,
+  .theme-dark .filetypes-icons[data-icon="ppt"],
+  .theme-dark .filetypes-icons.fi-pptx,
+  .theme-dark .filetypes-icons[data-icon="pptx"],
+  .theme-dark .filetypes-icons.fi-key,
+  .theme-dark .filetypes-icons[data-icon="key"],
+  .theme-dark .filetypes-icons.fi-odp,
+  .theme-dark .filetypes-icons[data-icon="odp"] {
+    -webkit-mask-position: -72px 0;
+            mask-position: -72px 0; }
+  .filetypes-icons.icon-dark.fi-pdf, .filetypes-icons.icon-dark[data-icon="pdf"],
+  .filetypes-icons.icon-light.fi-pdf,
+  .filetypes-icons.icon-light[data-icon="pdf"],
+  .filetypes-icons.icon-primary.fi-pdf,
+  .filetypes-icons.icon-primary[data-icon="pdf"],
+  .filetypes-icons.icon-accent.fi-pdf,
+  .filetypes-icons.icon-accent[data-icon="pdf"],
+  .btn .filetypes-icons.fi-pdf,
+  .btn .filetypes-icons[data-icon="pdf"], .fab .filetypes-icons.fi-pdf, .fab .filetypes-icons[data-icon="pdf"],
+  .theme-dark .filetypes-icons.fi-pdf,
+  .theme-dark .filetypes-icons[data-icon="pdf"] {
+    -webkit-mask-position: -96px 0;
+            mask-position: -96px 0; }
+  .filetypes-icons.icon-dark.fi-image, .filetypes-icons.icon-dark[data-icon="image"], .filetypes-icons.icon-dark.fi-jpg, .filetypes-icons.icon-dark[data-icon="jpg"], .filetypes-icons.icon-dark.fi-jpeg, .filetypes-icons.icon-dark[data-icon="jpeg"], .filetypes-icons.icon-dark.fi-png, .filetypes-icons.icon-dark[data-icon="png"], .filetypes-icons.icon-dark.fi-gif, .filetypes-icons.icon-dark[data-icon="gif"], .filetypes-icons.icon-dark.fi-psd, .filetypes-icons.icon-dark[data-icon="psd"], .filetypes-icons.icon-dark.fi-svg, .filetypes-icons.icon-dark[data-icon="svg"], .filetypes-icons.icon-dark.fi-ai, .filetypes-icons.icon-dark[data-icon="ai"], .filetypes-icons.icon-dark.fi-eps, .filetypes-icons.icon-dark[data-icon="eps"], .filetypes-icons.icon-dark.fi-cdr, .filetypes-icons.icon-dark[data-icon="cdr"],
+  .filetypes-icons.icon-light.fi-image,
+  .filetypes-icons.icon-light[data-icon="image"],
+  .filetypes-icons.icon-light.fi-jpg,
+  .filetypes-icons.icon-light[data-icon="jpg"],
+  .filetypes-icons.icon-light.fi-jpeg,
+  .filetypes-icons.icon-light[data-icon="jpeg"],
+  .filetypes-icons.icon-light.fi-png,
+  .filetypes-icons.icon-light[data-icon="png"],
+  .filetypes-icons.icon-light.fi-gif,
+  .filetypes-icons.icon-light[data-icon="gif"],
+  .filetypes-icons.icon-light.fi-psd,
+  .filetypes-icons.icon-light[data-icon="psd"],
+  .filetypes-icons.icon-light.fi-svg,
+  .filetypes-icons.icon-light[data-icon="svg"],
+  .filetypes-icons.icon-light.fi-ai,
+  .filetypes-icons.icon-light[data-icon="ai"],
+  .filetypes-icons.icon-light.fi-eps,
+  .filetypes-icons.icon-light[data-icon="eps"],
+  .filetypes-icons.icon-light.fi-cdr,
+  .filetypes-icons.icon-light[data-icon="cdr"],
+  .filetypes-icons.icon-primary.fi-image,
+  .filetypes-icons.icon-primary[data-icon="image"],
+  .filetypes-icons.icon-primary.fi-jpg,
+  .filetypes-icons.icon-primary[data-icon="jpg"],
+  .filetypes-icons.icon-primary.fi-jpeg,
+  .filetypes-icons.icon-primary[data-icon="jpeg"],
+  .filetypes-icons.icon-primary.fi-png,
+  .filetypes-icons.icon-primary[data-icon="png"],
+  .filetypes-icons.icon-primary.fi-gif,
+  .filetypes-icons.icon-primary[data-icon="gif"],
+  .filetypes-icons.icon-primary.fi-psd,
+  .filetypes-icons.icon-primary[data-icon="psd"],
+  .filetypes-icons.icon-primary.fi-svg,
+  .filetypes-icons.icon-primary[data-icon="svg"],
+  .filetypes-icons.icon-primary.fi-ai,
+  .filetypes-icons.icon-primary[data-icon="ai"],
+  .filetypes-icons.icon-primary.fi-eps,
+  .filetypes-icons.icon-primary[data-icon="eps"],
+  .filetypes-icons.icon-primary.fi-cdr,
+  .filetypes-icons.icon-primary[data-icon="cdr"],
+  .filetypes-icons.icon-accent.fi-image,
+  .filetypes-icons.icon-accent[data-icon="image"],
+  .filetypes-icons.icon-accent.fi-jpg,
+  .filetypes-icons.icon-accent[data-icon="jpg"],
+  .filetypes-icons.icon-accent.fi-jpeg,
+  .filetypes-icons.icon-accent[data-icon="jpeg"],
+  .filetypes-icons.icon-accent.fi-png,
+  .filetypes-icons.icon-accent[data-icon="png"],
+  .filetypes-icons.icon-accent.fi-gif,
+  .filetypes-icons.icon-accent[data-icon="gif"],
+  .filetypes-icons.icon-accent.fi-psd,
+  .filetypes-icons.icon-accent[data-icon="psd"],
+  .filetypes-icons.icon-accent.fi-svg,
+  .filetypes-icons.icon-accent[data-icon="svg"],
+  .filetypes-icons.icon-accent.fi-ai,
+  .filetypes-icons.icon-accent[data-icon="ai"],
+  .filetypes-icons.icon-accent.fi-eps,
+  .filetypes-icons.icon-accent[data-icon="eps"],
+  .filetypes-icons.icon-accent.fi-cdr,
+  .filetypes-icons.icon-accent[data-icon="cdr"],
+  .btn .filetypes-icons.fi-image,
+  .btn .filetypes-icons[data-icon="image"],
+  .btn .filetypes-icons.fi-jpg,
+  .btn .filetypes-icons[data-icon="jpg"],
+  .btn .filetypes-icons.fi-jpeg,
+  .btn .filetypes-icons[data-icon="jpeg"],
+  .btn .filetypes-icons.fi-png,
+  .btn .filetypes-icons[data-icon="png"],
+  .btn .filetypes-icons.fi-gif,
+  .btn .filetypes-icons[data-icon="gif"],
+  .btn .filetypes-icons.fi-psd,
+  .btn .filetypes-icons[data-icon="psd"],
+  .btn .filetypes-icons.fi-svg,
+  .btn .filetypes-icons[data-icon="svg"],
+  .btn .filetypes-icons.fi-ai,
+  .btn .filetypes-icons[data-icon="ai"],
+  .btn .filetypes-icons.fi-eps,
+  .btn .filetypes-icons[data-icon="eps"],
+  .btn .filetypes-icons.fi-cdr,
+  .btn .filetypes-icons[data-icon="cdr"], .fab .filetypes-icons.fi-image, .fab .filetypes-icons[data-icon="image"], .fab .filetypes-icons.fi-jpg, .fab .filetypes-icons[data-icon="jpg"], .fab .filetypes-icons.fi-jpeg, .fab .filetypes-icons[data-icon="jpeg"], .fab .filetypes-icons.fi-png, .fab .filetypes-icons[data-icon="png"], .fab .filetypes-icons.fi-gif, .fab .filetypes-icons[data-icon="gif"], .fab .filetypes-icons.fi-psd, .fab .filetypes-icons[data-icon="psd"], .fab .filetypes-icons.fi-svg, .fab .filetypes-icons[data-icon="svg"], .fab .filetypes-icons.fi-ai, .fab .filetypes-icons[data-icon="ai"], .fab .filetypes-icons.fi-eps, .fab .filetypes-icons[data-icon="eps"], .fab .filetypes-icons.fi-cdr, .fab .filetypes-icons[data-icon="cdr"],
+  .theme-dark .filetypes-icons.fi-image,
+  .theme-dark .filetypes-icons[data-icon="image"],
+  .theme-dark .filetypes-icons.fi-jpg,
+  .theme-dark .filetypes-icons[data-icon="jpg"],
+  .theme-dark .filetypes-icons.fi-jpeg,
+  .theme-dark .filetypes-icons[data-icon="jpeg"],
+  .theme-dark .filetypes-icons.fi-png,
+  .theme-dark .filetypes-icons[data-icon="png"],
+  .theme-dark .filetypes-icons.fi-gif,
+  .theme-dark .filetypes-icons[data-icon="gif"],
+  .theme-dark .filetypes-icons.fi-psd,
+  .theme-dark .filetypes-icons[data-icon="psd"],
+  .theme-dark .filetypes-icons.fi-svg,
+  .theme-dark .filetypes-icons[data-icon="svg"],
+  .theme-dark .filetypes-icons.fi-ai,
+  .theme-dark .filetypes-icons[data-icon="ai"],
+  .theme-dark .filetypes-icons.fi-eps,
+  .theme-dark .filetypes-icons[data-icon="eps"],
+  .theme-dark .filetypes-icons.fi-cdr,
+  .theme-dark .filetypes-icons[data-icon="cdr"] {
+    -webkit-mask-position: -120px 0;
+            mask-position: -120px 0; }
+  .filetypes-icons.icon-dark.fi-video, .filetypes-icons.icon-dark[data-icon="video"], .filetypes-icons.icon-dark.fi-avi, .filetypes-icons.icon-dark[data-icon="avi"], .filetypes-icons.icon-dark.fi-mpg, .filetypes-icons.icon-dark[data-icon="mpg"], .filetypes-icons.icon-dark.fi-mpeg, .filetypes-icons.icon-dark[data-icon="mpeg"], .filetypes-icons.icon-dark.fi-mp4, .filetypes-icons.icon-dark[data-icon="mp4"], .filetypes-icons.icon-dark.fi-mov, .filetypes-icons.icon-dark[data-icon="mov"], .filetypes-icons.icon-dark.fi-flv, .filetypes-icons.icon-dark[data-icon="flv"], .filetypes-icons.icon-dark.fi-mkv, .filetypes-icons.icon-dark[data-icon="mkv"],
+  .filetypes-icons.icon-light.fi-video,
+  .filetypes-icons.icon-light[data-icon="video"],
+  .filetypes-icons.icon-light.fi-avi,
+  .filetypes-icons.icon-light[data-icon="avi"],
+  .filetypes-icons.icon-light.fi-mpg,
+  .filetypes-icons.icon-light[data-icon="mpg"],
+  .filetypes-icons.icon-light.fi-mpeg,
+  .filetypes-icons.icon-light[data-icon="mpeg"],
+  .filetypes-icons.icon-light.fi-mp4,
+  .filetypes-icons.icon-light[data-icon="mp4"],
+  .filetypes-icons.icon-light.fi-mov,
+  .filetypes-icons.icon-light[data-icon="mov"],
+  .filetypes-icons.icon-light.fi-flv,
+  .filetypes-icons.icon-light[data-icon="flv"],
+  .filetypes-icons.icon-light.fi-mkv,
+  .filetypes-icons.icon-light[data-icon="mkv"],
+  .filetypes-icons.icon-primary.fi-video,
+  .filetypes-icons.icon-primary[data-icon="video"],
+  .filetypes-icons.icon-primary.fi-avi,
+  .filetypes-icons.icon-primary[data-icon="avi"],
+  .filetypes-icons.icon-primary.fi-mpg,
+  .filetypes-icons.icon-primary[data-icon="mpg"],
+  .filetypes-icons.icon-primary.fi-mpeg,
+  .filetypes-icons.icon-primary[data-icon="mpeg"],
+  .filetypes-icons.icon-primary.fi-mp4,
+  .filetypes-icons.icon-primary[data-icon="mp4"],
+  .filetypes-icons.icon-primary.fi-mov,
+  .filetypes-icons.icon-primary[data-icon="mov"],
+  .filetypes-icons.icon-primary.fi-flv,
+  .filetypes-icons.icon-primary[data-icon="flv"],
+  .filetypes-icons.icon-primary.fi-mkv,
+  .filetypes-icons.icon-primary[data-icon="mkv"],
+  .filetypes-icons.icon-accent.fi-video,
+  .filetypes-icons.icon-accent[data-icon="video"],
+  .filetypes-icons.icon-accent.fi-avi,
+  .filetypes-icons.icon-accent[data-icon="avi"],
+  .filetypes-icons.icon-accent.fi-mpg,
+  .filetypes-icons.icon-accent[data-icon="mpg"],
+  .filetypes-icons.icon-accent.fi-mpeg,
+  .filetypes-icons.icon-accent[data-icon="mpeg"],
+  .filetypes-icons.icon-accent.fi-mp4,
+  .filetypes-icons.icon-accent[data-icon="mp4"],
+  .filetypes-icons.icon-accent.fi-mov,
+  .filetypes-icons.icon-accent[data-icon="mov"],
+  .filetypes-icons.icon-accent.fi-flv,
+  .filetypes-icons.icon-accent[data-icon="flv"],
+  .filetypes-icons.icon-accent.fi-mkv,
+  .filetypes-icons.icon-accent[data-icon="mkv"],
+  .btn .filetypes-icons.fi-video,
+  .btn .filetypes-icons[data-icon="video"],
+  .btn .filetypes-icons.fi-avi,
+  .btn .filetypes-icons[data-icon="avi"],
+  .btn .filetypes-icons.fi-mpg,
+  .btn .filetypes-icons[data-icon="mpg"],
+  .btn .filetypes-icons.fi-mpeg,
+  .btn .filetypes-icons[data-icon="mpeg"],
+  .btn .filetypes-icons.fi-mp4,
+  .btn .filetypes-icons[data-icon="mp4"],
+  .btn .filetypes-icons.fi-mov,
+  .btn .filetypes-icons[data-icon="mov"],
+  .btn .filetypes-icons.fi-flv,
+  .btn .filetypes-icons[data-icon="flv"],
+  .btn .filetypes-icons.fi-mkv,
+  .btn .filetypes-icons[data-icon="mkv"], .fab .filetypes-icons.fi-video, .fab .filetypes-icons[data-icon="video"], .fab .filetypes-icons.fi-avi, .fab .filetypes-icons[data-icon="avi"], .fab .filetypes-icons.fi-mpg, .fab .filetypes-icons[data-icon="mpg"], .fab .filetypes-icons.fi-mpeg, .fab .filetypes-icons[data-icon="mpeg"], .fab .filetypes-icons.fi-mp4, .fab .filetypes-icons[data-icon="mp4"], .fab .filetypes-icons.fi-mov, .fab .filetypes-icons[data-icon="mov"], .fab .filetypes-icons.fi-flv, .fab .filetypes-icons[data-icon="flv"], .fab .filetypes-icons.fi-mkv, .fab .filetypes-icons[data-icon="mkv"],
+  .theme-dark .filetypes-icons.fi-video,
+  .theme-dark .filetypes-icons[data-icon="video"],
+  .theme-dark .filetypes-icons.fi-avi,
+  .theme-dark .filetypes-icons[data-icon="avi"],
+  .theme-dark .filetypes-icons.fi-mpg,
+  .theme-dark .filetypes-icons[data-icon="mpg"],
+  .theme-dark .filetypes-icons.fi-mpeg,
+  .theme-dark .filetypes-icons[data-icon="mpeg"],
+  .theme-dark .filetypes-icons.fi-mp4,
+  .theme-dark .filetypes-icons[data-icon="mp4"],
+  .theme-dark .filetypes-icons.fi-mov,
+  .theme-dark .filetypes-icons[data-icon="mov"],
+  .theme-dark .filetypes-icons.fi-flv,
+  .theme-dark .filetypes-icons[data-icon="flv"],
+  .theme-dark .filetypes-icons.fi-mkv,
+  .theme-dark .filetypes-icons[data-icon="mkv"] {
+    -webkit-mask-position: -144px 0;
+            mask-position: -144px 0; }
+  .filetypes-icons.icon-dark.fi-audio, .filetypes-icons.icon-dark[data-icon="audio"], .filetypes-icons.icon-dark.fi-mp3, .filetypes-icons.icon-dark[data-icon="mp3"], .filetypes-icons.icon-dark.fi-flac, .filetypes-icons.icon-dark[data-icon="flac"], .filetypes-icons.icon-dark.fi-ogg, .filetypes-icons.icon-dark[data-icon="ogg"], .filetypes-icons.icon-dark.fi-wav, .filetypes-icons.icon-dark[data-icon="wav"], .filetypes-icons.icon-dark.fi-ape, .filetypes-icons.icon-dark[data-icon="ape"], .filetypes-icons.icon-dark.fi-m4a, .filetypes-icons.icon-dark[data-icon="m4a"], .filetypes-icons.icon-dark.fi-aac, .filetypes-icons.icon-dark[data-icon="aac"],
+  .filetypes-icons.icon-light.fi-audio,
+  .filetypes-icons.icon-light[data-icon="audio"],
+  .filetypes-icons.icon-light.fi-mp3,
+  .filetypes-icons.icon-light[data-icon="mp3"],
+  .filetypes-icons.icon-light.fi-flac,
+  .filetypes-icons.icon-light[data-icon="flac"],
+  .filetypes-icons.icon-light.fi-ogg,
+  .filetypes-icons.icon-light[data-icon="ogg"],
+  .filetypes-icons.icon-light.fi-wav,
+  .filetypes-icons.icon-light[data-icon="wav"],
+  .filetypes-icons.icon-light.fi-ape,
+  .filetypes-icons.icon-light[data-icon="ape"],
+  .filetypes-icons.icon-light.fi-m4a,
+  .filetypes-icons.icon-light[data-icon="m4a"],
+  .filetypes-icons.icon-light.fi-aac,
+  .filetypes-icons.icon-light[data-icon="aac"],
+  .filetypes-icons.icon-primary.fi-audio,
+  .filetypes-icons.icon-primary[data-icon="audio"],
+  .filetypes-icons.icon-primary.fi-mp3,
+  .filetypes-icons.icon-primary[data-icon="mp3"],
+  .filetypes-icons.icon-primary.fi-flac,
+  .filetypes-icons.icon-primary[data-icon="flac"],
+  .filetypes-icons.icon-primary.fi-ogg,
+  .filetypes-icons.icon-primary[data-icon="ogg"],
+  .filetypes-icons.icon-primary.fi-wav,
+  .filetypes-icons.icon-primary[data-icon="wav"],
+  .filetypes-icons.icon-primary.fi-ape,
+  .filetypes-icons.icon-primary[data-icon="ape"],
+  .filetypes-icons.icon-primary.fi-m4a,
+  .filetypes-icons.icon-primary[data-icon="m4a"],
+  .filetypes-icons.icon-primary.fi-aac,
+  .filetypes-icons.icon-primary[data-icon="aac"],
+  .filetypes-icons.icon-accent.fi-audio,
+  .filetypes-icons.icon-accent[data-icon="audio"],
+  .filetypes-icons.icon-accent.fi-mp3,
+  .filetypes-icons.icon-accent[data-icon="mp3"],
+  .filetypes-icons.icon-accent.fi-flac,
+  .filetypes-icons.icon-accent[data-icon="flac"],
+  .filetypes-icons.icon-accent.fi-ogg,
+  .filetypes-icons.icon-accent[data-icon="ogg"],
+  .filetypes-icons.icon-accent.fi-wav,
+  .filetypes-icons.icon-accent[data-icon="wav"],
+  .filetypes-icons.icon-accent.fi-ape,
+  .filetypes-icons.icon-accent[data-icon="ape"],
+  .filetypes-icons.icon-accent.fi-m4a,
+  .filetypes-icons.icon-accent[data-icon="m4a"],
+  .filetypes-icons.icon-accent.fi-aac,
+  .filetypes-icons.icon-accent[data-icon="aac"],
+  .btn .filetypes-icons.fi-audio,
+  .btn .filetypes-icons[data-icon="audio"],
+  .btn .filetypes-icons.fi-mp3,
+  .btn .filetypes-icons[data-icon="mp3"],
+  .btn .filetypes-icons.fi-flac,
+  .btn .filetypes-icons[data-icon="flac"],
+  .btn .filetypes-icons.fi-ogg,
+  .btn .filetypes-icons[data-icon="ogg"],
+  .btn .filetypes-icons.fi-wav,
+  .btn .filetypes-icons[data-icon="wav"],
+  .btn .filetypes-icons.fi-ape,
+  .btn .filetypes-icons[data-icon="ape"],
+  .btn .filetypes-icons.fi-m4a,
+  .btn .filetypes-icons[data-icon="m4a"],
+  .btn .filetypes-icons.fi-aac,
+  .btn .filetypes-icons[data-icon="aac"], .fab .filetypes-icons.fi-audio, .fab .filetypes-icons[data-icon="audio"], .fab .filetypes-icons.fi-mp3, .fab .filetypes-icons[data-icon="mp3"], .fab .filetypes-icons.fi-flac, .fab .filetypes-icons[data-icon="flac"], .fab .filetypes-icons.fi-ogg, .fab .filetypes-icons[data-icon="ogg"], .fab .filetypes-icons.fi-wav, .fab .filetypes-icons[data-icon="wav"], .fab .filetypes-icons.fi-ape, .fab .filetypes-icons[data-icon="ape"], .fab .filetypes-icons.fi-m4a, .fab .filetypes-icons[data-icon="m4a"], .fab .filetypes-icons.fi-aac, .fab .filetypes-icons[data-icon="aac"],
+  .theme-dark .filetypes-icons.fi-audio,
+  .theme-dark .filetypes-icons[data-icon="audio"],
+  .theme-dark .filetypes-icons.fi-mp3,
+  .theme-dark .filetypes-icons[data-icon="mp3"],
+  .theme-dark .filetypes-icons.fi-flac,
+  .theme-dark .filetypes-icons[data-icon="flac"],
+  .theme-dark .filetypes-icons.fi-ogg,
+  .theme-dark .filetypes-icons[data-icon="ogg"],
+  .theme-dark .filetypes-icons.fi-wav,
+  .theme-dark .filetypes-icons[data-icon="wav"],
+  .theme-dark .filetypes-icons.fi-ape,
+  .theme-dark .filetypes-icons[data-icon="ape"],
+  .theme-dark .filetypes-icons.fi-m4a,
+  .theme-dark .filetypes-icons[data-icon="m4a"],
+  .theme-dark .filetypes-icons.fi-aac,
+  .theme-dark .filetypes-icons[data-icon="aac"] {
+    -webkit-mask-position: -168px 0;
+            mask-position: -168px 0; }
+  .filetypes-icons.icon-dark.fi-archive, .filetypes-icons.icon-dark[data-icon="archive"], .filetypes-icons.icon-dark.fi-zip, .filetypes-icons.icon-dark[data-icon="zip"], .filetypes-icons.icon-dark.fi-rar, .filetypes-icons.icon-dark[data-icon="rar"], .filetypes-icons.icon-dark.fi-gz, .filetypes-icons.icon-dark[data-icon="gz"], .filetypes-icons.icon-dark.fi-7z, .filetypes-icons.icon-dark[data-icon="7z"], .filetypes-icons.icon-dark.fi-jar, .filetypes-icons.icon-dark[data-icon="jar"], .filetypes-icons.icon-dark.fi-app, .filetypes-icons.icon-dark[data-icon="app"], .filetypes-icons.icon-dark.fi-exe, .filetypes-icons.icon-dark[data-icon="exe"], .filetypes-icons.icon-dark.fi-apk, .filetypes-icons.icon-dark[data-icon="apk"], .filetypes-icons.icon-dark.fi-deb, .filetypes-icons.icon-dark[data-icon="deb"], .filetypes-icons.icon-dark.fi-msi, .filetypes-icons.icon-dark[data-icon="msi"], .filetypes-icons.icon-dark.fi-rpm, .filetypes-icons.icon-dark[data-icon="rpm"],
+  .filetypes-icons.icon-light.fi-archive,
+  .filetypes-icons.icon-light[data-icon="archive"],
+  .filetypes-icons.icon-light.fi-zip,
+  .filetypes-icons.icon-light[data-icon="zip"],
+  .filetypes-icons.icon-light.fi-rar,
+  .filetypes-icons.icon-light[data-icon="rar"],
+  .filetypes-icons.icon-light.fi-gz,
+  .filetypes-icons.icon-light[data-icon="gz"],
+  .filetypes-icons.icon-light.fi-7z,
+  .filetypes-icons.icon-light[data-icon="7z"],
+  .filetypes-icons.icon-light.fi-jar,
+  .filetypes-icons.icon-light[data-icon="jar"],
+  .filetypes-icons.icon-light.fi-app,
+  .filetypes-icons.icon-light[data-icon="app"],
+  .filetypes-icons.icon-light.fi-exe,
+  .filetypes-icons.icon-light[data-icon="exe"],
+  .filetypes-icons.icon-light.fi-apk,
+  .filetypes-icons.icon-light[data-icon="apk"],
+  .filetypes-icons.icon-light.fi-deb,
+  .filetypes-icons.icon-light[data-icon="deb"],
+  .filetypes-icons.icon-light.fi-msi,
+  .filetypes-icons.icon-light[data-icon="msi"],
+  .filetypes-icons.icon-light.fi-rpm,
+  .filetypes-icons.icon-light[data-icon="rpm"],
+  .filetypes-icons.icon-primary.fi-archive,
+  .filetypes-icons.icon-primary[data-icon="archive"],
+  .filetypes-icons.icon-primary.fi-zip,
+  .filetypes-icons.icon-primary[data-icon="zip"],
+  .filetypes-icons.icon-primary.fi-rar,
+  .filetypes-icons.icon-primary[data-icon="rar"],
+  .filetypes-icons.icon-primary.fi-gz,
+  .filetypes-icons.icon-primary[data-icon="gz"],
+  .filetypes-icons.icon-primary.fi-7z,
+  .filetypes-icons.icon-primary[data-icon="7z"],
+  .filetypes-icons.icon-primary.fi-jar,
+  .filetypes-icons.icon-primary[data-icon="jar"],
+  .filetypes-icons.icon-primary.fi-app,
+  .filetypes-icons.icon-primary[data-icon="app"],
+  .filetypes-icons.icon-primary.fi-exe,
+  .filetypes-icons.icon-primary[data-icon="exe"],
+  .filetypes-icons.icon-primary.fi-apk,
+  .filetypes-icons.icon-primary[data-icon="apk"],
+  .filetypes-icons.icon-primary.fi-deb,
+  .filetypes-icons.icon-primary[data-icon="deb"],
+  .filetypes-icons.icon-primary.fi-msi,
+  .filetypes-icons.icon-primary[data-icon="msi"],
+  .filetypes-icons.icon-primary.fi-rpm,
+  .filetypes-icons.icon-primary[data-icon="rpm"],
+  .filetypes-icons.icon-accent.fi-archive,
+  .filetypes-icons.icon-accent[data-icon="archive"],
+  .filetypes-icons.icon-accent.fi-zip,
+  .filetypes-icons.icon-accent[data-icon="zip"],
+  .filetypes-icons.icon-accent.fi-rar,
+  .filetypes-icons.icon-accent[data-icon="rar"],
+  .filetypes-icons.icon-accent.fi-gz,
+  .filetypes-icons.icon-accent[data-icon="gz"],
+  .filetypes-icons.icon-accent.fi-7z,
+  .filetypes-icons.icon-accent[data-icon="7z"],
+  .filetypes-icons.icon-accent.fi-jar,
+  .filetypes-icons.icon-accent[data-icon="jar"],
+  .filetypes-icons.icon-accent.fi-app,
+  .filetypes-icons.icon-accent[data-icon="app"],
+  .filetypes-icons.icon-accent.fi-exe,
+  .filetypes-icons.icon-accent[data-icon="exe"],
+  .filetypes-icons.icon-accent.fi-apk,
+  .filetypes-icons.icon-accent[data-icon="apk"],
+  .filetypes-icons.icon-accent.fi-deb,
+  .filetypes-icons.icon-accent[data-icon="deb"],
+  .filetypes-icons.icon-accent.fi-msi,
+  .filetypes-icons.icon-accent[data-icon="msi"],
+  .filetypes-icons.icon-accent.fi-rpm,
+  .filetypes-icons.icon-accent[data-icon="rpm"],
+  .btn .filetypes-icons.fi-archive,
+  .btn .filetypes-icons[data-icon="archive"],
+  .btn .filetypes-icons.fi-zip,
+  .btn .filetypes-icons[data-icon="zip"],
+  .btn .filetypes-icons.fi-rar,
+  .btn .filetypes-icons[data-icon="rar"],
+  .btn .filetypes-icons.fi-gz,
+  .btn .filetypes-icons[data-icon="gz"],
+  .btn .filetypes-icons.fi-7z,
+  .btn .filetypes-icons[data-icon="7z"],
+  .btn .filetypes-icons.fi-jar,
+  .btn .filetypes-icons[data-icon="jar"],
+  .btn .filetypes-icons.fi-app,
+  .btn .filetypes-icons[data-icon="app"],
+  .btn .filetypes-icons.fi-exe,
+  .btn .filetypes-icons[data-icon="exe"],
+  .btn .filetypes-icons.fi-apk,
+  .btn .filetypes-icons[data-icon="apk"],
+  .btn .filetypes-icons.fi-deb,
+  .btn .filetypes-icons[data-icon="deb"],
+  .btn .filetypes-icons.fi-msi,
+  .btn .filetypes-icons[data-icon="msi"],
+  .btn .filetypes-icons.fi-rpm,
+  .btn .filetypes-icons[data-icon="rpm"], .fab .filetypes-icons.fi-archive, .fab .filetypes-icons[data-icon="archive"], .fab .filetypes-icons.fi-zip, .fab .filetypes-icons[data-icon="zip"], .fab .filetypes-icons.fi-rar, .fab .filetypes-icons[data-icon="rar"], .fab .filetypes-icons.fi-gz, .fab .filetypes-icons[data-icon="gz"], .fab .filetypes-icons.fi-7z, .fab .filetypes-icons[data-icon="7z"], .fab .filetypes-icons.fi-jar, .fab .filetypes-icons[data-icon="jar"], .fab .filetypes-icons.fi-app, .fab .filetypes-icons[data-icon="app"], .fab .filetypes-icons.fi-exe, .fab .filetypes-icons[data-icon="exe"], .fab .filetypes-icons.fi-apk, .fab .filetypes-icons[data-icon="apk"], .fab .filetypes-icons.fi-deb, .fab .filetypes-icons[data-icon="deb"], .fab .filetypes-icons.fi-msi, .fab .filetypes-icons[data-icon="msi"], .fab .filetypes-icons.fi-rpm, .fab .filetypes-icons[data-icon="rpm"],
+  .theme-dark .filetypes-icons.fi-archive,
+  .theme-dark .filetypes-icons[data-icon="archive"],
+  .theme-dark .filetypes-icons.fi-zip,
+  .theme-dark .filetypes-icons[data-icon="zip"],
+  .theme-dark .filetypes-icons.fi-rar,
+  .theme-dark .filetypes-icons[data-icon="rar"],
+  .theme-dark .filetypes-icons.fi-gz,
+  .theme-dark .filetypes-icons[data-icon="gz"],
+  .theme-dark .filetypes-icons.fi-7z,
+  .theme-dark .filetypes-icons[data-icon="7z"],
+  .theme-dark .filetypes-icons.fi-jar,
+  .theme-dark .filetypes-icons[data-icon="jar"],
+  .theme-dark .filetypes-icons.fi-app,
+  .theme-dark .filetypes-icons[data-icon="app"],
+  .theme-dark .filetypes-icons.fi-exe,
+  .theme-dark .filetypes-icons[data-icon="exe"],
+  .theme-dark .filetypes-icons.fi-apk,
+  .theme-dark .filetypes-icons[data-icon="apk"],
+  .theme-dark .filetypes-icons.fi-deb,
+  .theme-dark .filetypes-icons[data-icon="deb"],
+  .theme-dark .filetypes-icons.fi-msi,
+  .theme-dark .filetypes-icons[data-icon="msi"],
+  .theme-dark .filetypes-icons.fi-rpm,
+  .theme-dark .filetypes-icons[data-icon="rpm"] {
+    -webkit-mask-position: -192px 0;
+            mask-position: -192px 0; }
+  .filetypes-icons.icon-dark.fi-code, .filetypes-icons.icon-dark[data-icon="code"], .filetypes-icons.icon-dark.fi-php, .filetypes-icons.icon-dark[data-icon="php"], .filetypes-icons.icon-dark.fi-module, .filetypes-icons.icon-dark[data-icon="module"], .filetypes-icons.icon-dark.fi-inc, .filetypes-icons.icon-dark[data-icon="inc"], .filetypes-icons.icon-dark.fi-info, .filetypes-icons.icon-dark[data-icon="info"], .filetypes-icons.icon-dark.fi-yml, .filetypes-icons.icon-dark[data-icon="yml"], .filetypes-icons.icon-dark.fi-css, .filetypes-icons.icon-dark[data-icon="css"], .filetypes-icons.icon-dark.fi-scss, .filetypes-icons.icon-dark[data-icon="scss"], .filetypes-icons.icon-dark.fi-html, .filetypes-icons.icon-dark[data-icon="html"], .filetypes-icons.icon-dark.fi-htm, .filetypes-icons.icon-dark[data-icon="htm"], .filetypes-icons.icon-dark.fi-xml, .filetypes-icons.icon-dark[data-icon="xml"], .filetypes-icons.icon-dark.fi-class, .filetypes-icons.icon-dark[data-icon="class"], .filetypes-icons.icon-dark.fi-java, .filetypes-icons.icon-dark[data-icon="java"], .filetypes-icons.icon-dark.fi-c, .filetypes-icons.icon-dark[data-icon="c"], .filetypes-icons.icon-dark.fi-cpp, .filetypes-icons.icon-dark[data-icon="cpp"], .filetypes-icons.icon-dark.fi-h, .filetypes-icons.icon-dark[data-icon="h"], .filetypes-icons.icon-dark.fi-js, .filetypes-icons.icon-dark[data-icon="js"], .filetypes-icons.icon-dark.fi-pl, .filetypes-icons.icon-dark[data-icon="pl"], .filetypes-icons.icon-dark.fi-py, .filetypes-icons.icon-dark[data-icon="py"], .filetypes-icons.icon-dark.fi-sh, .filetypes-icons.icon-dark[data-icon="sh"],
+  .filetypes-icons.icon-light.fi-code,
+  .filetypes-icons.icon-light[data-icon="code"],
+  .filetypes-icons.icon-light.fi-php,
+  .filetypes-icons.icon-light[data-icon="php"],
+  .filetypes-icons.icon-light.fi-module,
+  .filetypes-icons.icon-light[data-icon="module"],
+  .filetypes-icons.icon-light.fi-inc,
+  .filetypes-icons.icon-light[data-icon="inc"],
+  .filetypes-icons.icon-light.fi-info,
+  .filetypes-icons.icon-light[data-icon="info"],
+  .filetypes-icons.icon-light.fi-yml,
+  .filetypes-icons.icon-light[data-icon="yml"],
+  .filetypes-icons.icon-light.fi-css,
+  .filetypes-icons.icon-light[data-icon="css"],
+  .filetypes-icons.icon-light.fi-scss,
+  .filetypes-icons.icon-light[data-icon="scss"],
+  .filetypes-icons.icon-light.fi-html,
+  .filetypes-icons.icon-light[data-icon="html"],
+  .filetypes-icons.icon-light.fi-htm,
+  .filetypes-icons.icon-light[data-icon="htm"],
+  .filetypes-icons.icon-light.fi-xml,
+  .filetypes-icons.icon-light[data-icon="xml"],
+  .filetypes-icons.icon-light.fi-class,
+  .filetypes-icons.icon-light[data-icon="class"],
+  .filetypes-icons.icon-light.fi-java,
+  .filetypes-icons.icon-light[data-icon="java"],
+  .filetypes-icons.icon-light.fi-c,
+  .filetypes-icons.icon-light[data-icon="c"],
+  .filetypes-icons.icon-light.fi-cpp,
+  .filetypes-icons.icon-light[data-icon="cpp"],
+  .filetypes-icons.icon-light.fi-h,
+  .filetypes-icons.icon-light[data-icon="h"],
+  .filetypes-icons.icon-light.fi-js,
+  .filetypes-icons.icon-light[data-icon="js"],
+  .filetypes-icons.icon-light.fi-pl,
+  .filetypes-icons.icon-light[data-icon="pl"],
+  .filetypes-icons.icon-light.fi-py,
+  .filetypes-icons.icon-light[data-icon="py"],
+  .filetypes-icons.icon-light.fi-sh,
+  .filetypes-icons.icon-light[data-icon="sh"],
+  .filetypes-icons.icon-primary.fi-code,
+  .filetypes-icons.icon-primary[data-icon="code"],
+  .filetypes-icons.icon-primary.fi-php,
+  .filetypes-icons.icon-primary[data-icon="php"],
+  .filetypes-icons.icon-primary.fi-module,
+  .filetypes-icons.icon-primary[data-icon="module"],
+  .filetypes-icons.icon-primary.fi-inc,
+  .filetypes-icons.icon-primary[data-icon="inc"],
+  .filetypes-icons.icon-primary.fi-info,
+  .filetypes-icons.icon-primary[data-icon="info"],
+  .filetypes-icons.icon-primary.fi-yml,
+  .filetypes-icons.icon-primary[data-icon="yml"],
+  .filetypes-icons.icon-primary.fi-css,
+  .filetypes-icons.icon-primary[data-icon="css"],
+  .filetypes-icons.icon-primary.fi-scss,
+  .filetypes-icons.icon-primary[data-icon="scss"],
+  .filetypes-icons.icon-primary.fi-html,
+  .filetypes-icons.icon-primary[data-icon="html"],
+  .filetypes-icons.icon-primary.fi-htm,
+  .filetypes-icons.icon-primary[data-icon="htm"],
+  .filetypes-icons.icon-primary.fi-xml,
+  .filetypes-icons.icon-primary[data-icon="xml"],
+  .filetypes-icons.icon-primary.fi-class,
+  .filetypes-icons.icon-primary[data-icon="class"],
+  .filetypes-icons.icon-primary.fi-java,
+  .filetypes-icons.icon-primary[data-icon="java"],
+  .filetypes-icons.icon-primary.fi-c,
+  .filetypes-icons.icon-primary[data-icon="c"],
+  .filetypes-icons.icon-primary.fi-cpp,
+  .filetypes-icons.icon-primary[data-icon="cpp"],
+  .filetypes-icons.icon-primary.fi-h,
+  .filetypes-icons.icon-primary[data-icon="h"],
+  .filetypes-icons.icon-primary.fi-js,
+  .filetypes-icons.icon-primary[data-icon="js"],
+  .filetypes-icons.icon-primary.fi-pl,
+  .filetypes-icons.icon-primary[data-icon="pl"],
+  .filetypes-icons.icon-primary.fi-py,
+  .filetypes-icons.icon-primary[data-icon="py"],
+  .filetypes-icons.icon-primary.fi-sh,
+  .filetypes-icons.icon-primary[data-icon="sh"],
+  .filetypes-icons.icon-accent.fi-code,
+  .filetypes-icons.icon-accent[data-icon="code"],
+  .filetypes-icons.icon-accent.fi-php,
+  .filetypes-icons.icon-accent[data-icon="php"],
+  .filetypes-icons.icon-accent.fi-module,
+  .filetypes-icons.icon-accent[data-icon="module"],
+  .filetypes-icons.icon-accent.fi-inc,
+  .filetypes-icons.icon-accent[data-icon="inc"],
+  .filetypes-icons.icon-accent.fi-info,
+  .filetypes-icons.icon-accent[data-icon="info"],
+  .filetypes-icons.icon-accent.fi-yml,
+  .filetypes-icons.icon-accent[data-icon="yml"],
+  .filetypes-icons.icon-accent.fi-css,
+  .filetypes-icons.icon-accent[data-icon="css"],
+  .filetypes-icons.icon-accent.fi-scss,
+  .filetypes-icons.icon-accent[data-icon="scss"],
+  .filetypes-icons.icon-accent.fi-html,
+  .filetypes-icons.icon-accent[data-icon="html"],
+  .filetypes-icons.icon-accent.fi-htm,
+  .filetypes-icons.icon-accent[data-icon="htm"],
+  .filetypes-icons.icon-accent.fi-xml,
+  .filetypes-icons.icon-accent[data-icon="xml"],
+  .filetypes-icons.icon-accent.fi-class,
+  .filetypes-icons.icon-accent[data-icon="class"],
+  .filetypes-icons.icon-accent.fi-java,
+  .filetypes-icons.icon-accent[data-icon="java"],
+  .filetypes-icons.icon-accent.fi-c,
+  .filetypes-icons.icon-accent[data-icon="c"],
+  .filetypes-icons.icon-accent.fi-cpp,
+  .filetypes-icons.icon-accent[data-icon="cpp"],
+  .filetypes-icons.icon-accent.fi-h,
+  .filetypes-icons.icon-accent[data-icon="h"],
+  .filetypes-icons.icon-accent.fi-js,
+  .filetypes-icons.icon-accent[data-icon="js"],
+  .filetypes-icons.icon-accent.fi-pl,
+  .filetypes-icons.icon-accent[data-icon="pl"],
+  .filetypes-icons.icon-accent.fi-py,
+  .filetypes-icons.icon-accent[data-icon="py"],
+  .filetypes-icons.icon-accent.fi-sh,
+  .filetypes-icons.icon-accent[data-icon="sh"],
+  .btn .filetypes-icons.fi-code,
+  .btn .filetypes-icons[data-icon="code"],
+  .btn .filetypes-icons.fi-php,
+  .btn .filetypes-icons[data-icon="php"],
+  .btn .filetypes-icons.fi-module,
+  .btn .filetypes-icons[data-icon="module"],
+  .btn .filetypes-icons.fi-inc,
+  .btn .filetypes-icons[data-icon="inc"],
+  .btn .filetypes-icons.fi-info,
+  .btn .filetypes-icons[data-icon="info"],
+  .btn .filetypes-icons.fi-yml,
+  .btn .filetypes-icons[data-icon="yml"],
+  .btn .filetypes-icons.fi-css,
+  .btn .filetypes-icons[data-icon="css"],
+  .btn .filetypes-icons.fi-scss,
+  .btn .filetypes-icons[data-icon="scss"],
+  .btn .filetypes-icons.fi-html,
+  .btn .filetypes-icons[data-icon="html"],
+  .btn .filetypes-icons.fi-htm,
+  .btn .filetypes-icons[data-icon="htm"],
+  .btn .filetypes-icons.fi-xml,
+  .btn .filetypes-icons[data-icon="xml"],
+  .btn .filetypes-icons.fi-class,
+  .btn .filetypes-icons[data-icon="class"],
+  .btn .filetypes-icons.fi-java,
+  .btn .filetypes-icons[data-icon="java"],
+  .btn .filetypes-icons.fi-c,
+  .btn .filetypes-icons[data-icon="c"],
+  .btn .filetypes-icons.fi-cpp,
+  .btn .filetypes-icons[data-icon="cpp"],
+  .btn .filetypes-icons.fi-h,
+  .btn .filetypes-icons[data-icon="h"],
+  .btn .filetypes-icons.fi-js,
+  .btn .filetypes-icons[data-icon="js"],
+  .btn .filetypes-icons.fi-pl,
+  .btn .filetypes-icons[data-icon="pl"],
+  .btn .filetypes-icons.fi-py,
+  .btn .filetypes-icons[data-icon="py"],
+  .btn .filetypes-icons.fi-sh,
+  .btn .filetypes-icons[data-icon="sh"], .fab .filetypes-icons.fi-code, .fab .filetypes-icons[data-icon="code"], .fab .filetypes-icons.fi-php, .fab .filetypes-icons[data-icon="php"], .fab .filetypes-icons.fi-module, .fab .filetypes-icons[data-icon="module"], .fab .filetypes-icons.fi-inc, .fab .filetypes-icons[data-icon="inc"], .fab .filetypes-icons.fi-info, .fab .filetypes-icons[data-icon="info"], .fab .filetypes-icons.fi-yml, .fab .filetypes-icons[data-icon="yml"], .fab .filetypes-icons.fi-css, .fab .filetypes-icons[data-icon="css"], .fab .filetypes-icons.fi-scss, .fab .filetypes-icons[data-icon="scss"], .fab .filetypes-icons.fi-html, .fab .filetypes-icons[data-icon="html"], .fab .filetypes-icons.fi-htm, .fab .filetypes-icons[data-icon="htm"], .fab .filetypes-icons.fi-xml, .fab .filetypes-icons[data-icon="xml"], .fab .filetypes-icons.fi-class, .fab .filetypes-icons[data-icon="class"], .fab .filetypes-icons.fi-java, .fab .filetypes-icons[data-icon="java"], .fab .filetypes-icons.fi-c, .fab .filetypes-icons[data-icon="c"], .fab .filetypes-icons.fi-cpp, .fab .filetypes-icons[data-icon="cpp"], .fab .filetypes-icons.fi-h, .fab .filetypes-icons[data-icon="h"], .fab .filetypes-icons.fi-js, .fab .filetypes-icons[data-icon="js"], .fab .filetypes-icons.fi-pl, .fab .filetypes-icons[data-icon="pl"], .fab .filetypes-icons.fi-py, .fab .filetypes-icons[data-icon="py"], .fab .filetypes-icons.fi-sh, .fab .filetypes-icons[data-icon="sh"],
+  .theme-dark .filetypes-icons.fi-code,
+  .theme-dark .filetypes-icons[data-icon="code"],
+  .theme-dark .filetypes-icons.fi-php,
+  .theme-dark .filetypes-icons[data-icon="php"],
+  .theme-dark .filetypes-icons.fi-module,
+  .theme-dark .filetypes-icons[data-icon="module"],
+  .theme-dark .filetypes-icons.fi-inc,
+  .theme-dark .filetypes-icons[data-icon="inc"],
+  .theme-dark .filetypes-icons.fi-info,
+  .theme-dark .filetypes-icons[data-icon="info"],
+  .theme-dark .filetypes-icons.fi-yml,
+  .theme-dark .filetypes-icons[data-icon="yml"],
+  .theme-dark .filetypes-icons.fi-css,
+  .theme-dark .filetypes-icons[data-icon="css"],
+  .theme-dark .filetypes-icons.fi-scss,
+  .theme-dark .filetypes-icons[data-icon="scss"],
+  .theme-dark .filetypes-icons.fi-html,
+  .theme-dark .filetypes-icons[data-icon="html"],
+  .theme-dark .filetypes-icons.fi-htm,
+  .theme-dark .filetypes-icons[data-icon="htm"],
+  .theme-dark .filetypes-icons.fi-xml,
+  .theme-dark .filetypes-icons[data-icon="xml"],
+  .theme-dark .filetypes-icons.fi-class,
+  .theme-dark .filetypes-icons[data-icon="class"],
+  .theme-dark .filetypes-icons.fi-java,
+  .theme-dark .filetypes-icons[data-icon="java"],
+  .theme-dark .filetypes-icons.fi-c,
+  .theme-dark .filetypes-icons[data-icon="c"],
+  .theme-dark .filetypes-icons.fi-cpp,
+  .theme-dark .filetypes-icons[data-icon="cpp"],
+  .theme-dark .filetypes-icons.fi-h,
+  .theme-dark .filetypes-icons[data-icon="h"],
+  .theme-dark .filetypes-icons.fi-js,
+  .theme-dark .filetypes-icons[data-icon="js"],
+  .theme-dark .filetypes-icons.fi-pl,
+  .theme-dark .filetypes-icons[data-icon="pl"],
+  .theme-dark .filetypes-icons.fi-py,
+  .theme-dark .filetypes-icons[data-icon="py"],
+  .theme-dark .filetypes-icons.fi-sh,
+  .theme-dark .filetypes-icons[data-icon="sh"] {
+    -webkit-mask-position: -216px 0;
+            mask-position: -216px 0; }
+
+.filetypes-icon-left:before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  content: " ";
+  margin-right: 12px;
+  float: left;
+  background: rgba(0, 0, 0, 0.87);
+  -webkit-mask: url(../img/filetypes-icons.svg) no-repeat;
+          mask: url(../img/filetypes-icons.svg) no-repeat; }
+
+.filetypes-icon-left.icon-dark:before {
+  background: rgba(0, 0, 0, 0.87) !important; }
+
+.filetypes-icon-left.icon-secondary:before {
+  background: rgba(0, 0, 0, 0.54); }
+
+.filetypes-icon-left.icon-disabled:before {
+  background: rgba(0, 0, 0, 0.26); }
+
+.filetypes-icon-left.icon-light:before {
+  background: #FFF !important; }
+
+.filetypes-icon-left.icon-light.icon-disabled:before {
+  background: rgba(255, 255, 255, 0.3) !important; }
+
+.filetypes-icon-left.icon-primary:before {
+  background: #607d8b; }
+
+.filetypes-icon-left.icon-accent:before {
+  background: #00b0ff; }
+
+a.filetypes-icon-left:not(.btn):before {
+  background: #00b0ff; }
+
+a.filetypes-icon-left:not(.btn):hover:before {
+  background: #0aa2ff; }
+
+a.filetypes-icon-left:not(.btn):active:before {
+  background: #0091ea; }
+
+.btn.filetypes-icon-left:before, .btn.filetypes-icon-left:hover:before, .btn.filetypes-icon-left:focus:before, .menu a.filetypes-icon-left:before, .menu a.filetypes-icon-left:hover:before, .menu a.filetypes-icon-left:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn-colored.filetypes-icon-left:before, .btn-colored.filetypes-icon-left:hover:before, .btn-colored.filetypes-icon-left:focus:before, .btn.btn-colored.filetypes-icon-left:before, .btn.btn-colored.filetypes-icon-left:hover:before, .btn.btn-colored.filetypes-icon-left:focus:before {
+  background: #546e7a; }
+
+.btn-accent.filetypes-icon-left:before, .btn-accent.filetypes-icon-left:hover:before, .btn-accent.filetypes-icon-left:focus:before, .btn.btn-accent.filetypes-icon-left:before, .btn.btn-accent.filetypes-icon-left:hover:before, .btn.btn-accent.filetypes-icon-left:focus:before {
+  background: #00b0ff; }
+
+.btn-raised.filetypes-icon-left.btn-colored:before, .btn-raised.filetypes-icon-left.btn-colored:hover:before, .btn-raised.filetypes-icon-left.btn-colored:focus:before, .btn.btn-raised.filetypes-icon-left.btn-colored:before, .btn.btn-raised.filetypes-icon-left.btn-colored:hover:before, .btn.btn-raised.filetypes-icon-left.btn-colored:focus:before {
+  background: #FFF; }
+
+.btn-raised.filetypes-icon-left.btn-accent:before, .btn-raised.filetypes-icon-left.btn-accent:hover:before, .btn-raised.filetypes-icon-left.btn-accent:focus:before, .btn.btn-raised.filetypes-icon-left.btn-accent:before, .btn.btn-raised.filetypes-icon-left.btn-accent:hover:before, .btn.btn-raised.filetypes-icon-left.btn-accent:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn.btn-disabled.filetypes-icon-left:before, .btn.btn-disabled.filetypes-icon-left:hover:before, .btn.btn-disabled.filetypes-icon-left:focus:before, .btn.btn-disabled.filetypes-icon-left:active:before {
+  background: rgba(0, 0, 0, 0.26); }
+
+.fab.filetypes-icon-left:before, .fab.filetypes-icon-left:hover:before, .fab.filetypes-icon-left:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.fab.filetypes-icon-left.fab-colored:before, .fab.filetypes-icon-left.fab-colored:hover:before, .fab.filetypes-icon-left.fab-colored:focus:before {
+  background: #FFF; }
+
+.fab.filetypes-icon-left.fab-accent:before, .fab.filetypes-icon-left.fab-accent:hover:before, .fab.filetypes-icon-left.fab-accent:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.filetypes-icon-left.fi-doc:before, .filetypes-icon-left[data-icon="doc"]:before, .filetypes-icon-left.fi-txt:before, .filetypes-icon-left[data-icon="txt"]:before, .filetypes-icon-left.fi-docx:before, .filetypes-icon-left[data-icon="docx"]:before, .filetypes-icon-left.fi-rtf:before, .filetypes-icon-left[data-icon="rtf"]:before, .filetypes-icon-left.fi-odt:before, .filetypes-icon-left[data-icon="odt"]:before {
+  -webkit-mask-position: -24px 0;
+          mask-position: -24px 0; }
+
+.filetypes-icon-left.fi-sheet:before, .filetypes-icon-left[data-icon="sheet"]:before, .filetypes-icon-left.fi-xls:before, .filetypes-icon-left[data-icon="xls"]:before, .filetypes-icon-left.fi-xlsx:before, .filetypes-icon-left[data-icon="xlsx"]:before, .filetypes-icon-left.fi-csv:before, .filetypes-icon-left[data-icon="csv"]:before, .filetypes-icon-left.fi-ods:before, .filetypes-icon-left[data-icon="ods"]:before {
+  -webkit-mask-position: -48px 0;
+          mask-position: -48px 0; }
+
+.filetypes-icon-left.fi-ppt:before, .filetypes-icon-left[data-icon="presentation"]:before, .filetypes-icon-left.fi-ppt:before, .filetypes-icon-left[data-icon="ppt"]:before, .filetypes-icon-left.fi-pptx:before, .filetypes-icon-left[data-icon="pptx"]:before, .filetypes-icon-left.fi-key:before, .filetypes-icon-left[data-icon="key"]:before, .filetypes-icon-left.fi-odp:before, .filetypes-icon-left[data-icon="odp"]:before {
+  -webkit-mask-position: -72px 0;
+          mask-position: -72px 0; }
+
+.filetypes-icon-left.fi-pdf:before, .filetypes-icon-left[data-icon="pdf"]:before {
+  -webkit-mask-position: -96px 0;
+          mask-position: -96px 0; }
+
+.filetypes-icon-left.fi-image:before, .filetypes-icon-left[data-icon="image"]:before, .filetypes-icon-left.fi-jpg:before, .filetypes-icon-left[data-icon="jpg"]:before, .filetypes-icon-left.fi-jpeg:before, .filetypes-icon-left[data-icon="jpeg"]:before, .filetypes-icon-left.fi-png:before, .filetypes-icon-left[data-icon="png"]:before, .filetypes-icon-left.fi-gif:before, .filetypes-icon-left[data-icon="gif"]:before, .filetypes-icon-left.fi-psd:before, .filetypes-icon-left[data-icon="psd"]:before, .filetypes-icon-left.fi-svg:before, .filetypes-icon-left[data-icon="svg"]:before, .filetypes-icon-left.fi-ai:before, .filetypes-icon-left[data-icon="ai"]:before, .filetypes-icon-left.fi-eps:before, .filetypes-icon-left[data-icon="eps"]:before, .filetypes-icon-left.fi-cdr:before, .filetypes-icon-left[data-icon="cdr"]:before {
+  -webkit-mask-position: -120px 0;
+          mask-position: -120px 0; }
+
+.filetypes-icon-left.fi-video:before, .filetypes-icon-left[data-icon="video"]:before, .filetypes-icon-left.fi-avi:before, .filetypes-icon-left[data-icon="avi"]:before, .filetypes-icon-left.fi-mpg:before, .filetypes-icon-left[data-icon="mpg"]:before, .filetypes-icon-left.fi-mpeg:before, .filetypes-icon-left[data-icon="mpeg"]:before, .filetypes-icon-left.fi-mp4:before, .filetypes-icon-left[data-icon="mp4"]:before, .filetypes-icon-left.fi-mov:before, .filetypes-icon-left[data-icon="mov"]:before, .filetypes-icon-left.fi-flv:before, .filetypes-icon-left[data-icon="flv"]:before, .filetypes-icon-left.fi-mkv:before, .filetypes-icon-left[data-icon="mkv"]:before {
+  -webkit-mask-position: -144px 0;
+          mask-position: -144px 0; }
+
+.filetypes-icon-left.fi-audio:before, .filetypes-icon-left[data-icon="audio"]:before, .filetypes-icon-left.fi-mp3:before, .filetypes-icon-left[data-icon="mp3"]:before, .filetypes-icon-left.fi-flac:before, .filetypes-icon-left[data-icon="flac"]:before, .filetypes-icon-left.fi-ogg:before, .filetypes-icon-left[data-icon="ogg"]:before, .filetypes-icon-left.fi-wav:before, .filetypes-icon-left[data-icon="wav"]:before, .filetypes-icon-left.fi-ape:before, .filetypes-icon-left[data-icon="ape"]:before, .filetypes-icon-left.fi-m4a:before, .filetypes-icon-left[data-icon="m4a"]:before, .filetypes-icon-left.fi-aac:before, .filetypes-icon-left[data-icon="aac"]:before {
+  -webkit-mask-position: -168px 0;
+          mask-position: -168px 0; }
+
+.filetypes-icon-left.fi-archive:before, .filetypes-icon-left[data-icon="archive"]:before, .filetypes-icon-left.fi-zip:before, .filetypes-icon-left[data-icon="zip"]:before, .filetypes-icon-left.fi-rar:before, .filetypes-icon-left[data-icon="rar"]:before, .filetypes-icon-left.fi-gz:before, .filetypes-icon-left[data-icon="gz"]:before, .filetypes-icon-left.fi-7z:before, .filetypes-icon-left[data-icon="7z"]:before, .filetypes-icon-left.fi-jar:before, .filetypes-icon-left[data-icon="jar"]:before, .filetypes-icon-left.fi-app:before, .filetypes-icon-left[data-icon="app"]:before, .filetypes-icon-left.fi-exe:before, .filetypes-icon-left[data-icon="exe"]:before, .filetypes-icon-left.fi-apk:before, .filetypes-icon-left[data-icon="apk"]:before, .filetypes-icon-left.fi-deb:before, .filetypes-icon-left[data-icon="deb"]:before, .filetypes-icon-left.fi-msi:before, .filetypes-icon-left[data-icon="msi"]:before, .filetypes-icon-left.fi-rpm:before, .filetypes-icon-left[data-icon="rpm"]:before {
+  -webkit-mask-position: -192px 0;
+          mask-position: -192px 0; }
+
+.filetypes-icon-left.fi-code:before, .filetypes-icon-left[data-icon="code"]:before, .filetypes-icon-left.fi-php:before, .filetypes-icon-left[data-icon="php"]:before, .filetypes-icon-left.fi-module:before, .filetypes-icon-left[data-icon="module"]:before, .filetypes-icon-left.fi-inc:before, .filetypes-icon-left[data-icon="inc"]:before, .filetypes-icon-left.fi-info:before, .filetypes-icon-left[data-icon="info"]:before, .filetypes-icon-left.fi-yml:before, .filetypes-icon-left[data-icon="yml"]:before, .filetypes-icon-left.fi-css:before, .filetypes-icon-left[data-icon="css"]:before, .filetypes-icon-left.fi-scss:before, .filetypes-icon-left[data-icon="scss"]:before, .filetypes-icon-left.fi-html:before, .filetypes-icon-left[data-icon="html"]:before, .filetypes-icon-left.fi-htm:before, .filetypes-icon-left[data-icon="htm"]:before, .filetypes-icon-left.fi-xml:before, .filetypes-icon-left[data-icon="xml"]:before, .filetypes-icon-left.fi-class:before, .filetypes-icon-left[data-icon="class"]:before, .filetypes-icon-left.fi-java:before, .filetypes-icon-left[data-icon="java"]:before, .filetypes-icon-left.fi-c:before, .filetypes-icon-left[data-icon="c"]:before, .filetypes-icon-left.fi-cpp:before, .filetypes-icon-left[data-icon="cpp"]:before, .filetypes-icon-left.fi-h:before, .filetypes-icon-left[data-icon="h"]:before, .filetypes-icon-left.fi-js:before, .filetypes-icon-left[data-icon="js"]:before, .filetypes-icon-left.fi-pl:before, .filetypes-icon-left[data-icon="pl"]:before, .filetypes-icon-left.fi-py:before, .filetypes-icon-left[data-icon="py"]:before, .filetypes-icon-left.fi-sh:before, .filetypes-icon-left[data-icon="sh"]:before {
+  -webkit-mask-position: -216px 0;
+          mask-position: -216px 0; }
+
+.filetypes-icon-right:after {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  content: " ";
+  margin-left: 12px;
+  float: right;
+  background: rgba(0, 0, 0, 0.87);
+  -webkit-mask: url(../img/filetypes-icons.svg) no-repeat;
+          mask: url(../img/filetypes-icons.svg) no-repeat; }
+
+.filetypes-icon-right.icon-dark:after {
+  background: rgba(0, 0, 0, 0.87) !important; }
+
+.filetypes-icon-right.icon-secondary:after {
+  background: rgba(0, 0, 0, 0.54); }
+
+.filetypes-icon-right.icon-disabled:after {
+  background: rgba(0, 0, 0, 0.26); }
+
+.filetypes-icon-right.icon-light:after {
+  background: #FFF !important; }
+
+.filetypes-icon-right.icon-light.icon-disabled:after {
+  background: rgba(255, 255, 255, 0.3) !important; }
+
+.filetypes-icon-right.icon-primary:after {
+  background: #607d8b; }
+
+.filetypes-icon-right.icon-accent:after {
+  background: #00b0ff; }
+
+a.filetypes-icon-right:not(.btn):after {
+  background: #00b0ff; }
+
+a.filetypes-icon-right:not(.btn):hover:after {
+  background: #0aa2ff; }
+
+a.filetypes-icon-right:not(.btn):active:after {
+  background: #0091ea; }
+
+.btn.filetypes-icon-right:after, .btn.filetypes-icon-right:hover:after, .btn.filetypes-icon-right:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn-colored.filetypes-icon-right:after, .btn-colored.filetypes-icon-right:hover:after, .btn-colored.filetypes-icon-right:focus:after, .btn.btn-colored.filetypes-icon-right:after, .btn.btn-colored.filetypes-icon-right:hover:after, .btn.btn-colored.filetypes-icon-right:focus:after {
+  background: #546e7a; }
+
+.btn-accent.filetypes-icon-right:after, .btn-accent.filetypes-icon-right:hover:after, .btn-accent.filetypes-icon-right:focus:after, .btn.btn-accent.filetypes-icon-right:after, .btn.btn-accent.filetypes-icon-right:hover:after, .btn.btn-accent.filetypes-icon-right:focus:after {
+  background: #00b0ff; }
+
+.btn-raised.filetypes-icon-right.btn-colored:after, .btn-raised.filetypes-icon-right.btn-colored:hover:after, .btn-raised.filetypes-icon-right.btn-colored:focus:after, .btn.btn-raised.filetypes-icon-right.btn-colored:after, .btn.btn-raised.filetypes-icon-right.btn-colored:hover:after, .btn.btn-raised.filetypes-icon-right.btn-colored:focus:after {
+  background: #FFF; }
+
+.btn-raised.filetypes-icon-right.btn-accent:after, .btn-raised.filetypes-icon-right.btn-accent:hover:after, .btn-raised.filetypes-icon-right.btn-accent:focus:after, .btn.btn-raised.filetypes-icon-right.btn-accent:after, .btn.btn-raised.filetypes-icon-right.btn-accent:hover:after, .btn.btn-raised.filetypes-icon-right.btn-accent:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.btn.btn-disabled.filetypes-icon-right:after, .btn.btn-disabled.filetypes-icon-right:hover:after, .btn.btn-disabled.filetypes-icon-right:focus:after, .btn.btn-disabled.filetypes-icon-right:active:after {
+  background: rgba(0, 0, 0, 0.26); }
+
+.fab.filetypes-icon-right:after, .fab.filetypes-icon-right:hover:after, .fab.filetypes-icon-right:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.fab.filetypes-icon-right.fab-colored:after, .fab.filetypes-icon-right.fab-colored:hover:after, .fab.filetypes-icon-right.fab-colored:focus:after {
+  background: #FFF; }
+
+.fab.filetypes-icon-right.fab-accent:after, .fab.filetypes-icon-right.fab-accent:hover:after, .fab.filetypes-icon-right.fab-accent:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.filetypes-icon-right.fi-doc:after, .filetypes-icon-right[data-icon="doc"]:after, .filetypes-icon-right.fi-txt:after, .filetypes-icon-right[data-icon="txt"]:after, .filetypes-icon-right.fi-docx:after, .filetypes-icon-right[data-icon="docx"]:after, .filetypes-icon-right.fi-rtf:after, .filetypes-icon-right[data-icon="rtf"]:after, .filetypes-icon-right.fi-odt:after, .filetypes-icon-right[data-icon="odt"]:after {
+  -webkit-mask-position: -24px 0;
+          mask-position: -24px 0; }
+
+.filetypes-icon-right.fi-sheet:after, .filetypes-icon-right[data-icon="sheet"]:after, .filetypes-icon-right.fi-xls:after, .filetypes-icon-right[data-icon="xls"]:after, .filetypes-icon-right.fi-xlsx:after, .filetypes-icon-right[data-icon="xlsx"]:after, .filetypes-icon-right.fi-csv:after, .filetypes-icon-right[data-icon="csv"]:after, .filetypes-icon-right.fi-ods:after, .filetypes-icon-right[data-icon="ods"]:after {
+  -webkit-mask-position: -48px 0;
+          mask-position: -48px 0; }
+
+.filetypes-icon-right.fi-ppt:after, .filetypes-icon-right[data-icon="presentation"]:after, .filetypes-icon-right.fi-ppt:after, .filetypes-icon-right[data-icon="ppt"]:after, .filetypes-icon-right.fi-pptx:after, .filetypes-icon-right[data-icon="pptx"]:after, .filetypes-icon-right.fi-key:after, .filetypes-icon-right[data-icon="key"]:after, .filetypes-icon-right.fi-odp:after, .filetypes-icon-right[data-icon="odp"]:after {
+  -webkit-mask-position: -72px 0;
+          mask-position: -72px 0; }
+
+.filetypes-icon-right.fi-pdf:after, .filetypes-icon-right[data-icon="pdf"]:after {
+  -webkit-mask-position: -96px 0;
+          mask-position: -96px 0; }
+
+.filetypes-icon-right.fi-image:after, .filetypes-icon-right[data-icon="image"]:after, .filetypes-icon-right.fi-jpg:after, .filetypes-icon-right[data-icon="jpg"]:after, .filetypes-icon-right.fi-jpeg:after, .filetypes-icon-right[data-icon="jpeg"]:after, .filetypes-icon-right.fi-png:after, .filetypes-icon-right[data-icon="png"]:after, .filetypes-icon-right.fi-gif:after, .filetypes-icon-right[data-icon="gif"]:after, .filetypes-icon-right.fi-psd:after, .filetypes-icon-right[data-icon="psd"]:after, .filetypes-icon-right.fi-svg:after, .filetypes-icon-right[data-icon="svg"]:after, .filetypes-icon-right.fi-ai:after, .filetypes-icon-right[data-icon="ai"]:after, .filetypes-icon-right.fi-eps:after, .filetypes-icon-right[data-icon="eps"]:after, .filetypes-icon-right.fi-cdr:after, .filetypes-icon-right[data-icon="cdr"]:after {
+  -webkit-mask-position: -120px 0;
+          mask-position: -120px 0; }
+
+.filetypes-icon-right.fi-video:after, .filetypes-icon-right[data-icon="video"]:after, .filetypes-icon-right.fi-avi:after, .filetypes-icon-right[data-icon="avi"]:after, .filetypes-icon-right.fi-mpg:after, .filetypes-icon-right[data-icon="mpg"]:after, .filetypes-icon-right.fi-mpeg:after, .filetypes-icon-right[data-icon="mpeg"]:after, .filetypes-icon-right.fi-mp4:after, .filetypes-icon-right[data-icon="mp4"]:after, .filetypes-icon-right.fi-mov:after, .filetypes-icon-right[data-icon="mov"]:after, .filetypes-icon-right.fi-flv:after, .filetypes-icon-right[data-icon="flv"]:after, .filetypes-icon-right.fi-mkv:after, .filetypes-icon-right[data-icon="mkv"]:after {
+  -webkit-mask-position: -144px 0;
+          mask-position: -144px 0; }
+
+.filetypes-icon-right.fi-audio:after, .filetypes-icon-right[data-icon="audio"]:after, .filetypes-icon-right.fi-mp3:after, .filetypes-icon-right[data-icon="mp3"]:after, .filetypes-icon-right.fi-flac:after, .filetypes-icon-right[data-icon="flac"]:after, .filetypes-icon-right.fi-ogg:after, .filetypes-icon-right[data-icon="ogg"]:after, .filetypes-icon-right.fi-wav:after, .filetypes-icon-right[data-icon="wav"]:after, .filetypes-icon-right.fi-ape:after, .filetypes-icon-right[data-icon="ape"]:after, .filetypes-icon-right.fi-m4a:after, .filetypes-icon-right[data-icon="m4a"]:after, .filetypes-icon-right.fi-aac:after, .filetypes-icon-right[data-icon="aac"]:after {
+  -webkit-mask-position: -168px 0;
+          mask-position: -168px 0; }
+
+.filetypes-icon-right.fi-archive:after, .filetypes-icon-right[data-icon="archive"]:after, .filetypes-icon-right.fi-zip:after, .filetypes-icon-right[data-icon="zip"]:after, .filetypes-icon-right.fi-rar:after, .filetypes-icon-right[data-icon="rar"]:after, .filetypes-icon-right.fi-gz:after, .filetypes-icon-right[data-icon="gz"]:after, .filetypes-icon-right.fi-7z:after, .filetypes-icon-right[data-icon="7z"]:after, .filetypes-icon-right.fi-jar:after, .filetypes-icon-right[data-icon="jar"]:after, .filetypes-icon-right.fi-app:after, .filetypes-icon-right[data-icon="app"]:after, .filetypes-icon-right.fi-exe:after, .filetypes-icon-right[data-icon="exe"]:after, .filetypes-icon-right.fi-apk:after, .filetypes-icon-right[data-icon="apk"]:after, .filetypes-icon-right.fi-deb:after, .filetypes-icon-right[data-icon="deb"]:after, .filetypes-icon-right.fi-msi:after, .filetypes-icon-right[data-icon="msi"]:after, .filetypes-icon-right.fi-rpm:after, .filetypes-icon-right[data-icon="rpm"]:after {
+  -webkit-mask-position: -192px 0;
+          mask-position: -192px 0; }
+
+.filetypes-icon-right.fi-code:after, .filetypes-icon-right[data-icon="code"]:after, .filetypes-icon-right.fi-php:after, .filetypes-icon-right[data-icon="php"]:after, .filetypes-icon-right.fi-module:after, .filetypes-icon-right[data-icon="module"]:after, .filetypes-icon-right.fi-inc:after, .filetypes-icon-right[data-icon="inc"]:after, .filetypes-icon-right.fi-info:after, .filetypes-icon-right[data-icon="info"]:after, .filetypes-icon-right.fi-yml:after, .filetypes-icon-right[data-icon="yml"]:after, .filetypes-icon-right.fi-css:after, .filetypes-icon-right[data-icon="css"]:after, .filetypes-icon-right.fi-scss:after, .filetypes-icon-right[data-icon="scss"]:after, .filetypes-icon-right.fi-html:after, .filetypes-icon-right[data-icon="html"]:after, .filetypes-icon-right.fi-htm:after, .filetypes-icon-right[data-icon="htm"]:after, .filetypes-icon-right.fi-xml:after, .filetypes-icon-right[data-icon="xml"]:after, .filetypes-icon-right.fi-class:after, .filetypes-icon-right[data-icon="class"]:after, .filetypes-icon-right.fi-java:after, .filetypes-icon-right[data-icon="java"]:after, .filetypes-icon-right.fi-c:after, .filetypes-icon-right[data-icon="c"]:after, .filetypes-icon-right.fi-cpp:after, .filetypes-icon-right[data-icon="cpp"]:after, .filetypes-icon-right.fi-h:after, .filetypes-icon-right[data-icon="h"]:after, .filetypes-icon-right.fi-js:after, .filetypes-icon-right[data-icon="js"]:after, .filetypes-icon-right.fi-pl:after, .filetypes-icon-right[data-icon="pl"]:after, .filetypes-icon-right.fi-py:after, .filetypes-icon-right[data-icon="py"]:after, .filetypes-icon-right.fi-sh:after, .filetypes-icon-right[data-icon="sh"]:after {
+  -webkit-mask-position: -216px 0;
+          mask-position: -216px 0; }
+
+.theme-dark .filetypes-icons {
+  background: #FFF; }
+
+.theme-dark .filetypes-icons.icon-secondary {
+  background: rgba(255, 255, 255, 0.7); }
+
+.theme-dark .filetypes-icons.icon-disabled {
+  background: rgba(255, 255, 255, 0.3); }
+
+.theme-dark .filetypes-icons.icon-primary {
+  background: #78909c; }
+
+.theme-dark .filetypes-icons.icon-accent {
+  background: #40c4ff; }
+
+.theme-dark .btn .filetypes-icons, .theme-dark .btn .filetypes-icons:hover, .theme-dark .btn .filetypes-icons:focus {
+  background: #FFF; }
+
+.theme-dark .btn-colored .filetypes-icons, .theme-dark .btn-colored:hover .filetypes-icons, .theme-dark .btn-colored:focus .filetypes-icons, .theme-dark .btn.btn-colored .filetypes-icons, .theme-dark .btn.btn-colored:hover .filetypes-icons, .theme-dark .btn.btn-colored:focus .filetypes-icons {
+  background: #78909c; }
+
+.theme-dark .btn-accent .filetypes-icons, .theme-dark .btn-accent:hover .filetypes-icons, .theme-dark .btn-accent:focus .filetypes-icons, .theme-dark .btn.btn-accent .filetypes-icons, .theme-dark .btn.btn-accent:hover .filetypes-icons, .theme-dark .btn.btn-accent:focus .filetypes-icons {
+  background: #40c4ff; }
+
+.theme-dark .btn-raised.btn-colored .filetypes-icons, .theme-dark .btn-raised.btn-colored:hover .filetypes-icons, .theme-dark .btn-raised.btn-colored:focus .filetypes-icons, .theme-dark .btn.btn-raised.btn-colored .filetypes-icons, .theme-dark .btn.btn-raised.btn-colored:hover .filetypes-icons, .theme-dark .btn.btn-raised.btn-colored:focus .filetypes-icons {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .btn-raised.btn-accent .filetypes-icons, .theme-dark .btn-raised.btn-accent:hover .filetypes-icons, .theme-dark .btn-raised.btn-accent:focus .filetypes-icons, .theme-dark .btn.btn-raised.btn-accent .filetypes-icons, .theme-dark .btn.btn-raised.btn-accent:hover .filetypes-icons, .theme-dark .btn.btn-raised.btn-accent:focus .filetypes-icons {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .btn.btn-disabled .filetypes-icons, .theme-dark .btn.btn-disabled:hover .filetypes-icons, .theme-dark .btn.btn-disabled:focus .filetypes-icons, .theme-dark .btn.btn-disabled:active .filetypes-icons {
+  background: rgba(255, 255, 255, 0.3); }
+
+.theme-dark .fab .filetypes-icons, .theme-dark .fab:hover .filetypes-icons, .theme-dark .fab:focus .filetypes-icons {
+  background: #FFF; }
+
+.theme-dark .fab.fab-colored .filetypes-icons, .theme-dark .fab.fab-colored:hover .filetypes-icons, .theme-dark .fab.fab-colored:focus .filetypes-icons {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .fab.fab-accent .filetypes-icons, .theme-dark .fab.fab-accent:hover .filetypes-icons, .theme-dark .fab.fab-accent:focus .filetypes-icons {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .filetypes-icon-left:before, .theme-dark .filetypes-icon-right:after {
+  background: #FFF; }
+
+.theme-dark .filetypes-icon-left.icon-secondary:before, .theme-dark .filetypes-icon-right.icon-secondary:after {
+  background: rgba(255, 255, 255, 0.7); }
+
+.theme-dark .filetypes-icon-left.icon-disabled:before, .theme-dark .filetypes-icon-right.icon-disabled:after {
+  background: rgba(255, 255, 255, 0.3); }
+
+.theme-dark .filetypes-icon-left.icon-primary:before, .theme-dark .filetypes-icon-right.icon-primary:after {
+  background: #78909c; }
+
+.theme-dark .filetypes-icon-left.icon-accent:before, .theme-dark .filetypes-icon-right.icon-accent:after {
+  background: #40c4ff; }
+
+.theme-dark a.filetypes-icon-left:not(.btn):before {
+  background: #40c4ff; }
+
+.theme-dark a.filetypes-icon-left:not(.btn):hover:before {
+  background: #5fcdff; }
+
+.theme-dark a.filetypes-icon-left:not(.btn):active:before {
+  background: #80d8ff; }
+
+.theme-dark .btn.filetypes-icon-left:before, .theme-dark .btn.filetypes-icon-left:hover:before, .theme-dark .btn.filetypes-icon-left:focus:before, .theme-dark .menu a.filetypes-icon-left:before, .theme-dark .menu a.filetypes-icon-left:hover:before, .theme-dark .menu a.filetypes-icon-left:focus:before {
+  background: #FFF; }
+
+.theme-dark .btn-colored.filetypes-icon-left:before, .theme-dark .btn-colored.filetypes-icon-left:hover:before, .theme-dark .btn-colored.filetypes-icon-left:focus:before, .theme-dark .btn.btn-colored.filetypes-icon-left:before, .theme-dark .btn.btn-colored.filetypes-icon-left:hover:before, .theme-dark .btn.btn-colored.filetypes-icon-left:focus:before {
+  background: #78909c; }
+
+.theme-dark .btn-accent.filetypes-icon-left:before, .theme-dark .btn-accent.filetypes-icon-left:hover:before, .theme-dark .btn-accent.filetypes-icon-left:focus:before, .theme-dark .btn.btn-accent.filetypes-icon-left:before, .theme-dark .btn.btn-accent.filetypes-icon-left:hover:before, .theme-dark .btn.btn-accent.filetypes-icon-left:focus:before {
+  background: #40c4ff; }
+
+.theme-dark .btn-raised.filetypes-icon-left.btn-colored:before, .theme-dark .btn-raised.filetypes-icon-left.btn-colored:hover:before, .theme-dark .btn-raised.filetypes-icon-left.btn-colored:focus:before, .theme-dark .btn.btn-raised.filetypes-icon-left.btn-colored:before, .theme-dark .btn.btn-raised.filetypes-icon-left.btn-colored:hover:before, .theme-dark .btn.btn-raised.filetypes-icon-left.btn-colored:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .btn-raised.filetypes-icon-left.btn-accent:before, .theme-dark .btn-raised.filetypes-icon-left.btn-accent:hover:before, .theme-dark .btn-raised.filetypes-icon-left.btn-accent:focus:before, .theme-dark .btn.btn-raised.filetypes-icon-left.btn-accent:before, .theme-dark .btn.btn-raised.filetypes-icon-left.btn-accent:hover:before, .theme-dark .btn.btn-raised.filetypes-icon-left.btn-accent:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .btn.btn-disabled.filetypes-icon-left:before, .theme-dark .btn.btn-disabled.filetypes-icon-left:hover:before, .theme-dark .btn.btn-disabled.filetypes-icon-left:focus:before, .theme-dark .btn.btn-disabled.filetypes-icon-left:active:before {
+  background: rgba(255, 255, 255, 0.3); }
+
+.theme-dark .fab.filetypes-icon-left:before, .theme-dark .fab.filetypes-icon-left:hover:before, .theme-dark .fab.filetypes-icon-left:focus:before {
+  background: #FFF; }
+
+.theme-dark .fab.filetypes-icon-left.fab-colored:before, .theme-dark .fab.filetypes-icon-left.fab-colored:hover:before, .theme-dark .fab.filetypes-icon-left.fab-colored:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .fab.filetypes-icon-left.fab-accent:before, .theme-dark .fab.filetypes-icon-left.fab-accent:hover:before, .theme-dark .fab.filetypes-icon-left.fab-accent:focus:before {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark a.filetypes-icon-right:not(.btn):after {
+  background: #40c4ff; }
+
+.theme-dark a.filetypes-icon-right:not(.btn):hover:after {
+  background: #5fcdff; }
+
+.theme-dark a.filetypes-icon-right:not(.btn):active:after {
+  background: #80d8ff; }
+
+.theme-dark .btn.filetypes-icon-right:after, .theme-dark .btn.filetypes-icon-right:hover:after, .theme-dark .btn.filetypes-icon-right:focus:after {
+  background: #FFF; }
+
+.theme-dark .btn-colored.filetypes-icon-right:after, .theme-dark .btn-colored.filetypes-icon-right:hover:after, .theme-dark .btn-colored.filetypes-icon-right:focus:after, .theme-dark .btn.btn-colored.filetypes-icon-right:after, .theme-dark .btn.btn-colored.filetypes-icon-right:hover:after, .theme-dark .btn.btn-colored.filetypes-icon-right:focus:after {
+  background: #78909c; }
+
+.theme-dark .btn-accent.filetypes-icon-right:after, .theme-dark .btn-accent.filetypes-icon-right:hover:after, .theme-dark .btn-accent.filetypes-icon-right:focus:after, .theme-dark .btn.btn-accent.filetypes-icon-right:after, .theme-dark .btn.btn-accent.filetypes-icon-right:hover:after, .theme-dark .btn.btn-accent.filetypes-icon-right:focus:after {
+  background: #40c4ff; }
+
+.theme-dark .btn-raised.filetypes-icon-right.btn-colored:after, .theme-dark .btn-raised.filetypes-icon-right.btn-colored:hover:after, .theme-dark .btn-raised.filetypes-icon-right.btn-colored:focus:after, .theme-dark .btn.btn-raised.filetypes-icon-right.btn-colored:after, .theme-dark .btn.btn-raised.filetypes-icon-right.btn-colored:hover:after, .theme-dark .btn.btn-raised.filetypes-icon-right.btn-colored:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .btn-raised.filetypes-icon-right.btn-accent:after, .theme-dark .btn-raised.filetypes-icon-right.btn-accent:hover:after, .theme-dark .btn-raised.filetypes-icon-right.btn-accent:focus:after, .theme-dark .btn.btn-raised.filetypes-icon-right.btn-accent:after, .theme-dark .btn.btn-raised.filetypes-icon-right.btn-accent:hover:after, .theme-dark .btn.btn-raised.filetypes-icon-right.btn-accent:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .btn.btn-disabled.filetypes-icon-right:after, .theme-dark .btn.btn-disabled.filetypes-icon-right:hover:after, .theme-dark .btn.btn-disabled.filetypes-icon-right:focus:after, .theme-dark .btn.btn-disabled.filetypes-icon-right:active:after {
+  background: rgba(255, 255, 255, 0.3); }
+
+.theme-dark .fab.filetypes-icon-right:after, .theme-dark .fab.filetypes-icon-right:hover:after, .theme-dark .fab.filetypes-icon-right:focus:after {
+  background: #FFF; }
+
+.theme-dark .fab.filetypes-icon-right.fab-colored:after, .theme-dark .fab.filetypes-icon-right.fab-colored:hover:after, .theme-dark .fab.filetypes-icon-right.fab-colored:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+.theme-dark .fab.filetypes-icon-right.fab-accent:after, .theme-dark .fab.filetypes-icon-right.fab-accent:hover:after, .theme-dark .fab.filetypes-icon-right.fab-accent:focus:after {
+  background: rgba(0, 0, 0, 0.87); }
+
+/*# sourceMappingURL=../css/filetypes-icons.css.map */

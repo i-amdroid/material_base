@@ -23,6 +23,11 @@ services-icons:
     theme:
       css/services-icons.css: {}
 
+filetypes-icons:
+  css:
+    theme:
+      css/filetypes-icons.css: {}      
+
 helpers:
   css:
     theme:
@@ -39,6 +44,7 @@ styles:
   css:
     theme:
       css/styles.css: {}
+      css/fonts.css: {}
   js:
     js/jquery.ripple.js: {}
     js/jquery.mobile-events.min.js: {}
