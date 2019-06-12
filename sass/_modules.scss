@@ -769,9 +769,9 @@ $primary-colors: (
   &.card-vertical { padding: 0; //display: flex;
     .card-column-left, .card-column-right { padding: 24px; }
   }
-  & > .breadcrumb:first-child, & > .title:first-child, & > .block:first-child,
+  & > *:not(.card-item):first-child,
   & > .element-invisible:first-child + .breadcrumb, & > .element-invisible:first-child + .title, & > .element-invisible:first-child + .block { margin-top: 0 !important; }
-  & > .block:last-child { margin-bottom: 0 !important; }
+  & > *:not(.card-item):last-child { margin-bottom: 0 !important; }
 }
 .card-main { background: $color-bg-card; border-bottom: 1px solid $color-divider; margin-left: -$gutter / 1.5; margin-right: -$gutter / 1.5; padding: $gutter / 1.5;
   @include z-level-0; border-radius: 0; }
@@ -816,10 +816,10 @@ $primary-colors: (
   .action-item { display: inline-block; height: 36px; line-height: 20px; padding: 8px 16px; margin: 8px; }
 }
 
-.card-text { padding: 16px 24px 8px 24px;
-  &:last-child { padding-bottom: 16px; }
+.card-text { padding: 16px 24px;
   .card-title + & { padding-top: 0; }
   .card-title.divider-bottom + &, .card-title + &.divider-top { padding-top: 16px; }
+  & > *:last-child { margin-bottom: 0; }
 }
 
 @each $color-name, $color-value in $primary-colors {

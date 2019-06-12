@@ -141,8 +141,6 @@
     border-bottom-color: rgba(255, 255, 255, 0.12); }
     .theme-dark .form-item input[type="text"]:focus, .theme-dark .form-item input[type="text"].error:focus, .theme-dark .form-item input[type="email"]:focus, .theme-dark .form-item input[type="email"].error:focus, .theme-dark .form-item input[type="password"]:focus, .theme-dark .form-item input[type="password"].error:focus, .theme-dark .form-item input[type="search"]:focus, .theme-dark .form-item input[type="search"].error:focus, .theme-dark .form-item input[type="tel"]:focus, .theme-dark .form-item input[type="tel"].error:focus, .theme-dark .form-item textarea:focus, .theme-dark .form-item textarea.error:focus, .theme-dark .form-item select:focus, .theme-dark .form-item select.error:focus {
       border-bottom-color: #40c4ff; }
-    .theme-dark .form-item input[type="text"]::-webkit-input-placeholder, .theme-dark .form-item input[type="email"]::-webkit-input-placeholder, .theme-dark .form-item input[type="password"]::-webkit-input-placeholder, .theme-dark .form-item input[type="search"]::-webkit-input-placeholder, .theme-dark .form-item input[type="tel"]::-webkit-input-placeholder, .theme-dark .form-item textarea::-webkit-input-placeholder, .theme-dark .form-item select::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.3); }
     .theme-dark .form-item input[type="text"]:-ms-input-placeholder, .theme-dark .form-item input[type="email"]:-ms-input-placeholder, .theme-dark .form-item input[type="password"]:-ms-input-placeholder, .theme-dark .form-item input[type="search"]:-ms-input-placeholder, .theme-dark .form-item input[type="tel"]:-ms-input-placeholder, .theme-dark .form-item textarea:-ms-input-placeholder, .theme-dark .form-item select:-ms-input-placeholder {
       color: rgba(255, 255, 255, 0.3); }
     .theme-dark .form-item input[type="text"]::-ms-input-placeholder, .theme-dark .form-item input[type="email"]::-ms-input-placeholder, .theme-dark .form-item input[type="password"]::-ms-input-placeholder, .theme-dark .form-item input[type="search"]::-ms-input-placeholder, .theme-dark .form-item input[type="tel"]::-ms-input-placeholder, .theme-dark .form-item textarea::-ms-input-placeholder, .theme-dark .form-item select::-ms-input-placeholder {
@@ -190,8 +188,6 @@
     color: rgba(255, 255, 255, 0.7); }
   .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"] {
     color: rgba(0, 0, 0, 0.87); }
-    .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder {
-      color: rgba(0, 0, 0, 0.26); }
     .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
     .theme-dark .block-search.search-persistent form .form-item.focused input[type="text"]::-ms-input-placeholder {

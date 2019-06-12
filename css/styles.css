@@ -1495,8 +1495,6 @@ tr.selected:hover {
     .form-item input[type="text"].error, .form-item input[type="email"].error, .form-item input[type="password"].error, .form-item input[type="search"].error, .form-item input[type="tel"].error, .form-item textarea.error, .form-item select.error {
       border-bottom: 2px solid #f44336;
       padding: 8px 0 7px; }
-    .form-item input[type="text"]::-webkit-input-placeholder, .form-item input[type="email"]::-webkit-input-placeholder, .form-item input[type="password"]::-webkit-input-placeholder, .form-item input[type="search"]::-webkit-input-placeholder, .form-item input[type="tel"]::-webkit-input-placeholder, .form-item textarea::-webkit-input-placeholder, .form-item select::-webkit-input-placeholder {
-      color: rgba(0, 0, 0, 0.26); }
     .form-item input[type="text"]:-ms-input-placeholder, .form-item input[type="email"]:-ms-input-placeholder, .form-item input[type="password"]:-ms-input-placeholder, .form-item input[type="search"]:-ms-input-placeholder, .form-item input[type="tel"]:-ms-input-placeholder, .form-item textarea:-ms-input-placeholder, .form-item select:-ms-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
     .form-item input[type="text"]::-ms-input-placeholder, .form-item input[type="email"]::-ms-input-placeholder, .form-item input[type="password"]::-ms-input-placeholder, .form-item input[type="search"]::-ms-input-placeholder, .form-item input[type="tel"]::-ms-input-placeholder, .form-item textarea::-ms-input-placeholder, .form-item select::-ms-input-placeholder {
@@ -1962,10 +1960,6 @@ tr.selected:hover {
 .card-bg-primary .block-search form .form-item input[type="text"] {
   color: #FFF;
   border-bottom: 1px solid #FFF; }
-  .navbar-item.block-search form .form-item input[type="text"]::-webkit-input-placeholder,
-  #header .block-search form .form-item input[type="text"]::-webkit-input-placeholder,
-  .card-bg-primary .block-search form .form-item input[type="text"]::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.3); }
   .navbar-item.block-search form .form-item input[type="text"]:-ms-input-placeholder,
   #header .block-search form .form-item input[type="text"]:-ms-input-placeholder,
   .card-bg-primary .block-search form .form-item input[type="text"]:-ms-input-placeholder {
@@ -2012,10 +2006,6 @@ tr.selected:hover {
 #header .block-search.search-persistent form .form-item.focused input[type="text"],
 .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"] {
   color: rgba(0, 0, 0, 0.87); }
-  .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder,
-  #header .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder,
-  .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]::-webkit-input-placeholder {
-    color: rgba(0, 0, 0, 0.26); }
   .navbar-item.block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder,
   #header .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder,
   .card-bg-primary .block-search.search-persistent form .form-item.focused input[type="text"]:-ms-input-placeholder {
@@ -2037,8 +2027,6 @@ tr.selected:hover {
     background: #FFF; }
   .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"] {
     color: rgba(0, 0, 0, 0.87); }
-    .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]::-webkit-input-placeholder {
-      color: rgba(0, 0, 0, 0.26); }
     .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]:-ms-input-placeholder {
       color: rgba(0, 0, 0, 0.26); }
     .navbar-light:not(.theme-dark) .navbar-item.block-search.search-persistent form .form-item input[type="text"]::-ms-input-placeholder {
@@ -2111,11 +2099,11 @@ tr.selected:hover {
     padding: 0; }
     .card.card-vertical .card-column-left, .content-card .card-vertical.card-holder .card-column-left, .card.card-vertical .card-column-right, .content-card .card-vertical.card-holder .card-column-right {
       padding: 24px; }
-  .card > .breadcrumb:first-child, .content-card .card-holder > .breadcrumb:first-child, .card > .title:first-child, .content-card .card-holder > .title:first-child, .card > .block:first-child, .content-card .card-holder > .block:first-child,
+  .card > *:not(.card-item):first-child, .content-card .card-holder > *:not(.card-item):first-child,
   .card > .element-invisible:first-child + .breadcrumb,
   .content-card .card-holder > .element-invisible:first-child + .breadcrumb, .card > .element-invisible:first-child + .title, .content-card .card-holder > .element-invisible:first-child + .title, .card > .element-invisible:first-child + .block, .content-card .card-holder > .element-invisible:first-child + .block {
     margin-top: 0 !important; }
-  .card > .block:last-child, .content-card .card-holder > .block:last-child {
+  .card > *:not(.card-item):last-child, .content-card .card-holder > *:not(.card-item):last-child {
     margin-bottom: 0 !important; }
 
 .card-main, .content-card .card-holder {
@@ -2222,13 +2210,13 @@ tr.selected:hover {
   margin: 8px; }
 
 .card-text {
-  padding: 16px 24px 8px 24px; }
-  .card-text:last-child {
-    padding-bottom: 16px; }
+  padding: 16px 24px; }
   .card-title + .card-text {
     padding-top: 0; }
   .card-title.divider-bottom + .card-text, .card-title + .card-text.divider-top {
     padding-top: 16px; }
+  .card-text > *:last-child {
+    margin-bottom: 0; }
 
 .card-bg-red {
   background-color: #f44336;
