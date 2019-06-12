@@ -1,0 +1,227 @@
+# layout
+material_base.layout.min-xs:
+  label: "min-xs, min-mobiles"
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.ss:
+  label: "ss, min-mobiles-small"
+  mediaQuery: 'all and (min-width: 360px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.ms:
+  label: "ms, min-mobiles-medium"
+  mediaQuery: 'all and (min-width: 480px)'
+  weight: 2
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.xs:
+  label: "xs, min-mobiles-large"
+  mediaQuery: 'all and (min-width: 568px)'
+  weight: 3
+  multipliers:
+    - 1x 
+  group: material_base.layout
+material_base.layout.max-sm:
+  label: "max-sm, mobiles-only, max-mobiles"
+  mediaQuery: 'all and (max-width: 767px)'
+  weight: 4
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.sm:
+  label: "sm, min-tablets, min-tablets-modern"
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 5
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.only-sm:
+  label: "only-sm, tablets-only"
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 991px)'
+  weight: 6
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.max-md:
+  label: "max-md, max-tablets"
+  mediaQuery: 'all and (max-width: 991px)'
+  weight: 7
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.md:
+  label: "md, min-desktops, desktops-only"
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 8
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.only-smx:
+  label: "only-smx, tablets-modern-only"
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 1255px)'
+  weight: 9
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.max-lg:
+  label: "max-lg, max-tablets-modern"
+  mediaQuery: 'all and (max-width: 1255px)'
+  weight: 10
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.lg:
+  label: "lg, min-desktops-modern, desktops-modern-only"
+  mediaQuery: 'all and (min-width: 1256px)'
+  weight: 11
+  multipliers:
+    - 1x
+  group: material_base.layout
+material_base.layout.xl:
+  label: "xl, min-desktops-medium"
+  mediaQuery: 'all and (min-width: 1520px)'
+  weight: 12
+  multipliers:
+    - 1x  
+  group: material_base.layout
+material_base.layout.ll:
+  label: "ll, min-desktops-large"
+  mediaQuery: 'all and (min-width: 1920px)'
+  weight: 13
+  multipliers:
+    - 1x
+  group: material_base.layout  
+# images
+material_base.image.min-xs:
+  label: "min-xs, min-mobiles"
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+    - 2.5x
+    - 3x
+  group: material_base.image
+material_base.image.ss:
+  label: "ss, min-mobiles-small"
+  mediaQuery: 'all and (min-width: 360px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+    - 2.5x
+    - 3x
+  group: material_base.image
+material_base.image.ms:
+  label: "ms, min-mobiles-medium"
+  mediaQuery: 'all and (min-width: 480px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+    - 2.5x
+    - 3x
+  group: material_base.image
+material_base.image.xs:
+  label: "xs, min-mobiles-large"
+  mediaQuery: 'all and (min-width: 568px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+    - 2.5x
+    - 3x   
+  group: material_base.image
+material_base.image.max-sm:
+  label: "max-sm, mobiles-only, max-mobiles"
+  mediaQuery: 'all and (max-width: 767px)'
+  weight: 4
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+    - 2.5x
+    - 3x
+  group: material_base.image
+material_base.image.sm:
+  label: "sm, min-tablets, min-tablets-modern"
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 5
+  multipliers:
+    - 1x
+    - 2x
+  group: material_base.image
+material_base.image.only-sm:
+  label: "only-sm, tablets-only"
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 991px)'
+  weight: 6
+  multipliers:
+    - 1x
+    - 2x
+  group: material_base.image
+material_base.image.max-md:
+  label: "max-md, max-tablets"
+  mediaQuery: 'all and (max-width: 991px)'
+  weight: 7
+  multipliers:
+    - 1x
+    - 2x
+  group: material_base.image
+material_base.image.md:
+  label: "md, min-desktops, desktops-only"
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 8
+  multipliers:
+    - 1x
+    - 2x
+  group: material_base.image
+material_base.image.only-smx:
+  label: "only-smx, tablets-modern-only"
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 1255px)'
+  weight: 9
+  multipliers:
+    - 1x
+    - 2x
+  group: material_base.image
+material_base.image.max-lg:
+  label: "max-lg, max-tablets-modern"
+  mediaQuery: 'all and (max-width: 1255px)'
+  weight: 10
+  multipliers:
+    - 1x
+    - 2x
+  group: material_base.image
+material_base.image.lg:
+  label: "lg, min-desktops-modern, desktops-modern-only"
+  mediaQuery: 'all and (min-width: 1256px)'
+  weight: 11
+  multipliers:
+    - 1x
+    - 2x
+  group: material_base.image
+material_base.image.xl:
+  label: "xl, min-desktops-medium"
+  mediaQuery: 'all and (min-width: 1520px)'
+  weight: 12
+  multipliers:
+    - 1x
+    - 2x    
+  group: material_base.image
+material_base.image.ll:
+  label: "ll, min-desktops-large"
+  mediaQuery: 'all and (min-width: 1920px)'
+  weight: 13
+  multipliers:
+    - 1x
+    - 2x 
+  group: material_base.image
