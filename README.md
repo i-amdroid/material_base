@@ -1,3 +1,10 @@
+This clone of repo archived and will no longer receive updates.
+
+For issues please use Drupal.org issue tracker [drupal.org/project/material_base](https://www.drupal.org/project/material_base).  
+For code please use official Drupal GitLab [git.drupalcode.org/project/material_base](https://git.drupalcode.org/project/material_base).
+
+----
+
 Material base theme
 ===================
 
